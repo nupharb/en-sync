@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Withdrawal_files/.idea/Withdrawal_files.iml" filepath="$PROJECT_DIR$/../Withdrawal_files/.idea/Withdrawal_files.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/en.iml" filepath="$PROJECT_DIR$/.idea/en.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../updated/.idea/updated.iml" filepath="$PROJECT_DIR$/../updated/.idea/updated.iml" />
     </modules>
   </component>
 </project>
