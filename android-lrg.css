@@ -1,0 +1,589 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  */
+
+	body {
+	margin-top:0px;
+	margin-left:0px;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-text-size-adjust: none;
+	background:
+ -webkit-gradient(radial, 0 0, 1050, 500 650, 0, from(#000000), to(#2E95D1), color-stop(.6, #001A2D ));
+	padding: 0px;
+}
+#wrap {
+	overflow:hidden;
+	width: 480px;
+	max-height: 800px;
+	height:800px;
+	background-color: none;
+	padding-top: 0px;
+	border: solid 1px #12426c;
+	background-image: url("../../images/en/W.png?ver=10302352b9cca8d374b2c95e0ccf157d");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: bottom right;
+	margin-left:auto;
+	margin-right:auto;
+}
+#content {
+	height: auto;
+	min-height: 923px;
+	overflow: visible;
+	background-color: none;
+	padding-top:7px;
+	padding-bottom:7px;/*-webkit-gradient(radial, 0 0, 1000, 550 450, 40, from(#000000), to(#4477CF), color-stop(.4,#0E3E7D));*/
+}
+.clear {
+	clear: both;
+}
+/* Start topbar */
+
+#header {
+	background-image: url(../../images/en/topbar.jpg?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-repeat: no-repeat;
+	height: 39px;
+	width: 310px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+a.backbutton:link {
+	background-image: url(../../images/en/back_button.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-position: top;
+	height: 32px;
+	width: 59px;
+	display: block;
+}
+a.backbutton:hover {
+	background-image: url(../../images/en/back_button.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-position: bottom;
+	height: 32px;
+	width: 59px;
+	display: block;
+}
+/* Balance bar */
+
+#balance {
+	font-size: 10px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(7, 19, 31, 0.3);
+	text-align: right;
+	height: 13px;
+	padding-right: 5px;
+	padding-left: 5px;
+	outline:none;
+	border-bottom: rgba(7, 19, 31, 0.1) 2px solid
+}
+/* Shake-a-bet-logo section */
+
+#logobar {
+	padding: 7px 9px 7px 14px;
+}
+#logobar span {
+	color: #FC0;
+	display: inline;
+	float: right;
+	font-weight: bold;
+	font-size: 13px;
+	padding-right: 6px;
+	margin-top: 23px;
+}
+#logobar img {
+	display: inline;
+	float: left;
+}
+/* Message Boxes */
+
+.messagebox_blank {
+	width: 87%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 14px;
+	margin-bottom:24px;
+	padding: 0px;
+	font-size: 18px;
+	font-weight:normal;
+	color: rgba(255, 255, 255, 1);
+	text-align: left;
+}
+.messagebox {
+	background-color:  rgba(7, 19, 31, 0.2);
+	width: 80%;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: 14px;
+	padding: 14px;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 1);
+	text-align: left;
+	-webkit-border-radius: 4px;
+}
+.messageboxtext p {
+	margin-bottom: 7px;
+}
+.messageboxtext p a {
+	color: #FFF;
+}
+.messagebox .messageboxtext {
+	margin-left: 5px;
+	font-size: 16px;
+}
+#wrap #content .messagebox_blank .heading {
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 45px;
+}
+#wrap #content .messagebox_blank .heading2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.pricehangebox {
+	background-color:  rgba(7, 19, 31, 0.2);
+	width: 80%;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 7px;
+	padding: 14px;
+	font-size: 16px;
+	/*font-weight:bold;*/
+	color: rgba(255, 255, 255, 1);
+	text-align: left;
+	-webkit-border-radius: 2px;
+	font-weight:bold;
+}
+.pricehangebox .stakereturn {
+	color: #ffd500;
+}
+.refbox {
+	background-color:  rgba(7, 19, 31, 0.2);
+	width: 80%;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	margin-right: auto;
+	margin-left: auto;
+	padding: 14px;
+	font-size: 18px;
+	/*font-weight:bold;*/
+	color: rgba(255, 255, 255, 1);
+	text-align: left;
+	-webkit-border-radius: 4px;
+	margin-top: 0px;
+	margin-bottom: 24px;
+}
+.textholder {
+	text-align: left;
+	width: 80%;
+	margin-top: 24px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 18px;
+	color: #FFF;
+}
+/* DEPOSIT FORM */
+#deposit_fields_wrap {
+	text-align: left;
+	height: auto;
+	width: 79%;
+	margin-top: 14px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 24px;
+}
+#deposit_fields_wrap label {
+	display: block;
+	font-size: 20px;
+	color: #FFF;
+	margin-bottom: 14px;
+	margin-top: 24px;
+}
+#depositform {
+	margin: 0px;
+	padding: 0px;
+}
+/* Call to action button */
+
+#cta_deposit_bet {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 7px;
+}
+#cta_graphic {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+/* Ref and bet info box */
+	
+.refbox .accum {
+	font-size: 14px;
+	color: #FFF;
+	display: inline;
+	float: left;
+	line-height: 24px;
+}
+.refbox .towin {
+	display: inline;
+	float: right;
+}
+.refbox .towin .winnings {
+	color: #ffd500;
+	font-weight: bold;
+}
+/* Selections */
+
+.selection_top {
+	background-image: url(../../images/en/expand_icon_iphone.png?ver=10302352b9cca8d374b2c95e0ccf157d), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#055BA4), to(#0A3158), color-stop(.24,#055BA4));
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding: 13px;
+	height: auto;
+	width: 80%;
+	margin-bottom: 1px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #0a3158;
+}
+.selection_top a {
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.selection_top a:hover {
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.selection_details {
+	padding: 13px;
+	height: auto;
+	width: 80%;
+	margin-bottom: 14px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #07447B;
+	color: #FFF;
+	font-size: 14px;
+	border-bottom: 1px solid rgba(9, 29, 43, 0.3);
+}
+.selection_details.expanded {
+	display: block;
+}
+.selection_details.hidden {
+	display: none;
+}
+.selection_warning {
+
+	
+	background-image: url(../../images/en/warning_icon_ipad.png?ver=10302352b9cca8d374b2c95e0ccf157d), url(../../images/en/expand_icon_iphone.png?ver=10302352b9cca8d374b2c95e0ccf157d),
+	-webkit-gradient(linear, 0% 0%, 0% 100%, from(#055BA4), to(#0A3158), color-stop(.24,#055BA4));
+	background-position: center left, center right;
+	background-repeat: no-repeat, no-repeat;
+	padding: 14px;
+	height: auto;
+	width: 80%;
+	margin-bottom: 1px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+.selection_warning a {
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	margin-left: 30px;
+	padding-right: 24px;
+}
+.selectionwrap {
+	margin-bottom: 18px;
+	display: block;
+}
+.selection_warning a .pricechange {
+	color: #ffd500;
+}
+#changeselections {
+	text-align: center;
+	margin-bottom: 4px;
+	margin-top: 0px;
+}
+#changeselections a {
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+}
+/* Help section phone numbers etc */
+.helpholder {
+	text-align: center;
+	width: 80%;
+	margin-top: 14px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 14px;
+	color: #FFF;
+	margin-bottom: 14px;
+}
+.helpholder a {
+	color: #FFF;
+	font-weight: bold;
+}
+#error-buttons-wrap {
+	height: auto;
+	width: 86%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 14px;
+}
+/*
+#error-buttons-wrap #cta-lrg a {
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+}
+#cta-lrg {
+	font-family:   Helvetica-Black, "Arial Black",  Impact, Arial, Sans-serif;
+	background-repeat: no-repeat;
+	font-size: 24px;
+	line-height: 52px;
+	text-shadow: 0px 0px 5px rgba(0, 0,0, 0.85);
+	font-weight: bold;
+	text-align: center;
+	height: 63px;
+	width: 561px;
+	margin-bottom: 3px;
+}
+#cta-lrg.red {
+	background-image: url(../../images/en/Delete_Selections_lrg_bg.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+	}
+#cta-lrg.blue {
+	background-image: url(../../images/en/Accept_Change_lrg_bg.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+	}
+	#cta-lrg.green {
+	background-image: url(../../images/en/Replace_Selections_lrg_bg.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+#wrap #content #error-buttons-wrap #right-error-button a {
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+}
+#glasswrap {
+	border-radius: 80px 80px 80px 80px;
+	width: 100%;
+	height: 51px;
+	margin-bottom:18px;
+   }
+ #glasswrap.green{
+  background-color: #C7FE21;
+    }
+	 #glasswrap.orange{
+  background-color: #F40
+    }
+	 #glasswrap.red{
+  background-color: #F00;
+    }
+		 #glasswrap.blue{
+  background-color: #06C;
+    }
+#glassdiv {
+	font-family:   Helvetica-Black, "Arial Black",  Impact, Arial, Sans-serif;
+	font-size: 20px;
+	line-height: 52px;
+	text-shadow: 0px 0px 5px rgba(0, 0,0, 0.75);
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	padding: 0;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 80px 80px 80px 80px;
+	background: rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+   
+}
+#glassdiv a {
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+}
+.button-wrap {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+*/
+/* sliding door css buttons */
+#buttons-container {
+	width: 100%;
+}
+.button-lrg-wrap {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 14px;
+	height: auto;
+	float: left;
+}
+.button-lrg-wrap .button-left {
+	width:auto;
+	height:43px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	float: left;
+	margin: 0px;
+}
+.button-lrg-wrap .button-right {
+	width:29px;
+	height:43px;
+	float:left;
+	display:inline-block;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.buttontext {
+	text-align: center;
+	margin-left: 29px;
+	font-family: Helvetica-Black, "Arial Black", Arial Black, Impact, Arial, Sans-serif;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
+	color: #FFF;
+	line-height:43px;
+	width: 351px;
+}
+.buttontext a {
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	font-size:20px;
+}
+.btn-bg-green-left {
+	background-image: url(../../images/en/green-btn-L.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-green-right {
+	background-image: url(../../images/en/green-btn-R.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-blue-left {
+	background-image: url(../../images/en/blue-btn-L.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-blue-right {
+	background-image: url(../../images/en/blue-btn-R.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-red-left {
+	background-image: url(../../images/en/red-btn-L.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-red-right {
+	background-image: url(../../images/en/red-btn-R.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-yellow-left {
+	background-image: url(../../images/en/yellow-btn-L.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-yellow-right {
+	background-image: url(../../images/en/yellow-btn-R.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.button-small-wrap {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+	height: auto;
+	float: left;
+}
+.button-small-wrap .button-left-small {
+	width:auto;
+	height:24px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	float: left;
+}
+.button-small-wrap .button-right-small {
+	width:15px;
+	height:24px;
+	float:left;
+	display:inline-block;
+	background-repeat: no-repeat;
+}
+.buttontext-small {
+	text-align: center;
+	margin-left: 15px;
+	font-family: Helvetica-Black, "Arial Black", Arial Black, Impact, Arial, Sans-serif;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
+	color: #FFF;
+	line-height:24px;
+	width: 243px;
+}
+.buttontext-small a {
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	font-size:16px;
+}
+.btn-bg-green-small-left {
+	background-image: url(../../images/en/green-btn-L-small.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-green-small-right {
+	background-image: url(../../images/en/green-btn-R-small.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-blue-small-left {
+	background-image: url(../../images/en/blue-btn-L-small.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-blue-small-right {
+	background-image: url(../../images/en/blue-btn-R-small.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-red-small-left {
+	background-image: url(../../images/en/red-btn-L-small.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-red-small-right {
+	background-image: url(../../images/en/red-btn-R-small.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-yellow-small-left {
+	background-image: url(../../images/en/yellow-btn-L-small.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.btn-bg-yellow-small-right {
+	background-image: url(../../images/en/yellow-btn-R-small.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+.small-left-wrap {
+	display: inline;
+	float: left;
+	width: auto;
+}
+.small-right-wrap {
+	display: inline;
+	float: right;
+	width: auto;
+}
+/* end sliding door buttons */
+.rounded {
+border-radius: 80px 80px 80px 80px;
+font-weight:bold;
+}
+#wrap #content #depositform #deposit_fields_wrap #amount {
+	height: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	width: 95%;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#wrap #content #depositform #deposit_fields_wrap #CSC {
+	height: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	width: 95%;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+

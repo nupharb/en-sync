@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, .regAccContent {
+scrollbar-base-color: #035571;
+scrollbar-arrow-color: white;
+scrollbar-track-color: #002534;
+
+scrollbar-shadow-color: #01a7cb;
+scrollbar-lightshadow-color: black; 
+scrollbar-darkshadow-color: black;
+
+scrollbar-highlight-color: #01a7cb;
+scrollbar-3dlight-color: black;
+}
+
+/*body1{width: 778px; background: none}      */
+/** MD **/
+body{width: 94%; background: #023b59 url(../../images/en/casinoContentBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x fixed}
+
+.headerBG1, #SiteFooter1 {display: none}
+
+#contentCenter{width: 750px; margin: 0}
+.accStyle #contentHead{
+ /* width: 658px;  */
+  margin: 0 0 0 33px;
+  height: 65px;
+  border-bottom: 2px solid #FFF}
+.accStyle #contentHead h2{width: 600px; padding-left: 0px; padding-top: 30px; color: #FFF; }
+.accStyle #contentHolder {width: 767px; padding: 0; margin: 0; margin: 0; border: none}
+.accStyle .regAccContent{
+  padding: 0 0 0 20px;
+/*  background: #01415c;*/
+background:transparent;
+  color: #fff;
+  margin: 0;
+  /*  */
+  /*  */
+
+  }
+
+background:transparent none repeat scroll 0 0;
+overflow:visible;
+width:700px;
+
+.accStyle .regAccContent
+height:305px;
+overflow:auto;
+padding:0 0 0 20px;
+
+.accStyle .regAccContent a{color: #FFF}
+
+#registration{margin-top: 51px}
+
+
+label{width: 120px; color: #FFF}
+fieldset{border: none}
+body legend{color: #FFF;}
+body legend span{padding-left: 32px}
+#checkRows ol{border: 1px solid #012235; padding: 20px; width: 660px; margin-left: 18px; margin-bottom: 0}
+#checkRows input{margin-left: 10px}
+.btnHolder{padding-left: 140px}
+.lowerForm{margin-top: -40px}
+.lowerForm .btnHolder{padding-left: 100px; padding-top: 10px; }
+.regAccContent fieldset {margin: 0px 0px 37px 0px;}
+
+li.error label{color: #FFF}
+
+li.error select{background: #000; border: 1px solid red}
+
+li.error .validationAdvice  {
+	line-height: 23px;
+	width: 280px;
+	right: 56px;
+	background: url(../../images/en/casinoValidationFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left center no-repeat;
+	color: #000;
+	}
+
+body .validationAdvice.prompt {width: 325px; right: 13px;}
+
+.lowerForm #checkRows li.error label{background: url(../../images/en/casinoValidationFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; color: #000}
+.lowerForm #checkRows li.error label a{color: #000}
+
+body .lowerForm .btnHolder.error .validationAdvice{background: url(../../images/en/casinoValidationFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; color: #000; width: 338px; right: 50px}
+
+
+.validationAdvice.prompt{width: 350px; right: 0px}
+.validationPassed{width: 355px; background: url(../../images/en/casinoValidationPassed.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left 6px no-repeat;}
+
+
+.btnHolder.error .validationAdvice {
+	background: red
+}
+
+
+.tempPassword li.error .validationAdvice  {width: 350px; right: 85px}
+.tempPassword .validationAdvice.prompt{width: 350px; right: 85px}
+.tempPassword .validationPassed{width: 450px}
+
+
+
+.regAccContent .lowerForm {padding-left: 0}
+.lowerForm .btnHolder.error .validationAdvice{right: 0px; width: 390px}
+.lowerForm .btnHolder {padding-left: 142px; }
+.lowerForm .btnHolder.error {padding-left: 142px; width: 500px; padding-top: 10px;  }
+.btn, .btnHolder .btn{width: 110px; background: url(../../images/en/casinoSubmitBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; color: #000; padding: 3px 0; margin: 0; border: none; cursor: pointer}
+
+.btn{width: 169px}
+
+li.error input {border: 1px solid red; padding:2px 3px;}
+
+.lowerForm #checkRows li.error label{right: 55px;}
+
+input{width: 216px; border: 1px solid #00b2d9; padding: 2px; background: url(../../images/en/casinoInputBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-y; color: #FFF}
+#card_no{width: 216px}
+select{width: 224px; border: 1px solid #00b2d9; background: #027395; color: #FFF}
+#dob_month {width: 80px;}
+#country_code{width: 224px}
+.dob {width: 62px}
+#country_code, #challenge_1 {width: 224px}
+#max_deposit{width: 140px}
+.medField{width: 216px}
+
+
+/*---------------------------------INPUT BACKGROUND STYLES--------------------------------*/
+
+select#title{background: #027498}
+input#fName{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -50px;}
+input#lName{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -100px;}
+select#dob_day{background: #035b79}
+select#dob_month{background: #035b79}
+select#dob_year{background: #035b79}
+input#email{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -200px;}
+input#telephone{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -250px;}
+select#country_code{background: #033e52;}
+input#fhouse{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -350px;}
+
+input#addr_street_1{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -355px;}
+input#addr_street_2{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -360px;}
+input#addr_city{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -365px;}
+input#addr_region{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -370px;}
+
+input#postcode{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -375px;}
+
+input#reg_username{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left 0;}
+input#reg_password{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -50px;}
+input#vfy_password{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -100px;}
+select#ccy_code{background: #035772}
+select#max_deposit{background: #03506a}
+select#challenge_1{background: #03475d}
+input#response_1{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -300px;}
+input#fb_promo_code{background: url(../../images/en/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -350px;}
+
+/*----------------------------------------------------------------------------------------*/
+
+#reg_username, #reg_password, #vfy_password, #fb_promo_code, #telephone {width: 132px}
+
+.tempPassword input{width: 132px}
+
+#findAddressLink{width: 139px}
+
+
+
+label{margin: 5px 10px 0 0; width: 130px}
+
+.fieldInfo {padding: 9px 0 0 9px; font-size: 0.9em}
+
+
+.matrixAccA  {margin-top: 15px}
+.matrixAccA li{width: 742px; border-top: 3px solid #0ea2e6; border-bottom: 3px solid #0ea2e6; padding: 17px 0 19px 10px}
+
+.regAccContent .tableData td ul.paymentTypes li{width: 100px; padding-left: 105px}
+.regAccContent .tableData td ul.paymentTypes.noPad li{text-align: center}
+.regAccContent .tableData td .btn{width: 150px}
+
+.regAccContent .infoBox{width: 740px; margin-right: 0}
+
+.regAccContent .infoBox.error {width: 734px}
+.regAccContent .infoBox.error li{text-align: center; padding: 20px}
+
+
+.regAccContent .infoBox ul{padding-left: 20px; margin-left: 20px; list-style: disc; line-height: 20px}
+.regAccContent .infoBox ul li{padding: 0}
+
+.regAccContent .infoBox.thinBorder{border: 1px solid #012235; width: 734px; margin: 13px 0 13px 0; font-size: 1.2em; padding: 20px 0; text-align: center}
+
+
+.reqFieldHolder{margin-top: -38px; margin-right: 40px; color: #fff}
+.reqField, fieldset .reqField{color: #FFF}
+
+p.regTerms{font-size: 1.1em; padding: 0; margin: -18px 55px 30px 50px;}
+p.accFooter{font-size: 1.2em; padding: 17px 0 18px 10px; border-top: 3px solid #0ea2e6; margin-right: 9px}
+
+
+#checkRows label {width: 600px;}
+
+
+fieldset li p{width: 129px}
+
+
+body .regAccContent fieldset .error.btnHolder {
+	padding-top: 20px;
+	padding-bottom: 0px;
+	padding-left: 140px;
+	border: none;
+	margin-top: -8px;
+	width: 340px;
+}
+
+body .regAccContent fieldset li.error{padding: 3px 0; margin: 0; width: 600px}
+
+body .regAccContent fieldset  label{padding: 3px 0 0 0;}
+
+.btnHolder.error .validationAdvice {
+	width: 350px;
+}
+
+.tempPassword .btnHolder.error .validationAdvice{width: 310px; right: 85px}

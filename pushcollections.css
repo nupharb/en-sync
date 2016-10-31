@@ -1,0 +1,2595 @@
+/*
+
+    This CSS is used mainly by the Sport home page, competition page
+    and event page.
+
+    This file defines the way market collections are displayed and the
+    way they appear when they are collapsed/expanded.
+
+    Market templates also use this CSS to display the new set of styles
+*/
+
+
+#contentHolder #contentA {
+	margin-top: 10px;
+}
+
+#contentA hr.hrthin {
+	height: 8px;
+	padding:0px;
+}
+
+
+/* GEN TABLE RULES */
+
+.tableData {
+	margin: 0px auto 25px;
+	position: relative;
+	width: 626px;
+}
+
+.multiTableHolder {
+	width: 626px;
+	margin: 5px auto;
+}
+
+
+.mktHdr {
+	color: #000000;
+	font-size: 13pt;
+	/*height: 20px;*/
+	padding: 5px 0 0 8px;
+	position: relative;
+	width: 618px;
+	/*display: inline-block; */
+}
+
+.mktHdrFlatPack {
+   position: relative;
+   width: 618px;
+   /*height: 23px;*/
+   margin: 0 0 5px 8px;
+   padding-top: 5px;
+   border-bottom:1pt dotted #000000;
+   color:#000000;
+   font-size: 13pt;
+   /*display: inline-block;*/
+}
+
+.mktHdrFlatPackNoBorder {
+	border-bottom:0pt dotted #000000;
+	color:#000000;
+	font-size:13pt;
+	margin:0 0 5px 8px;
+	padding-top:5px;
+	position:relative;
+	width:618px;
+}
+
+.marketName {
+	font-size: 10pt;
+	font-weight: bold;
+	width: 600px;
+	/*position:absolute;
+	top: 8px;
+	left: 16px;*/
+	float: left;
+	margin-left: 4px;
+}
+
+
+.marketHideLink {
+	background:  url(../../images/en/collapseMkt.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+}
+
+.marketControl {
+	/*display: inline-block;*/
+	width: 9px;
+	height: 9px;
+}
+
+.marketShowLink {
+	/*display: none;*/
+	background: url(../../images/en/expandMkt.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	/*display: none;*/
+}
+
+.marketCtrlHolder {
+	float:right;
+	margin-right: -4px;
+	position: absolute;
+}
+
+html > body .marketCtrlHolder{
+	position: static;
+}
+
+.flatPack {
+	/* style for collapsed market */
+	border-bottom: 1pt dotted gray;
+	margin-bottom: -10px;
+}
+
+
+.tableSubHdr {
+	height: 24px;
+	line-height: 24px;
+	color: #fff;
+	background:   url(../../images/en/tableSubHdrBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) top left repeat-x;
+	width: 624px;
+}
+
+
+/*.mktHdr img {
+	float: right;
+	margin-right: 10px;
+	margin-top: 4px;
+}*/
+
+
+
+.subCapt {
+	margin-left: 5px;
+	font-size: 0.7em;
+}
+
+
+
+
+.tableData tr th a {
+	color: #000;
+	font-size:11px;
+}
+
+
+.subCaptLeft {
+	/*   width:auto;
+	display: inline;
+	float:left;*/
+}
+
+
+.tableData tr {
+	height: 26px;
+}
+
+.tableData tr.altRow {
+	background: #ECF7FA;
+}
+
+.tableData tr td{
+        border:  none;
+        height: 24px;
+        font-size: 11px;
+        font-weight: normal;
+        padding: 0px;
+}
+
+.tableData tr td:first-child {
+  padding-left: 8px;
+}
+
+
+/*********** Column property overrides (col elements) *************/
+.moreCol2 {
+	width: 44px;
+}
+
+.infoBox {
+	width: 634px;
+	margin: 0px;
+	padding: 5px 10px;
+	text-align: center;
+	border: 0px none;
+	color: #333333;
+	background-color: none;
+}
+
+div.infoBox {
+	background: url(../../images/en/blurbbg.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0;
+	width: 614px;
+	background-size: auto 100%;
+}
+
+#contentA a.oddsBtn, .tableData td a.oddsBtn{
+	display: block;
+	width: 63px;
+	text-decoration: none;
+	color: white;
+	background: #FFF;
+	text-align: center;
+	border: 1pt none;
+	height: 20px;
+	background: url(../../images/en/vOddsButton.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	margin:0px  ;
+	padding:0px;
+	font-size: 1.0em;
+	font-weight:bold;
+	line-height:20px;
+}
+
+#contentA .tableData td a.oddsBtn.bestPrice{
+	color: white;
+	background: url(../../images/en/vBestPrice.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	border:none;
+}
+
+body #contentA a.oddsBtn:hover,
+.tableData td a.oddsBtn:hover,
+#contentA .tableData td a.oddsBtn.bestPrice:hover,
+.tableData td a.oddsBtn.btnB:hover {
+   	text-decoration: none;
+   	color: #FFF;
+   	border: 1pt none;
+    background: url(../../images/en/vOddsButtonHover.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+}
+
+.allBetsLink {
+	height: 20px;
+	width:40px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	background: url(../../images/en/allBetsBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	display: block;
+	text-decoration: none;
+	line-height: 20px;
+}
+
+/** COLLECTION AND MARKET CONTAINERS**/
+
+.collectionHdr {
+	width: 651px;
+	height: 30px;
+	margin-bottom: 0px;
+	position:relative;
+	margin-top: 5px;
+	background: url(../../images/en/top-corners-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	background-repeat: no-repeat;
+}
+
+.mktGrpHeader {
+	width: 646px;
+	background: url(../../images/en/collectionHdrBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	height: 30px;
+	margin-bottom: 0px;
+	position:relative;
+}
+
+
+.collectionContainer {
+  width: 651px;
+  /* padding-top:20px;           */
+  background: url(../../images/en/expanded-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+  background-repeat: repeat-y;
+}
+
+.collectionContainerGrey {
+	width: 646px;
+	/* padding-top:20px;           */
+	padding-bottom: 1px;
+	background-image: url(../../images/en/expanded-bg-grey.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-repeat: repeat-y;
+}
+
+
+.collectionHideLinkGrey, .compHideLinkGrey {
+	background:  url(../../images/en/expandCollection-grey.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top right no-repeat;
+}
+
+.collectionShowLinkGrey, .compShowLinkGrey {
+	background: url(../../images/en/collapseCollection-grey.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top right no-repeat;
+	/*display:none;*/  /* All expanded by default ?? */
+}
+
+.outrightMarket ul.outrightList {
+	background:none repeat scroll 0 0 #FFFFFF;
+	float:left;
+	display:inline;
+	margin:0 1px;
+	padding:10px 0 10px 16px;
+	width:628px;
+}
+
+.outrightMarket ul.outrightList li{
+	display:inline;
+	float:left;
+	width:298px;
+	margin-right:16px;
+	clear:none;
+	padding:0 0 5px;
+}
+
+.outrightMarket ul.outrightList li a {
+	font-size:12px;
+}
+
+.collectionHdrGrey {
+	width: 646px;
+	height: 30px;
+	margin-bottom:0;
+	position:relative;
+	margin-top:0;
+	background-image: url(../../images/en/top-corners-bg-grey.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-repeat: no-repeat;
+}
+
+.collectionFtrGrey {
+	width: 646px;
+	height: 9px;
+	margin-bottom: 10px;
+	background-image: url(../../images/en/footer-bg-grey.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-repeat: no-repeat;
+}
+.collectionNameGrey {
+    color: #003448;
+    font-size: 1.6em;
+    font-weight: bold;
+    left: 8px;
+    position: absolute;
+    top: 12px;
+}
+.collectionShowLinkGrey{
+	/*display: inline-block;*/
+   font-size: 1.2em;
+	height: 25px;
+	left: 447px;
+	line-height: 25px;
+	position: relative;
+	top: 6px;
+	width: 161px;
+	text-align:right;
+	padding-right:30px;
+}
+
+.collectionWaitLink{
+	height: 25px;
+	width: 141px;
+	line-height: 25px;
+	font-size: 1.2em;
+	position:relative;
+	top: 6px;
+	left: 497px;
+	/*display:inline-block;*/
+}
+
+
+.collectionHideLinkGrey {
+	/*display: inline-block;*/
+	font-size: 1.2em;
+	height: 25px;
+	left: 507px;
+	line-height: 25px;
+	position: relative;
+	top: 6px;
+	width: 101px;
+	text-align:right;
+	padding-right:30px;
+}
+
+.compsContainer {
+  margin-top:20px;
+  width: 646px;
+	clear:both;
+  background: url(../../images/en/expanded-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-y;
+}
+
+
+.collectionFtr {
+  width: 651px;
+  height: 9px;
+  margin-bottom: 5px;
+  background: url(../../images/en/footer-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+  background-repeat: no-repeat;
+}
+
+
+.collectionName {
+  font-size: 12px;
+  position:absolute;
+  top: 12px;
+  left: 16px;
+  font-weight: bold;
+}
+
+.mktGrpTitle {
+	font-size: 14pt;
+	position:absolute;
+	top: -12px;
+	left: 16px;
+	/* width: 400px;            */
+}
+
+
+
+.collectionShowLink{
+	/*display: inline-block;*/
+    font-size: 1.2em;
+	height: 25px;
+	left: 447px;
+	line-height: 25px;
+	position: relative;
+	top: 6px;
+	width: 161px;
+	text-align:right;
+	padding-right:30px;
+}
+
+
+.collectionWaitLink{
+   height: 25px;
+   width: 141px;
+   line-height: 25px;
+   font-size: 1.2em;
+   position:relative;
+   top: 6px;
+   left: 497px;
+   /*display:inline-block;*/
+}
+
+
+.collectionHideLink {
+   /*display: inline-block;*/
+   font-size: 1.2em;
+   height: 25px;
+   left: 507px;
+   line-height: 25px;
+   position: relative;
+   top: 6px;
+   width: 101px;
+   	text-align:right;
+	padding-right:30px;
+}
+
+
+.compShowLink, .compHideLink, .compWaitLink {
+	/*display: inline-block;*/
+	font-size: 1.2em;
+	height: 25px;
+	left: 477px;
+	line-height: 25px;
+	position: relative;
+	top: -14px;
+	width: 161px;
+}
+
+.collectionHideLink, .compHideLink {
+    background: url(../../images/en/expandCollection.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top right no-repeat;
+}
+
+.collectionShowLink, .compShowLink {
+    background: url(../../images/en/collapseCollection.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top right no-repeat;
+    /*display:none;*/  /* All expanded by default ?? */
+}
+
+.compShowLink {
+    background: url(../../images/en/expandCollection.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top right no-repeat;
+    /*display:none;*/  /* All expanded by default ?? */
+}
+
+.collectionWaitLink, .compWaitLink {
+	background: url(../../images/en/collectionWait.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top right no-repeat;
+	/*display:none;*/
+}
+
+
+.tabWaitLink{
+	height: 66px;
+	width: 100%;
+	line-height: 66px;
+	font-size: 1.2em;
+	position:relative;
+	top: -5px;
+	background: url(../../images/en/tabDelay.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top center no-repeat;
+	/*display:inline-block;*/
+}
+
+
+/************* Competitions Page *********************/
+
+/*general rules for comp tables*/
+.compTable {
+	width: 632px;
+	margin: 0px auto 15px;
+}
+
+/*base or collpased view */
+.compTableBase {
+
+}
+
+/* Expanded*/
+.compTableRest {
+	margin-top: -16px;
+}
+
+
+.compTableCol1 {
+	background: url(../../images/en/compTableCol1BG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) ;
+	width: 157px;
+}
+
+.compTableCol2 {
+	background: url(../../images/en/compTableCol2BG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d)  ;
+	width: 157px;
+}
+
+.compTableCol3 {
+	background: url(../../images/en/compTableCol3BG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d)   ;
+	width: 157px;
+}
+
+.compTableCol4 {
+	background: url(../../images/en/compTableCol4BG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d)    ;
+	width: 156px;
+}
+
+.compTableColEmpty {
+	background: #FFFFFF   ;
+	width: 156px;
+}
+
+.compTable td {
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+ }
+
+.compTable a{
+        display: block;
+        height: 2em;
+        overflow: hidden;
+        padding: 1.4em 2px 0.5em;
+        color: #000000;
+        vertical-align: center;
+        text-decoration: none;
+        background: #FFFFFF url(../../images/en/listInlineBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll left bottom;
+        border: 1px solid #002134;
+ }
+
+.compTable a:hover{
+	color: #FFFFFF;
+	background: #002134 url(../../images/en/listInlineOnBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll left top;
+}
+
+
+
+/* NEW ---------------------------------- */
+
+.collectionHeader{
+	width: 646px;
+	background: url(../../images/en/collectionHdrBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	height: 30px;
+	margin-bottom: 0px;
+	position:relative;
+	margin-top: 20px;
+}
+
+.collectionHeader h3{
+	position: absolute;
+	display: block;
+	top: -12px;
+	left: 16px;
+	font-size: 14pt;
+}
+
+.collectionHeaderLink{
+	float: right;
+	margin: -20px 0 0 0;
+	padding-right: 30px;
+	font-size: 10pt;
+}
+
+.linkShow{
+	background: url(../../images/en/collapseCollection.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top right no-repeat;
+}
+
+.linkHide{
+	display: none;
+	background: url(../../images/en/expandCollection.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top right no-repeat;
+}
+
+/* Home page styles */
+
+	#contentA h3 {
+		margin: 5px 0 3px 7px;
+	}
+		#contentA .bbSectionHeader h3 {
+			margin: 0;
+			padding: 0;
+			font-weight: bold;
+			font-size: 16px;
+			display: inline;
+		}
+
+		#contentA .bbSectionHeader p {
+			font-size: 12px;
+			display: inline;
+		}
+
+		#contentA div.bbSectionHeader {
+			padding-left: 7px;
+			padding-bottom: 5px;
+		}
+
+   	.matrixB {
+   		margin-top: 0px;
+   	}
+  	.matrixA li, .matrixB li, .matrixC li {
+		clear: both;
+		position: relative;
+		margin-bottom: 0;
+		padding: 0 0 5px 1px;
+		width: 643px;
+		height: 1%;
+		list-style-image: none;
+		list-style-position: outside;
+		list-style-type: none;
+		border-bottom: 1px dotted #85CCE8;
+	}
+
+	.matrixB li.headerRow {
+		background: #DCEFF5 url(../../images/en/tableDataHeaderBG-new.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0;
+		color: #000000;
+		height: 26px;
+		margin-bottom: 5px;
+		padding: 0 0 0 1px;
+		border-left: 0;
+		border-right: 0;
+		border-top: 3px solid #01527D;
+		border-bottom: 1px solid #85CCE8;
+	}
+   	#contentA .matrixB li h3 {
+		font-size: 1.1em;
+		font-weight: bold;
+		margin: 0;
+		padding-bottom: 4px;
+		padding-top: 5px;
+	}
+
+
+/* NEW2----------------------------------------- */
+
+#contentA h4{
+	float: left;
+	width: 600px;
+	display: block;
+	margin: 0;
+	padding: 15px 0 3px 11px;
+	font-size: 1.4em;
+}
+#contentA h4 .marketDate{
+	font-weight: normal;
+	font-size: 0.8em;
+}
+#contentA h4 a{
+	display: block;
+	text-decoration: none;
+}
+#contentA h4 .marketDate a{
+	display: inline;
+	text-decoration: underline;
+}
+#contentA h4 .marketDate a:hover{
+	text-decoration: none;
+}
+html > body .marketHolder{
+	margin: 0 6px;
+}
+.marketHolder {
+	padding: 0;
+}
+.tableData {
+	width: 634px;
+	margin: 0;
+	color: #000000;
+	font-size: 1.2em;
+	border: none;
+	border-spacing: 0 2px;
+}
+.tableData caption{
+	width:634px;
+}
+.tableData tr th{
+	background: #DCEFF5 url(../../images/en/tableDataHeaderBG-new.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0;
+	color: #000000;
+	height: 26px;
+	margin: 0 0 5px 0;
+	padding: 0;
+	text-align: center;
+	border-left: 0;
+	border-right: 0;
+	border-top: 3px solid #01527D;
+	border-bottom: 1px solid #85CCE8;
+}
+.tableData tr td {
+	height: 24px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	border: none;
+}
+.tableData tr.rowOdd td {
+	background-color: #ECF7FA;
+}
+.tableData tr.rowOddHighlight td{
+	background-color: #d2eaf6;
+}
+.tableData tr th.leftPad, .tableData tr td.leftPad{
+	padding: 0 0 0 0px;
+	text-align: left;
+}
+.tableData tr.headDivide th {
+	border-top: 10px solid #FFFFFF;
+	border-color: #01527D -moz-use-text-color #85CCE8;
+	border-style: solid none;
+	border-width: 3px 0px 1px;
+	padding: none;
+}
+.tableData .dateCol {
+	width: 110px;
+}
+.tableData .priceCol{
+	width: 69px;
+}
+.tableData .tvCol{
+	width: 20px;
+}
+.tableData .statsCol{
+	width: 20px;
+}
+.tableData .moreCol2{
+	width: 44px;
+}
+.tableData .WMTMatch{
+	width: 233px;
+}
+.tableData .WMTMatchE{
+	width: 427px;
+}
+.tableData .HTHMatch{
+	width: 302px;
+}
+.tableData .HTHMatchE{
+	width: 496px;
+}
+.tableData .OUEMatch{
+	width: 164px;
+}
+.tableData .YesNo{
+	width: 248px;
+}
+.tableData .CSTeam{
+	width: 170px;
+}
+.tableData .CS2Team{
+	width: 248px;
+}
+.tableData .CSDraw{
+	width: 87px;
+}
+.tableData .SCORPlayer{
+	width: 289px;
+}
+.tableData .SCastMatch{
+	width: 285px;
+}
+.tableData .SCast{
+	width: 140px;
+}
+.tableData .SCastInput{
+	font-size: 0.9em;
+	height: 18px;
+	margin: 1px 0 0 0;
+	padding: 0;
+	width: auto;
+}
+.tableData a{
+	text-decoration: none;
+}
+.tableData a:hover{
+	text-decoration: underline;
+}
+.tableData a.morebets{
+	display: block;
+	width: 40px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	background: #0F7AB1 url('../../images/en/allBetsBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat scroll;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 20px;
+}
+
+.tableData ol.CSList li {
+	padding: 0.5px;
+}
+
+.CSListLeft {
+	width: 213px;
+}
+
+.CSListRight {
+	width: 208px;
+}
+
+.marketHeader a{
+	text-decoration: none;
+}
+
+.marketHeader a:hover{
+	text-decoration: underline;
+}
+
+.marketHeader a.morebetsIcon{
+	float: right;
+	display: block;
+	width: 40px;
+	height: 20px;
+	margin: 12px 10px 0 0;
+	padding: 0;
+	background: #0F7AB1 url('../../images/en/allBetsBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat scroll;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 20px;
+}
+.marketHeader a.videoIcon{
+	float: right;
+	margin: 12px 4px 0 0;
+}
+.marketHeader a.statsIcon{
+	float: right;
+	margin: 12px 2px 0 0;
+}
+#contentA .tableData tr th div.scorerMarketToggle {
+	display: inline;
+	margin-left: 1em;
+	opacity: 0.75;
+}
+#contentA .tableData tr td .infoBox {
+	width: 614px;
+	margin: 0px;
+	padding: 5px 10px;
+	text-align: center;
+	border: 0px none;
+	color: #333333;
+	background-color: #ffffff;
+}
+#contentA a.oddsBtn, .tableData td a.oddsBtn{
+	display: block;
+	width: 63px;
+	height: 20px;
+	margin: 0 3px;
+	padding: 0;
+	text-align: center;
+	background: #FFFFFF url(../../images/en/vOddsButton.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	font-size: 1.0em;
+	font-weight:bold;
+	line-height: 20px;
+	color: #013856;
+	text-decoration: none;
+	border: none;
+}
+#contentA .tableData td a.oddsBtn.bestPrice{
+	background: url(../../images/en/vBestPrice.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	border: none;
+}
+body #contentA a.oddsBtn:hover, .tableData td a.oddsBtn:hover, #contentA .tableData td a.oddsBtn.bestPrice:hover, .tableData td a.oddsBtn.btnB:hover{
+	background: url(../../images/en/vOddsButtonHover.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	border: none;
+}
+.collectionHeader{
+	padding: 10px 5px 5px 10px;
+	background: transparent url(../../images/en/collectionHdrBGMid.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0;
+}
+.topCollectionHeader{
+	margin: 15px 0 0 0;
+	padding: 0 5px 5px 10px;
+	background: transparent url(../../images/en/collectionHdrBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0;
+}
+#contentA div.collectionHeader h3{
+	float: left;
+	width: 400px;
+	margin: 0;
+	padding: 0;
+	font-size: 1.9em;
+	font-weight: normal;
+}
+#contentA div.collectionHeader h3 a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+.collectionHolder{
+	clear: both;
+	padding: 0px 5px;
+	border-left: 1px solid #7BBFFF;
+	border-right: 1px solid #7BBFFF;
+}
+.collectionHolder .marketHolder{
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+.collectionHolder h4{
+  	display: block;
+  	margin: 0;
+  	padding: 10px 0 3px 5px;
+	font-size: 1.4em;
+}
+#contentA .expandCol{
+	float: right;
+	display: block;
+	height: 25px;
+	padding: 0 30px 0 0;
+	font-size: 1.1em;
+	line-height: 25px;
+	text-decoration: underline;
+	color: #000;
+	background: transparent url(../../images/en/expandCollection.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll right top;
+}
+#contentA .collapseCol{
+	float: right;
+	display: block;
+	height: 25px;
+	padding: 0 30px 0 0;
+	font-size: 1.1em;
+	line-height: 25px;
+	text-decoration: underline;
+	color: #000;
+	background: transparent url(../../images/en/collapseCollection.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll right top;
+}
+#contentA .expandCol:hover, #contentA .collapseCol:hover{
+	text-decoration: none;
+}
+#contentA .expandMar{
+	float: right;
+	display: block;
+	margin: 12px 6px 0 0;
+	height: 20px;
+}
+#contentA .collapseMar{
+	float: right;
+	display: block;
+	margin: 12px 6px 0 0;
+	height: 20px;
+}
+#contentA .collectionHolder .expandMar, #contentA .collectionHolder .collapseMar{
+	margin: 12px 0 0 0;
+}
+.collectionFooter{
+	height: 15px;
+	background: transparent url(../../images/en/collectionFtrBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0;
+}
+.comp{
+	border-collapse: collapse;
+}
+.comp tr{
+	height: 100%;
+}
+.comp td{
+	width: 157px;
+	height: 100%;
+	margin: 0;
+	padding: 2px 2px 0 0;
+	vertical-align: top;
+	border: 0;
+}
+.comp td.noTopPadding{
+	padding-top: 0;
+}
+.comp td.noRightPadding{
+	padding-right: 0;
+}
+a.marketType{
+	display: block;
+	height: 100%;
+	padding: 5px 10px;
+	color: #000;
+	background: #E0F4FB;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+a.marketType:hover{
+	background: #B4DDFD;
+	text-decoration: underline;
+}
+#contentA .hiddenCol{
+	display: none;
+}
+#contentA .shownCol{
+	display: block;
+}
+#contentA .hiddenMar{
+	border-bottom: 1px dotted #7BBFFF;
+}
+
+
+#eventDetailsHeader{
+	width: 210px;
+	height: 20px;
+	position: absolute;
+	margin-top: -22px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: left;
+	font-family: normal normal 1.1em/20px arial,sans-serif;
+	right: 0;
+
+}
+
+#eventDetailsHeader img{
+	margin-top: -1px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+	margin-right: 4px;
+        float:right;
+}
+
+
+/*
+##################################################
+New Push content
+##################################################
+*/
+
+
+/* All markets */
+#contentA .tableData{
+	width: 634px;
+	font-size: 1.1em;
+	border-spacing: 0px;
+}
+#contentA div.marketHolderExpanded, #contentA div.marketHolderCollapsed{
+	margin: 0;
+	padding: 0 0 2px 5px;
+	width: 639px;
+}
+/*ie6*/
+* html #contentA div.marketHolderExpanded, #contentA div.marketHolderCollapsed {
+     margin: 0;
+	 padding: 0 0 2px 5px;
+	 width: 639px;
+}
+#contentA .tableData thead{
+	cursor: pointer;
+}
+#contentA .tableData tr{
+	height: auto;
+}
+#contentA .tableData tr th{
+	height: 20px;
+	margin: 0 0 2px 0;
+	line-height: 20px;
+	font-size: 1em;
+	background: #0682C7 url('../../images/en/tableDataHeaderBG-push.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 0;
+	border: none;
+}
+#contentA .tableData tr.header td{
+	font-weight: bold;
+	color: #AFE0F7;
+	background-color: #014B70;
+}
+#contentA .tableData tr th span{
+	width: auto;
+	margin: 0;
+	padding: 0 0 0 16px !important;
+	color: #FFFFFF;
+	text-align: left;
+}
+#contentA .tableData div.mkt_header{
+	color: #FFFFFF;
+}
+#contentA .tableData tr th#suspendedheader span{
+	color: #959494;
+}
+#contentA .tableData tr td img, #contentA .tableData tr th img{
+	display: block;
+	border: none;
+}
+
+/*ie7
+*:first-child+html #contentA .tableData tr th .containsTooltip{
+	margin-top: 1px;
+	margin-right: 4px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	float: none !important;
+}
+*/
+
+#contentA .tableData tr td img, #contentA .tableData tr th .containsTooltip{
+	float: right;
+	margin: 1px 4px 0 0;
+}
+
+#contentA .tableData tr th img.addMarket{
+	display: inline;
+	vertical-align: middle;
+}
+#contentA .tableData tr td.leftPad, #contentA .tableData tr th.leftPad{
+	padding: 0 0 0 6px;
+	text-align: left;
+}
+#contentA .tableData tr td.rightPad, #contentA .tableData tr th.rightPad{
+	padding: 0 6px 0 0;
+	text-align: right;
+}
+#contentA .tableData tr.rowOdd td{
+	padding: 0;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #c0e0ef;
+	vertical-align:middle;
+}
+
+#contentA .tableData tr.rowOdd td.marketscorer{
+	text-align:left;
+	padding: 0 0 0 10px;
+}
+#contentA .tableData tr.rowOddHighlight td{
+	padding: 0;
+	background-color: #d2eaf6;
+	border-bottom: 1px solid #c0e0ef;
+	vertical-align:middle;
+}
+#contentA .tableData tr.rowOddHighlight td.marketscorer{
+	text-align:left;
+	padding: 0 0 0 10px;
+}
+
+#contentA .tableData tr.rowLive td{
+	padding: 0;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #c0e0ef;
+	vertical-align:middle;
+}
+
+#contentA .tableData select.scorecast{
+	width: 136px;
+	font-size: 0.9em;
+}
+#contentA .tableData div.marketInfoBox{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	color:#333333;
+	font-size:10px;
+	padding:3px;
+	background:transparent url(../../images/en/blurbbg.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0;
+}
+#contentA .tableData a{
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+}
+#contentA .tableData a:hover{
+	text-decoration: underline;
+}
+
+#contentA .tableData a.leftPad:hover {
+	text-decoration:none;
+}
+#contentA .tableData .containsTooltip a {
+	color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: underline;
+}
+#contentA .tableData .containsTooltip:hover {
+	position: relative;
+	cursor:pointer;
+}
+#contentA .tableData .containsTooltip span.outerTT {
+	display: none;
+}
+#contentA .tableData .containsTooltip:hover span.outerTT {
+	background: url(../../images/en/tooltipBg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 bottom transparent;
+	bottom: 16px;
+	color: #ffffff;
+	display: block;
+	font-weight: normal;
+	line-height: 14px;
+	padding: 0 !important;
+	position: absolute;
+	right:0;
+	text-decoration: none;
+	width:160px;
+	z-index: 9000;
+}
+#contentA .tableData .containsTooltip:hover span.outerTT span.innerTT {
+	background:none #264D64;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	float: right;
+	font-size:11px;
+	margin: 0 0 5px;
+	padding: 4px 7px 5px !important;
+	position: relative;
+}
+
+#contentA .tableData a.Time:hover {
+	text-decoration: none;
+}
+
+#contentA .tableData a.moreBets{
+	display: block;
+	width: 40px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	text-align: center;
+	font-weight: normal;
+	background: transparent url('../../images/en/all-bets-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat;
+}
+#contentA .tableData a.moreBets:hover{
+	text-decoration: underline;
+}
+#contentA .tableData a.floatRight{
+	float: right;
+	margin: 0px 4px 0px 0px;
+}
+#contentA .tableData .suspended{
+	float: right;
+	margin: 3px 4px 0px 0px;
+	height:14px;
+	line-height:14px;
+	border:0px;
+	color:#993333;
+	font-weight:bold;
+	background:none;
+}
+
+#contentA .tableData .new{
+	float: right;
+	margin: 1px 4px 0px 0px;
+	color:#b2e33a;
+	font-weight:bold;
+}
+#contentA .tableData td a.liveat{
+	display: block;
+	width: 48px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFE222;
+	text-decoration: none;
+	background: #0A1F31 url('../../images/en/liveat-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat 0 0;
+	margin-right: 3px;
+}
+
+
+/* Expanded market */
+#contentA div.marketHolderExpanded tr th{
+	color: #AFE0F7;
+	text-indent: 0px;
+}
+
+
+#contentA div.marketHolderExpanded .marketShowAllExpanded{
+	color: #FFFFFF;
+	text-indent: 0px;
+	text-align:right;
+	background:none;
+	display:table-group;
+	padding: 0 6px 0 0;
+	width:90px;
+	*width:84px;
+}
+
+#contentA div.marketHolderExpanded .marketShowAllCollapsed{
+	display:none;
+}
+
+#contentA div.marketHolderExpanded tr th span{
+	color: #FFFFFF;
+	background: transparent url('../../images/en/new-expanded-market.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat scroll 0 1px;
+}
+#contentA div.marketHolderExpanded tbody{
+	display: table-row-group;
+}
+
+
+/* Collapsed market */
+#contentA div.marketHolderCollapsed tr th{
+	color: #014B70;
+	text-indent: -9999px;
+}
+
+#contentA div.marketHolderCollapsed .marketShowAllExpanded{
+	display:none;
+}
+
+#contentA div.marketHolderCollapsed .marketShowAllCollapsed{
+	color: #FFFFFF;
+	text-indent: 0px;
+	text-align:right;
+	background:none;
+	display:table-group;
+	padding: 0 6px 0 0;
+	width:90px;
+	*width:84px;
+	*float:right;
+}
+
+#contentA div.marketHolderCollapsed tr th.title{
+	text-indent: 0px;
+}
+#contentA div.marketHolderCollapsed tr th span{
+	color: #FFFFFF;
+	background: transparent url('../../images/en/new-collapsed-market.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat 0 3px;
+}
+#contentA div.marketHolderCollapsed tbody{
+	display: none;
+}
+
+
+/* Prices */
+#contentA .tableData td a.oddsBtnNew, #contentA .tableData td div.eventpriceholder-left{
+	display: block;
+	height: auto;
+	margin: 2px 4px 2px 0;
+	padding: 0;
+	line-height: 18px;
+	font-weight: normal;
+	text-align: center;
+	color: #000000;
+	border: 1px solid #AAC1E3;
+	text-decoration: none;
+	background: #FFFFFF url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 0;
+}
+
+
+#contentA .tableData td div.eventpriceholder-right{
+	display: block;
+	height: auto;
+	margin: 2px 0;
+	padding: 0;
+	line-height: 18px;
+	font-weight: normal;
+	text-align: center;
+	color: #000000;
+	border: 1px solid #AAC1E3;
+	text-decoration: none;
+	cursor: pointer;
+	background: #FFFFFF url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 0;
+}
+
+#contentA .tableData td div.pricemouseover, #contentA .tableData td div.priceselected, #contentA .tableData td a.oddsBtn.priceselected {
+	background: #FAFAFA url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 -80px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#contentA .tableData td a.oddsBtnSusp, #contentA .tableData td div.eventpriceholdersusp-left{
+	display: block;
+	height: auto;
+	margin: 2px 4px 2px 0px;
+	padding: 0;
+	line-height: 18px;
+	font-weight: normal;
+	text-align: center;
+	color: #999999;
+	border: 1px solid #AAC1E3;
+	text-decoration: none;
+	background: #FFFFFF url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat scroll 0 -160px;
+}
+#contentA .tableData td a.oddsBtnSusp, #contentA .tableData td div.eventpriceholdersusp-right{
+	display: block;
+	height: auto;
+	margin: 2px 0px;
+	padding: 0;
+	line-height: 18px;
+	font-weight: normal;
+	text-align: center;
+	color: #999999;
+	border: 1px solid #AAC1E3;
+	text-decoration: none;
+	background: #FFFFFF url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat scroll 0 -160px;
+}
+#contentA .tableData td a.Score{
+	display: block;
+	width: 48px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+	background: #FFE222 url('../../images/en/score-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat 0 0;
+}
+#contentA .tableData td a.goalflash{
+	display: block;
+	width: 48px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFF503;
+	text-decoration: none;
+	background: #000000;
+}
+
+div.eventpriceholder, div.eventpriceholder-left{
+	margin: 2px 0px 2px 0px;
+	line-height: 18px;
+	cursor: pointer;
+	border: 1px solid #AAC1E3;
+	background: #FAFAFA url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x 0px 0px;
+}
+div.eventpriceholder-left{
+	margin: 2px 4px 2px 0px;
+}
+div.eventprice{
+	float: right;
+	width: 60px;
+	font-weight:bold;
+}
+div.eventpriceup{
+	float: right;
+	width: 60px;
+	background: transparent url('../../images/en/live-arrow-up.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat scroll 48px 4px;
+	font-weight:bold;
+}
+
+div.eventpricedown{
+	float: right;
+	width: 60px;
+	background: transparent url('../../images/en/live-arrow-down.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat scroll 48px 4px;
+	font-weight:bold;
+}
+
+div.eventselection{
+	margin-right: 60px;
+	padding-left: 9px;
+	text-align: left;
+}
+div.eventselection span.hc{
+	color: #CF0302;
+}
+#contentA .tableData tr td{
+	background-color: #FFFFFF;
+	height: 24px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	vertical-align: top;
+}
+
+#contentA .tableData td div.pricehover{
+	background: #FAFAFA url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x 0px -80px;
+}
+#contentA .tableData td div.pricesuspended{
+	color: #AAAAAA;
+	background: #FAFAFA url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x 0px -160px;
+}
+
+/* Collection Tabs */
+#paginationLive{
+	font-size: 11px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	margin: 2px 0 2px 0;
+	overflow: hidden;
+	text-align: center;
+	width: 646px;
+}
+#collectionTabs{
+	width: 646px;
+	border-collapse: collapse;
+}
+#collectionTabs tr{
+	padding: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:middle;
+
+}
+#collectionTabs td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width:155px;
+	vertical-align:middle;
+	height:100%;
+
+}
+#collectionTabs div{
+	margin: 0 2px 0 0;
+	background: transparent url(../../images/en/collection-tab-off.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll bottom;
+}
+#collectionTabs a{
+	display: block;
+	margin: 0;
+	padding: 8px 5px;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 11px;
+	background: none;
+	border: 1px solid #b3c7e5;
+}
+#collectionTabs a:hover, #collectionTabs a.selected{
+	color: #FFFFFF;
+	background: #002134 url(../../images/en/dailyMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0;
+}
+#contentA .tableData#suspended{
+	color:#b4b4b4;
+}
+#contentA .tableData#suspended tr th {
+	height: 20px;
+	margin: 0 0 2px 0;
+	line-height: 20px;
+	color:#959494;
+	font-size: 1em;
+	background: #0682C7 url('../../images/en/tableDataHeaderBG-suspended.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 0;
+	border: none;
+}
+#contentA .tableData#suspended tr th span {
+	color:#959494;
+}
+#contentA .tableData#suspended div.eventpriceholder, #contentA .tableData#suspended div.eventpriceholder-left{
+	color:#b4b4b4;
+	margin: 2px 0px 2px 0px;
+	line-height: 18px;
+	border: 1px solid #AAC1E3;
+	background: #FAFAFA url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x 0px 0px;
+}
+#contentA .tableData#suspended div.eventpriceholder-left{
+	margin: 2px 4px 2px 0px;
+}
+
+.castSuspended {
+	color: #b4b4b4;
+}
+
+.castSuspended table {
+	color: #b4b4b4;
+}
+
+.castSuspended table tr th {
+	background: #0682C7 url('../../images/en/tableDataHeaderBG-suspended.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 0 !important;
+}
+
+.castSuspended table tr th span {
+	color:#959494 !important;
+}
+
+/* Live Tabs 4 */
+.paginationLiveTwo {
+	font-size:11px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	margin:10px 0 6px;
+	overflow:hidden;
+	padding:0;
+	text-align:center;
+	width:646px;
+}
+.paginationLiveTwo span.outside{
+	background:transparent url('../../images/en/dailyMatchOff.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 0;
+	border:1px solid #8897ad;
+	clear:none;
+	float:left;
+	font-size:11px;
+	padding:2px;
+	width:151px;
+	height:28px;
+	margin:0 2px 4px;
+	position:relative;
+    display:table;
+    vertical-align: middle;
+}
+.paginationLiveTwo span.outside span.inside{
+	position:relative;
+	display:table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* new-collection style was designed to add a "new" flag to collections marked as new in the configuration for horse racing and sports. */
+.paginationLiveTwo span.new-collection-flag {
+	background: url("../../images/en/tabs-new.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left top transparent;
+	display: block;
+	height: 25px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 25px;
+}
+
+.paginationLiveTwo a {
+	text-decoration:none;
+}
+.paginationLiveTwo span#selectedLive a, .paginationLiveTwo span.outside:hover a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.paginationLiveTwo span#selectedLive, .paginationLiveTwo a:hover .outside {
+	background:transparent url('../../images/en/dailyMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+	color:#ffffff;
+}
+
+/* END Live Tabs */
+
+/* Live Tabs 5 */
+.paginationLiveFive {
+	font-size:11px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	margin:10px 0 0 2px;
+	overflow:hidden;
+	padding:0px;
+	text-align:center;
+	width:638px;
+}
+.paginationLiveFive span.outside{
+	background:#E6E6E6 url('../../images/en/dailyMatchOff.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 0;
+	border:1px solid #8897ad;
+	clear:none;
+	float:left;
+	font-size:11px;
+	padding:0px;
+	width:118px;
+	height:28px;
+	margin:0px 2px;
+	position:relative;
+	display:table;
+	vertical-align: middle;
+}
+.paginationLiveFive span.outside span.inside{
+	position:relative;
+	display:table-cell;
+	vertical-align: top;
+	width:100%;
+	height:28px;
+}
+.paginationLiveFive span#selectedLive {
+	border:1px solid #fff;
+	height:41px;
+	background:url('../../images/en/dailyLiveMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat scroll 0 0;
+
+}
+.paginationLiveFive a {
+	text-decoration:none;
+}
+.paginationLiveFive span#selectedLive, .paginationLiveFive span#selectedLive a, .paginationLiveFive span.outside:hover a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.paginationLiveFive a:hover .outside {
+	height:41px;
+	margin:0 2px 0;
+	border:1px solid #fff;
+	background:url('../../images/en/dailyLiveMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat scroll 0 0;
+	color:#ffffff;
+}
+
+/* END Live Tabs */
+
+/* Live Tabs 3 */
+.paginationLiveThree {
+	font-size:11px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	margin:10px 0 6px;
+	overflow:hidden;
+	padding:0;
+	text-align:center;
+	width:646px;
+}
+.paginationLiveThree span.outside{
+	background:transparent url('../../images/en/dailyMatchOff.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 0;
+	border:1px solid #8897ad;
+	clear:none;
+	display:block;
+	float:left;
+	font-size:11px;
+	margin:2px;
+	padding:2px;
+	width:204px;
+	height:28px;
+	position:relative;
+    display:table;
+    vertical-align: middle;
+}
+.paginationLiveThree span.outside span.inside{
+	position:relative;
+    display:table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.paginationLiveThree span#selectedLive {
+	background:transparent url('../../images/en/dailyMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+}
+.paginationLiveThree a {
+	text-decoration:none;
+}
+.paginationLiveThree span#selectedLive a, .paginationLiveThree span.outside:hover a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.paginationLiveThree a:hover .outside, .paginationLiveThree span#selectedLive {
+	background:transparent url('../../images/en/dailyMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+	color:#ffffff;
+}
+.paginationLiveThree div.blockbuster {
+	background:transparent url('../../images/en/listInlinebbBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+}
+.paginationLiveThree div.blockbuster:hover {
+	background:transparent url('../../images/en/listInlinebbOnBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+	color:#000000;
+}
+.paginationLiveThree span.blockbuster {
+	background:transparent url('../../images/en/listInlinebbOnBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+}
+.paginationLiveThree span#selectedLive.blockbuster, .paginationLiveThree span.blockbuster:hover {
+	background:transparent url('../../images/en/listInlinebbBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+	color:#000000;
+} 
+
+/* END Live Tabs */
+
+/* Live Tabs 8 */
+.paginationLiveEight {
+	font-size:11px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	margin:10px 0 6px;
+	overflow:hidden;
+	padding:0;
+	text-align:center;
+	width:646px;
+}
+.paginationLiveEight span.outside{
+	background:transparent url('../../images/en/dailyMatchOff.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 0;
+	border:1px solid #8897ad;
+	clear:none;
+	display:block;
+	float:left;
+	font-size:11px;
+	margin:2px;
+	padding:2px 0 2px 0;
+	width:74px;
+	height:28px;
+	position:relative;
+    display:table;
+    vertical-align: middle;
+}
+.paginationLiveEight span.outside span.inside{
+	position:relative;
+    display:table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.paginationLiveEight span#selectedLive {
+	background:transparent url('../../images/en/dailyMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+}
+.paginationLiveEight a {
+	text-decoration:none;
+}
+.paginationLiveEight span#selectedLive a, .paginationLiveEight span.outside:hover a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.paginationLiveEight a:hover .outside{
+	background:transparent url('../../images/en/dailyMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+	color:#ffffff;
+}
+
+/* END Live Tabs */
+
+
+
+/* Home page Live*/
+#LiveContainer{
+	padding-bottom:7px;
+}
+#contentA div.subtitlediv {
+	border-bottom:4px solid #005173;
+	padding-bottom: 0px;
+}
+#contentA h2.subtitlenew{
+	font-size:18px;
+        margin: 0;
+	padding: 6px 1px 5px 0;
+}
+#LiveContainer p{
+	padding: 10px 10px 0px 10px;
+	font-size:11px;
+}
+#LiveContainer p.viewall{
+	text-align:right;
+}
+/* End of Home page Live */
+
+/* Other Events side bar */
+
+#rNavInplay{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+	width:306px;
+	background-color:#e6e6e6;
+	min-height:73px;
+	padding-bottom:5px;
+	margin-bottom:10px;
+}
+
+#rNavInplay .rNavInplayHdr{
+	float:left;
+	width:290px;
+	color:#000000;
+	letter-spacing:0;
+	font-weight:bold;
+	background:transparent url('../../images/en/betInBg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x 0 -1px;
+	height:26px;
+	line-height:28px;
+	padding: 0 7px;
+	vertical-align:middle;
+	margin-bottom:0;
+}
+
+#rNavInplay .rNavInplayTitle{
+	float:left;
+	height:28px;
+	line-height:28px;
+	vertical-align:middle;
+}
+
+#rNavInplay .dropdown{
+	float:right;
+	height:28px;
+	line-height:28px;
+	vertical-align:middle;
+}
+
+#rNavInplay .dropdown select{
+	font-size:10px;
+	width:100px;
+}
+
+#rNavInplay .rNavInplaySport{
+	clear:both;
+	color:#064471;
+	letter-spacing:0;
+	font-weight:bold;
+	background: #cccccc;
+	padding: 4px 7px;
+	margin-top:8px;
+}
+
+#rNavInplay .rNavInplaySport .dropdown {
+	line-height:18px;
+}
+
+#rNavInplay .rNavInplaySport img {
+	margin-right:5px;
+}
+
+#rNavInplay .betInTop {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url('../../images/en/betInTop.gif?ver=10302352b9cca8d374b2c95e0ccf157d');
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	height:4px;
+	width:306px;
+}
+#rNavInplay .betInBottom {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url('../../images/en/betFavBottom.gif?ver=10302352b9cca8d374b2c95e0ccf157d');
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	height:11px;
+	width:306px;
+}
+#rNavInplay .betInRep {border-right:1px solid #96a3b7;border-left:1px solid #96a3b7;width:304px; float:left;display:block;}
+
+
+div.eventcontainer{
+	clear:both;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin: 3px;
+	padding:4px;
+	height:28px;
+	cursor: pointer;
+	border: 1px solid #AAC1E3;
+	background: #FAFAFA url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x 0px 0px;
+}
+
+div.eventcontainer:hover{
+	color: #FFFFFF;
+	background: #FAFAFA url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x 0px -80px;
+}
+
+div.eventcontainer div.scorebtn{
+	height:28px;
+	display:inline;
+	float:left;
+	vertical-align:middle;
+}
+
+div.eventdetails {
+	display:inline;
+	float:left;
+	height:28px;
+	margin:0 0 0 5px;
+	text-align:left;
+	vertical-align:middle;
+	width:178px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+div.eventdetails > p{
+	overflow: inherit;
+	text-overflow: inherit;
+}
+
+div.eventactions {
+	display:inline;
+	float:right;
+	width:57px;
+}
+
+div.eventcontainer div.scorebtn a.goalflash{
+	display: block;
+	width: 48px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFE222;
+	text-decoration: none;
+	background: #000000;
+	float:left;
+	vertical-align:middle;
+}
+
+div.eventcontainer div.scorebtn a.Score{
+	display: block;
+	float:left;
+	width: 48px;
+	height: 20px;
+	line-height:20px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	vertical-align:middle;
+	color: #000000;
+	text-decoration: none;
+	background: #FFE222 url('../../images/en/score-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat 0 0;
+}
+
+
+div.eventcontainer div.scorebtn a.liveat{
+	display: block;
+	float: left;
+	width: 48px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFE222;
+	text-decoration: none;
+	background: #0A1F31 url('../../images/en/liveat-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat 0 0;
+}
+
+div.eventcontainer div.scorebtn a.Goal{
+	display: block;
+	float:left;
+	width: 48px;
+	height: 20px;
+	line-height:20px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	vertical-align:middle;
+	color: #ffe957;
+	text-decoration: none;
+	background: #FFE222 url('../../images/en/goal-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat 0 0;
+}
+
+span.lastcored{
+	color: #cc0000;
+}
+
+div.eventactions a, div.othereventactions a {
+	display:inline;
+	float:right;
+	margin-left:3px;
+	text-decoration:none;
+}
+
+.eventactions .favCloseBtn {
+	display:inline;
+	float:right;
+	margin-left:3px;
+}
+
+div.othereventactions{
+	display:inline;
+	float:right;
+	width:40px;
+}
+
+div.showall{
+	text-align:right;
+	font-weight:bold;
+	margin-right: 3px;
+}
+
+div.eventcontainer.suspended {
+	clear:both;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin: 3px;
+	padding:4px;
+	height:28px;
+	cursor: pointer;
+	border: 1px solid #AAC1E3;
+	color: #AAAAAA;
+	background: #FAFAFA url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x 0px 0px;
+}
+
+
+
+/* End of other events side bar */
+
+/* NEW BET LIVE BLOCK SUB FEATURE */
+#newBetLiveHolder {float:left;}
+
+#newBetLiveHolder .betLiveTop {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url(../../images/en/bet-live-top.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	height:4px;
+	width:646px;
+	line-height:4px;
+}
+#newBetLiveHolder .betLiveBottom {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url(../../images/en/bet-live-bottom.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	height:10px;
+	width:646px;
+}
+#newBetLiveHolder .betLiveBorderFrame{
+	border-top:0px;
+	border-left:1px solid #d4d4d4;
+	border-right:1px solid #d4d4d4;
+	border-bottom:0px;
+ 	background: #f3f4f6 url(../../images/en/bet-live-rp.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top;
+	repeat-x top;
+	width:644px;
+	float:left;
+	display:block;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	/*overflow:hidden;
+	background-attachment:scroll;
+	background-color:transparent;
+	display:block;
+	float:left;
+	width:644px;
+	border-left:1px solid #6b737d;
+	border-right:1px solid #6b737d;*/
+}
+#newBetLiveHolder .betLiveRepeat {
+	background-color:transparent;
+	background-image:url(../../images/en/bet-live-rp.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top;
+	width:644px;
+	display:block;
+	margin-bottom:7px;
+}
+#newBetLiveHolder .betLiveRepeat h3 {
+	color:#003448;
+	font-size:1.6em;
+	font-weight:bold;
+	margin-left:0px;
+	padding-left:7px;
+}
+#newBetLiveHolder .betLiveRepeat p {
+	margin:0;
+	padding:3px 0 10px 7px;
+	font-size:1.1em;
+}
+.yellowBut {
+	background:#eceef0 url(../../images/en/bet-live-title-yellow.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top;
+	border:1px #CCC solid;
+	padding:2px 4px ;
+}
+/* END OF NEW BET LIVE BLOCK SUB FEATURE */
+
+/* New In Play Links */
+a.inPlayLinks {
+	display:inline-block;
+	height:13px;
+	font-size:11px;
+	color:#084d7a;
+	background:url(../../images/en/inPlayLink_icon.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right 1px;
+	padding-right:14px;
+	margin-bottom:5px;
+}
+
+a.inPlayLinks:hover {
+	color:#0c6dac;
+	background:url(../../images/en/inPlayLink_icon.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right -12px;
+	padding-right:14px;
+	text-decoration:underline;
+}
+
+a.inPlayLinks.noMrgn {
+	margin-bottom:1px;
+}
+
+/* In-play events heading */
+#liveInPlayHeader p {
+	padding: 10px 10px 0px 10px;
+	font-size:11px;
+}
+
+/* Link to daily matches page */
+#daily_matches_link {
+	float: right;
+	margin-right: 16px;
+	font-size: 11px;
+}
+
+.paginationDailyMatches {
+	width:645px;
+}
+
+.paginationDailyMatches li {
+	background:#E1E1E1 url('../../images/en/dailyMatchOff.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0pt;
+	border:1px solid #8897AD;
+	clear:none;
+	display:block;
+	float:left;
+	font-size:0.9em;
+	margin:0 1px 1px 0;
+	padding:4px 3px;
+	width:71px;
+}
+.paginationDailyMatches  a:hover li {
+	background:#E1E1E1 url('../../images/en/dailyMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0pt;
+}
+.statsImage {
+	margin-left:8px;
+}
+
+#inplayHeader{
+	width:646px;
+	position:relative;
+	font-size:11px;
+}
+
+#inplayHeader img{
+	display:inline;
+	float:left;
+}
+
+#inplayHeader .inplayOuter{
+	display:table;
+	#position:relative;
+	overflow:hidden;
+}
+
+#inplayHeader .inplayMid{
+	#position:absolute;
+	#top:50%;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+#inplayHeader .inplayInner{
+	#position:relative;
+	#top:-50%;
+	margin-left:3px;
+}
+
+#inplayHeader .inplayInner a{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+
+div.viewall{
+	clear:both;
+	display:inline;
+	float:right;
+	height:23px;
+	margin-top:3px;
+	margin-right:6px;
+}
+
+div.viewall a{
+	display:inline-block;
+	height:17px;
+	font-size:12px;
+	padding:3px 15px 3px 5px;
+}
+
+div.viewall a:hover{
+	text-decoration: underline;
+}
+
+/* Favourites */
+#favs {
+	background-color:#E6E6E6;
+	margin-top:5px;
+	margin-bottom:10px;
+	min-height:30px;
+	padding-bottom:5px;
+	width:306px;
+}
+#favs .favsTitle {
+	-moz-background-clip:border;
+	-moz-background-origin:padding;
+	-moz-background-size:auto auto;
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../images/en/favsTitleBg.gif?ver=10302352b9cca8d374b2c95e0ccf157d");
+	background-position:0 -1px;
+	background-repeat:repeat-x;
+	color:#064471;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:0;
+	padding-bottom:6px;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:6px;
+}
+#favs .betFavTop {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../images/en/betFavTop.gif?ver=10302352b9cca8d374b2c95e0ccf157d");
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	height:4px;
+	width:306px;
+	overflow:hidden;
+}
+#favs .betFavBottom {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("../../images/en/betFavBottom.gif?ver=10302352b9cca8d374b2c95e0ccf157d");
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	height:11px;
+	width:306px;
+	overflow:hidden;
+}
+#favs .betFavRep {border-right:1px solid #96a3b7;border-left:1px solid #96a3b7;width:304px; float:left;display:block;background-color:#e6e6e6;}
+
+#favsDivLink {
+	text-align: right;
+}
+
+
+div.contentMyEv .bubbleError{position: absolute; top: 0; background: url(../../images/en/bubbleRed.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; width: 180px; height: 77px; margin-top: -60px;  padding: 12px 0 0 0; color: #FFF; font-size: 1.3em; z-index: 9000; text-align: center;  left: -1px;}
+
+div.contentMyEv  .bubbleError {
+	margin-top: -60px;
+	width: 180px;
+	text-align: center;
+	padding-top: 12px;
+}
+
+div.contentMyEv .posType0 {left: -1px !important;}
+div.contentMyEv .posType1 {left: 612px !important;}
+div.contentMyEv .posType2 {left: 168px !important;}
+div.contentMyEv .posType3 {left: -1px !important;}
+
+div.myeventdetails > p{
+	overflow: inherit;
+	text-overflow: inherit;
+}
+
+div.myeventdetails{
+	height:28px;
+	display:inline;
+	float:left;
+	text-align:left;
+	margin: 0 0 0 5px;
+	vertical-align:middle;
+	width:170px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+div.myeventdetails p{
+	vertical-align:middle;
+	line-height:13px;
+}
+
+#contentA .tableData td div.eventpriceholder-left.priceselected, #contentA .tableData td div.eventpriceholder-right.priceselected {
+	background: #FAFAFA url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll 0 -80px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.freeBets {
+	float:left; padding:5px 0; font-size:1.1em;
+}
+
+.sportsTopCurves
+{
+	background:url('../../images/en/curves-top.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat;
+	height:4px; width:644px; display:block; float:left;
+	overflow:hidden;
+}
+
+.sportsCurvesGrad {
+	background:url('../../images/en/grad.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x #FBFBFB;
+	border-left:1px solid #d4d4d4;
+	border-right:1px solid #d4d4d4;
+	width:642px;
+	display:block;
+	float:left;
+}
+
+
+.sportsBottomCurves {
+	background:url('../../images/en/curves-bottom.gif?ver=10302352b9cca8d374b2c95e0ccf157d')	no-repeat;
+	height:10px;
+	width:644px;
+	display:block;
+	float:left;
+}
+
+#myMarketHowTo .sportsCurvesGrad {
+	width:622px !important;
+	padding:5px 10px;
+	background:#F9F9F9 url('../../images/en/grad.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat;
+}
+#myMarketHowTo #myMarketHdr{
+	float:left;
+	width:622px;
+	font-size:17px;
+	font-weight:bold;
+	color:#002b48;
+}
+#myMarketHowTo #myMarketHdr #myMarketTitle{
+	float:left;
+	width:622px;
+}
+#myMarketHowTo #myMarketHdr #myMarketClose{
+	float:right;
+}
+#myMarketHowTo #myMarketHdr #myMarketClose a{
+	display:block;
+	float:right;
+	background:url('../../images/en/closeBtn.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat 0 0;
+	width:16px;
+	height:16px;
+}
+#myMarketHowTo p {
+	float:left;
+	margin:10px 0;
+	width:622px;
+}
+#myMarketHowTo p span.rightImg{
+	float:right;
+	width:207px;
+}
+#myMarketHowTo p span.leftCol{
+	float:left;
+	width:340px;
+}
+#myMarketHowTo p span.leftCol .leftColTitle{
+	clear:both;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	color:#002b48;
+	width:340px;
+}
+#myMarketHowTo p span.leftCol .leftColCtnt{
+	clear:both;
+	float:left;
+	margin:5px 0 0 0;
+	width:340px;
+}
+
+#sports_holder{
+	width:644px;
+}
+
+#contentA .tableData tr.rowOddUS td.leftPad{
+	padding: 0;
+	background-color: #FFFFFF;
+	vertical-align:middle;
+}
+
+#contentA .tableData tr td.rightPad {
+	padding: 0 3px 0 0;
+	vertical-align:middle;
+}
+
+#contentA .tableData .titleUS {
+	padding-right: 4px;
+}
+
+#matchHighlightsTop {
+	overflow:hidden;
+}
+#matchHighlightsFrame .sportHighlights {
+	float:left;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+#matchHighlightsFrame .sportHighlights h3 {
+	color: #003448;
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-left: 7;
+	padding-left: 20px;
+}
+#matchHighlightsFrame .sportHighlights h3.football {
+	background:url(../../images/en/ICO-Highlights-Football.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.tennis {
+	background:url(../../images/en/ICO-Highlights-Tennis.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.athletics {
+	background:url(../../images/en/ICO-Highlights-Althetics.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.american_football {
+	background:url(../../images/en/ICO-Highlights-American-Football.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.australian_rules {
+	background:url(../../images/en/ICO-Highlights-Aussie-Rules.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.baseball {
+	background:url(../../images/en/ICO-Highlights-Baseball.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.basketball {
+	background:url(../../images/en/ICO-Highlights-Basketball.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.beach_soccer {
+	background:url(../../images/en/ICO-Highlights-Beach-Football.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.beach_volleyball {
+	background:url(../../images/en/ICO-Highlights-Beach-Volleyball.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.bowls {
+	background:url(../../images/en/ICO-Highlights-Bowls.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.boxing {
+	background:url(../../images/en/ICO-Highlights-Boxing.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.cricket {
+	background:url(../../images/en/ICO-Highlights-Cricket.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.cycling {
+	background:url(../../images/en/ICO-Highlights-Cycling.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.darts {
+	background:url(../../images/en/ICO-Highlights-Darts.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.futsal {
+	background:url(../../images/en/ICO-Highlights-Futsal.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.gaelic_football {
+	background:url(../../images/en/ICO-Highlights-Galic-Football.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.golf {
+	background:url(../../images/en/ICO-Highlights-Golf.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.greyhounds {
+	background:url(../../images/en/ICO-Highlights-Greyhounds.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.handball {
+	background:url(../../images/en/ICO-Highlights-Handball.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.hockey {
+	background:url(../../images/en/ICO-Highlights-Hockey.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.horse_racing {
+	background:url(../../images/en/ICO-Highlights-Horse-Racing.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.hurling {
+	background:url(../../images/en/ICO-Highlights-Hurling.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.ice_hockey {
+	background:url(../../images/en/ICO-Highlights-Ice-Hockey.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.lotteries {
+	background:url(../../images/en/ICO-Highlights-Lotteries.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.ufc {
+	background:url(../../images/en/ICO-Highlights-MMA-UCF.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.motorbikes {
+	background:url(../../images/en/ICO-Highlights-Motobikes.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.motosports {
+	background:url(../../images/en/ICO-Highlights-Motosports.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.politics {
+	background:url(../../images/en/ICO-Highlights-Politics.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.pool {
+	background:url(../../images/en/ICO-Highlights-Pool.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.rugby_league {
+	background:url(../../images/en/ICO-Highlights-Rugby-League.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.rugby_union {
+	background:url(../../images/en/ICO-Highlights-Rugby-Union.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.snooker {
+	background:url(../../images/en/ICO-Highlights-Snooker.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.tv_specials {
+	background:url(../../images/en/ICO-Highlights-TV-Specials.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.volleyball {
+	background:url(../../images/en/ICO-Highlights-Volleyball.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.water_polo{
+	background:url(../../images/en/ICO-Highlights-Water-Polo.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsFrame .sportHighlights h3.winter_sports {
+	background:url(../../images/en/ICO-Highlights-Winter-Sports.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#matchHighlightsBottom {
+	margin-bottom:5px;
+}
+
+.contentBScoreboard {
+	margin-top:362px !important;
+}
+
+#contentA .scoreboardCollapsed {
+	width:648px;
+	height:265px;
+}
+
+#contentA .scoreboardExpanded {
+	width:972px;
+	height:265px;
+}
+

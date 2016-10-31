@@ -1,0 +1,2154 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+	Copyright (c) 2008 Orbis Technology Ltd. All rights reserved.
+
+	Betslip CSS
+*/
+
+*:focus {
+	outline:none;
+}
+#slip{
+	width: 306px; /* was 294px */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	padding:0px; /* was 4px */
+	float: left;
+	margin-top: -74px;
+	display: block;
+	position: relative;
+	z-index: 0;
+	/*border: 3px solid #002134;*/
+}
+
+#slip #slipNavigation {
+	border-bottom: 2px solid #023e5e;
+	overflow: auto;
+}
+
+#slip #slipNavigation #nav_openBets, #slip #slipNavigation #nav_betSlip {
+	/*margin-right: 1px;*/
+}
+
+#slip #slipNavigation li.disabled#nav_sistema a {
+	color:#aaa;
+}
+
+#slip #slipNavigation li.active {
+	background: #fff url(../../images/en/tab_active.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -1px top;
+}
+
+#slip #slipNavigation li.active a {
+	color: #fff;
+	padding-top:0px;
+}
+
+#slip #slipNavigation li#nav_tipit a {
+	background:transparent url(../../images/en/tipit_tab.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 5px top;
+	padding-left:20px;
+	width:82px;
+}
+
+#slip #slipNavigation li.active#nav_tipit a {
+	background:transparent url(../../images/en/tipit_tab.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 5px -16px;
+}
+
+#slip #slipNavigation li.inactive#nav_tipit a {
+	background:transparent url(../../images/en/tipit_tab.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 5px -32px;
+}
+
+#slip #slipNavigation li#nav_tipit a span.starTips {
+	background:transparent url(../../images/en/tipit_star.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top;
+	width:8px;
+	height:9px;
+	display:block;
+	position:absolute;
+	top:0px;
+	right:5px;
+}
+
+#slip #slipNavigation li.active#nav_tipit a span.starTips {
+	background:transparent url(../../images/en/tipit_star.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center -9px;
+}
+
+#slip #slipNavigation li.inactive#nav_tipit a span.starTips {
+	background:transparent url(../../images/en/tipit_star.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center -17px;
+}
+
+#slip #slipNavigation li a {
+	text-align:center;
+	position:relative;
+	top:7px;
+	padding:0px;
+	height:15px;
+	vertical-align:middle;
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	width: 102px;
+	color: #024061;
+	white-space:nowrap;
+	font-size:10px;
+}
+
+#slip #slipNavigation li {
+	float:left;
+	width:102px;
+	clear: none;
+	display:inline-block;
+	height: 26px;
+	padding: 0;
+	text-align: center;
+	vertical-align:inherit;
+	background: #fff url(../../images/en/tab_inactive.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top left;
+}
+
+#slip #slipNavigation li.small a {
+	width: 75px;
+}
+
+#slip #slipNavigation li.small {
+	width:75px;
+}
+
+#slip #slipNavigation li.inactive a {
+	color: #999;
+}
+
+#slip #slipNavigation li .tabPerks_badge {
+	float: left;
+	position: absolute;
+	top: 2px;
+	left: 61px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	line-height: 17px;
+	background: transparent url(../../images/en/perks_circle.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+}
+
+.slipWrapper{
+	border-left: 1px solid #1f536f;
+	border-right: 1px solid #1f536f;
+	width: 296px;
+	padding: 0 4px;
+	overflow-x: hidden !important;
+	overflow-y: auto !important;
+}
+
+#betSlip {
+	display: block;
+	padding: 0px;
+	width: 304px;
+}
+#contentB #slip h4 {
+	color: #024061;
+	font: 19px Arial;
+}
+#contentB #slip h4 a {
+	float: right;
+}
+#betSlip .slipTitle_details {
+	color: #024061;
+	font: 11px Arial;
+	font-weight: bold;
+	padding-left: 10px;
+	margin-bottom: 5px;
+	margin-top: 2px;
+}
+#betSlip .slipTitle_details a {
+	float: right;
+	padding-right:8px;
+	padding-top: 1px;
+}
+#slipBtns {
+	margin-bottom: 0 !important;
+}
+#betSlip .slipBtnDisclaimer {
+	padding: 0px 8px 12px;
+}
+#betSlip .slipBtnRight input {
+	width: 148px;
+	height: 32px;
+	background: transparent url(../../images/en/input_btn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	border: 0;
+	color: #fff;
+	text-transform: uppercase;
+	font: 14px Arial;
+	font-weight: bold;
+	Padding-bottom: 7px;
+	cursor: pointer;
+}
+#betSlip .slipBtnLeft a {
+	color: #024061;
+	font: 12px Arial;
+	font-weight: bold;
+}
+
+.slipErrorBox, .slipMsgBox {
+	border-bottom: 0 !important;
+}
+
+#slip .slipErrorHeader {
+	width: 304px;
+	height: 2px;
+	line-height: 2px;
+	background-color:#FEB6BA;
+}
+
+#slip .slipErrorBox {
+	background-color:#FEB6BA;
+	width: 281px;
+	padding: 5px 12px 7px;
+	color: #024061;
+	margin-bottom: 0 !important;
+	overflow:hidden;
+}
+
+#slip .slipErrorFooter {
+	width: 304px;
+	height: 2px;
+	line-height: 2px;
+	background-color:#FEB6BA;
+	margin-bottom: 5px;
+}
+
+#slip .slipErrorShort {
+	float:left;
+	display:inline;
+	width:261px;
+}
+
+#slip .slipErrorClose {
+	float:left;
+	display:inline;
+	width:18px;
+	height:18px;
+}
+
+.community #slip{
+	margin-top: 0;
+}
+
+#slip.error{border: 3px solid red}
+
+#poolBettingContainer .slipPool{
+	display: block;
+	border: none;
+	margin: 4px 0 0 0;
+	border: none;
+	width: 781px;
+	padding: 0
+}
+
+#poolBettingContainer.errorPool {
+	border: 3px solid red;
+}
+
+#slip hr{
+	visibility: hidden;
+	margin-top: 10px;
+}
+
+.slipSupText{
+	font-size: 1em;
+	padding: 1px 2px 0 0;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	background: url(../../images/en/slipHelp.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	text-align: center;
+	width: 18px;
+	height: 18px;
+	margin-right: 8px;
+	margin-left: 270px;
+}
+.slipSupText:hover{background: url(../../images/en/slipHelpOver.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;}
+
+
+.slipSupTextToteReceipt{
+	font-size: 1em;
+	padding: 1px 2px 0 0;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	background: url(../../images/en/slipHelp.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	text-align: center;
+	width: 18px;
+	height: 18px;
+	margin-right: 8px;
+	margin-left: 270px;
+}
+.slipSupTextToteReceipt:hover{background: url(../../images/en/slipHelpOver.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;}
+
+
+
+.slipEmpty{
+	padding: 0;
+	margin-top: 0px;
+}
+
+
+.slipEmpty .slipPromo{
+	background: url(../../images/en/slipPromoBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x; margin-top: -1px; border: 1px solid #0983bd; border-top: none; padding: 4px 0 4px 6px
+}
+
+.slipEmpty .slipSelection{
+	background: #013956 url(../../images/en/slipHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	padding: 5px 0 6px 6px;
+	border: 1px solid #012e46;
+}
+
+.slipEmpty .slipRow{padding: 20px 0; text-align: center; border: 1px solid #0983bd; margin-top: 3px;}
+.slipEmpty.login .slipRow{padding: 0 0 0 8px; text-align: left;  margin-top: 3px; border: none}
+
+.slipEmpty.login .slipRow .slipLeft{width: 115px;}
+
+.slipSupText a{
+	color: #FFF; 
+	text-decoration: none; 
+	font-weight: bold;
+}
+
+.slipTitle .slipSupText{
+	position: absolute; 
+	top: 28px; 
+	left: 10px;
+}
+
+
+.slipSupTextToteReceipt a{
+	color: #FFF; 
+	text-decoration: none; 
+	font-weight: bold;
+}
+
+.slipTitle .slipSupTextToteReceipt{
+	position: relative; 
+	top: 28px; 
+	left: 10px;
+}
+
+
+#slip .checkbox{
+	margin: -1px 4px 0 0;
+	float: left;
+	padding: 0;
+	width: 15px;
+	height: 15px;
+}
+#slip .slipSelection .checkbox{margin-right: 3px}
+
+#slip label{
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#slip .headRight{
+	float: right;
+	padding-top: 5px;
+	margin-right: 10px;
+}
+
+#contentB #slip h2, #slip h4, #slip h5{
+	margin: 0 0 2px 0;
+	font-size: 1em;
+	padding: 5px 8px 3px 8px;
+	color: #000;
+	font-size: 1.7em;
+	font-weight: normal;
+	letter-spacing: 0px;
+}
+
+#contentB #slip h4{background: #FFF color: #000; margin: 0 0 0 0; padding: 11px 6px 4px 4px; font-size: 2.3em; letter-spacing: -1px; font-weight: normal}
+#slip h4 a{color: #7ddfff; text-decoration: none; font-size: 1em; font-weight: normal}
+#slip h4 a:hover{color: #fff}
+
+.slipTitle h4 .textSmall{font-size: 0.5em; letter-spacing: 0}
+
+#slip h5{margin-top: -10px; padding: 0 0 1px 5px;}
+
+.slipHeader{
+	background: #013956 url(../../images/en/slipHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	height: 25px;
+	padding: 2px 0 0 9px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 0.9em;
+	margin-bottom: 3px;
+}
+
+body.langCN .slipHeader, body.langZH .slipHeader{font-weight: normal; font-size:1.1em;}
+
+.slipHeader .slipLeft{
+	float: left;
+	padding: 4px 0 0 17px;
+	width: 179px;
+	background:url(../../images/en/arrowDown.gif?ver=10302352b9cca8d374b2c95e0ccf157d) 1px 4px no-repeat;
+}
+
+.slipHeader .slipRight{
+	float: left;
+	width: 82px;
+	padding: 4px 0 0 0;
+	text-align: right;
+}
+
+.slipHeader a{color: #FFF}
+
+.slipRow{
+	padding-left: 4px;
+	padding-bottom: 3px;
+	height: 1%;
+}
+.slipRow.noEW{padding-top: 4px; padding-bottom: 0}
+
+#slip.slipPool .slipRow{padding-left: 8px}
+
+.singleBet.multiple .slipRow{
+	padding-bottom: 8px;
+}
+
+.receipt .singleBet .slipRow p{padding-left: 3px; margin-left: 0}
+
+.slipRow .slipLeft{width: 150px; float: left; clear: both; padding-bottom: 5px}
+.slipRow .slipRight{float: left; padding-bottom: 5px}
+
+.slipRow ul .slipFloat{float: left; width: 100px}
+
+.slipRow p{
+	padding-left: 20px;
+	line-height: 1.5em;
+}
+
+.slipRowSection {
+	font-weight: bold;
+}
+
+.slipRowReceipt p, .slipRowRules p {
+	padding: 6px;
+	line-height: 1.2em;
+}
+.slipRowReceipt ul{list-style: square; margin: 8px 0 10px 0}
+.slipRowReceipt ul li{padding-left: 0px; margin-left: 20px}
+
+
+.slipTip{
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	margin: -60px 0 0 85px;
+	background: #FFF;
+	padding: 5px;
+	border: 1px solid #000;
+	/*display: none;*/
+}
+
+.slipTip ul{
+	line-height: 8px;
+}
+
+.slipFooter .slipLeft{
+	float: left;
+	padding: 5px 0 7px 0px;
+}
+
+#contentA .slipFooter.wide{background: none; padding: 0}
+
+#contentA .slipFooter.wide .slipLeft{
+	width: 395px;
+	float: left;
+	padding: 3px 0 6px 0px;
+	text-align: right;
+}
+
+.slipReceiptBox .slipFooter .slipLeft, #slip.receipt #totalCost .slipLeft{
+	text-align: left;
+}
+
+#slip.slipPool .slipReceiptBox .slipFooter .slipLeft{width: 300px}
+
+
+
+#contentA .slipFooter.wide .slipRight{
+	float: left;
+	padding: 3px 0px 6px 0px;
+	text-align: left;
+	margin-right: 6px;
+}
+
+.slip3DS{
+	border: 5px solid  #08355f;
+	padding: 6px 6px 0 6px;
+	margin-top: 0px;
+}
+
+.slip3DS .slipSelection{
+	background: #074e81;
+	border: 1px solid #013855;
+}
+
+.quickDeposit .msg{
+	padding: 5px 0 7px 0;
+	background: #0a85be url(../../images/en/selectionHeaderSingleSel.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	color: #FFF;
+	text-align: center;
+	margin-right: 4px;
+}
+
+.quickDeposit .msg_reverse{
+	padding: 5px 0 3px 0;
+	text-align: center;
+	margin-right: 4px;
+}
+
+
+.quickDeposit .slipLeft{
+	width: 143px;
+	float: left;
+	padding: 3px 0 3px 6px;
+	text-align: left;
+	margin: 0
+}
+
+.quickDeposit .slipRight{
+	width: 90px;
+	float: left;
+	padding: 3px 0 3px 0px;
+	text-align: left;
+	margin: 0;
+}
+
+.quickDeposit .deposit{
+	border-top: 1px solid #0983bd;
+	padding: 5px 0;
+	margin: 4px;
+}
+.quickDeposit .deposit .slipRow{padding-left: 10px}
+
+.csv{
+	width: 50px;
+}
+
+.deposit .slipRow{
+	padding-top: 5px;
+}
+
+.deposit .slipLabel{
+	float: left;
+	width: 140px;
+	padding: 4px 0 0 0px;
+}
+
+.slipFooter .slipRight{
+	float: left;
+	padding: 5px 0px 7px 0px;
+	text-align: left;
+	margin-right: 6px;
+}
+
+
+.slipName{
+	padding: 4px 0 3px 20px;
+}
+.slipBestOdds{padding: 2px 0 3px 20px; font-weight: bold}
+
+body.langCN .slipName, body.langZH .slipName{font-weight: normal; font-size:1.1em;}
+body.langCN .slipName strong, body.langZH .slipName strong{font-weight: normal; font-size:1.1em;}
+
+.slipRow.noEW .slipName{
+	float: left;
+	width: 140px;
+	padding: 4px 0 0 20px;
+}
+
+.slipStake{
+	width: 113px;
+	float: right;
+	text-align: left;
+	margin-right: 4px;
+}
+
+#slip .slipStake label{
+	padding-top: 4px;
+	width: 24px;
+	margin-right: 3px;
+	text-align: right
+}
+
+#slip .slipStake input{
+	width: 75px;
+}
+
+#slip .quickDeposit .slipStake .csv{
+	width: 40px;
+}
+
+
+.slipSelection{
+	border: 1px solid #88a850;
+	background: #5a860a url(../../images/en/selectionHeaderSingle.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) top repeat-x;
+	color: #FFF;
+	padding: 3px 3px 3px 5px;
+	margin-bottom: 2px;
+	font-weight: bold;
+	height: 1%;
+	overflow: hidden;
+}
+
+body.langCN .slipSelection, body.langZH .slipSelection{font-weight: normal; font-size:1.1em;}
+
+.slipSelection.checkBet{padding: 3px 0 5px 6px; margin-bottom: 4px}
+
+#slip.slipPool .slipSelection{padding-left: 8px}
+
+.slipReceiptBox .slipSelection.transaction{
+	background: #013956 url(../../images/en/slipHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	padding: 5px 6px 7px 6px;
+	border: 1px solid #012e46;
+}
+
+.slipSelection label{width: 235px;}
+
+#slip .slipSelection .remove{
+	float: right;
+	border: 1px solid #689512;
+	margin-right: 1px;
+}
+#slip .slipError .slipSelection .remove{
+	border: 1px solid #a80202;
+}
+
+#slip .singleSelected .slipSelection .remove{border: 1px solid #0e88c1}
+
+#slip .slipSelection .remove a{
+	color: #FFF;
+	padding: 0 4px 0 3px;
+	text-decoration: none;
+}
+#slip .slipSelection .remove a:hover{background: #5e8b0c}
+#slip .singleSelected .slipSelection .remove a:hover{background: #005c8e}
+#slip .slipError .slipSelection .remove a:hover{background: #c20505}
+
+
+.quickDeposit .slipSelection, .betDelay .slipSelection{
+	background: #013956 url(../../images/en/slipHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	padding: 5px 0 7px 6px;
+	border: 1px solid #012e46;
+}
+
+#totalCost{
+	background: #002133 url(../../images/en/slipTotalCostBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	color: #FFF;
+	padding: 8px 5px 3px 8px;
+	margin-top: 3px;
+	margin-bottom: 1px;
+	font-weight: bold;
+	height: 25px;
+
+}
+#slipMainFooter #totalCost .totalUSD{
+	background: #abddf6; color: #000
+}
+
+#slip #totalCost .slipLeft{
+	float: left;
+	padding-left: 0px;
+	font-size: 1.6em;
+	margin-left: 0px;
+	text-align: left;
+	width:100%;
+}
+
+#slip  #totalCost .slipRight{
+	float: left;
+	width: 68px;
+	padding: 0 0 0 0;
+}
+
+#totalEstimatedWinning{
+	background: #002133 url(../../images/en/slipTotalCostBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	color: #FFF;
+	padding: 2px 5px 3px 8px;
+	margin-top: 0px;
+	margin-bottom: 2px;
+	height: 25px;
+}
+
+#slipMainFooter #totalEstimatedWinning #slipEstimatedWinning{
+	font-size: 12px;
+}
+
+#slipMainFooter #totalEstimatedWinning #slipEstimatedWinning a {
+	color:#FFF;
+}
+
+#slip .singleBet.singleSelected{
+	background: url(../../images/en/singleSelectedBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom repeat-x;
+}
+
+.singleSelected .slipSelection{
+	border: 1px solid #4ba5cf;
+	background: #0781bb url(../../images/en/selectionHeaderSingleSel.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+}
+
+.slipSelection.open .slipSelectionLeft{
+	color: #fff;
+}
+
+.multipleBet{background: #f9fcf0 url(../../images/en/multipleBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom repeat-x;}
+
+.multipleBet.slipOn{border-bottom: 1px solid #A80202}
+
+.multipleBet.slipOn .slipRow{padding-top: 4px; padding-bottom: 0px;}
+.multipleBet.slipOn .slipStake{margin-left: 6px; margin-right: 6px}
+
+
+.multipleBet .slipSelection{
+	background: #588509 url(../../images/en/selectionHeaderSingle.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) top repeat-x;
+	padding-left: 4px;
+	cursor: hand;
+
+}
+
+.slipSelectionLeft{
+	float: left;
+	width: 150px;
+}
+
+.multipleBet .slipSelectionLeft{
+	background: url(../../images/en/arrowOff.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left center no-repeat;
+	padding-left: 12px;
+}
+
+.multipleBet.slipOn .slipSelection .slipSelectionLeft{
+	background: url(../../images/en/arrowOn.gif?ver=10302352b9cca8d374b2c95e0ccf157d) 0 2px no-repeat;
+	padding-left: 12px;
+}
+
+.multipleBet .slipSelection:hover {
+	cursor: pointer
+}
+
+.slipSelectionRight{
+	float: right;
+	width: 15px;
+	margin-top: 1px;
+	margin-right: 2px;
+}
+
+.slipSelectionRight span{display: block; float: left; padding-top: 1px}
+
+.multipleBet .slipSelectionRight{
+	margin-top: -1px;
+	color: #FFF; padding: 0 0 0 3px;
+	border: 1px solid #54830f; width: 100px; background: #618f12 url(../../images/en/multiBetsBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+}
+ .multipleBet.slipError .slipSelectionRight{border: 1px solid #a80202; background: url(../../images/en/slipSelectionError.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x}
+
+.multipleBet .slipSelectionRight a{color: #FFF; text-decoration: none; background: url(../../images/en/multipleBetHelp.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 2px 1px no-repeat; padding: 1px 5px 1px 5px; display: block; float: right; border-left: 1px solid #54830f; }
+
+.multipleBet.slipError .slipSelectionRight a{border-left: 1px solid #a80202;}
+
+.slipError .slipSelectionRight a{background: url(../../images/en/multipleBetHelpError.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 2px 1px no-repeat;}
+
+
+.multipleBet .slipSelectionRight a:hover{background: url(../../images/en/multipleBetHelpOver.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;}
+.slipError .slipSelectionRight a:hover{background: url(../../images/en/multipleBetHelpErrorOver.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;}
+
+
+
+.slipSP{
+	width: 96px;
+	float: left;
+	padding: 3px 0 5px 0;
+	text-align: right;
+}
+
+.slipEW{
+	float: left;
+	width: 140px;
+	padding: 4px 0 0 20px;
+}
+.multipleBet .slipEW{padding-left: 22px}
+
+.quickDeposit .slipEW{
+	float: left;
+	width: 155px;
+	padding: 4px 0 0 0px;
+}
+
+.quickDeposit #slipRows2{border: 1px solid #0983bd; margin-top: 3px; padding-top: 5px}
+
+.slipFooter{
+	margin: 5px 5px 0 25px;
+	border-top: 1px solid #9bca2c;
+	padding-left: 0px;
+	height: 1%;
+}
+#slip.slipPool .slipFooter{margin: 5px 5px 0 158px;}
+
+.multipleBet .slipFooter{margin: 4px 7px 0 27px}
+
+
+.slipFooter.return{
+	margin: 5px 0 0px 0;
+	border-top: 1px dotted #6fa008;
+	border-bottom: none;
+	padding: 2px 0 0 8px;
+}
+
+.slipFooter.trans{
+	margin: 0;
+	border-top: 1px dotted #6fa008;
+	padding: 2px 0 0 8px;
+}
+
+.singleSelected .slipFooter{
+	border-top: 1px solid #8bc8e4;
+}
+
+.slipCasts{
+	width: 100%;
+	margin-bottom: 5px;
+	background: #FFF;
+}
+
+.slipCasts a.changeOrderUp{background: url(../../images/en/changeOrderUp.gif?ver=10302352b9cca8d374b2c95e0ccf157d) 2px  center no-repeat; display: block; text-align: center; padding: 0 0 0 14px}
+
+.slipCasts a.changeOrderDown{background: url(../../images/en/changeOrderDown.gif?ver=10302352b9cca8d374b2c95e0ccf157d) 2px center no-repeat; display: block;  text-align: center;  padding: 0 0 0 14px}
+
+
+.castsNo{width: 20px;}
+.castsName{width: 110px;}
+.castsUp, .castsDown{width: 27px}
+
+.slipCasts tr th{
+	background: #013956 url(../../images/en/slipHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	padding: 7px 6px 8px 7px;
+	text-align: left;
+	color: #FFF;
+	font-size: 0.9em;
+}
+
+.slipCasts td{
+	border-bottom: 1px solid #8bc8e4;
+	padding: 6px 6px 8px 7px;
+}
+
+.slipCasts .lastRow td{
+	border-bottom: none;
+}
+
+.slipCasts a{border: 1px solid #FFF; padding: 1px}
+.slipCasts a:hover{border: 1px solid #8bb923}
+
+#slipMainFooter{
+	padding: 0;
+	height: 1%;
+}
+
+#slipMainFooter .slipRowCheck{padding: 8px; font-size: 1.6em; font-weight: bold; text-align: center; border: 1px solid #002131; background: url(../../images/en/slipRowCheckBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) left 2px no-repeat}
+
+#slip.receipt #slipMainFooter{margin-top: 0px}
+
+#slipMainFooter.error{
+	border: none;
+	border-top: 3px solid red;
+	margin-top: 4px;
+	width: 100%;
+	color: #000
+}
+
+#slipMainFooter.errorStake #totalCost{
+	background: #cc0707 url(../../images/en/slipSelectionError.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	border: 1px solid #a80202;
+}
+
+#slipMainFooter.error #totalCost .slipRight{float: right; text-align: center; border: 1px solid #a80202; margin-top: -1px; background: #cc0707 url(../../images/en/slipSelectionError.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom repeat-x}
+
+#slipMainFooter #totalCost .slipLeft, #slipMainFooter #totalCost .slipRight {
+	padding: 0
+}
+
+#slipMainFooter .slipLeft{
+	float: left;
+	padding: 4px 0 3px 0;
+}
+
+#slipMainFooter .slipRow .slipRight{
+	float: right;
+	padding: 6px 6px 0 0;
+}
+
+#slip #slipMainFooter select{
+	font-size: 0.8em;
+	width: 265px;
+	margin-bottom: 5px;
+}
+
+#slipMainFooter .slipRow{
+	background: #abddf6;
+	margin-top: 0px;
+	padding: 0 0 1px 6px;
+}
+#slip.slipPool #slipMainFooter .slipRow{background: #e2f2f9 url(../../images/en/slipPoolFooterBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x; border: 1px solid #09324a; margin-top: -5px; padding: 5px 0 0 0}
+
+#slip #slipMainFooter #slipFreeBets{background: #abddf6; margin-top: -2px;  padding: 3px 0 4px 4px}
+#slip #slipMainFooter #slipFreeBets .slipRow{background: none}
+#slip #slipMainFooter.error #slipFreeBets{background: url(../../images/en/slipFooterErrorBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom repeat-x; }
+#slip #slipMainFooter #slipFreeBets select{width: 275px; margin-top: 2px}
+
+
+#slipMainFooter .slipRow span{ /*--FREE BET HIGHLIGHT --*/
+	border: 1px solid #0174ec;
+	display: block;
+	background: #FFF;
+	float: left;
+	padding: 0px 3px;
+	margin: -1px 3px 0 0;
+
+}
+
+.quickDeposit, .betDelay{
+	padding: 0;
+	margin-top: 0px;
+}
+
+.betDelay .slipRow{
+	text-align: center; border: 1px solid #0983bd; border-top: none; padding: 0 0 35px 0;
+}
+.betDelay .slipRow.textCenter{ border: 1px solid #0983bd; border-bottom: none; margin-top: 3px; padding-bottom: 0; padding-top: 15px}
+
+.betDelay .slipRow img{
+	padding: 10px 0;
+}
+
+#slipMainFooter .slipSelection{
+	background: #0a3862 url(../../images/en/tableDataTHGrad.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) top repeat-x;
+	color: #FFF
+}
+
+#slipBtns{
+	margin: 0 0 4px 0;
+	padding: 7px 0px 0 0px;
+}
+
+.slipBtnLeft{
+	width: 143px;
+	float: left;
+	text-align: center;
+
+}
+.slipBtnLeft a{padding: 7px 0 9px 0; display: block; font-size: 1.4em;}
+
+.slipBtnLeft input{
+	width: 143px;
+}
+
+.slipBtnCenter {
+	padding : 2px 20pt 7px;
+}
+
+.slipBtnCenter input {
+	width: 210px;
+}
+
+.slipBtnRight{
+	float: right;}
+
+.slipBtnRight input, .slipBtnLeft input{
+	width: 143px;
+	font-size: 1.7em;
+}
+#betSlip .slipBtnRight input.slipBtnRightDisabled {
+	color:#6e9506;
+}
+
+.slipCalculator{
+	margin: 10px 0;
+}
+
+.reqField, fieldset .reqField {
+	display: inline;
+	float: none;
+	color: red;
+}
+
+/*-----------------------------------ERRORS----------------------------------*/
+
+.slipErrorRow{
+	color: red;
+}
+
+.slipError{
+	background: #FDE1E9;
+}
+
+.slipError .slipFooter{
+	border-top: 1px solid red;
+	border-bottom: none;
+}
+
+.slipErrorBox .slipSelection, #slipMainFooter .slipSelection.error{
+	background: #cc0707 url(../../images/en/slipSelectionError.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	height: 15px;
+	padding-left: 6px;
+}
+
+
+.slipError .slipSelection{
+	background: #cc0707 url(../../images/en/slipSelectionError.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+	border: 1px solid #a80202;
+	color: #FFF;
+}
+
+.slipError .slipSelection label{
+	color: #FFF;
+}
+
+.slipError label{
+	color: #000;
+}
+
+.slipError .checkbox{
+	border: none;
+}
+
+.slipError a{
+	color: #000;
+}
+
+.slipErrorBox, .slipMsgBox{
+	padding: 0;
+	margin-bottom: 5px;
+	height: 1%;
+	border-bottom: 3px solid red;
+}
+
+.slipMsgBox{
+	border: 4px solid #08355f;
+	padding-bottom: 6px;
+}
+
+.slipMsgBox .slipSelection{
+	background: #074e81
+}
+
+.slipMsgBox p{
+	margin-bottom: 6px;
+	background: red;
+}
+
+.slipReceiptBox{
+	padding: 0;
+	margin: 0;
+}
+
+.slipErrorBox .slipLeft{
+	width: 150px;
+	float: left;
+	padding: 0;
+}
+
+.slipErrorBox .slipRight{
+	padding-right: 6px;
+	float: right;
+}
+
+.errorMsg{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #a80202;
+	margin-bottom: 3px;
+
+}
+
+.errorDetails{
+	height: 1%;
+	border-top: 1px dotted red;
+	margin-bottom: 5px;
+	padding-top: 5px;
+}
+
+.singleBet{
+	background: #e6f1cf url(../../images/en/multipleBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) center top repeat-x scroll;
+	height: 1%;
+	margin-bottom: -1px;
+	border: 1px solid #0983bd;
+	padding: 1px;
+	color: #000;
+}
+#slip.slipPool .singleBet{background: #f4f9e5 url(../../images/en/singlePoolBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom repeat-x;}
+
+
+.singleBet.slipError{
+	background: none repeat scroll 0 0 #FEEAEC;
+}
+
+#slipTimeLeft {
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+
+
+/*----------------TOTE SLIPS-------------------*/
+
+body #contentHolder #contentA  .slipPool.tote {width: 876px; margin-top: 0; !important}
+
+
+.quickDeposit#slip{border-color: #0a82be}
+
+.slipPool.tote h3{border-bottom: 1px dotted #5ed1fd; padding-left: 12px; padding-bottom: 8px}
+.slipPool.tote.checkBet h3{border-bottom: none}
+.slipPool.tote p.message{border-bottom: 1px dotted #5ed1fd; padding: 6px 0 11px 12px; margin-bottom: 4px; font-size: 1.2em}
+
+.slipPool.tote.checkBet.error h3{border-bottom: 1px dotted red}
+.slipPool.tote.error p.message{border-bottom: 1px dotted red}
+
+.slipToteStakes {overflow: auto; height: 1%}
+.slipToteStakes ul {margin-bottom: 3px; overflow: auto; float: right; width: 100%; font-size: 1.2em}
+.slipToteStakes ul.right{float: right}
+.slipToteStakes ul.borderDivide{border-top: 1px solid #85cce8; padding-top: 3px}
+
+.slipToteStakes ul li{display: block; float: left; clear: none}
+
+.slipToteStakes ul li.colClear{width: 186px; padding: 7px 0 0 10px;}
+.slipToteStakes ul li.col1{padding: 7px 0 0 0; width: 450px; text-align: right}
+.slipToteStakes ul li.col3{width: 108px; padding: 7px 0 0 8px; text-align: left}
+.slipToteStakes ul li.col4{padding: 7px 0 0 0; width: 646px; text-align: right}
+.slipToteStakes ul li.col6{padding: 7px 0 0 8px; width: 100px; text-align: left; font-size: 11px}
+
+#slip .labelStake{display: block; float: right; padding-top: 0; margin-top: -1px; margin-left: 5px}
+#slip .radioUnitStake{text-align: right; width: 14px; height: 14px; display: block; float: right;}
+#slip .stakeInput{width: 83px; margin-left: 8px}
+
+#slip .stakeError{display: block; background: url(../../images/en/toteStakeError.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) right no-repeat; color: #FFF; margin-right: 10px; padding: 2px 10px 4px 10px; margin-top: -4px; font-weight: bold; width: 250px; position: absolute; left: 185px; text-align: center; display: none}
+
+.slipToteStakes ul li.col3 span{font-size: 11px}
+
+#slip.slipPool.tote #totalCost{margin-top: 0;}
+#slip.slipPool.tote #totalCost .slipLeft{font-size: 1em; font-weight: normal; padding-top: 2px; padding-left: 2px; width: 60%;}
+
+#slip.slipPool.tote #totalCost .slipRight{width: 297px; float: right; text-align: left; padding-right: 20px; font-size: 1.4em}
+
+#slip.slipPool.tote #totalCost .slipRight.alignRight{width: 207px; padding-left: 90px;}
+
+#slip.slipPool.tote .slipBtnLeft{padding-left: 7px; text-align: left; width: 710px}
+#slip.slipPool.tote .slipBtnLeft.link a{width: 150px; margin-top: -1px; text-align: right; font-size: 1em}
+
+#slip.slipPool.tote .slipBtnLeft .disclaimer{width: 565px; float: left}
+
+#slip.slipPool.tote .slipBtnLeft .disclaimer a{display: inline; font-size: 1em}
+#slip.slipPool.tote .slipBtnLeft .linkPos{float: left; text-align: right; width: 140px}
+
+#slip.slipPool.tote .slipBtnRight{margin-right: 4px; margin-bottom: 6px}
+
+.disabled{color: #edf7f9}
+.disabled a{color: #edf7f9}
+
+#calculate.disabled{color: #edf7f9}
+#calculate.disabled a{color: #edf7f9}
+
+#calculate  a{color: #000}
+
+input.disabled{border: 1px solid #edf7f9; padding: 2px 3px}
+
+.slipPool.tote p.slipSupText a{padding-right: 1px}
+.slipPool.tote p.slipSupTextToteReceipt a{padding-right: 1px}
+
+
+/*----------------------GIGYA--------------------------*/
+.slipRow #gigyaShareIcons {
+	text-align:right;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.slipRow #gigyaShareIcons img {
+	 margin-right:5px;
+	 cursor: pointer;
+         cursor: hand;
+}
+
+/*--------------------COMMUNITY------------------------*/
+.slipRow #tipIt {
+	float: right;
+	padding-right: 5px;
+}
+
+#slipopenBets {
+	background-color: #fff;
+	display: block;
+	padding: 0;
+	width: 304px;
+}
+
+#slipopenBets p {
+	padding:2px 4px;
+}
+
+.cashout_open, .cashout_acc, .cashout_noCash {
+	margin-left: -4px;
+	width: 308px;
+	border-bottom: 2px solid #6b6b6b;
+	padding-top: 8px;
+}
+.cashout_cashed {
+	background-color: #cce0cc;
+	padding: 8px 0;
+	margin-left: -4px;
+	margin-top: 2px;
+	width: 308px;
+	border-bottom: 1px solid #6b6b6b;
+}
+.cashout_cashing {
+	height: 40px;
+	padding-top: 70px;
+	background: #fff url(../../images/en/loading_icon.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center 30px;
+	border-bottom: 1px solid #6b6b6b;
+	width: 308px;
+	margin-left: -4px;
+	text-align: center;
+}
+.cashout_footer {
+	height: 33px;
+	line-height: 33px;
+	background-color: #014F77;
+	color: #FFFFFF;
+}
+.cashout_footer a.cashOut {
+	background: url(../../images/en/cashIn_btn.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url(../../images/en/cashIn_btn.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat\9; /* IE 8 and below */
+	border: 0 none;
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	font-weight: bold;
+	height: 17px;
+	line-height: 17px;
+	margin: 8px 0 8px 8px;
+	padding-right: 10px;
+	text-align: center;
+	text-decoration: none;
+	width: 75px;
+}
+
+.cashout_footer a.cashOut_disabled {
+        background: url(../../images/en/cashIn_disabled_btn.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background: url(../../images/en/cashIn_disabled_btn.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat\9; /* IE 8 and below */
+}
+
+div.cashOut {
+	width: 75px;
+	background: transparent url(../../images/en/cashIn_btn.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	border: 0;
+	height: 17px;
+	line-height: 17px;
+	color: #fff;
+	font-weight: bold;
+	display: inline;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+a.cashOutAccept {
+	width: 282px;
+	background: transparent url(../../images/en/cashout-accept-button.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	border: 0;
+	height: 32px;
+	line-height: 32px;
+	color: #fff;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 8px;
+	padding-right: 10px;
+}
+
+.cashout_footer a.cancelcashOut {
+	background: url(../../images/en/cancelBtn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 0 none;
+	color: #FFFFFF;
+	cursor: default;
+	display: block;
+	float: left;
+	font-weight: bold;
+	height: 17px;
+	line-height: 17px;
+	margin: 8px 0 8px 8px;
+	text-align: center;
+	text-decoration: none;
+	width: 75px;
+}
+
+.cashout_footer a.disablecashOut {
+	float: right;
+	width: 75px;
+	background: transparent url(../../images/en/cancelBtn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	border: 0;
+	height: 17px;
+	line-height: 17px;
+	color: #fff;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 8px;
+	padding-right: 10px;
+	cursor:default;
+}
+
+.cashout_open p, .cashout_cashed p, .cashout_acc p, .cashout_noCash p {
+	padding: 0 8px !important;
+}
+.cashout_acc a.cashout_accControlsHide, .cashout_acc a.cashout_accControlsShow {
+	float: right;
+	padding-right: 12px;
+	text-decoration: none;
+}
+.cashout_acc a.cashout_accControlsHide {
+	background: transparent url(../../images/en/arrow_hide.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right center;
+}
+.cashout_acc a.cashout_accControlsShow {
+	background: transparent url(../../images/en/arrow_show.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right center;
+}
+.cashout_open p.cashout_stakeReturns, .cashout_open p.cashout_details, .cashout_open p.cashout_link,
+.cashout_noCash p.cashout_stakeReturns, .cashout_noCash p.cashout_details, .cashout_noCash p.cashout_link,
+.cashout_open p.cashout_stakeReturns, .cashout_cashed p.cashout_details, .cashout_cashed p.cashout_link,
+.cashout_acc p.cashout_stakeReturns, .cashout_acc p.cashout_details, .cashout_acc p.cashout_link {
+	overflow: auto;
+	margin: 5px 0px;
+}
+
+.cashout_noCash .cashout_stakeReturns {
+	border-bottom: 12px solid #d7d7d9;
+	padding-bottom: 5px !important;
+	margin: 5px 0px 0px !important;
+}
+
+.cashout_cashed p.cashout_stakeReturns {
+	margin: 5px 0px;
+	overflow: auto;
+}
+
+.cashout_stakeReturns {
+	width:96%;
+}
+
+.cashout_col1, .cashout_col2 {
+	width: 90px;
+	float: left;
+}
+.cashout_col3 {
+	width: 101px;
+	float: left;
+}
+.cashout_col2, .cashout_col3 {
+	text-align: right;
+}
+.cashout_cashed .cashout_col3 {
+	font-weight: bold;
+	color: #006600;
+}
+.cashout_accRow .cashout_col3 {
+	margin-left: 2px;
+}
+.cashout_details .cashout_horse_col1 {
+	width: 184px;
+	float: left;
+}
+.cashout_details .cashout_horse_col1 img {
+	margin-left: 20px;
+	position: relative;
+	top: 2px;
+}
+.cashout_suspended {
+	background: #FF0000;
+	color: #FFF;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	height: 17px;
+	width: 72px;
+	padding-right: 4px;
+}
+.cimb_success {
+	background:#E6F1CF; padding: 5px 0;
+}
+.cimb_susp {
+	background:#FEB6BA; padding: 5px 0;
+}
+.cashout_accRow .cashout_link {
+	width: 58%;
+	border-bottom: 1px dotted #000;
+	height: 18px;
+	line-height: 16px;
+	padding-bottom: 2px; 
+	margin-top: 0px !important;
+}
+.cashout_hiddenData {
+	margin-top: 15px;
+}
+.cashout_hiddenData a.Score, .cashout_hiddenData a.Time {
+	background: #FFE222 url(../../images/en/score-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px;
+	color: black;
+	display: block;
+	float: right;
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none;
+	width: 48px;
+}
+.cashout_hiddenData a.goalflash {
+	background: #000000;
+	color: #FFF503;
+	display: block;
+	float: right;
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none;
+	width: 48px;
+	margin-left: 2px;
+}
+.cashout_hiddenData a.Score {
+	margin-left: 2px;
+}
+.cashout_acc p.cashout_accTitle {
+	margin-bottom: 10px;
+}
+.cashout_bad { color: #cc0000; }
+.cashout_profit { color: #F6D500; font-size: 120%;}
+.cashout_good { color: #006600;}
+.cashout_left { float: left; }
+.cashout_right { float: right; }
+
+.cashout_slider {
+	left: 0px;
+	height: 70px;
+	background-color: rgba(232, 233, 233, 1);
+	padding-left: 2px;
+}
+
+.cashout_slider .ui-slider {
+	top: 0;
+	left: 16px;
+	height: 10px;
+	width: 274px;
+	background-color: #014f77;
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	border: 1px solid #979797;
+}
+
+.cashout_slider .ui-slider-range {
+	background-color: #014f77;
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cashout_slider .ui-slider-horizontal .ui-slider-handle {
+	height: 14px;
+	width: 14px;
+	margin-left: -10px;
+	top: -5px;
+	background-color: #fff;
+	border: 3px solid #014f77;
+	border-radius: 13px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+	background-image: none;
+}
+
+.cashout_slider .cashin_values {
+	color: #014f77;
+	padding: 8px 5px 6px 7px;
+	font-weight: bold;
+}
+
+.cashout_slider .cashin_values .cashin_left {
+	float: left;
+}
+
+.cashout_slider .cashin_values .cashin_right {
+	float: right;
+}
+
+.cashout_slider .slider_axis {
+	height: 9px;
+	width: 100%;
+	margin: 2px 0 0 17px;
+}
+
+.cashout_slider .slider_axis li {
+	float: left;
+	border-left: 1px solid #979797;
+	clear: none;
+	margin-right: 28.3px;
+	height: 7px;
+	width: 1px;
+	padding: 0;
+}
+
+.cashout_slider .slider_axis .slider_label {
+	height: 9px;
+}
+
+.cashout_slider .slider_axis .slider_label.last span {
+	margin-left: -15px;
+}
+
+.cashout_slider .slider_axis .slider_label span {
+	margin: 12px 0 0 -11px;
+	display: block;
+	color: #014f77;
+}
+
+.cashout_slider .slider_axis .slider_label span sub {
+	vertical-align: bottom;
+}
+
+.cashout_slider .ui-slider-disabled,
+.cashout_slider .ui-state-disabled,
+.cashout_slider .ui-disabled,
+.cashout_slider .ui-disabled + .slider_axis {
+	opacity: 0.5;
+}
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default { border: 0px none }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {  text-decoration: none; outline: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { border: 0px ;  outline: none; }
+.ui-state-hover a, .ui-state-hover a:hover { text-decoration: none; outline: none; }
+.ui-state-active, .ui-widget-content .ui-state-active {  outline: none; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {  outline: none; text-decoration: none; }
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #aaaaaa;
+	background: url(../../images/en/topx_slider_back.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+}
+.ui-widget-content a {
+	color: #ffffff;
+
+}
+
+/* Slider
+----------------------------------*/
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 9px;
+	height: 25px;
+	cursor: pointer;
+	background-image:url(../../images/en/topx_slider_handle.gif?ver=10302352b9cca8d374b2c95e0ccf157d)
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+}
+.ui-slider-horizontal {
+	height: 10px;
+}
+.ui-slider-horizontal .ui-slider-handle { margin-left:-4px; top:-2px;}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+#slipPerks {
+	padding: 0 !important;
+	width: 304px;
+	background: #fff url(../../images/en/wrapper_bg.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top;
+}
+#slipPerks p {
+	padding: 2px 4px;
+}
+#slipPerks .perks_intro {
+	padding: 11px 11px 9px;
+	border-bottom: 1px solid #5f6569;
+}
+#slipPerks .perks_row {
+	border-bottom: 1px solid #5f6569;
+	padding: 10px 9px 10px 10px;
+}
+#slipPerks .perks_row .perks_row_icon {
+	float: left;
+	margin-right: 7px;
+}
+#slipPerks .perks_row .perks_row_link {
+	float: right;
+	display: block;
+	width: 75px;
+	height: 17px;
+	background: transparent url(../../images/en/cashIn_btn.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 17px;
+	color: #fff;
+	margin-top: 3px;
+}
+
+#cashout_more {
+	background: url(../../images/en/footerSprite.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 138px 0 transparent;
+	float: right;
+	line-height: 16px;
+	margin-top: 7px;
+	padding-right: 35px;
+}
+
+#openBets_footer {
+	height: 28px;
+	background-color: #f6f6f6;
+	width: 308px;
+	margin-left: -4px;
+}
+
+#openBets_header {
+	height: 25px;
+	border-bottom: 1px solid #434746;
+	width: 308px;
+	margin-left: -4px;
+	background: transparent url(../../images/en/tipit_overlay_top.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top left;
+}
+
+#openBets_header a {
+	float: right;
+	line-height: 17px;
+	margin-top: 4px;
+	text-decoration: none;
+}
+
+#openBets_header a:hover {
+	text-decoration: underline;
+}
+
+#cashout_refresh {
+	background: url(../../images/en/headerSprite.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 45px - 16px transparent;
+	margin-right: 5px;
+	padding-left: 5px;
+	padding-right: 25px;
+}
+
+.slip_footer {
+	display: block;
+	width: 308px;
+	height: 12px;
+	background: #fff url(../../images/en/slip_footer.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top left;
+}
+
+.eachwayhighlight {
+	background: #FFFF00;
+}
+
+.slipWarningIcon {
+	float:left;
+	display:inline;
+	width:32px;
+	height:32px;
+}
+
+#balanceModal {width:304px; background-color:#FFF; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; margin:10px; overflow:hidden;}
+
+#balBetModal {margin:2px; border: 1px solid #139ecf; color:#000; font-family:Arial, Helvetica, sans-serif; font-size:12px; margin-top:0; margin-bottom:0; background-color:#FFF;}
+
+#balBetHighlight { border:5px solid #139ecf;}
+
+#balBetGreenWrapper {text-align:left; background-color:#e6f1cf;}
+#balBetGreenInner, #balBetBlueInner {padding:10px; }
+#balBetGreenInner .balBetGreenText {font-size: 12px; line-height:18px; }
+#balBetPriceWrapper .balBetGreenPrice {font-weight:bold; font-size:12px; line-height:18px;}
+#balBetGreenInner .balBetGreenSelection {font-weight:normal; font-size:11px; line-height:18px;}
+
+#balBetBlueWrapper {background:#015c91 url(../../images/en/balance-bet-blue-background.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x bottom left; text-align:left; color:#fff; overflow:hidden;}
+#balBetBlueWrapper .balBetBlueText {font-size:12px; line-height:18px; font-weight:bold;}
+#balBetBlueWrapper .balBetBlueSelection {color:#f6d500; font-weight:normal; font-size:11px; line-height:18px;}
+#balBetBlueWrapper .balBetBlueReturns {font-size:11px; line-height:30px;}
+#balBetPriceWrapper .balBBBetPrice {color:#f6d500;}
+
+#balBetTimerWrapper {height: 40px; margin: 15px 10px 0 10px;}
+#balBetTimerWrapper .balBetTimerIcon {width:37px; height:37px; display:block; float:left; display:inline; }
+
+/* Balanced Bet Price */
+#balBetPriceWrapper {height:20px; margin-bottom:5px;}
+#balBetPriceWrapper .balBetPrice, .balBBBetPrice {width:230px; margin-right:10px; float:left; display:inline; line-height:20px; font-weight:bold; font-size:14px;}
+#balBetCheck {float:left; display:inline; width:20px; height:20px;}
+#balBetCheck .balanceBox {float:none; width:15px;}
+#balBetEstimate {font-size:10px; line-height:18px;}
+
+/* Border styles */
+
+.single {border-top:1px solid #139ecf; border-bottom:1px solid #139ecf; margin-top:10px;}
+.end {border-bottom:none;}
+
+/* Over Two lines */
+#balBetTimerWrapper .balBetTimerText {height:37px; font-weight:bold; float:left; display:inline; margin: 1px 0px 0px 8px; width:195px; }
+#balBetTimerWrapper .balBetTimerText span {font-size:12px; line-height:18px;}
+
+#balAlertWrapper {/* background-color:#feb6b7;*/  }
+#balAlertInner {padding:10px; }
+#balAlertHeading {height:30px;  background: transparent url(../../images/en/warning.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top left; padding-left:34px; color:#005276; margin-bottom: 5px; display:table; }
+#balAlertHeading span {font-weight:bold; font-size:12px; display:table-cell; vertical-align:middle; }
+#balAlertMessage, #balAlertReturn {font-size:11px; line-height:13px; color:#005276;}
+
+
+#balBetButtons {margin:20px 6px 0 6px; overflow:hidden;}
+.buttonAccept, .buttonReject {display:block; float:left; width:140px; height:38px;  text-decoration:none;  font-weight:bold;  color:#fff;  cursor:pointer; border:none; margin-bottom:10px; font-size:15px; line-height:30px; padding-bottom:8px; }
+.buttonAccept {background:#669900 url(../../images/en/balance-bet-buttons.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0; color:#fff;  text-transform:uppercase;}
+.buttonAccept:hover {background:#669900 url(../../images/en/balance-bet-buttons.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -40px; color:#fff; }
+.buttonReject {background:#f8f8f8 url(../../images/en/balance-bet-buttons.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -80px; color:#ccc;  margin-right:7px; color:#666;  text-transform:uppercase;}
+.buttonReject:hover {background:#f8f8f8 url(../../images/en/balance-bet-buttons.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -120px;}
+#balBetButtons .clearfix {
+	height:35px !important;
+}
+*:first-child+html .buttonAccept[type], *:first-child+html .buttonReject[type] {
+  padding-bottom: 3px; /* IE7 */
+}
+
+#balBetTotalStake { background:#002133 url(../../images/en/slipTotalCostBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0; color: #FFFFFF; font-weight: bold; height: 25px; padding: 5px; margin:10px 5px; }
+#balBetTotalStake span {color:#fff; font-weight:bold; font-size:1.6em;  line-height:27px;  padding-left:10px;}
+
+/*--------------------Payment Redesign------------------------*/
+#qdb_container {
+	width: 294px;
+}
+.qdb_instruction {
+	background: url(../../images/en/slipHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0 #013956;
+	border: 1px solid #012E46;
+	padding: 5px 0 6px 6px;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 1%;
+	margin: 5px 0;
+	overflow: hidden;
+}
+.qdb_header {
+	color: #005580;
+	border-bottom: 2px solid #005580;
+	font-weight: bold;
+	font-size: 11px;
+	width: 282px;
+	margin: 5px auto;
+	position: relative;
+	padding-bottom: 1px;
+}
+.qdb_textLine {
+	width: 282px;
+	margin: 4px auto;
+	position: relative;
+}
+.qdb_header .qdb_extra,
+.qdb_textLine .qdb_extra {
+	position: absolute;
+	right: 0px;
+}
+.qdb_good {
+	font-weight: normal;
+	color: #006d3e;
+}
+.qdb_bad {
+	font-weight: normal;
+	color: #b90318;
+}
+.qdb_divider {
+	text-align: center;
+	font-weight: bold;
+	margin: 5px 0;
+}
+.qdb_content {
+	width: 282px;
+	margin: 0 auto;
+}
+.qdb_btn, .qdb_btn_disabled {
+	width: 282px;
+	height: 26px;
+	display: block;
+	text-align: center;
+	line-height: 26px;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+}
+.qdb_btn {
+	background: transparent url(../../images/en/greenBtn.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px;
+}
+.qdb_btn_disabled {
+	background: transparent url(../../images/en/greenBtn_disabled.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px;
+	color: #666;
+}
+#qdb_header {
+	color: #b90318;
+	font-weight: bold;
+	font-size: 12px;
+	position: relative;
+	width: 282px;
+	margin: 0 auto;
+	height: 28px;
+	line-height: 23px;
+}
+#qdb_header.qdb_error .qdb_icon {
+	width: 22px;
+	height: 28px;
+	margin-right: 5px;
+	display: block;
+	float:left;
+	background: transparent url(../../images/en/messageIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px;
+}
+#qdb_header .qdb_amendLink {
+	position: absolute; 
+	right: 0px;
+	font-size: 10px;
+	color: #1188c0;
+}
+
+/** jqTransform Stuff **/
+
+#qdb_container form .jqTransformHidden {display: none;}
+#qdb_container form input {
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:0;
+	border:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	overflow:hidden;
+	background:none;
+}
+
+div.tooltipGroup {
+	position: relative; 
+	float: left;
+	display: block;
+	width: 100%;
+	height: 20px;
+	margin-bottom: 6px;
+}
+
+#qdb_container form .smallInput,
+#qdb_container form .smallInput_disabled {
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:3px 4px;
+	overflow:hidden;
+}
+
+#qdb_container form .smallInput {
+	width:91px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -40px;
+}
+#qdb_container form .smallInput_disabled {
+	width: 91px;
+	background:url(../../images/en/inputsDisabled.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -40px !important;
+}
+
+#qdb_container form .smallInput input,
+#qdb_container form .smallInput_disabled input {
+	width:91px;
+	position: relative;
+	z-index: 2;
+}
+
+.qdb_content label {
+	color: #005580;
+}
+
+/**   Hints & Errors  **/
+
+div.tooltipGroup .hint.error {
+	color:#4a030b;
+}
+#qdb_container div.tooltipGroup .hint {
+	display:block;
+	left:2px;
+	bottom:-1px;
+	overflow:hidden;
+	position: absolute;
+	vertical-align:middle;
+	height:auto;
+	min-height:21px;
+	max-height:43px;
+	width: 182px;
+	padding-bottom:1px;
+	z-index:1;
+}
+#qdb_container .rightClmn div.tooltipGroup .hint, #qdb_container div.tooltipGroup .hint {
+	padding-left: 97px;
+}
+#qdb_container .leftClmn div.tooltipGroup .hint {
+	padding-left: 197px;
+}
+#qdb_container div.tooltipGroup .hint.m {
+	width: 260px;
+	padding-left:96px;
+}
+#qdb_container div.tooltipGroup .hint.l {
+	width: 322px;
+}
+#qdb_container div.tooltipGroup .hint.xl {
+	width: 182px;
+	padding-left: 97px;
+}
+#qdb_container div.tooltipGroup .hint.s {
+	width: 365px;
+	padding-left:142px;
+}
+#qdb_container div.tooltipGroup .hint.info {
+	background:url(../../images/en/hintInfo_btm.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right bottom;
+}
+#qdb_container div.tooltipGroup .hint.suggest {
+	background:url(../../images/en/hintSuggest_btm.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right bottom;
+}
+#qdb_container div.tooltipGroup .hint.error {
+	background:url(../../images/en/hintError_btm.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right bottom;
+}
+#qdb_container div.tooltipGroup .hint p {
+	display:block;
+	overflow:hidden;
+	position: relative;
+	float:left;
+	vertical-align:middle;
+	padding:4px 2px 3px 4px;
+	line-height:12px;
+	width:176px;
+	min-height:14px;
+}
+#qdb_container div.tooltipGroup .hint.m p {
+	width:284px;
+}
+#qdb_container div.tooltipGroup .hint.xl p label {
+	color: #000;
+}
+#qdb_container div.tooltipGroup .hint.l p {
+	width:316px;
+}
+#qdb_container div.tooltipGroup .hint.xl p {
+	width:176px;
+}
+#qdb_container div.tooltipGroup .hint.s p {
+	width:358px;
+}
+#qdb_container div.tooltipGroup .hint.info p {
+	background:url(../../images/en/hintInfo_top_large.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#qdb_container div.tooltipGroup .hint.suggest p {
+	background:url(../../images/en/hintSuggest_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#qdb_container div.tooltipGroup .hint.error p {
+	background:url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#qdb_container div.tooltipGroup .hint.error p {
+	background:url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#qdb_container div.tooltipGroup .hint.success p {
+	background:url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -40px top;
+	height:14px;
+	width:14px;
+	padding:0;
+	margin:4px 0 0 4px;
+}
+
+/***********************/
+
+.qdb_ccv_help {
+	float: right;
+	position: relative;
+	width: 166px;
+}
+.qdb_ccv_help img {
+	margin: 3px 0 0 3px;
+}
+#qdb_ccv_helpTxt {
+	display: none;
+	position: absolute;
+	border: 1px solid #063654;
+	background-color: #175c88;
+	color: #fff;
+	width: 150px;
+	padding: 5px;
+	top: -7px;
+	right: 0px;
+}
+.qdb_content #form_topup #cvv2_msg.hint.success {
+	width: 20px;
+}
+
+
+/* Styles for Bet Slip Arrows */
+.eventpriceupslip {
+	background: url('../../images/en/live-arrow-up.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat right 1px transparent;
+	font-weight: bold;
+	padding-right:12px;
+	zoom:1;
+}
+
+.eventpricedownslip {
+	background: url('../../images/en/live-arrow-down.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat right 2px transparent;
+	font-weight: bold;
+	padding-right:12px;
+	zoom:1;
+}
+
+#contentB .cashout_footer img, #contentB .cashout_footer .containsTooltip{
+	float: right;
+	margin: 0px 4px 0 0;
+}
+
+#contentB .cashout_footer .cashoutInfoIcon {
+	margin-top: 50%;
+	width: 16px;
+	height: 16px;
+	background: url(../../images/en/infoSel.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 bottom transparent;
+}
+
+#contentB .cashout_footer .containsTooltip a {
+	color: #FFFFFF;
+	float: left;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+#contentB .cashout_footer .containsTooltip:hover {
+	position: relative;
+	cursor:pointer;
+}
+#contentB .cashout_footer .containsTooltip span.outerTT {
+	display: none;
+}
+#contentB .cashout_footer .containsTooltip:hover span.outerTT {
+	background: url(../../images/en/tooltipBg-cashout-right.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 bottom rgba(0, 0, 0, 0);
+	bottom: 16px;
+	color: #FFFFFF;
+	display: block;
+	font-weight: normal;
+	line-height: 13px;
+	padding: 0 !important;
+	position: absolute;
+	right: -100px;
+	text-decoration: none;
+	width: 220px;
+	z-index: 9000;
+}
+#contentB .cashout_footer .containsTooltip:hover span.outerTT span.innerTT {
+	background:none #264D64;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	float: right;
+	font-size:11px;
+	margin: 0 0 5px;
+	padding: 4px 7px 5px !important;
+	position: relative;
+}
+
+.cashoutValue {
+	display:block;
+	float:left;
+	padding-right:4px !important;
+}
+
+.cashoutWrapper {
+	float:right;
+}
+
+#contentB .cashout_footer img, #contentB .cashout_footer .containsTooltip {
+	float: left;
+	margin: 0;
+}
+
+.cashout_footer a.cancelcashOutBlue {
+	background: url(../../images/en/cancelButton-Blue.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 0 none;
+	color: #FFFFFF;
+	cursor: default;
+	display: block;
+	float: right;
+	font-weight: bold;
+	height: 17px;
+	line-height: 17px;
+	margin-right: 10px;
+	margin-top: 8px;
+	text-align: center;
+	text-decoration: none;
+	width: 75px;
+}
+
+/* Protection of Customer Funds (on betslip topup) */
+
+#PoCF {
+	width: 90%;
+	font-size: 11px;
+	color: #000;
+	margin-bottom: 5px;
+	float: left;
+}
+
+#PoCF.error {
+	color: #B90318 !important;
+}
+
+#PoCF input[type="checkbox"] {
+	margin: 2px 4px 0px 0px;
+	float: left;
+	width: auto;
+}
+
+#PoCF img {
+	float: left;
+	margin-top: 3px;
+}
+
+#PoCFText {
+	width: 85%;
+	margin: 0px 0px 0px 7px;
+	float: left;
+}
+
+#PoCFText a {
+	color: #1188C0 !important;
+	float: none;
+	padding: 0px;
+}
+

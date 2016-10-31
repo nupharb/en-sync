@@ -1,0 +1,316 @@
+/*
+
+    This CSS is for the playtech accounts pages for styling the header
+*/
+
+#contentCenter, #contentHolder, body .accStyle #contentHolder {
+	height:580px !important;
+	width:996px !important;
+	margin: 0 auto !important;
+	padding:0 !important;
+	border:none !important;
+	background:none !important;
+}
+.regOverlay .HdrTL, .regOverlay .HdrTR, .regOverlay .HdrBL, .regOverlay .HdrBM, .regOverlay .HdrBR {
+	display:none;
+}
+.regOverlay {
+	background:url(../../images/en/playtechReg-bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0 #fff;
+	height:580px;
+	width:996px;
+}
+.regOverlay #overlayHeader {
+	background:url(../../images/en/whLogo_reg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0 transparent;
+	height:58px;
+	margin:0 12px;
+	text-shadow:none;
+	width:972px;
+}
+.regOverlay a.lobbyLink {
+	color:#fff !important;
+	float:right;
+	margin:25px 0 0;
+	text-decoration:underline;
+}
+#contentHolder .success {
+    background:none;
+}
+label {
+    margin:0;
+}
+select.addressLookup { 
+	background:none !important;
+	border:none !important;
+}
+select.addressLookup option { 
+	color:#000 !important;
+}
+
+/* Acount details and Tabs */
+.regOverlay #overlayHeader {
+	margin-right: 0px;
+	width: 984px;
+}
+.ptc_hdrWrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.ptc_userDetails {
+	width: 570px;
+	height: 35px;
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+.ptc_userDetails p {
+	float: right;
+	color: #fff;
+	font-weight: normal;
+	margin-left: 22px;
+}
+.ptc_userDetails p span {
+	font-weight: bold;
+}
+.ptc_balance {
+	color: #fdd403;
+}
+ul.ptc_tabsList {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 20px;
+}
+ul.ptc_tabsList li {
+	float: right;
+	clear: none;
+	padding-left: 6px;
+	height: 20px;
+	line-height: 20px;
+	margin-right: 1px;
+	
+}
+ul.ptc_tabsList li {
+	background: transparent url(../../images/en/tabSlidingDoors.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -40px;
+}
+ul.ptc_tabsList li.ptc_selected {
+	background: transparent url(../../images/en/tabSlidingDoors.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px;
+}
+ul.ptc_tabsList li a {
+	background: transparent url(../../images/en/tabSlidingDoors.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right -60px;
+}
+ul.ptc_tabsList li a:hover {
+	color: #fff !important;
+	font-weight:bold;
+}
+ul.ptc_tabsList li.ptc_selected a {
+	background: transparent url(../../images/en/tabSlidingDoors.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right -20px;
+	font-weight: bold;
+	color: #005b87;
+}
+ul.ptc_tabsList li.ptc_selected a:hover {
+	color: #005B87 !important;
+}
+/* set min-width for IE7
+* html ul.ptc_tabsList li a { 
+   width: expression( document.body.clientWidth < 80 ? "79px" : "auto" );
+}
+*/
+ul.ptc_tabsList li a {
+	min-width: 79px;
+	font-weight: normal;
+	color: #fff;
+	display: block;
+	text-align: center;
+	padding-right: 6px; /* more padding added to try and balance the text-align */
+}
+
+/** Transfer Pages **/
+.mts_container {
+	margin-left: 0 !important;
+}
+
+/* Style for Playtech Warning - copied from playtechAccounts.css - Begin */
+
+div.whdialog {
+	padding:20px 40px;
+	position: absolute;
+	z-index:5001;
+	margin: 29px 101px;
+	display:none;
+	width: 410px;
+	left: -20px;
+}
+
+div.whdialog div.top {
+	background: url('../../images/en/whdialog_top.png?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat;
+	width: 390px;
+	height:8px;
+	overflow: hidden;
+}
+/*
+div.whdialog div.main {
+	background: url('../../images/en/whdialog_main.png?ver=10302352b9cca8d374b2c95e0ccf157d') 0 bottom  no-repeat;
+	width: 390px;
+	height: 452px;
+}
+*/
+div.whdialog div.main {
+	background: url('../../images/en/whdialog_main.png?ver=10302352b9cca8d374b2c95e0ccf157d') 0 bottom  no-repeat;
+	width: 390px;
+	padding:0 0 20px;
+
+}
+div.whdialog div.main div {
+	margin: 0 15px 0 15px;
+	font-size: 12px;
+	line-height: 16px;
+}
+div.whdialog div.main div div.title {
+	padding: 10px 30px 10px 0;
+	margin: 0px -14px 0px 0px;
+	font-size: 18px;
+}
+div.whdialog div.main div div.warning {
+	background: url('../../images/en/whdialog_warn.gif?ver=10302352b9cca8d374b2c95e0ccf157d') right 0 no-repeat;
+}
+div.whdialog div.main div div.title strong {
+	color: red;
+}
+div.whdialog div.main div p {
+	margin: 5px 0 10px 0;
+}
+div.whdialog div.main div a {
+	color: white !important;
+}
+
+div.whdialog div.main div a.ok {
+	background: url('../../images/en/whdialog_btn_ok.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat;
+}
+div.whdialog div.main div a.cancel {
+	background: url('../../images/en/whdialog_btn_cancel.gif?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat;
+}
+div.whdialog div.main div a.button {
+	text-decoration: none;
+	color: black !important;
+	height: 28px;
+	display: block;
+	float: left;
+	margin: 0 20px 0 0;
+}
+div.whdialog div.main div a.button:hover {
+	color: #555;
+}
+div.whdialog div.main div a.button span {
+	background: url('../../images/en/whdialog_btn_span.gif?ver=10302352b9cca8d374b2c95e0ccf157d') right 0 no-repeat;
+	padding: 6px 13px 6px 5px;
+	display: block;
+	float: left;
+	margin-left: 26px;
+}
+
+div.whdialog {
+	width: 529px;
+	margin: 99px;
+	color:#fff;
+}
+
+div.whdialog div.top 	{
+	background: url('../../images/en/whdialog_top.png?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat;
+	width: 529px;
+	height:8px;
+	overflow: hidden;
+}
+
+div.whdialog div.main	{
+	background: url('../../images/en/whdialog_main.png?ver=10302352b9cca8d374b2c95e0ccf157d') 0 bottom  no-repeat;
+	width: 529px;
+}
+div.whdialog div.main div {
+	margin: 0 15px;
+	font-size: 12px;
+	line-height: 16px;
+}
+div.whdialog div.main div div.title {
+	padding: 10px 0;
+	margin: 0;
+	font-size: 18px;
+}
+div.whdialog div.main div div.casinoHeader {
+	background: url('../../images/en/wh_logo.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') 0 0 no-repeat;
+	height:30px;
+	text-align:right;
+	margin:0;
+	font-size:18px;
+	line-height:30px;
+	vertical-align:bottom;
+	padding-bottom:7px;
+	border-bottom:1px solid #fff;
+}
+div.whdialog div.main div div.greeting {
+	background: url('../../images/en/whdialog_warn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') right 0 no-repeat;
+	height:30px;
+	margin:10px 0 5px 0;
+	font-size:15px;
+	line-height:30px;
+	vertical-align:middle;
+	text-align:center;
+}
+div.whdialog div.main div div.warning {}
+
+div.whdialog div.main div div.title strong	{
+	color: red;
+}
+div.whdialog div.main div p {
+	margin: 0 0 10px 0;
+	font-size:11px;
+}
+div.whdialog div.main div a {
+	color: #377ff6;
+}
+
+div.whdialog div.main div.centerContent {
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+
+div.whdialog div.main div.buttons {
+	padding:0;
+	width:338px;
+	margin-left:auto;
+	margin-right:auto;
+}
+div.whdialog div.main div.buttons a.buttonOK {
+	padding:0;
+	display:inline-block;
+	background: url('../../images/en/btnOK.png?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat 0 0;
+}
+div.whdialog div.main div.buttons a.buttonCancel {
+	display:inline-block;
+	background: url('../../images/en/btnCancel.png?ver=10302352b9cca8d374b2c95e0ccf157d') no-repeat 0 0;
+}
+div.whdialog div.main div.buttons a.buttonOK, div.whdialog div.main div.buttons a.buttonCancel {
+	width:163px;
+	height:28px;
+	color:#000;
+	text-decoration: none;
+	margin:0 2px;
+}
+div.whdialog div.main div.buttons a.buttonOK span, div.whdialog div.main div.buttons a.buttonCancel span {
+	padding:0;
+	height:28px;
+	line-height:28px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-align:center;
+	margin:0 6px 0 22px;
+	cursor:pointer;
+	color: #377ff6;
+}
+div.whdialog div.main div.buttons a.buttonOK:hover, div.whdialog div.main div.buttons a.buttonCancel:hover {
+	color: #555;
+}
+
+/* Style for Playtech Warning - copied from playtechAccounts.css - End */
+

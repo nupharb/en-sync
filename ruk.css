@@ -1,0 +1,184 @@
+/*
+	Copyright (c) 2008 Orbis Technology Ltd. All rights reserved.
+
+	CSS for Perform streaming video pop up page.
+*/
+
+body { background:#002337 url(../../images/en/bg-grad.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;padding:25px; margin:0px; font-family:Arial, Helvetica, sans-serif; overflow:hidden;}
+
+
+#disclaimer{
+}
+#disclaimer p{
+	margin: 5px 0;
+	padding: 153px 20px;
+	font: normal normal 9px/16px arial, san-serif;
+	color: white;
+}
+#terms{
+}
+#terms p{
+	display: block;
+	height: 11px;
+	margin: 0;
+	padding: 0 20px;
+	font: normal normal 10px/40px arial, san-serif;
+}
+
+#whtvContainer {width:830px;}
+#whtvContainer #whtvMainHeader{background:transparent url(../../images/en/grad-title.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0; width:830px;}
+#whtvContainer #whtvMainHeader .title { color:black; font-size:11px; font-weight:bold; height:21px; padding:5px 0 0 0;}
+
+#whtvContainer #whtvMainImg {float:left; width:480px; height:360px; border:1px solid #d3d3d7; background-color:#d3d3d7;}
+#whtvContainer #whtvOdds {float:left; width:348px; height:361px; font-size:11px; background-color:#eaeaec; border-top:1px solid #d3d3d7; position:relative;}
+
+#whtvContainer #whtvOdds .top {border-bottom:1px solid #d2d2d6; width:100%; height:25px; background:transparent url(../../images/en/arrow-up-perf.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center center; display:block; cursor:pointer;}
+#whtvContainer #whtvOdds .bottom {width:100%; height:23px; background:transparent url(../../images/en/arrow-down-perf.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center center; display:block; cursor:pointer;}
+
+#whtvContainer #whtvOdds .buttonDisabledTop { background:transparent url(../../images/en/arrow-disabled-top-perf.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center center;}
+#whtvContainer #whtvOdds .buttonDisabledBottom { background:transparent url(../../images/en/arrow-disabled-bottom-perf.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center center;}
+
+#whtvContainer #whtvOdds .buttonEnabledTop { background:transparent url(../../images/en/arrow-enabled-top-perf.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center center;}
+#whtvContainer #whtvOdds .buttonEnabledBottom { background:transparent url(../../images/en/arrow-enabled-bottom-perf.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center center; position:absolute; bottom:0px; left:0px;}
+
+#whtvContainer #whtvOdds #silksHolder {float:left; overflow:hidden; height:312px; width:348px;}
+
+#whtvContainer .lineup {border-bottom:1px solid #d2d2d6; width:100%; height:23px; padding:2px 0 0 0; background:#eaeaec url(../../images/en/lineup-grad.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x; font-size:11px; font-weight:bold; color:#424242; display:block; text-decoration:none;}
+#whtvContainer .lineup img {float:left;}
+#whtvContainer .lineup .no {float:left; padding:3px 10px 0 20px;}
+#whtvContainer .lineup .horse {float:left; padding:3px 3px 0 10px;}
+
+#whtvContainer .lineup .oddsVOD {float:right; padding:3px 20px 0 3px;}
+
+#whtvContainer .lineup .odds {
+	float:right;
+	background: url("../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x 0 0;
+	border: 1px solid #AAC1E3;
+	font-size: 12px;
+	font-weight: normal;
+	height: 19px;
+	line-height: 18px;
+	margin-right: 12px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	width: 58px;
+}
+
+#whtvContainer ul.linksR {padding:0 0 0 10px; margin:0px;}
+#whtvContainer ul.linksR li {padding:0 0 35px 0; width:238px; list-style:none;}
+#whtvContainer ul.linksR li a {color:#2e486f; text-decoration:underline;}
+#whtvContainer ul.linksR li a:hover {text-decoration:none;}
+#whtvContainer ul.linksR li div {float:left;padding-right:15px;}
+
+#whtvContainer a {color:#2e486f; text-decoration:underline;}
+#whtvContainer a:hover {text-decoration:none;}
+
+#whtvContainer .refreshText {float:left;padding:2px 2px 0 0;font-weight:normal;}
+#whtvContainer .refreshImg {float:left;}
+#whtvContainer .refreshText a {text-decoration:none;color:#000;}
+
+#whtvlinksLeft {float:left; padding: 0 0 30px 0;}
+#whtvlinksLeftTitle {background:transparent url(../../images/en/grad-title.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0; width:400px; height:26px; float:left; margin:0 30px 0 0 ;}
+#whtvlinksLeftTitle .title {color:black; font-size:11px; font-weight:bold; height:21px; padding:5px 0 0 0;}
+#whtvlinksLeftTitle .linksContent {float:left; width:388px; height:110px; border:1px solid #d3d3d7; background-color:#eaeaec; font-size:11px; padding:15px 5px 5px 5px;}
+
+#whtvlinksLeftTitleVOD {background:transparent url(../../images/en/grad-title.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0; width:270px; height:26px; float:left; margin:0 10px 0 0 ;}
+#whtvlinksLeftTitleVOD .title {color:black; font-size:11px; font-weight:bold; height:21px; padding:5px 0 0 0;}
+#whtvlinksLeftTitleVOD .linksContent {float:left; width:258px; height:110px; border:1px solid #d3d3d7; background-color:#eaeaec; font-size:11px; padding:15px 5px 5px 5px;}
+
+#whtvlinksCentreTitle {background:transparent url(../../images/en/grad-title.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0; width:400px; height:26px; float:left;}
+#whtvlinksCentreTitle .title {color:black; font-size:11px; font-weight:bold; height:21px; padding:5px 0 0 0;}
+#whtvlinksCentreTitle .linksContent {float:left; width:388px; height:110px; border:1px solid #d3d3d7; background-color:#eaeaec; font-size:11px; padding:15px 5px 5px 5px; overflow: auto;}
+#whtvlinksCentreTitle ul.linksC {padding:0 0 0 10px; margin:0px;}
+#whtvlinksCentreTitle ul.linksC li {list-style-position:inside; list-style-type:disc; padding:0px 0px 10px 0px; width:180px; float:left;}
+#whtvlinksCentreTitle ul.linksC li a {color:#2e486f; text-decoration:underline;}
+#whtvlinksCentreTitle ul.linksC li a:hover {text-decoration:none;}
+
+#whtvlinksCentreTitleVOD {background:transparent url(../../images/en/grad-title.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0; width:270px; height:26px; float:left; margin:0 10px 0 0 ;}
+#whtvlinksCentreTitleVOD .title {color:black; font-size:11px; font-weight:bold; height:21px; padding:5px 0 0 0;}
+
+#whtvlinksCentreTitleVOD .linksContent {
+	background-color:  #EAEAEC;
+	float: left;
+	font-size: 11px;
+	height: 132px;
+	overflow: auto;
+	width: 270px;
+}
+
+#whtvlinksCentreTitleVOD ul.linksC {padding:0 0 0 10px; margin:0px;}
+
+#whtvlinksCentreTitleVOD ul.linksC li {
+	float: left;
+	list-style-position: inside;
+	list-style-type: none;
+	padding: 0 10px 5px;
+	width: 40px;
+}
+
+#whtvlinksCentreTitleVOD ul.linksC li a {color:#2e486f; text-decoration:underline;}
+#whtvlinksCentreTitleVOD ul.linksC li a:hover {text-decoration:none;}
+
+#whtvlinksRightTitleVOD {background:transparent url(../../images/en/grad-title.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0; width:270px; height:26px; float:left;}
+#whtvlinksRightTitleVOD .title {color:black; font-size:11px; font-weight:bold; height:21px; padding:5px 0 0 0;}
+#whtvlinksRightTitleVOD .linksContent {float:left; width:258px; height:110px; border:1px solid #d3d3d7; background-color:#eaeaec; font-size:11px; padding:15px 5px 5px 5px; overflow-y: auto;}
+
+#whtvlinksIframe {background:transparent; width:376px; height:200px; float:left; overflow-x:hidden;}
+#whtvlinksIframe .linksContentI {float:left; background-color:#eaeaec; font-size:11px; padding:0px 0px 0px 0px;}
+
+#whtvlinksIframe ul.linksI {padding:0 0 0 0px; margin:0px;}
+#whtvlinksIframe ul.linksI li {list-style-position:inside; list-style-type:circle; padding:0px 0px 10px 0px; list-style-image:url(../../images/en/bullet-perf.gif?ver=10302352b9cca8d374b2c95e0ccf157d); width:188px; float:left;}
+#whtvlinksIframe ul.linksI li a {color:#2e486f; text-decoration:underline;}
+#whtvlinksIframe ul.linksI li a:hover {text-decoration:none;}
+
+#whtvlinksIframeVOD {background:transparent; width:240px; height:26px; float:left;}
+#whtvlinksIframeVOD .linksContentI {float:left; width:248px; background-color:#eaeaec; font-size:11px; padding:0px 0px 0px 0px;}
+
+#whtvlinksIframeVOD ul.linksI {padding:0 0 0 0px; margin:0px;}
+#whtvlinksIframeVOD ul.linksI li {list-style-position:inside; list-style-type:circle; padding:0px 0px 10px 4px; list-style-image:url(../../images/en/bullet-perf.gif?ver=10302352b9cca8d374b2c95e0ccf157d); width:120px; float:left;}
+#whtvlinksIframeVOD ul.linksI li a {color:#2e486f; text-decoration:underline;}
+#whtvlinksIframeVOD ul.linksI li a:hover {text-decoration:none;}
+
+#whtvContainer .lineup .odds:hover, #whtvContainer .lineup .odds.priceselected {
+	background: url("../../images/en/oddsBtnOver.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x 0 0 #0781BB;
+	border: 1px solid #2B97C9;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#whtvContainer .lineup .odds.bestPrice {
+	background: url("../../images/en/oddsBtnBestPriceBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x 0 0 #9AC536;
+	border: 1px solid #75A027;
+}
+#whtvContainer .lineup .odds.suspendPrice {
+	border: 1px solid #FFF;
+	background: #FFF; color: #666;
+}
+#whtvContainer #silksHolder .bubbleOK, #whtvContainer #silksHolder .bubbleError {
+	color: #FFFFFF;
+	font-size: 12px;
+	height: 21px;
+	line-height: 20px;
+	margin-top: -1px;
+	padding: 0 5px;
+	position: absolute;
+	right: 60px;
+	text-align: center;
+	top: 0;
+	width: 186px;
+	z-index: 9000;
+}
+#whtvContainer #silksHolder .bubbleError {
+	background: url("../../images/en/bubbleRed_small.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0 0 transparent;
+	border-left: 1px solid # a80202;
+}
+#whtvContainer #silksHolder .bubbleOK {
+	background: url("../../images/en/bubbleGreen_small.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0 0 transparent;
+	border-left: 1px solid # 5a860b;
+}
+
+.displayNone {display: none !important; color: #000; background: none;}
+
+.clearBoth{clear:both;}
+

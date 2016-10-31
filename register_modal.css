@@ -1,0 +1,5680 @@
+/*-----------------------------------MODAL REGISTRATION STYLES-------------------------------*/
+/*
+	Copyright (c) 2011 Orbis Technology Ltd. All rights reserved.
+
+	This CSS is for styling registration overlay and its form elements.
+*/
+
+/*
+*:focus {
+	outline:none;
+}
+*/
+.regOverlay #overlayContainer .formContainer form a:focus, .regOverlay #overlayContainer .formContainer form input[type="button"]:focus {
+	outline: thin dotted;
+}
+#modalDimmer {
+	filter:alpha(opacity=80);
+	opacity:.80;
+	-khtml-opacity:.80;
+	-moz-opacity:.80;
+	-ms-filter:'alpha(opacity=80)';
+	z-index:9998;
+}
+.regOverlay div, .regOverlay span, .regOverlay p, .regOverlay img, .regOverlay ol, .regOverlay ul, .regOverlay li {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:11px;
+	vertical-align:baseline;
+	background:transparent;
+}
+.regOverlay #inputs, .regOverlay #inputs div {
+	float:left;
+}
+.regOverlay #inputs {
+	height:410px;
+}
+.large_single.regOverlay #inputs {
+	height:498px;
+}
+.regOverlay ol, .regOverlay ul {
+	list-style:none;
+}
+.regOverlay a, .regOverlay button {
+	outline:0;
+	text-decoration:none;
+	border:none;
+}
+.regOverlay a {
+	color: #000;
+}
+.regOverlay a:hover {
+	color: #1a74ae !important;
+}
+.regOverlay {
+	padding: 0;
+	z-index:9999;
+	width:996px;
+	height:550px;
+	background:none;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow:hidden;
+}
+.large_single.regOverlay {
+	height:645px;
+}
+.regOverlay .HdrTL, .regOverlay .HdrTR, .regOverlay .HdrBL, .regOverlay .HdrBM, .regOverlay .HdrBR {
+	float:left;
+	overflow:hidden;
+}
+.regOverlay .HdrTL, .regOverlay .HdrTR {
+	height:27px;
+	width:10px;
+}
+.regOverlay .HdrBL, .regOverlay .HdrBR {
+	height:11px;
+	width:10px;
+}
+.regOverlay .HdrTL {
+	background:url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+.regOverlay .HdrTR {
+	background:url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0;
+}
+.regOverlay #overlayHeader {
+	color: #264d64;
+	display: inline;
+	float: left;
+	font-weight: bold;
+	height: 27px;
+	line-height: 26px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	vertical-align: middle;
+	width:976px;
+	font-family: Tahoma, Arial, sans-serif;
+	text-shadow:1px 1px #e3e3e6;
+	background:url(../../images/en/overlay_TM.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;
+}
+.regOverlay .HdrBL {
+	background:url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -27px;
+}
+.regOverlay .HdrBM {
+	height:11px;
+	background:#fff;
+	width:976px;
+}
+.regOverlay .HdrBR {
+	background:url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px -27px;
+}
+.regOverlay #overlayHeader #overlayTitle {
+	display: inline;
+	float: left;
+	padding: 0 10px 0 2px;
+	width: 500px;
+}
+.regOverlay #overlayHeader #overlayFunc {
+	display: inline;
+	float: right;
+	height: 27px;
+	overflow: hidden;
+	padding: 0 14px 0 10px;
+	width: 450px;
+	z-index: 100499;
+}
+.regOverlay #overlayHeader #overlayFunc ul {
+	float: right;
+	list-style: none outside none;
+	margin: 0;
+}
+.regOverlay #overlayHeader #overlayFunc ul li {
+	clear: none;
+	float: right;
+	margin-left: 7px;
+}
+.regOverlay #overlayHeader #overlayFunc a {
+	color: #1c3849;
+	line-height:27px;
+	display:inline-block;
+	cursor:pointer;
+}
+.regOverlay #overlayHeader #overlayFunc a#close {
+	background: url(../../images/en/closeIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right 8px;
+	padding-right: 12px;
+}
+.regOverlay #overlayHeader #overlayFunc a span {
+	float:left;
+}
+.regOverlay #overlayContainer {
+	display: inline;
+	float: left;
+	height: 506px;
+	margin: 0;
+	padding: 6px 11px 0;
+	position: relative;
+	width: 972px;
+	border-left:#fff 1px solid;
+	border-right:#fff 1px solid;
+	background:#fff url(../../images/en/overlayContent_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;
+}
+.large_single.regOverlay #overlayContainer {
+	height: 586px;
+}
+.regOverlay #overlayContainer .submitMessageContainer {
+	float:left;
+	display: inline;
+	position: relative;
+	width: 760px;
+	height:28px;
+	font-family:Tahoma, Arial, sans-serif;
+}
+.large_single.regOverlay #overlayContainer .submitMessageContainer {
+	display: inline;
+	float: left;
+	font-family: Tahoma,Arial,sans-serif;
+	height: 38px; /* Increase this Height */
+	position: relative;
+	width: 760px;
+}
+.large_single.regOverlay #overlayContainer .formContainer form .termsAbs {
+	bottom: 38px;
+	clear: both;
+	float: left;
+	position: absolute;
+}
+.regOverlay #overlayContainer .submitMessageContainer a {
+	color:#1A74AE !important;
+	text-decoration:underline;
+}
+.regOverlay #overlayContainer .submitMessageContainer a:hover {
+	color:#269EEC !important;
+}
+.regOverlay #overlayContainer .submitMessageContainer span {
+	height:24px;
+	padding:4px 0 0 27px;
+	font-weight:bold;
+	font-size:12px;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span {
+	padding-left: 0 !important;
+}
+.regOverlay #overlayContainer .submitMessageContainer span.submitError {
+	color:#b90318;
+	background:url(../../images/en/errorIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+	overflow:hidden;
+	float:left;
+	padding-left: 27px !important;
+}
+.regOverlay #overlayContainer .submitMessageContainer span.submitError p {
+	color:#b90318;
+	background:none;
+	padding:0;
+	font-weight:bold;
+}
+.regOverlay.deposit #overlayContainer #submitMessage-Narrow span.submitSuccess, .regOverlay #overlayContainer #submitMessage-Narrow span.submitError {
+	max-width: 475px !important;
+}
+.regOverlay #overlayContainer .formContainer {
+	display: inline;
+	float: left;
+	position: relative;
+	width: 778px;
+}
+.regOverlay #overlayContainer .formContainer form {
+	display: inline;
+	float: left;
+	width: 768px;
+}
+.regOverlay #overlayContainer .formContainer .leftClmn, .regOverlay #overlayContainer .formContainer .rightClmn {
+	display: inline;
+	float: left;
+}
+.regOverlay #overlayContainer .formContainer .leftClmn {
+	width: 396px;
+}
+.regOverlay #overlayContainer .formContainer .formFooter {
+	display: inline;
+	float: left;
+	width:768px;
+	margin-top:12px;
+	padding-top:7px;
+	height:26px;
+	background:url(../../images/en/line.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0 !important;
+}
+.formFooter.paypalFormFooter {
+	margin-top: 82px !important;
+}
+.regOverlay #overlayContainer .formContainer #reverse_wtd .formFooter{
+	background: none;
+}
+.regOverlay #overlayContainer .formContainer .formFooter a {
+	display: inline;
+	float: left;
+}
+.regOverlay #overlayContainer .formContainer .formFooter a.thawte, .regOverlay #overlayContainer .formContainer .formFooter a.changeMethod {
+	margin-top:4px;
+}
+.regOverlay #overlayContainer .formContainer .rightClmn {
+	width: 372px;
+}
+.regOverlay #overlayContainer .formContainer form a {
+	text-decoration:none;
+	color:#1a74ae !important;
+}
+.regOverlay #overlayContainer .formContainer form a:hover {
+	color:#269eec !important;
+}
+.regOverlay #overlayContainer .formContainer form label.label {
+	width:94%;
+	float: left;
+	color:#015f8e;
+	margin-top:7px;
+	text-align: left;
+}
+.regOverlay #overlayContainer .formContainer form label.label.top {
+	margin-top:0;
+}
+.regOverlay #overlayContainer .formContainer form label span.optionalField {
+	color:#818384;
+}
+.regOverlay #overlayContainer .formContainer form .termsAbs {
+	position:absolute;
+	float: left;
+	bottom:32px;
+	clear:both;
+}
+.single_large.regOverlay #overlayContainer .formContainer form .termsAbs {
+	bottom:45px;
+	display:block;
+}
+.regOverlay #overlayContainer .formContainer form .checkboxDiv {
+	clear:both;
+	float: left;
+	margin:5px 0 0 0;
+	padding:0;
+	width:372px;
+}
+.regOverlay #overlayContainer .formContainer form .inlineLabel {
+	float:left;
+	margin-left:5px;
+	width: 350px;
+	clear:none;
+	display:inline;
+}
+.regOverlay #overlayContainer .formContainer form input {
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:0 1px 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	overflow:hidden;
+	background:none;
+}
+.regOverlay #overlayContainer .formContainer form .firstName input,
+.regOverlay #overlayContainer .formContainer form .surname input,
+.regOverlay #overlayContainer .formContainer form .tinyInput input,
+.regOverlay #overlayContainer .formContainer form .smallInput input,
+.regOverlay #overlayContainer .formContainer form .midInput input,
+.regOverlay #overlayContainer .formContainer form .largeInput input,
+input#recaptcha_response_field {
+	border:none !important;
+	outline:0 !important;
+}
+.regOverlay #overlayContainer .formContainer form .firstName, .regOverlay #overlayContainer .formContainer form .surname, .regOverlay #overlayContainer .formContainer form .tinyInput, .regOverlay #overlayContainer .formContainer form .smallInput, .regOverlay #overlayContainer .formContainer form .midInput, .regOverlay #overlayContainer .formContainer form .largeInput {
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:3px 4px;
+	overflow:hidden;
+}
+.regOverlay #overlayContainer .formContainer form .firstName label,
+.regOverlay #overlayContainer .formContainer form .surname label,
+.regOverlay #overlayContainer .formContainer form .smallInput label,
+.regOverlay #overlayContainer .formContainer form .fName_long label,
+.regOverlay #overlayContainer .formContainer form .lName_long label,
+.regOverlay #overlayContainer .formContainer form .sName_long label {
+	padding:0 !important;
+}
+.regOverlay #overlayContainer .formContainer form .tooltipGroup input {
+	position: absolute;
+	z-index:4 !important;
+}
+.regOverlay #overlayContainer .formContainer form .tooltipGroup span label {
+	z-index:3;
+	text-align: left;
+	max-height: 35px;
+	overflow: hidden;
+}
+.regOverlay #overlayContainer .formContainer form input.address1 {
+	margin-bottom:4px;
+}
+.regOverlay #overlayContainer .formContainer form .firstName, .regOverlay #overlayContainer .formContainer form .surname, .regOverlay #overlayContainer .formContainer form .smallInput {
+	width:91px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -40px;
+}
+.regOverlay #overlayContainer .formContainer form .firstName input, .regOverlay #overlayContainer .formContainer form .surname input, .regOverlay #overlayContainer .formContainer form .smallInput input {
+	width:91px;
+}
+.regOverlay #overlayContainer .formContainer form .firstName, .regOverlay #overlayContainer .formContainer form .surname {
+	position:absolute;
+	z-index:2;
+}
+.regOverlay #overlayContainer .formContainer form .surname {
+	left:101px;
+}
+.regOverlay #overlayContainer .formContainer form .largeInput {
+	width:192px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+.regOverlay #overlayContainer .formContainer form .largeInput input {
+	width:192px;
+}
+.regOverlay #overlayContainer .formContainer form .midInput {
+	width:180px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+}
+.regOverlay #overlayContainer .formContainer form .midInput input {
+	width:180px;
+}
+.regOverlay #overlayContainer .formContainer form .submitGreen {
+	position:relative;
+	float:left;
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+	color: #354a02;
+	border: none;
+	display: inline-block;
+	font-size: 11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 0;
+	vertical-align: middle;
+	cursor:pointer;
+	width: 188px;
+}
+.regOverlay #overlayContainer .formContainer form .submitGreen:hover {
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+	color: #4561031;
+}
+.regOverlay #overlayContainer .formContainer form .submitDisable {
+	position:relative;
+	float:left;
+	background:transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px !important;;
+	color:#93969c;
+	border:none;
+	display:inline-block;
+	font-size:11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 20px;
+	vertical-align: middle;
+	cursor:auto;
+	width: 188px;
+	text-align:left;
+}
+.regOverlay #overlayContainer .formContainer form input.secCTA {
+	width:99px !important;
+	height:22px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -184px;
+	margin-top:10px !important;
+	cursor:pointer;
+	padding:0 0 1px;
+	color:#000;
+}
+.regOverlay #overlayContainer .formContainer form input.secCTA:hover {
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -99px -184px;
+	color:#444;
+}
+.regOverlay #overlayContainer .formContainer form input.secCTADisable {
+	width:99px !important;
+	height:22px;
+	background:transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px;
+	color:#93969c;
+	margin-top:10px !important;
+	cursor:pointer;
+	padding:0 0 1px 10px;
+}
+.regOverlay #overlayContainer .formContainer form input.secCTA.right_column {
+	width:188px !important;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -318px;
+	margin-top:7px !important;
+	margin-bottom:16px;
+}
+.regOverlay #overlayContainer .formContainer form input.secCTA.right_column:hover {
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -340px;
+}
+.regOverlay #overlayContainer .formContainer form input.secCTADisable.right_column {
+	background:transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px;
+}
+.regOverlay #overlayContainer .formContainer form .addressManual {
+	float:left;
+	margin:14px 0 0 10px;
+	cursor:pointer;
+}
+.regOverlay #overlayContainer .formContainer form .addressLookup {
+	background:transparent url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -206px !important;
+	border:none !important;
+	font-size:11px!important;
+	padding:0;
+	width:302px !important;
+	height:52px;
+	overflow:hidden;
+	float:left;
+}
+.regOverlay #overlayContainer .formContainer form .addressLookup ul {
+	overflow-x:hidden;
+	overflow-y:scroll;
+	padding:1px !important;
+	height:50px;
+}
+
+.regOverlay #overlayContainer .formContainer form .addressLookup li {
+	background:transparent url(../../images/en/arrowBullet.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 5px !important;
+	padding:1px 1px 1px 6px;
+	margin:0 0 1px 3px;
+	cursor:pointer;
+}
+.regOverlay #overlayContainer .formContainer form .addressLookup li a {
+	text-decoration:none;
+}
+.regOverlay #overlayContainer .formContainer form .addressLookup li.focus {
+	background:#e2e3ea !important;
+}
+div.tooltipGroup {
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+	height: 20px;
+}
+div.tooltipGroup select {
+	font-size: 11px !important;
+}
+div.tooltipGroup.select_double {
+	height: 33px;
+}
+div.tooltipGroup.select_double .gender_container {
+	display: inline;
+	float: left;
+	position: relative;
+	width: 101px;
+}
+div.tooltipGroup.select_double .title_container {
+	display: inline;
+	float: left;
+	position: relative;
+}
+div.tooltipGroup.double span {
+	height: 20px;
+	width:101px;
+}
+div.tooltipGroup.double span label {
+	margin:0 !important;
+	width:auto;
+}
+div.tooltipGroup.address1 {
+	height: 24px;
+}
+#inputs div.tooltipGroup.address1 span {
+	bottom:3px;
+}
+.regOverlay #overlayContainer .formContainer form div.tooltipGroup .hint a {
+	color:#1c3d92;
+}
+div.tooltipGroup .hint.info {
+	color:#000;
+}
+div.tooltipGroup .hint.suggest {
+	color:#4a030b;
+}
+div.tooltipGroup .hint.error {
+	color:#4a030b;
+}
+#inputContent_edit div.tooltipGroup .hint,
+#inputs div.tooltipGroup .hint {
+	display:block;
+	left:2px;
+	bottom:-1px;
+	overflow:hidden;
+	position: absolute;
+	vertical-align:middle;
+	height:auto;
+	min-height:21px;
+	width: auto;
+	max-height:41px;
+	padding-bottom:1px;
+	z-index:1;
+}
+#inputContent_edit div.tooltipGroup .hint,
+#inputs .rightClmn div.tooltipGroup .hint,
+#inputs div.tooltipGroup .hint,
+#form_transfer div.tooltipGroup .hint{
+	padding-left: 185px;
+}
+#inputContent_edit .leftClmn div.tooltipGroup .hint,
+#inputs .leftClmn div.tooltipGroup .hint {
+	padding-left: 197px;
+}
+#inputContent_edit div.tooltipGroup .hint.m,
+#inputs div.tooltipGroup .hint.m {
+	width: 290px !important;
+	padding-left:96px !important;
+}
+#inputContent_edit div.tooltipGroup .hint.l,
+#inputs div.tooltipGroup .hint.l,
+#form_transfer div.tooltipGroup .hint.l{
+	width: 322px;
+}
+#inputContent_edit div.tooltipGroup .hint.xl,
+#inputs div.tooltipGroup .hint.xl,
+#form_transfer div.tooltipGroup .hint.xl{
+	width: 426px;
+	padding-left: 81px;
+}
+#inputContent_edit div.tooltipGroup .hint.s,
+#inputs div.tooltipGroup .hint.s {
+	width: 365px;
+	padding-left:142px;
+}
+#inputContent_edit div.tooltipGroup .hint.suggest,
+#inputs div.tooltipGroup .hint.suggest {
+	background:url(../../images/en/hintSuggest_btm.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right bottom;
+}
+#inputs div.tooltipGroup .weak label#reg_password_msg_txt {
+	background:url(../../images/en/weakPass.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left 2px;
+	padding-left:15px;
+}
+#inputs div.tooltipGroup .strong label#reg_password_msg_txt {
+	background:url(../../images/en/strongPass.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left 2px;
+	padding-left:15px;
+}
+#inputContent_edit div.tooltipGroup .hint p,
+#inputs div.tooltipGroup .hint p {
+	display:block;
+	overflow:hidden;
+	position: relative;
+	float:left;
+	vertical-align:middle;
+	padding:4px 2px 3px 4px;
+	line-height:12px;
+	width:183px;
+	min-height:14px;
+}
+#inputContent_edit div.tooltipGroup .hint.m p,
+#inputs div.tooltipGroup .hint.m p {
+	width:284px;
+}
+#inputContent_edit div.tooltipGroup .hint.l p,
+#inputs div.tooltipGroup .hint.l p {
+	width:316px;
+}
+#inputContent_edit div.tooltipGroup .hint.xl p,
+#inputs div.tooltipGroup .hint.xl p {
+	width:420px;
+}
+#inputContent_edit div.tooltipGroup .hint.s p,
+#inputs div.tooltipGroup .hint.s p {
+	width:358px;
+}
+#inputContent_edit div.tooltipGroup .hint.info p,
+#inputs div.tooltipGroup .hint.info p {
+	background: #BFCED6 url(../../images/en/hintInfo_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#inputContent_edit div.tooltipGroup .hint.suggest p,
+#inputs div.tooltipGroup .hint.suggest p {
+	background:url(../../images/en/hintSuggest_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#inputContent_edit div.tooltipGroup .hint.error p,
+#inputs div.tooltipGroup .hint.error p {
+	background:url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#inputs div.tooltipGroup .hint.error p {
+	background:url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) #fdb7b7 no-repeat left top;
+}
+#inputContent_edit div.tooltipGroup .hint.success p,
+#inputs div.tooltipGroup .hint.success p {
+	background:url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -40px top;
+	height:14px;
+	width:14px;
+	padding:0;
+	margin:4px 0 0 4px;
+}
+#inputContent_edit .rightClmn div.tooltipGroup .hint,
+.mts_form #inputs .rightClmn div.tooltipGroup .hint,
+#inputContent_edit .leftClmn div.tooltipGroup .hint, 
+.mts_form #inputs .leftClmn div.tooltipGroup .hint {
+	padding-left: 185px;
+}
+#inputContent_edit .leftClmn div.tooltipGroup .hint.m,
+#inputContent_edit .rightClmn div.tooltipGroup .hint.m,
+#inputs .leftClmn div.tooltipGroup .hint.m,
+#inputs .rightClmn div.tooltipGroup .hint.m {
+	padding-left: 96px;
+	width: 259px;
+}
+.mts_form #inputs div.tooltipGroup .hint {
+	width: 180px;
+}
+.mts_form div.tooltipGroup .mts_selectTo + span.hint.success p,.mts_form div.tooltipGroup .mts_selectFrom + span.hint.success p {
+	display:none;
+}
+#lName_msg_txt {
+	top: 3px;
+	left: 3px;
+}
+
+#gender_msg {height:0; line-height:0;}
+
+/* -------------
+ * Right Nav
+ * ------------- */
+.regOverlay #overlayContainer .rightNav {
+	display: inline;
+	float: right;
+	position: static;
+	width: 185px;
+	height:452px;
+	padding:3px;
+	margin-top:15px;
+	background:url(../../images/en/rightNavBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+.regOverlay #overlayContainer .rightNav .rightNavContent {
+	float: left;
+}
+.regOverlay #overlayContainer .rightNav .rightNavContent .helpLinks {
+	float: left;
+	width:165px;
+	padding:0 10px;
+	margin:10px 0;
+}
+.regOverlay #overlayContainer .rightNav .rightNavContent .helpLinks li {
+	background:url(../../images/en/helpRowSeparator.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left bottom;
+	padding:3px 0;
+	height:20px;
+	line-height:24px;
+	display:block;
+}
+.regOverlay #overlayContainer .rightNav .rightNavContent .helpLinks .helpTitle {
+	font-weight:bold;
+	border-bottom:1px solid #00b3ec;
+	background:none;
+	height:14px;
+	line-height:14px;
+	padding:0;
+}
+.regOverlay #overlayContainer .rightNav .rightNavContent .helpLinks li a {
+	padding-left:25px;
+	display:block;
+	overflow:hidden;
+}
+.regOverlay #overlayContainer .rightNav .rightNavContent .helpLinks li a.phoneHelp {
+	background:url(../../images/en/helpIcons.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+	height:19px;
+}
+.regOverlay #overlayContainer .rightNav .rightNavContent .helpLinks li a.emailHelp {
+	background:url(../../images/en/helpIcons.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -19px;
+	height:20px;
+}
+.regOverlay #overlayContainer .rightNav .rightNavContent .helpLinks li a.chatHelp {
+	background:url(../../images/en/helpIcons.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -39px;
+	height:19px;
+}
+.regOverlay #overlayContainer .rightNav .rightNavContent .helpLinks li a:hover {
+	color:#269eec !important;
+}
+
+/* -------------
+ * First Deposit
+ * ------------- */
+.regOverlay.deposit #overlayContainer .submitMessageContainer {
+	height:60px;
+	margin-bottom:17px;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span {
+	min-height:28px;
+	height:auto;
+	max-height:60px;
+	vertical-align:middle;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.infoMessage {
+	padding:4px 0 0;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span p {
+	color:#000;
+	font-size:12px;
+	font-weight:bold;
+	padding:3px 0 0 0;
+	clear:both;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess p.promoError {
+	font-size:11px;
+	color:#d45000;
+	padding:0 0 0 10px;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess {
+	color:#405b00;
+	background:url(../../images/en/successIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+	overflow:hidden;
+	float:left;
+	max-width:550px !important;
+	padding-left: 27px !important;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer_reverseWtd span.submitSuccess {
+	max-width: 700px !important;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo {
+	overflow:hidden;
+	float:right;
+	max-width:276px !important;
+	padding:1px 0 0 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo p, .regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo p span {
+	font-size:11px;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo p .boldLabel {
+	color:#015F8E;
+	font-weight:bold;
+	min-height:0;
+	padding:0;
+	margin-left:3px;
+	padding:0 3px 0 0;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo p .boldLabel.withoutLink {
+	margin-left:0;
+}
+.label.mts_amount_label.importo-prelevare-label {
+	margin-top: 2px !important;
+}
+span.importo-prelevare-text {
+	  color: #015F8E;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo p .accountDetails {
+	font-weight:normal;
+	max-width:236px;
+	padding:0;
+	min-height:0;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo p a {
+	float:left;
+	background:url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 1px;
+	width:11px;
+	height:11px;
+}
+.submitMessageContainer_reverseWtd #s_error, .submitMessageContainer_reverseWtd #s_success {
+	width: 675px !important;
+	max-width: 675px !important;
+}
+.regOverlay.deposit #overlayContainer #paymentMethodsContainer, .regOverlay.deposit #overlayContainer #depositSuccessContainer {
+	position:relative;
+	display:inline;
+	float:left;
+	width:760px;
+	height:415px;
+}
+.regOverlay.deposit #overlayContainer #paymentMethodsContainer #paymentMethodsMenu {
+	display:inline;
+	float:left;
+	width:231px;
+}
+.regOverlay.deposit #overlayContainer #paymentMethodsContainer #paymentMethodsContent {
+	display:inline;
+	float:right;
+	width:509px;
+}
+.regOverlay.deposit #overlayContainer #paymentMethodsContainer #paypalPaymentMethodsContent {
+	display: inline;
+	float: right;
+	width: 760px;
+}
+.regOverlay.deposit #overlayContainer .formContainer .formFooter, #paypalPaymentMethodsContent .pmTitle {
+	width: 760px;
+}
+
+#paymentMethodsMenu #scrollContent {
+	overflow: hidden;
+	height: 360px;
+	border-top:1px solid #d4d5d7;
+}
+#paymentMethodsMenu #scrollContent ul {
+	display: block;
+	width:231px;
+	border-top:1px solid #fff;
+	font-family:Tahoma, Arial, sans-serif;
+	text-shadow:1px 1px #ffffff;
+	float:left;
+}
+#paymentMethodsMenu #scrollContent ul li {
+	display: block;
+	float:left;
+	width:223px;
+	cursor:pointer;
+	padding:6px 0 0 8px;
+	position:relative;
+}
+#paymentMethodsMenu #scrollContent ul li span.used {
+	position:absolute;
+	left:0;
+	top:-5px;
+	background:url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -25px 0;
+	width:15px;
+	height:13px;
+	overflow:hidden;
+}
+#paymentMethodsMenu #scrollContent ul li.single.clickIgnore {
+	height:24px;
+	background:url(../../images/en/pmCategoryBg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;
+	overflow:hidden;
+	margin:0;
+	cursor:default;
+}
+
+#paymentMethodsMenu #scrollContent ul li.single.clickIgnore.highlight {
+	background:url(../../images/en/pmCategoryBg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0 !important;
+}
+#paymentMethodsMenu #scrollContent ul li.double {
+	height: 54px;
+	background:url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#paymentMethodsMenu #scrollContent ul li.double.selected, #paymentMethodsMenu #scrollContent ul li.double.highlight {
+	background:url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+}
+#paymentMethodsMenu #scrollContent ul li.single {
+	height: 24px;
+	background:url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -120px;
+}
+#paymentMethodsMenu #scrollContent ul li.single.selected, #paymentMethodsMenu #scrollContent ul li.single.highlight {
+	background:url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -150px;
+}
+#paymentMethodsMenu #scrollContent ul li p {
+	font-weight:bold;
+	color:#808080;
+	text-indent:-100000px;
+}
+#paymentMethodsMenu #scrollContent ul li p.visibleText {
+	text-indent:0;
+}
+#paymentMethodsMenu #scrollContent ul li.myMethods p.visibleText {
+	color:#3f7600;
+	text-align:center;
+}
+#paymentMethodsMenu #scrollContent ul li.otherMethods p.visibleText {
+	color:#025b87;
+	text-align:center;
+}
+#paymentMethodsMenu #scrollContent ul li.selected p {
+	color:#015b86;
+}
+#paymentMethodsMenu #scrollContent ul li p.multiMethod {
+	float: left;
+	height: 30px;
+	overflow: hidden;
+	width: 205px;
+}
+#paymentMethodsMenu #scrollContent ul li span {
+	display:inline;
+	float:left;
+	margin:5px 1px 0 0;
+	overflow:hidden;
+	height:24px;
+	overflow:hidden;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SPEUR p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -453px;
+	width:92px;
+	height:19px !important;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SPUSD p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -453px;
+	width:92px;
+	height:19px !important;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_AMEX,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_AMEX p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -382px;
+	width:44px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_QIWI,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_QIWI p{
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -358px;
+	width:42px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_KAPO,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_KAPO p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -334px;
+	width:42px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_G2P,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_G2P p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -310px;
+	width:44px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_VC,
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_VD,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_VC p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_VD p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+	width:36px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_ELTN,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_ELTN p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -24px;
+	width:36px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_SWCH,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_SWCH p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -48px;
+	width:36px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_MC,
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_MCD,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_MC p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_MCD p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -72px;
+	width:36px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_SOLO,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_SOLO p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -96px;
+	width:22px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_LASR,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_LASR p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -120px;
+	width:22px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_EP,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_EP p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -144px;
+	width:36px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li span.paymentCC_DC,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_DC p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -168px;
+	width:42px;
+	height:24px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_BPNG p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -599px;
+	width: 50px;
+	height: 16px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_IKSH_IKSH p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -192px;
+	width:46px;
+	height:17px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_PSC_PSC p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -209px;
+	width:88px;
+	height:16px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_PPAL_PPAL p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -225px;
+	width:50px;
+	height:15px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_NTLR_NTLR p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -240px;
+	width:62px;
+	height:12px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_MB_MB p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -252px;
+	width:113px;
+	height:13px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_C2P_C2P p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -265px;
+	width:74px;
+	height:14px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CB_CB p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -279px;
+	width:85px;
+	height:18px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_UKSH_UKSH p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0px -550px transparent;
+	width: 105px;
+	height: 18px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_CASHU p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0px;
+	width:50px;
+	height:23px;
+	margin-top:-4px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_FNDSD p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -23px;
+	width:78px;
+	height:13px;
+	margin-top:1px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SPDCD p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -36px;
+	width:76px;
+	height:18px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SWIFF p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -435px;
+	width:76px;
+	height:19px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SPORO p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -54px;
+	width:71px;
+	height:14px;
+	margin-top:2px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TODIT p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -68px;
+	width:77px;
+	height:18px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYRO p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -405px;
+	width: 53px;
+	height: 14px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_WU_WU p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+	width:73px;
+	height:22px;
+	margin-top:-3px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_MONET p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -108px;
+	width:84px;
+	height:22px;
+	margin-top:-3px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BLKSB p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -130px;
+	width:100px;
+	height:23px;
+	margin-top:-4px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_INSTA p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -281px;
+	width:88px;
+	height:21px !important;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_INSDB p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -175px;
+	width:87px;
+	height:12px;
+	margin-top:3px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EUTLR p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -188px;
+	width:75px;
+	height:20px;
+	margin-top:-2px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SOFCH p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -207px;
+	width:61px;
+	height:20px;
+	margin-top:-2px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_UMBNK p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -227px;
+	width:88px;
+	height:19px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_POLI p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_PLINZ p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -246px;
+	width:45px;
+	height:17px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_NORDE p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -268px;
+	width:70px;
+	height:17px;
+	margin-top:-2px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_WEBMO p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -56px;
+	width:78px;
+	height:19px;
+	margin-top:-2px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ECARD p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -276px;
+	width:22px;
+	height:25px;
+	margin-top:-5px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_CDIGI p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -229px;
+	width:101px;
+	height:22px;
+	margin-top:-3px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EPS p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -124px;
+	width:28px;
+	height:22px;
+	margin-top:-3px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_GIROP p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -320px;
+	width:44px;
+	height:20px;
+	margin-top:-3px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_NSURF p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -301px;
+	width:41px;
+	height:19px;
+	margin-top:-2px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ENP24 p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -76px;
+	width:58px;
+	height:23px;
+	margin-top:-4px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EWRDK p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EWRNO p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EWRSK p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -40px;
+	width:56px;
+	height:16px;
+	margin-top:-1px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ENIDL p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -98px;
+	width:28px;
+	height:25px;
+	margin-top:-5px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ABAQS p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0px;
+	width:66px;
+	height:20px;
+	margin-top:-2px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BSANT p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -146px;
+	width:84px;
+	height:19px;
+	margin-top:-4px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BLETO p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -206px;
+	width:40px;
+	height:22px;
+	margin-top:-4px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_MBANC p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -186px;
+	width:87px;
+	height:20px;
+	margin-top:-2px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TELEI p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -165px;
+	width:109px;
+	height:21px;
+	margin-top:-3px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ENFBT p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+	width:65px;
+	height:20px;
+	margin-top:-3px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_MRCSH p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -256px;
+	width:39px;
+	height:25px;
+	margin-top:-5px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EKONT p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -340px;
+	width:39px;
+	height:23px;
+	margin-top:-4px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SOFEU p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -364px;
+	width:85px;
+	height:23px;
+	margin-top:-4px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BLKUN p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -386px;
+	width:41px;
+	height:14px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BALOT p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -228px -344px;
+	width: 65px;
+	height: 27px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SWIFF p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -433px;
+	width: 56px;
+	height: 22px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ASTRO p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -434px;
+	width: 50px;
+	height: 20px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_AGMO p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -229px -388px;
+	width: 57px;
+	height: 14px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYBG p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYCZ p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYEU p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYHU p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYLV p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYLT p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYPL p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYRO p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -406px;
+	width: 78px;
+	height: 14px;
+	margin-top: 1px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentEPYV p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -403px;
+	width:100px;
+	height:21px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_QIWI p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -420px;
+	width: 52px;
+	height: 14px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_EPYV_EPYV p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -403px;
+	width:100px;
+	height:21px;
+}
+
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_YANDX p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -506px;
+	width:50px;
+	height:20px !important;
+}
+#paymentMethodsMenu #scrollContent ul li.selected  span.paymentCC_AMEX,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_AMEX.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -382px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_QIWI,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_QIWI.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -358px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_KAPO,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_KAPO.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -334px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_G2P,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_G2P.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -310px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_VC,
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_VD,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_VC.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_VD.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px 0;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_ELTN,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_ELTN.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -24px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_SWCH,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_SWCH.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -48px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_MC,
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_MCD,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_MC.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_MCD.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -72px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_SOLO,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_SOLO.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -96px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_LASR,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_LASR.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -120px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_EP,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_EP.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -144px;
+}
+#paymentMethodsMenu #scrollContent ul li.selected span.paymentCC_DC,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CC_DC.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -168px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_BPNG.selected p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -599px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_IKSH_IKSH.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -192px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_PSC_PSC.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -209px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_PPAL_PPAL.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -225px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_NTLR_NTLR.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -240px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_MB_MB.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -252px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_C2P_C2P.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -265px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_CB_CB.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -279px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_UKSH_UKSH.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -0px -528px;
+	width: 105px;
+	height: 18px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SPEUR.selected  p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -453px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SPUSD.selected  p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -453px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_CASHU.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px 0px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_FNDSD.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -23px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SPDCD.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -36px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SWIFF.selected p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -435px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SPORO.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -54px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TODIT.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -68px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_WU_WU.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -86px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_MONET.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -108px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BLKSB.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -130px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_INSTA.selected  p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -281px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_INSDB.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -175px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EUTLR.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -188px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SOFCH.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -207px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_UMBNK.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -227px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_POLI.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_PLINZ.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -246px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_NORDE.selected p {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -268px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_WEBMO.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -56px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ECARD.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -276px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_CDIGI.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -229px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EPS.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -124px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_GIROP.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -320px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_NSURF.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -301px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ENP24.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -76px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EWRDK.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EWRNO.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EWRSK.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -40px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ENIDL.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -98px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ABAQS.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px 0px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BSANT.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -146px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BLETO.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -206px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_MBANC.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -186px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TELEI.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -165px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ENFBT.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -20px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_MRCSH.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -256px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_EKONT.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -340px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SOFEU.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -364px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BLKUN.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -386px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_BALOT.selected p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -228px -316px;
+	width: 64px;
+	height: 26px;
+}
+#paymentSINGLE_ENVO_BALOT.single {
+	padding-top: 0 !important;
+	height: 30px !important;
+}
+#paymentSINGLE_ENVO_BALOT.double {
+	padding-top: 0 !important;
+	height: 60px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_SWIFF.selected p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -433px;
+	width: 56px;
+	height: 22px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_ASTRO.selected p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -456px;
+	width: 51px;
+	height: 20px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_AGMO.selected p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -229px -373px;
+	width: 59px;
+	height: 14px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYBG.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYCZ.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYEU.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYHU.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYLV.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYLT.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYPL.selected p,
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_TPYRO.selected p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -406px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentEPYV.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -403px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_QIWI.selected p {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -113px -420px;
+	width: 52px;
+	height: 14px;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_EPYV_EPYV.selected p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -403px;
+}
+
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_YANDX.selected  p {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -506px;
+}
+
+#paymentMethodsMenu #scrollUp, #paymentMethodsMenu #scrollDown {
+	width:70px;
+	height:21px;
+	text-indent:-100000px;
+	margin-left:80px;
+	cursor:pointer;
+}
+#paymentMethodsMenu #scrollUp {
+	background:url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -180px;
+}
+#paymentMethodsMenu #scrollDown {
+	background:url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -201px;
+}
+
+#paymentMethodsMenu #scrollUp.disabled {
+	background:url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -70px -180px;
+	cursor:auto;
+}
+#paymentMethodsMenu #scrollDown.disabled {
+	background:url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -70px -201px;
+	cursor:auto;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_PAYU p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -1px -431px rgba(0,0,0,0);
+	width:85px;
+	height:18px !important;
+}
+#paymentMethodsMenu #scrollContent ul li#paymentSINGLE_ENVO_PAYU.selected  p {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -431px;
+}
+#paymentMethodsContent{
+	display: none;
+}
+
+#paymentMethodsContent .moreText {
+	display:none;
+	float:left;
+}
+#paymentMethodsContent .pmTitle, #paypalPaymentMethodsContent .pmTitle {
+	height:21px;
+	border-bottom:2px solid #005580;
+	line-height:23px;
+}
+#paymentMethodsContent .pmTitle p, #paypalPaymentMethodsContent .pmTitle p {
+	float:left;
+	color:#005580;
+	font-weight:bold;
+	font-family:Tahoma, Arial, sans-serif;
+	font-size:12px;
+	text-shadow:1px 1px #ffffff;
+}
+#paymentMethodsContent .pmTitle a.moreInfo, #paypalPaymentMethodsContent .pmTitle a.moreInfo {
+	float:right;
+	font-weight:normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	background:url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -62px 4px;
+	padding-left:17px;
+}
+#paymentMethodsContent a, #paypalPaymentMethodsContent a, #depositSuccessContainer a {
+	color:#1A74AE !important;
+	text-decoration:underline;
+}
+#paymentMethodsContent a:hover, #paypalPaymentMethodsContent a:hover, #depositSuccessContainer a:hover {
+	color:#269eec !important;
+}
+#paymentMethodsContent .paymentMethodRedirect {
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+.pymnt_iconWithText {
+	position: relative;
+	top: -4px;
+}
+p.pymnt_iconWithText.visibleText span {
+	position: relative;
+	left: 46px;
+	width: 150px;
+	height: 19px;
+}
+.regOverlay.deposit #overlayContainer .formContainer form,
+.regOverlay.deposit #overlayContainer .formContainer .formFooter,
+#paymentMethodsContent .pmTitle, .regOverlay.deposit #inputs {
+	width: 527px;
+}
+.regOverlay.deposit .month {
+	margin-left:0;
+}
+.regOverlay #overlayContainer .formContainer form .tinyInput {
+	width:76px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -164px;
+}
+.regOverlay #overlayContainer .formContainer form .tinyInput input {
+	width:76px;
+}
+.regOverlay.deposit #overlayContainer .formContainer .leftClmn {
+	width:255px;
+}
+.regOverlay.deposit #overlayContainer .formContainer .rightClmn {
+	width:254px;
+}
+.regOverlay.deposit #overlayContainer .formContainer .formFooter a {
+	float: right;
+}
+.regOverlay.deposit #overlayContainer .formContainer .formFooter a.changeMethod {
+	font-size: 11px;
+	font-weight: bold;
+	color: #1A74AE !important;
+	padding-left: 16px;
+	background: transparent url(../../images/en/actionSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 1px;
+	position: relative;
+	top: 7px;
+	left: 10px;
+	float: left !important;
+	text-decoration: none;
+	padding-bottom: 2px;
+}
+.regOverlay.deposit #overlayContainer .formContainer .formFooter a.changeMethod:hover {
+	color:#0EA2E6 !important;
+	text-decoration:none;
+}
+.regOverlay.deposit #overlayContainer .formContainer .formFooter .footerImage {
+	float:right;
+	margin:4px 5px 0 0;
+}
+.regOverlay.deposit #inputs {
+	height:302px;
+	overflow:hidden;
+}
+.regOverlay.deposit .pmDetails {
+	height:44px;
+}
+.regOverlay.deposit .pmLogo {
+	width:189px;
+	float:left;
+	height:24px;
+	margin-top:12px;
+	display:block;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_SPEUR {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -425px;
+	width:124px;
+	height:32px !important;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_SPUSD {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -425px;
+	width:124px;
+	height:32px !important;
+}
+.regOverlay.deposit .pmLogo.paymentBPNG {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -599px;
+	width: 97px;
+	height: 24px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_VC,
+.regOverlay.deposit .pmLogo.paymentCC_VD {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px 0;
+	width:36px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_MC,
+.regOverlay.deposit .pmLogo.paymentCC_MCD {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -72px;
+	width:36px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_SWCH {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -48px;
+	width:36px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_SOLO {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -96px;
+	width:22px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_LASR {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -120px;
+	width:22px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_ELTN {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -24px;
+	width:36px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_QIWI {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -358px;
+	width:42px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_EP {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -144px;
+	width:36px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_DC {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -168px;
+	width:42px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_AMEX {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -382px;
+	width:44px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_KAPO {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -334px;
+	width:42px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentCC_G2P {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -310px;
+	width:44px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentIKSH {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px 0;
+	width:52px;
+	height:20px;
+}
+.regOverlay.deposit .pmLogo.paymentPSC {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -20px;
+	width:97px;
+	height:19px;
+}
+.regOverlay.deposit .pmLogo.paymentPPAL {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -39px;
+	width:60px;
+	height:18px;
+}
+.regOverlay.deposit .pmLogo.paymentNTLR {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -57px;
+	width:73px;
+	height:14px;
+}
+.regOverlay.deposit .pmLogo.paymentMB {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -71px;
+	width:45px;
+	height:15px;
+}
+.regOverlay.deposit .pmLogo.paymentC2P {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -86px;
+	width:85px;
+	height:16px;
+}
+.regOverlay.deposit .pmLogo.paymentCB {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -102px;
+	width:107px;
+	height:23px;
+}
+.regOverlay.deposit .pmLogo.paymentUKSH {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -528px;
+	width: 106px;
+	height: 20px;
+}
+.regOverlay.deposit .pmLogo.paymentWU {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -100px;
+	width:87px;
+	height:25px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_CASHU {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px 0px;
+	width:57px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_FNDSD {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -25px;
+	width:97px;
+	height:17px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_SPDCD {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -42px;
+	width:85px;
+	height:20px;
+}
+/* WHO 9-Jan 2013 */
+.regOverlay.deposit .pmLogo.paymentENVO_SWIFF {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -249px;
+	width:85px;
+	height:20px;
+}
+/* EO WHO 9-Jan 2013 */
+.regOverlay.deposit .pmLogo.paymentENVO_SPORO {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -62px;
+	width:83px;
+	height:18px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_TODIT {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -80px;
+	width:85px;
+	height:20px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_MONET {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -109px;
+	width:84px;
+	height:22px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_BLKSB {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -125px;
+	width:110px;
+	height:25px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_INSTA {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -281px;
+	width:100px;
+	height:24px !important;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_INSDB {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -150px;
+	width:107px;
+	height:14px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_EUTLR {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -164px;
+	width:83px;
+	height:22px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_SOFCH {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -186px;
+	width:75px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_UMBNK {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -210px;
+	width:100px;
+	height:20px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_POLI,
+.regOverlay.deposit .pmLogo.paymentENVO_PLINZ {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -371px;
+	width:49px;
+	height:18px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_NORDE {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -249px;
+	width:86px;
+	height:21px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_WEBMO {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -64px;
+	width:91px;
+	height:23px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_ECARD {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -962px;
+	width:22px;
+	height:25px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_CDIGI {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -637px;
+	width:113px;
+	height:23px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_EPS {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -112px;
+	width:31px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_GIROP {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -275px;
+	width:53px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_NSURF {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -251px;
+	width:52px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_ENP24 {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -87px;
+	width:69px;
+	height:25px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_EWRDK,
+.regOverlay.deposit .pmLogo.paymentENVO_EWRNO,
+.regOverlay.deposit .pmLogo.paymentENVO_EWRSK {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -46px;
+	width:68px;
+	height:18px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_ENIDL {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -98px;
+	width:28px;
+	height:25px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_ABAQS {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px 0px;
+	width:78px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_BSANT {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -136px;
+	width:94px;
+	height:21px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_BLETO {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -203px;
+	width:42px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_MBANC {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -181px;
+	width:95px;
+	height:22px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_TELEI {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -157px;
+	width:117px;
+	height:24px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_ENFBT {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -24px;
+	width:73px;
+	height:22px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_MRCSH {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -257px;
+	width:39px;
+	height:25px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_EKONT {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -299px;
+	width:43px;
+	height:25px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_SOFEU {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -324px;
+	width:99px;
+	height:28px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_BLKUN {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -352px;
+	width:49px;
+	height:17px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_BALOT {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -229px -318px;
+	width: 65px;
+	height: 26px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_SWIFF {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -247px;
+	width: 66px;
+	height: 25px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_TPYBG,
+.regOverlay.deposit .pmLogo.paymentENVO_TPYCZ,
+.regOverlay.deposit .pmLogo.paymentENVO_TPYEU,
+.regOverlay.deposit .pmLogo.paymentENVO_TPYHU,
+.regOverlay.deposit .pmLogo.paymentENVO_TPYLV,
+.regOverlay.deposit .pmLogo.paymentENVO_TPYLT,
+.regOverlay.deposit .pmLogo.paymentENVO_TPYPL,
+.regOverlay.deposit .pmLogo.paymentENVO_TPYRO {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -205px;
+	width: 97px;
+	height: 18px;
+}
+.regOverlay.deposit .pmLogo.paymentEPYV {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -371px;
+	width:115px;
+	height:25px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_ASTRO {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -404px;
+	width: 75px;
+	height: 30px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_AGMO {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -229px -298px;
+	width: 97px;
+	height: 19px;
+}
+.regOverlay.deposit .pmLogo.paymentENVO_QIWI {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -229px -223px;
+	width: 81px;
+	height: 24px;
+}
+.regOverlay.deposit .pmLogo.paymentEPYV {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -371px;
+	width:115px;
+	height:25px;
+}
+
+.regOverlay.deposit .pmLogo.paymentENVO_YANDX {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -478px transparent;
+	height: 28px !important;
+	width: 50px;
+}
+
+.regOverlay.deposit .pmLogo.paymentENVO_PAYU {
+    background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -397px rgba(0,0,0,0);
+    width:60px;
+    height:24px !important;
+}i
+
+.regOverlay.deposit .pmDetails .pmInfo {
+	width:320px;
+	float:right;
+	margin-top:2px;
+}
+.regOverlay.deposit .pmDetails .pmInfo ul {
+	display:inline;
+	float:right;
+	margin-top: 1px;
+}
+.regOverlay.deposit .pmDetails .pmInfo ul.pmInfoLabels {
+	font-weight:bold;
+	margin-right:8px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.regOverlay #inputs #whatIsThisURL.lowIndex {
+	position:absolute;
+	z-index:1;
+}
+.regOverlay #inputs #whatIsThisURL.highIndex {
+	position:absolute;
+	z-index:2;
+}
+.regOverlay #inputs .whatIsThis {
+	cursor: hand;
+	display:inline-block;
+	float:left;
+	margin:3px 0 0 3px;
+	background:url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -11px 0;
+	width:14px;
+	height:14px;
+}
+.regOverlay.deposit #inputs p.infoText, .regOverlay.deposit p.infoText {
+	clear:both;
+	display:block;
+	float:left;
+	width:100%;
+}
+.regOverlay.deposit #inputs p.infoText {
+	margin-top:30px;
+}
+.regOverlay.deposit p.infoText {
+	margin-top:10px;
+}
+.regOverlay .bold {
+	font-weight:bold;
+}
+.regOverlay #overlayContainer .formContainer .pmEditOpts {
+	display:inline-block;
+	float:left;
+	width:300px;
+	overflow:hidden;
+	height:20px;
+	margin:0 0 0 10px;
+}
+.regOverlay #overlayContainer .formContainer .pmEditOpts a {
+	display:inline-block;
+	margin:0 10px 0 0;
+}
+.regOverlay #overlayContainer .formContainer .pmEditOpts a:hover {
+	color:#1974ad;
+}
+.regOverlay #overlayContainer .formContainer .pmEditOpts a .pmEdit, .regOverlay #overlayContainer .formContainer .pmEditOpts a .pmAdd {
+	float:left;
+	background:url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	height:13px;
+	overflow:hidden;
+}
+.regOverlay #overlayContainer .formContainer .pmEditOpts a .pmEdit {
+	background-position: 0 3px;
+	width:11px;
+}
+.regOverlay #overlayContainer .formContainer .pmEditOpts a .pmAdd {
+	background-position: -54px 3px;
+	width:8px;
+}
+
+/* -------------
+ * Deposit Success
+ * ------------- */
+.regOverlay.deposit #overlayContainer #depositSuccessContainer #depositSuccessContent {
+	display:inline;
+	float:left;
+}
+.regOverlay.deposit #overlayContainer #depositSuccessContainer #transactionDetails, .regOverlay.deposit #overlayContainer #depositSuccessContainer .dsDetails, .regOverlay #overlayContainer #depositSuccessContainer .formFooter {
+	width:460px;
+	float:left;
+}
+#transactionDetails .dsTitle {
+	border-bottom:2px solid #4b7300;
+	height:21px;
+	line-height:23px;
+}
+#transactionDetails .dsTitle p {
+	float:left;
+	color:#4b7300;
+	font-weight:bold;
+	font-family:Tahoma, Arial, sans-serif;
+	font-size:12px;
+	text-shadow:1px 1px #ffffff;
+}
+.regOverlay.deposit .dsDetails .pmInfo {
+	width:100%;
+	float:left;
+	margin-top:5px;
+}
+.regOverlay.deposit .dsDetails .pmInfo ul {
+	display:inline;
+	float:left;
+	list-style:none outside none;
+}
+.regOverlay.deposit .dsDetails .pmInfo ul.pmInfoLabels {
+	color:#005480;
+	margin-right:8px;
+}
+.regOverlay.deposit .dsDetails .pmInfo ul li {
+	padding-top:5px;
+}
+.regOverlay.deposit #overlayContainer .submitMessageContainer .balanceAmount{
+	padding:0;
+	font-weight:normal;
+}
+.regOverlay #overlayContainer #depositSuccessContainer .formFooter a {
+	float:left;
+	margin-right:10px;
+}
+.regOverlay #overlayContainer a.backToSiteBtn {
+	display:block;
+	float:left;
+	background:url("../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0 -112px;
+	width:200px;
+	height:26px;
+	font-family:Tahoma, Arial, sans-serif;
+	color:#2d4456;
+	line-height:24px;
+	vertical-align:middle;
+	font-weight:bold;
+	text-decoration:none;
+	clear:both;
+	text-align:center;
+	margin-bottom:40px;
+	margin-left: 27px;
+}
+.regOverlay #overlayContainer a.backToSiteBtn:hover {
+	background-position: 0 -138px;
+}
+.regOverlay.deposit #overlayContainer #depositSuccessContainer #transactionDetails {
+	margin-bottom:25px;
+	margin-left: 27px;
+}
+.regOverlay.deposit #overlayContainer #depositSuccessContainer #accountOptions {
+	float:left;
+	width:100%;
+	clear:both;
+}
+.regOverlay.deposit #overlayContainer a.accountOption {
+	display:inline-block;
+	float:left;
+	width:77px;
+	margin-right:12px;
+	padding-top:80px;
+	text-align:center;
+	text-decoration:none;
+	color:#000;
+}
+.regOverlay.deposit #overlayContainer a.accountOption:hover {
+	color:#269EEC;
+}
+.regOverlay.deposit #overlayContainer .accountOption#deposit {
+	background:url(../../images/en/accountIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+.regOverlay.deposit #overlayContainer .accountOption#transfer {
+	background:url(../../images/en/accountIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -77px 0;
+}
+.regOverlay.deposit #overlayContainer .accountOption#bonuses {
+	background:url(../../images/en/accountIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -154px 0;
+}
+.regOverlay.deposit #overlayContainer .accountOption#accountDetails {
+	background:url(../../images/en/accountIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -231px 0;
+}
+
+#overlayFunc {
+	display: inline;
+	float: right;
+	height: 27px;
+	overflow: hidden;
+	padding: 0 14px 0 10px;
+	width: 972px;
+	position: fixed;
+	z-index: 100501;
+	color: #264D64;
+	font-family: Tahoma,Arial,sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px #E3E3E6;
+}
+#overlayFunc ul {
+	float: right;
+	list-style: none outside none;
+	margin: 0;
+}
+#overlayFunc ul li {
+	clear: none;
+	float: right;
+	margin-left: 7px;
+	padding:0;
+}
+#overlayFunc a {
+	color: #1C3849;
+	cursor: pointer;
+	line-height: 26px;
+	text-decoration: none;
+}
+#overlayFunc a#close {
+	background: url(../../images/en/closeIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right center;
+	padding: 0 12px 0 0;
+	display:inline-block;
+}
+#overlayFunc a span {
+	float: left;
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	font-size: 11px;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+	vertical-align: baseline;
+	line-height: 26px;
+}
+
+.regOverlay #overlayContainer .formContainer form .tooltipGroup {
+	position:relative;
+}
+
+
+#overlay_second_dimmer {
+	width: 996px;
+	height: 550px;
+	position: absolute;
+	top: -110px;
+	left: -12px;
+	background-color: #000;
+	opacity: .4;
+	z-index: 100012;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/**      Starting Styles    **/
+/* - partly affected by JS-  */
+
+#overlay_second_dimmer {
+	display: none;
+	position: absolute;
+	z-index: 100012;
+}
+#secondOverlay {
+	display: none;
+	position: absolute;
+	z-index: 100013;
+}
+#secondOverlay .leftClmn {
+	width: 250px !important;
+	clear: left;
+}
+#formFooter_edit .rightClmn,
+#formFooterMulti_edit .rightClmn {
+	width: 200px !important;
+	float: right !important;
+}
+#formFooter_remove .rightClmn,
+#formFooterMulti_remove .rightClmn {
+	float: left !important;
+	width: 528px !important;
+	text-align: right;
+}
+
+#secondOverlay_TLhdr, #secondOverlay_hdr, #secondOverlay_TRhdr,
+#secondOverlay_BLftr, #secondOverlay_ftr, #secondOverlay_BRftr,
+#secondOverlay_Lcol, #secondOverlay_ctnt , #secondOverlay_Rcol,
+#secondOverlay_container {
+	float: left;
+}
+
+#secondOverlay_TLhdr {
+	width: 19px;
+	height: 35px;
+	background: transparent url(../../images/en/OverlayOutlineSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px;
+}
+#secondOverlay_hdr {
+	padding: 11px 0 2px;
+	height: 22px;
+	background: transparent url(../../images/en/OverlayOutlineSprites_2.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px 0px;
+	color: #264d64;
+	text-shadow: 1px 1px 0px #fff;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 23px;
+}
+#secondOverlay_TRhdr {
+	width: 19px;
+	height: 35px;
+	background: transparent url(../../images/en/OverlayOutlineSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -19px 0px;
+}
+
+#secondOverlay_Lcol, #secondOverlay_Rcol {
+	width: 10px;
+	height: 206px;
+}
+#secondOverlay_Lcol {
+	background: transparent url(../../images/en/OverlayOutlineSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-y -38px 0px;
+}
+#secondOverlay_ctnt {
+	background: #fff url(../../images/en/OverlayContentBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px 0px;
+	height: 100%;
+	padding: 0 10px;
+}
+#secondOverlay_Rcol {
+	background: transparent url(../../images/en/OverlayOutlineSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-y -48px 0px;
+}
+
+#secondOverlay_BLftr {
+	width: 19px;
+	height: 18px;
+	background: transparent url(../../images/en/OverlayOutlineSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -35px;
+}
+#secondOverlay_ftr {
+	padding: 11px 0 2px;
+	height: 23px;
+	background: transparent url(../../images/en/OverlayOutlineSprites_2.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px -35px;
+}
+#secondOverlay_BRftr {
+	width: 19px;
+	height: 18px;
+	background: transparent url(../../images/en/OverlayOutlineSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -19px -35px;
+}
+
+#secondOverlay_container .formContainer form label.label {
+	width:94%;
+	float: left;
+	color:#015f8e;
+	margin-top:7px;
+	text-align: left;
+}
+#secondOverlay_container .formContainer form label.label.top {
+	margin-top:0;
+}
+#secondOverlay_close {
+	display: none;
+}
+#inputContent_edit, #inputContent_remove,
+#formFooter_edit, #formFooter_remove, #formFooter_conditions,
+#formFooterMulti_remove {
+	display: none;
+}
+#formFooterMulti_remove {
+	height: 147px;
+}
+
+#secondOverlay.editCard #inputContent_edit,
+#secondOverlay.editCard #formFooter_edit {
+	display: block;
+}
+
+#secondOverlay.removeCard #inputContent_remove,
+#secondOverlay.removeCard #formFooter_remove,
+#secondOverlay.removeCard #formFooterMulti_remove {
+	display: block;
+}
+#secondOverlay.removeCard #formFooter_remove .rightClmn,
+#secondOverlay.removeCard #formFooterMulti_remove .rightClmn {
+	text-align: right;
+}
+
+#secondOverlayDiv #inputContent_edit, #secondOverlayDiv #inputContent_edit div,
+#secondOverlayDiv #inputContent_remove, #secondOverlayDiv #inputContent_remove div{
+	float:left;
+}
+#secondOverlayDiv .formContainer .formFooter {
+	display: inline;
+	float: left;
+	width:509px;
+	margin-top:12px;
+	padding-top:7px;
+	height:26px;
+	background: transparent url(../../images/en/line.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px 0px;
+}
+
+#secondOverlayDiv .pmDetails {
+	height:44px;
+	float: none;
+	display: block;
+}
+#secondOverlayDiv .pmLogo {
+	width:189px;
+	float:left;
+	height:24px;
+	margin-top:12px;
+	display:block;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_SPEUR {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -453px;
+	width:76px;
+	height:19px !important;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_SPUSD {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -453px;
+	width:76px;
+	height:19px !important;
+}
+#secondOverlayDiv .pmLogo.paymentCC_VC,
+#secondOverlayDiv .pmLogo.paymentCC_VD {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px 0;
+	width:36px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_MC,
+#secondOverlayDiv .pmLogo.paymentCC_MCD {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -72px;
+	width:36px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_SWCH {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -48px;
+	width:36px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_SOLO {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -96px;
+	width:22px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_LASR {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -120px;
+	width:22px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_ELTN {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -24px;
+	width:36px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_QIWI {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -358px;
+	width:42px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_EP {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -144px;
+	width:36px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_DC {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -168px;
+	width:42px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_AMEX {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -382px;
+	width:44px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_KAPO {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -334px;
+	width:42px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentCC_G2P {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -310px;
+	width:44px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentUKSH {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -0px -528px;
+	width:106px;
+	height:20px;
+}
+#secondOverlayDiv .pmLogo.paymentIKSH {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px 0;
+	width:52px;
+	height:20px;
+}
+#secondOverlayDiv .pmLogo.paymentPSC {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -20px;
+	width:97px;
+	height:19px;
+}
+#secondOverlayDiv .pmLogo.paymentPPAL {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -39px;
+	width:60px;
+	height:18px;
+}
+#secondOverlayDiv .pmLogo.paymentNTLR {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -57px;
+	width:73px;
+	height:14px;
+}
+#secondOverlayDiv .pmLogo.paymentMB {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -71px;
+	width:45px;
+	height:15px;
+}
+#secondOverlayDiv .pmLogo.paymentC2P {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -86px;
+	width:85px;
+	height:16px;
+}
+#secondOverlayDiv .pmLogo.paymentCB {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -102px;
+	width:107px;
+	height:23px;
+}
+#secondOverlayDiv .pmLogo.paymentWU {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -100px;
+	width:87px;
+	height:25px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_CASHU {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px 0px;
+	width:57px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_FNDSD {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -25px;
+	width:97px;
+	height:17px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_SPDCD {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -42px;
+	width:85px;
+	height:20px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_SWIFF {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -0px -528px;
+	width:172px;
+	height:20px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_SPORO {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -62px;
+	width:83px;
+	height:18px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_TODIT {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -80px;
+	width:85px;
+	height:20px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_MONET {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -108px;
+	width:84px;
+	height:22px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_BLKSB {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -125px;
+	width:110px;
+	height:25px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_INSTA {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -281px;
+	width:88px;
+	height:21px !important;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_INSDB {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -150px;
+	width:107px;
+	height:14px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_EUTLR {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -164px;
+	width:83px;
+	height:22px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_SOFCH {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -186px;
+	width:75px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_UMBNK {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -210px;
+	width:100px;
+	height:20px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_POLI,
+#secondOverlayDiv .pmLogo.paymentENVO_PLINZ {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -246px;
+	width:49px;
+	height:18px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_NORDE {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -286px;
+	width:86px;
+	height:21px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_WEBMO {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -64px;
+	width:91px;
+	height:23px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_ECARD {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -276px;
+	width:22px;
+	height:25px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_CDIGI {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -227px;
+	width:113px;
+	height:23px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_EPS {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -112px;
+	width:31px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_GIROP {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -275px;
+	width:53px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_NSURF {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -251px;
+	width:52px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_ENP24 {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -87px;
+	width:69px;
+	height:25px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_EWRDK,
+#secondOverlayDiv .pmLogo.paymentENVO_EWRNO,
+#secondOverlayDiv .pmLogo.paymentENVO_EWRSK {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -46px;
+	width:68px;
+	height:18px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_ENIDL {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -98px;
+	width:28px;
+	height:25px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_ABAQS {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px 0px;
+	width:78px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_BSANT {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -136px;
+	width:94px;
+	height:21px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_BLETO {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -203px;
+	width:42px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_MBANC {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -181px;
+	width:95px;
+	height:22px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_TELEI {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -157px;
+	width:117px;
+	height:24px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_ENFBT {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -24px;
+	width:73px;
+	height:22px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_MRCSH {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -256px;
+	width:39px;
+	height:25px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_EKONT {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -299px;
+	width:43px;
+	height:25px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_SOFEU {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -325px;
+	width:99px;
+	height:28px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_BLKUN {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -352px;
+	width:49px;
+	height:17px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_BALOT {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -229px -318px;
+	width: 65px;
+	height: 26px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_SWIFF {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -247px;
+	width: 66px;
+	height: 25px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_ASTRO {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -404px;
+	width: 75px;
+	height: 30px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_TPYBG,
+#secondOverlayDiv .pmLogo.paymentENVO_TPYCZ,
+#secondOverlayDiv .pmLogo.paymentENVO_TPYEU,
+#secondOverlayDiv .pmLogo.paymentENVO_TPYHU,
+#secondOverlayDiv .pmLogo.paymentENVO_TPYLV,
+#secondOverlayDiv .pmLogo.paymentENVO_TPYLT,
+#secondOverlayDiv .pmLogo.paymentENVO_TPYPL,
+#secondOverlayDiv .pmLogo.paymentENVO_TPYRO {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -205px;
+	width: 137px;
+	height: 18px;
+}
+#secondOverlayDiv .pmLogo.paymentEPYV {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -371px;
+	width:115px;
+	height:25px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_AGMO {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -229px -298px;
+	width: 97px;
+	height: 19px;
+}
+#secondOverlayDiv .pmLogo.paymentENVO_QIWI {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -229px -223px;
+	width: 81px;
+	height: 24px;
+}
+#secondOverlayDiv .pmLogo.paymentEPYV {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -230px -371px;
+	width:115px;
+	height:25px;
+}
+
+#secondOverlayDiv .pmLogo.paymentENVO_YANDX {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -478px transparent;
+	height: 28px !important;
+	width: 50px;
+}
+
+#secondOverlayDiv .pmLogo.paymentENVO_PAYU {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -431px;
+	width:88px;
+	height:21px !important;
+}
+
+#secondOverlayDiv .pmDetails .pmInfo {
+	width:320px;
+	float:right;
+	margin-top:2px;
+}
+#secondOverlayDiv .pmDetails .pmInfo ul {
+	display:inline;
+	float:right;
+}
+#secondOverlayDiv .pmDetails .pmInfo ul.pmInfoLabels {
+	font-weight:bold;
+	margin-right:8px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+#secondOverlay.removeConditions {
+	height: 264px;
+	left: -21px;
+	position: absolute;
+	top: 26px;
+	width: 801px;
+}
+#secondOverlay.removeConditions #secondOverlay_close {
+	display: block;
+	float: right;
+	cursor: pointer;
+	background: transparent url(../../images/en/closeIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center right;
+	padding-right: 14px;
+	height: 20px;
+}
+#secondOverlay.removeConditions #secondOverlay_ctnt {
+	width: 761px;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	margin-left: 9px;
+}
+
+.secondOverlay_hdr_removeConditions, .secondOverlay_ftr_removeConditions {
+	width: 763px;
+}
+
+#secondOverlay.removeConditions #secondOverlay_Lcol,
+#secondOverlay.removeConditions #secondOverlay_Rcol {
+	display: none;
+}
+
+#secondOverlay.removeConditions .formFooter {
+	display: none !important;
+}
+
+#secondOverlayCtnt.editMthdsecondOverlayCtnt .formContainer {
+	width: 537px !important;
+}
+
+#secondOverlayCtnt.rmMthdConditionssecondOverlayCtnt .formContainer {
+	width: 789px !important;
+}
+#secondOverlayTop.rmMthdConditionssecondOverlayTop #secondOverlay_close {
+	display: block;
+	float: right;
+	cursor: pointer;
+	background: transparent url(../../images/en/closeIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right 8px;
+	padding-right: 14px;
+	height: 20px;
+}
+
+#inputContent_conditions>p {
+	margin: 10px 0;
+}
+#conditionsTable>ul {
+	width: 754px;
+	min-height: 159px;
+	background: transparent url(../../images/en/conditionsTableBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) top left no-repeat;
+	margin: 0px 0px 5px;
+	padding: 1px 1px 0;
+}
+.conditionsTableHeader_leftBracket {
+	width: 9px;
+	height: 31px;
+	background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
+	float: left;
+}
+.conditionsTableHeader_rightBracket {
+	width: 11px;
+	height: 31px;
+	background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0px !important;
+	float: left;
+}
+.conditionsTable_title {
+	height: 31px;
+	background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px -31px !important;
+	float: left;
+	line-height: 30px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: -1px 1px 2px #000;
+	width: 734px;
+}
+.conditionsTableHeader {
+	border-bottom: 1px solid #f5f6f7 !important;
+	height: 23px;
+	padding: 0;
+	background: #fefefe url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top left !important;
+}
+.conditionsTableHeader div {
+	font-weight: bold;
+	height: 23px;
+	line-height: 23px;
+	border-bottom: 1px solid #aaaeb6;
+	font-size: 11px;
+}
+.conditionsTableRow {
+	overflow:auto;
+	clear: left;
+	margin: 0 11px 0 9px !important;
+}
+.rev_wtd_table_scrolling {
+	overflow: auto;
+	width: 743px;
+	max-height: 200px;
+}
+.rev_wtd_table_scrolling .conditionsTableRow {
+	margin-right: 0 !important;
+}
+.conditionsTableRow.lastRowItem {
+	border-bottom: 1px dotted #264d64;
+}
+.conditionsTableRow_rightBracket, .conditionsTableRow_leftBracket {
+	float: left;
+	height:19px;
+	line-height: 19px;
+}
+.overlayStatusOk {
+	color: #346200;
+}
+.overlayStatusBad {
+	color: #ab0119;
+}
+.overlayStatusNeutral {
+	color: #666666;
+}
+.regOverlay.deposit .formFooter {
+	background: none !important;
+}
+
+.reverseWtdTable_amount,
+.reverseWtdTable_requestOn,
+.reverseWtdTable_reverseUntil {
+	background: transparent url(../../images/en/tableSubHeader_divider.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left bottom !important;
+}
+.reverseWtdTable_amount, .reverseWtdTableRow_amount {
+	width: 125px;
+}
+.reverseWtdTableRow_item {
+	width: 127px;
+}
+.reverseWtdTable_method, .reverseWtdTableRow_method, .reverseWtdTableRow_condition {
+	width: 260px;
+}
+.reverseWtdTable_requestOn, .reverseWtdTableRow_requestOn, .reverseWtdTableRow_status {
+	width: 141px;
+}
+.reverseWtdTable_reverseUntil, .reverseWtdTableRow_reverseUntil {
+	width: 176px;
+}
+.reverseWtdTableRow_resolution {
+	width: 127px;
+}
+.reverseWtdTable_amount { padding-left: 10px !important; }
+.reverseWtdTable_method { padding-left: 10px !important; }
+.reverseWtdTable_requestOn { padding-left: 10px !important; }
+.reverseWtdTable_reverseUntil { padding: 0 12px 0 10px !important;}
+
+.reverseWtdTableRow_item, .reverseWtdTableRow_status,
+.reverseWtdTableRow_resolution { padding-left: 9px !important; }
+
+.reverseWtdTable_amount, .reverseWtdTable_method, .reverseWtdTable_requestOn,
+.reverseWtdTable_reverseUntil, .reverseWtdTableRow_amount, .reverseWtdTableRow_method,
+.reverseWtdTableRow_requestOn, .reverseWtdTableRow_reverseUntil,
+.reverseWtdTableRow_item, .reverseWtdTableRow_condition, .reverseWtdTableRow_status,
+.reverseWtdTableRow_resolution {
+	float: left;
+	height:19px;
+	line-height: 19px;
+}
+.reverseWtdTableRow_amount {
+	padding-left: 2px !important;
+}
+.reverseWtdTableRow_method,
+.reverseWtdTableRow_reverseUntil, .reverseWtdTableRow_requestOn {
+	padding-left: 10px !important;
+}
+.reverseWtdTableRow_totalAmount {
+	font-weight: bold;
+	float: left;
+	height: 19px;
+	line-height: 19px;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.conditionsTable_item,.conditionsTable_condition,.conditionsTable_status,.conditionsTable_resolution {
+	height: 31px;
+	background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px -31px !important;
+	float: left;
+	line-height: 30px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: -1px 1px 2px #000;
+	padding-left: 2px !important;
+}
+.conditionsTable_item, .conditionsTableRow_item {
+	width: 196px;
+}
+.conditionsTable_condition, .conditionsTableRow_condition {
+	width: 192px;
+}
+.conditionsTable_status, .conditionsTableRow_status {
+	width: 141px;
+}
+.conditionsTable_resolution, .conditionsTableRow_resolution {
+	width: 197px;
+}
+
+.conditionsTableRow_item, .conditionsTableRow_condition, .conditionsTableRow_status,
+.conditionsTableRow_resolution {
+	float: left;
+	height:19px;
+	line-height: 19px;
+}
+.conditionsTableRow_item, .conditionsTableRow_condition,
+.conditionsTableRow_resolution, .conditionsTableRow_status {
+	padding-left: 2px !important;
+}
+#conditionsTable .conditionsTableRow_resolution {
+	overflow: hidden !important;
+}
+
+#secondOverlay.editCard #inputContent_conditions, #secondOverlay.removeCard #inputContent_conditions {
+	display: none;
+}
+#secondOverlay.editCard, #secondOverlay.removeCard {
+	top: 26px;
+	left: 232px;
+	width: 549px;
+	height: 264px;
+}
+
+#secondOverlayDiv #secondOverlay_ctnt{
+	width: 528px !important;
+}
+
+#secondOverlayDiv #inputContent_edit {
+	width: 509px;
+}
+#secondOverlayDiv #inputContent_edit .largeInput, #secondOverlayDiv #inputContent_remove .largeInput {
+	background:url(../../images/en/inputsDisabled.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0 !important;
+}
+#secondOverlayDiv .overlayMonth, #expiry_date .year, #start_date .year, #secondOverlayDiv .overlayYear {
+	margin-left:3px;
+}
+#secondOverlayDiv .overlayMonth {
+	margin-left:0;
+}
+#secondOverlayDiv .leftClmn {
+	width: 300px !important;
+}
+
+#formFooter_edit a.overlay_removeBtn {
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	color: #dc1641 !important;
+	padding-left: 12px;
+	background: transparent url(../../images/en/actionSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -14px;
+	position: relative;
+	top: 7px;
+	float: right !important;
+	text-decoration: none;
+}
+#formFooter_edit a.overlay_cancelBtn, .formFooter a.ftr_cancelBtn {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1a74ae !important;
+	padding-left: 16px;
+	background: transparent url(../../images/en/actionSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 1px;
+	position: relative;
+	top: 7px;
+	left: 10px;
+	float: left !important;
+	text-decoration: none;
+}
+#formFooter_remove a.overlay_cancelBtn,
+#formFooterMulti_remove a.overlay_cancelBtn {
+	color: #1a74ae !important;
+	padding-left: 16px;
+	background: transparent url(../../images/en/actionSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 1px;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 5px;
+	padding-left: 16px;
+	position: relative;
+	top: 8px;
+	float: left;
+	text-decoration: none !important;
+}
+#formFooter_remove strong {
+	position: relative;
+	top: 4px;
+}
+#formFooterMulti_remove strong {
+	position: relative;
+	top: -69px;
+	text-align: center;
+	float: none;
+	width: 527px;
+	display: block;
+}
+#formFooter_remove .submitGreen {
+	float: none !important;
+}
+#formFooterMulti_remove .submitGreen,
+.regOverlay.deposit #overlayContainer .formContainer .formFooterMulti a {
+	float: left !important;
+}
+.secondOverlay_hdr_editRemove, .secondOverlay_ftr_editRemove {
+	width: 511px;
+}
+
+#secondOverlayTop div {
+	color: #264D64;
+	font-family: Tahoma,Arial,sans-serif;
+	font-weight: bold;
+	line-height: 26px;
+	text-shadow: 1px 1px #E3E3E6;
+	float: left;
+}
+#secondOverlayDiv .submitGreen,
+#secondOverlayDiv .submitDisable,
+#secondOverlayDiv #formFooter_remove .mts_btn_disabled,
+#secondOverlayDiv #formFooterMulti_remove .mts_btn_disabled {
+	position:relative;
+	color: #354a02;
+	border: none;
+	display: inline-block;
+	font-size: 11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 0;
+	vertical-align: middle;
+	cursor:pointer;
+	width: 188px;
+}
+#secondOverlayDiv .submitGreen {
+	float:left;
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+}
+#secondOverlayDiv #formFooterMulti_remove .mts_btn_disabled,
+#secondOverlayDiv #formFooter_remove .mts_btn_disabled,
+#secondOverlayDiv #formFooterMulti_remove .submitDisable,
+#secondOverlayDiv #formFooter_remove .submitDisable,
+#secondOverlayDiv .submitDisable {
+	background: url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 30px 3px !important;
+	display: inline !important;
+	color:#93969c !important;
+}
+#secondOverlayDiv #formFooter_remove .mts_btn_disabled,
+#secondOverlayDiv #formFooter_remove .submitDisable,
+#secondOverlayDiv .submitDisable {
+	float: none !important;
+}
+#secondOverlayDiv #formFooterMulti_remove .mts_btn_disabled,
+#secondOverlayDiv #formFooterMulti_remove .submitDisable,
+#secondOverlayDiv #formFooter_edit #upd_submitButton.submitDisable {
+	float: left !important;
+}
+#secondOverlayDiv .submitGreen:focus,
+#secondOverlayDiv .overlay_cancelBtn:focus,
+#secondOverlayDiv .overlay_removeBtn:focus {
+	border: 1px dotted #999;
+}
+#secondOverlayDiv .regForm_sec .submitGreen:hover {
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+	color: #4561031;
+}
+#secondOverlay_container .formContainer form input {
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:0;
+	border:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	overflow:hidden;
+	background:none;
+}
+
+#secondOverlay_container .formContainer form .firstName,
+#secondOverlay_container .formContainer form .surname,
+#secondOverlay_container .formContainer form .tinyInput,
+#secondOverlay_container .formContainer form .smallInput,
+#secondOverlay_container .formContainer form .midInput,
+#secondOverlay_container .formContainer form .largeInput {
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:3px 4px;
+	overflow:hidden;
+}
+#secondOverlay_container .formContainer form .largeInput {
+	width:192px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#secondOverlay_container .formContainer form .largeInput input {
+	width:192px;
+}
+#secondOverlay_container .formContainer form .midInput {
+	width:180px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+}
+#secondOverlay_container .formContainer form .midInput input {
+	width:180px;
+}
+#secondOverlay_container .formContainer .submitGreen {
+	position:relative;
+	float:left;
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+	color: #354a02;
+	border: none;
+	display: inline-block;
+	font-size: 11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 0;
+	vertical-align: middle;
+	cursor:pointer;
+	width: 188px;
+}
+#secondOverlay_container .formContainer .submitGreen:hover {
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+	color: #4561031;
+}
+#secondOverlay_container .formContainer .submitDisable {
+	position:relative;
+	float:left;
+	background:transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px;
+	color:#93969c;
+	border:none;
+	display:inline-block;
+	font-size:11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 20px;
+	vertical-align: middle;
+	cursor:auto;
+	width: 188px;
+	text-align:left;
+}
+.wtd_divider_horiz {
+	clear: both;
+	display: block;
+	font-weight: bold;
+	margin: 30px 0 !important;
+	float: left;
+}
+#wtd_continue_deposit {
+	float: left;
+	clear: both;
+	display: block;
+	text-decoration: underline !important;
+}
+
+.mts_container {
+	width: 784px;
+	display: block;
+	position: fixed;
+	margin-left: 100px;
+	z-index: 100011;
+}
+.mts_container .HdrBM {
+	width: 764px !important;
+}
+
+.mts_headerbar {
+	float: left;
+	width: 764px;
+	height: 27px;
+	background:url(../../images/en/overlay_TM.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0 !important;
+	text-shadow: #E3E3E6 1px 1px;
+	font-weight: bold;
+	line-height: 27px;
+	font-size: 12px;
+	color: #264d64;
+}
+.mts_headerbar a {
+	float: right;
+	text-decoration: none;
+	color: #264d64;
+}
+.mts_headerbar a.mts_header_help,
+#ils_headerbar a.mts_header_help,
+#overlayFunc ul li a.mts_header_help {
+	padding-right: 7px;
+	background: transparent url(../../images/en/headerLinksDivider.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right center;
+}
+.mts_headerbar a#close,
+#ils_headerbar a#close {
+	background: url(../../images/en/closeIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 100% 8px;
+	padding-right: 12px;
+}
+.mts_contents {
+	width: 784px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	background:#fff url(../../images/en/overlayContent_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0 !important;
+	float: left;
+	overflow: auto;
+}
+
+.mts_messages {
+	min-height: 32px;
+	margin: 5px 10px 10px !important;
+	padding: 0;
+	display: block !important;
+}
+.mts_messages span {
+	display: block;
+	float: left;
+	width: 0px;
+	height: 28px;
+}
+.mts_messages.mts_error span {
+	background: transparent url(../../images/en/messageIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top left;
+	width: 22px !important;
+	margin-right: 5px;
+}
+.mts_messages.mts_success span {
+	background: transparent url(../../images/en/messageIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top right;
+	width: 22px !important;
+	margin-right: 5px;
+}
+.mts_messages p {
+	font-size: 12px;
+	margin-left: 5px;
+	line-height: 25px;
+	float: left;
+	width: 90%;
+}
+.mts_messages.mts_error p {
+	color: #b9031a;
+}
+.mts_messages.mts_success p#s_success {
+	color: #405b00;
+	font-weight: bold;
+}
+.mts_messages.mts_standard span {
+	display: none;
+}
+.mts_messages.mts_standard p {
+	color: #000;
+}
+.mts_messages p a {
+	color: #1a74ae;
+}
+.mts_ftrMsg {
+	width: 760px !important;
+	margin: 20px auto !important;
+}
+.mts_form_container {
+	overflow: auto;
+	width: 760px;
+	margin: 0 auto !important;
+}
+.mts_form_withdrawal_amount {
+	float:left;
+	width:90px;
+}
+.mts_btn {
+	background: transparent url(../../images/en/mts_greenBtn.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
+	width: 188px;
+	height: 26px !important;
+	display: block !important;
+	text-align: center;
+	line-height: 26px;
+	text-decoration: none;
+	font-size: 11px !important;
+	font-weight: bold;
+	color: #384f02 !important;
+	margin: 10px 0 0;
+}
+.mts_btn_disabled {
+	background: transparent url(../../images/en/mts_disabledButton.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
+	width: 188px;
+	height: 26px !important;
+	display: block !important;
+	text-align: center;
+	line-height: 26px;
+	text-decoration: none;
+	font-size: 11px !important;
+	font-weight: bold;
+	color: #666 !important;
+	margin: 10px 0 20px;
+}
+.mts_label_sub {
+	font-size: 10px;
+	color: #818382;
+}
+.mts_value_transferred {
+	font-weight: bold;
+	color: #346100;
+}
+.mts_table>ul {
+	width: 754px;
+	min-height: 159px;
+	background: transparent url(../../images/en/conditionsTableBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) top left no-repeat;
+	margin: 0px auto 5px;
+	padding: 1px 1px 0;
+}
+.transfersTableTitle {
+	margin: 0;
+	padding: 0;
+}
+.transfersTableHeader_leftBracket {
+	width: 9px;
+	height: 31px;
+	background: transparent url(../../images/en/transfersTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
+	float: left;
+}
+.transfersTableHeader_rightBracket {
+	width: 11px;
+	height: 31px;
+	background: transparent url(../../images/en/transfersTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0px !important;
+	float: left;
+}
+.transfersTable_BANK_CHQ_heading {
+	float: right;
+	overflow: hidden;
+	padding-right: 10px;
+}
+.transfersTable_title {
+	height: 31px;
+	background: transparent url(../../images/en/transfersTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px -31px !important;
+	float: left;
+	line-height: 30px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: -1px 1px 2px #000;
+	padding-left: 2px !important;
+	width: 732px;
+}
+.transfersTable_transferable,
+.transfersTable_bonus,
+.transfersTable_total {
+	background: transparent url(../../images/en/tableSubHeader_divider.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left bottom !important;
+}
+.transfersTableHeader {
+	border-bottom: 1px solid #f5f6f7;
+	height: 23px;
+	padding: 0;
+	background: #fefefe url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top left !important;
+}
+.transfersTableHeader div {
+	color: #264d64;
+	font-weight: bold;
+	height: 21px;
+	line-height: 21px;
+	border-bottom: 1px solid #aaaeb6;
+	border-top: 1px solid #e9edf0;
+	padding-left: 10px;
+	font-size: 11px;
+}
+.transfersTable_allocation, .transfersTableRow_allocation {
+	width: 190px;
+}
+.transfersTable_transferable, .transfersTableRow_transferable {
+	width: 151px;
+}
+.transfersTable_bonus, .transfersTableRow_bonus {
+	width: 153px;
+}
+.transfersTable_total {
+	width: 220px;
+}
+.transfersTableRow_total {
+	width: 187px;
+}
+
+.transfersTable_allocation, .transfersTable_transferable,
+.transfersTable_bonus, .transfersTable_total,
+.transfersTableRow_rightBracket, .transfersTableRow_leftBracket,
+.transfersTableRow_allocation, .transfersTableRow_transferable,
+.transfersTableRow_bonus, .transfersTableRow_total {
+	float: left;
+	height:19px;
+	line-height: 19px;
+}
+.transfersTableRow_allocation {
+
+}
+.transfersTableRow_transferable,
+.transfersTableRow_bonus,
+.transfersTableRow_total {
+	padding-left: 11px !important;
+}
+
+.transfersTableRow {
+	overflow:hidden;
+	clear: left;
+	margin: 0 11px 0 9px !important;
+}
+.transfersTableRow a:hover, .transfersTable_transferable a:hover {
+	color: #269EEC !important;
+	text-decoration: none !important;
+}
+.transfersTableRow a, .transfersTable_transferable a {
+	color: #1A74AE !important;
+	line-height: 24px;
+	text-decoration: underline !important;
+	font-weight:bold;
+}
+.transfersTableRow.lastRowItem {
+	border-bottom: 1px dotted #264d64;
+}
+div.tooltipGroup div.largeInput span {
+	width: 192px;
+	height: 20px;
+}
+.mts_form div.tooltipGroup .hint p {
+	display:block;
+	overflow:hidden;
+	position: relative;
+	float:left;
+	vertical-align:middle;
+	padding:4px 2px 3px 4px;
+	line-height:12px;
+	width:183px;
+	min-height:14px;
+}
+.mts_form div.tooltipGroup .hint.m p {
+	width:284px;
+}
+.mts_form div.tooltipGroup .hint.l p {
+	width:316px;
+}
+.mts_form div.tooltipGroup .hint.xl p {
+	width:255px;
+}
+.mts_form div.tooltipGroup .hint.s p {
+	width:358px;
+}
+.mts_form div.tooltipGroup .hint.info p {
+	background:url(../../images/en/hintInfo_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+.mts_form div.tooltipGroup .hint.suggest p {
+	background:url(../../images/en/hintSuggest_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+.mts_form div.tooltipGroup .hint.error p {
+	background:url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+.mts_form div.tooltipGroup .hint.error p {
+	background:url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+.mts_form div.tooltipGroup .hint.success p {
+	background:url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -40px top;
+	height:14px;
+	width:14px;
+	padding:0;
+	margin:4px 0 0 4px;
+}
+.mts_form label.label {
+	width:94%;
+	float: left;
+	color:#015f8e;
+	margin-top:7px;
+	margin-bottom: 1px;
+	text-align: left;
+}
+.mts_form input {
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:0;
+	border:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	overflow:hidden;
+	background:none;
+	position: relative;
+	z-index: 4;
+}
+.mts_form .tinyInput,
+.mts_form .smallInput,
+.mts_form .midInput,
+.mts_form .largeInput {
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:3px 4px;
+	overflow:hidden;
+}
+.mts_form. largeInput {
+	width:192px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+.mts_form .largeInput input {
+	width:192px;
+}
+.mts_form .midInput {
+	width:180px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+}
+.mts_form .midInput input {
+	width:180px;
+}
+.mts_form .submitGreen {
+	position:relative;
+	float:left;
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+	color: #354a02;
+	border: none;
+	display: inline-block;
+	font-size: 11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 0;
+	vertical-align: middle;
+	cursor:pointer;
+	width: 188px;
+}
+.mts_form .submitGreen:hover {
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+	color: #4561031;
+}
+.mts_form .submitDisable {
+	position:relative;
+	float:left;
+	background:transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px;
+	color:#93969c;
+	border:none;
+	display:inline-block;
+	font-size:11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	height: 26px;
+	line-height: 26px;
+	margin: 10px 0 0;
+	padding: 0 0 4px 20px;
+	vertical-align: middle;
+	cursor:auto;
+	width: 188px;
+	text-align:center;
+}
+.mts_form .smallInput {
+	width:91px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -40px;
+}
+.mts_form .smallInput input {
+	width:91px;
+}
+
+.mts_form .tinyInput {
+	width:76px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -164px;
+	z-index: 4 !important;
+	position: absolute;
+}
+.mts_form .tinyInput input {
+	width:76px;
+}
+.mts_form .transfersTable_allocation div.tooltipGroup .hint {
+	display: block;
+	left: 2px;
+	bottom: -1px;
+	overflow: hidden;
+	position: absolute;
+	vertical-align: middle;
+	height: auto;
+	min-height: 21px;
+	max-height: 31px;
+	padding-bottom: 1px;
+	z-index:1;
+	padding-left: 96px;
+	width: 265px;
+}
+.dsDetails_reverse_row {
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 1px dotted #aaaeb6 !important;
+}
+.dsDetails_reverse_label {
+	float: left;
+	color: #005580;
+	width: 132px;
+}
+.dsDetails_reverse_amount {
+	float: left;
+}
+#edit_pay_mthd_link {
+	border-bottom: 1px solid #1a74ae;
+	float: left;
+	height: 15px;
+	line-height: 19px;
+	margin-left: 10px;
+	text-decoration: none !important;
+	background: transparent url(../../images/en/updateCardImg.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0 4px no-repeat;
+	padding-left: 14px;
+}
+#add_pay_mthd_link {
+	border-bottom: 1px solid #1a74ae;
+	float: left;
+	height: 15px;
+	line-height: 19px;
+	margin-left: 10px;
+	text-decoration: none !important;
+	background: transparent url(../../images/en/addAnotherImg.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0 5px no-repeat;
+	padding-left: 10px;
+}
+.hidden_block {
+	display: none;
+}
+.mts_container #sbErrorBoxWarning {
+	margin: 0px auto 30px;
+	width: 761px;
+}
+.mts_container #sbErrorBoxWarning .top {
+	background: transparent url(../../images/en/warningMsgSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0px 0px no-repeat;
+	width: 761px;
+	height: 12px;
+}
+.mts_container #sbErrorBoxWarning .greeting {
+	text-align: center;
+	margin-bottom: 5px !important;
+}
+.mts_container #sbErrorBoxWarning .main {
+	background-color: #F4F6F8;
+	border-left: 1px solid #C3C9CD;
+	border-right: 1px solid #C3C9CD;
+	padding: 0px 10px;
+}
+.mts_container #sbErrorBoxWarning .main .buttons {
+	text-align: center;
+}
+.mts_container #sbErrorBoxWarning .main .buttons a {
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 -112px transparent;
+	color: #294457;
+	display: inline-block;
+	font-weight: bold;
+	height: 26px;
+	line-height: 25px;
+	margin-left: 5px;
+	width: 200px;
+	zoom: 1;
+}
+.mts_container #sbErrorBoxWarning .bottom {
+	background: transparent url(../../images/en/warningMsgSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0px -12px no-repeat;
+	width: 761px;
+	height: 12px;
+}
+.mts_container #overlayHeader {
+	width: 764px !important;
+}
+.mts_container #overlayHeader #overlayFunc {
+	width: 238px !important;
+}
+#interstitialLogin {
+	width: 556px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -274px 0 0 -228px;
+	z-index: 100011;
+	display: block;
+}
+
+#ils_headerbar {
+	float: left;
+	width: 536px;
+	height: 27px;
+	background:url(../../images/en/overlay_TM.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;
+	text-shadow: #E3E3E6 1px 1px;
+	font-weight: bold;
+	line-height: 27px;
+	font-size: 11px;
+	color: #264d64;
+}
+#ils_headerbar a {
+	float: right;
+	text-decoration: none;
+	color: #264d64;
+}
+#ils_headerbar a.ils_header_help {
+	margin-right: 7px;
+	padding-right: 7px;
+	background: transparent url(../../images/en/headerLinksDivider.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right center;
+}
+#ils_contents {
+	width: 554px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	background: #fff url(../../images/en/ilsBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top left;
+	float: left;
+	overflow: auto;
+	padding: 0 0 27px;
+}
+
+#ils_messages {
+	color: #B9031A;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 16px;
+	margin: 4px 0 10px 12px;
+	overflow: auto;
+}
+#ils_messages span {
+	width: 22px;
+	height: 28px;
+	display: block;
+	float: left;
+	clear: left;
+	margin-right: 5px;
+}
+#ils_messages span.ils_error {
+	background: transparent url(../../images/en/messageIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top left;
+}
+#ils_messages p a {
+	color: #1a74ae;
+}
+
+#ils_loginScreens {
+	width: 532px;
+	margin: 0px auto;
+}
+.ils_loginHDR, .ils_loginFTR {
+	width: 532px;
+	height: 12px;
+}
+.ils_loginHDR {
+	background: transparent url(../../images/en/loginSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px;
+}
+.ils_loginFTR {
+	background: transparent url(../../images/en/loginSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -12px;
+	margin-bottom: 20px;
+}
+#ils_login, #ils_password {
+	width: 510px;
+	padding: 0 10px;
+	border-left: 1px solid #c0c6ca;
+	border-right: 1px solid #c0c6ca;
+	background-color: #f4f6f8;
+	overflow: hidden;
+}
+#ils_loginForm, #ils_password {
+	font-size: 11px;
+}
+.ils_login_title, .ils_password_title {
+	color: #264d64;
+	font-weight: bold;
+	font-size: 12px;
+}
+#ils_loginForm label, #registration label {
+	width:100%;
+	float: left;
+	margin-top:7px;
+	text-align: left;
+}
+#ils_loginForm .tooltipGroup span label {
+	margin-top: 0 !important;
+}
+
+#ils_loginForm #remember_link {color: #1a74ae !important; text-decoration:underline;}
+#ils_loginForm #remember_link:hover {color: #269eec !important;}
+
+.ils_username_label, .ils_oldPassword_label {color: #025581;}
+.ils_password_label, .ils_newPassword_label {color: #005683;}
+.ils_remember_label, .ils_confirmPassword_label {color: #264d64;}
+.ils_captcha_label {color: #005080;}
+.ils_loginLostDetails a {color: #1a74ae;}
+
+.ils_btnHolder {
+	float: left;
+	width: 519px;
+}
+.ils_btnHolder input {
+	width: 188px;
+	height: 26px !important;
+	background: transparent url(../../images/en/loginBtn.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
+	margin: 10px 10px 10px 0;
+	cursor: pointer;
+	border: 0;
+	font-weight: bold;
+	color: #04364F;
+}
+.ils_btnHolder input:hover {
+	background-position: 0px -26px;
+}
+.ils_btnHolder input[disabled] {
+	cursor: default;
+	background: transparent url(../../images/en/disabledButton.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
+}
+.ils_btnHolder .ils_loginLostDetails {
+	background: transparent url(../../images/en/dividingBar.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 10px;
+	float: left;
+	padding: 17px 0 17px 10px;
+	display: block;
+}
+#ils_loginForm .checkboxGroup {
+	margin-top: 10px;
+	overflow: auto;
+	float: left;
+}
+.checkboxGroup label {
+	float: left;
+	width: 350px !important;
+	margin-top: 2px !important;
+	margin-left: 7px;
+}
+#ils_newCustBanner {
+	position: relative;
+	width: 532px;
+	height: 138px;
+	margin: 0px auto;
+}
+#regNewAcctModalCanvas {
+	position: relative;
+	width: 532px;
+	height: 138px;
+	margin: 0px auto;
+}
+.HdrTL, .HdrTR, .HdrBL, .HdrBM, .HdrBR {
+	float:left;
+	overflow:hidden;
+}
+.HdrTL, .HdrTR {
+	height:27px;
+	width:10px;
+}
+.HdrBL, .HdrBR {
+	height:11px;
+	width:10px;
+}
+.HdrTL {
+	background:url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+.HdrTR {
+	background:url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0;
+}
+.HdrBL {
+background:url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -27px;
+}
+.HdrBM {
+	height:11px;
+	background:#fff;
+	width:536px;
+}
+.HdrBR {
+	background:url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px -27px;
+}
+.mts_table .transfersTable_allocation div.tooltipGroup {
+	display: block;
+	float: left;
+	height: 20px;
+	position: relative;
+	width: 322px;
+}
+div.tooltipGroup .hint {
+	display:block;
+	left:2px;
+	bottom:-1px;
+	overflow:hidden;
+	position: absolute;
+	vertical-align:middle;
+	height:auto;
+	min-height:21px;
+	max-height:31px;
+	width: 200px;
+	padding-bottom:1px;
+	z-index:1;
+}
+#ils_loginScreens .rightClmn div.tooltipGroup .hint, #ils_loginScreens div.tooltipGroup .hint {
+	padding-left: 198px;
+}
+#ils_loginScreens .leftClmn div.tooltipGroup .hint {
+	padding-left: 197px;
+}
+#ils_loginScreens div.tooltipGroup .hint.m {
+	width: 290px;
+	padding-left:96px;
+}
+#ils_loginScreens div.tooltipGroup .hint.l {
+	width: 322px;
+}
+#ils_loginScreens div.tooltipGroup .hint.xl {
+	width: 426px;
+	padding-left: 81px;
+}
+#ils_loginScreens div.tooltipGroup .hint.s {
+	width: 365px;
+	padding-left:142px;
+}
+#ils_loginScreens div.tooltipGroup .hint.info {
+	background:url(../../images/en/hintInfo_btm.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right bottom;
+}
+#ils_loginScreens div.tooltipGroup .hint.suggest {
+	background:url(../../images/en/hintSuggest_btm.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right bottom;
+}
+#ils_loginScreens div.tooltipGroup .hint.error {
+	background:url(../../images/en/hintError_btm.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right bottom;
+}
+#ils_loginScreens div.tooltipGroup .weak label#reg_password_msg_txt {
+	background:url(../../images/en/weakPass.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left 2px;
+	padding-left:15px;
+}
+#ils_loginScreens div.tooltipGroup .strong label#reg_password_msg_txt {
+	background:url(../../images/en/strongPass.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left 2px;
+	padding-left:15px;
+}
+#ils_loginScreens div.tooltipGroup .hint p {
+	display:block;
+	overflow:hidden;
+	position: relative;
+	float:left;
+	vertical-align:middle;
+	padding:4px 2px 3px 4px;
+	line-height:12px;
+	width:183px;
+	min-height:14px;
+}
+#ils_loginScreens div.tooltipGroup .hint.m p {
+	width:284px;
+}
+#ils_loginScreens div.tooltipGroup .hint.l p {
+	width:316px;
+}
+#ils_loginScreens div.tooltipGroup .hint.xl p {
+	width:420px;
+}
+#ils_loginScreens div.tooltipGroup .hint.s p {
+	width:358px;
+}
+#ils_loginScreens div.tooltipGroup .hint.info p {
+	background:url(../../images/en/hintInfo_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#ils_loginScreens div.tooltipGroup .hint.suggest p {
+	background:url(../../images/en/hintSuggest_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#ils_loginScreens div.tooltipGroup .hint.error p {
+	background:url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#ils_loginScreens div.tooltipGroup .hint.error p {
+	background:url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+}
+#ils_loginScreens div.tooltipGroup .hint.success p {
+	background:url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -40px top;
+	height:14px;
+	width:14px;
+	padding:0;
+	margin:4px 0 0 4px;
+}
+
+#interstitialLogin form .tooltipGroup input {
+	position: absolute !important;
+	z-index: 4 !important;
+}
+#ils_loginForm input, #registration input {
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:0;
+	border:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	overflow:hidden;
+	background:none;
+}
+
+#ils_loginForm .firstName,
+#ils_loginForm .surname,
+#ils_loginForm .tinyInput,
+#ils_loginForm .smallInput,
+#ils_loginForm .midInput,
+#ils_loginForm .largeInput,
+#registration .oldPassword,
+#registration .newPassword,
+#registration .confirmPassword,
+#registration .smallInput,
+#registration .midInput,
+#registration .largeInput{
+	float:left;
+	display:inline-block;
+	height:14px;
+	padding:3px 4px;
+	overflow:hidden;
+}
+#ils_loginForm .largeInput,
+#registration .largeInput{
+	width:192px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+#ils_loginForm .largeInput input,
+#registration .largeInput input{
+	width:192px;
+}
+#ils_loginForm .midInput, #registration .midInput {
+	width:180px;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+}
+#ils_loginForm .midInput input, #registration .midInput input {
+	width:180px;
+}
+#ils_loginForm .submitGreen {
+	position:relative;
+	float:left;
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+	color: #354a02;
+	border: none;
+	display: inline-block;
+	font-size: 11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 0;
+	vertical-align: middle;
+	cursor:pointer;
+	width: 188px;
+}
+#ils_loginForm .submitGreen:hover {
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+	color: #4561031;
+}
+#ils_loginForm .submitDisable {
+	position:relative;
+	float:left;
+	background:transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px;
+	color:#93969c;
+	border:none;
+	display:inline-block;
+	font-size:11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 20px;
+	vertical-align: middle;
+	cursor:auto;
+	width: 188px;
+	text-align:left;
+}
+.ils_termsReAccept {
+	width: 510px;
+	padding: 0 10px;
+	border-left: 1px solid #c0c6ca;
+	border-right: 1px solid #c0c6ca;
+	background-color: #f4f6f8;
+	overflow: auto;
+}
+.ils_termsReAcceptForm>p {
+	margin-bottom: 10px;
+	font-size: 11px;
+	color: #264d64;
+	width: 90%;
+}
+.ils_termsReAcceptForm input[type=submit] {
+	border: 0;
+}
+.ils_termsReAcceptForm input[type=submit][disabled=disabled] {
+	background: transparent url(../../images/en/disabledButton.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat !important;
+	cursor: default;
+}
+.ils_termsList {
+	margin-bottom: 10px;
+}
+.ils_termsList li {
+	overflow: auto;
+	margin-bottom: 5px;
+}
+
+.ils_termsList p {
+	float: left;
+	height: 15px;
+	color: #005683;
+	line-height: 15px;
+	padding-left: 6px;
+	font-size: 11px;
+}
+.ils_termsList p a {
+	color: #1a74ae;
+}
+#registration .tooltipGroup input {
+	position: absolute;
+	z-index: 2;
+}
+#registration div.tooltipGroup .hint {
+	padding-left: 200px;
+	}
+#registration .tooltipGroup span label {
+	margin-top: 0 !important;
+	padding: 0;
+}
+input[readonly="readonly"] {
+	color: #818384;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+.submitSuccess p {
+	font-weight: normal !important;
+}
+.regOverlay #overlayContainer .formContainer form .submitBtn_disabled {
+	position:relative;
+	float:left;
+	background: url(../../images/en/mts_disabledButton.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+	color: #354a02;
+	border: none;
+	display: inline-block;
+	font-size: 11px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 0;
+	vertical-align: middle;
+	cursor:pointer;
+	width: 188px;
+}
+#expire_msg {
+	color: #AD0018;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 46px;
+	margin-left: 5px;
+}
+.cardStatus_active, .cardStatus_expired {
+	background: none repeat scroll 0 0 transparent !important;
+	display: inline;
+	padding: 0 !important;
+	position: static !important;
+}
+.cardStatus_active { color: #156a02; }
+.cardStatus_expired { color: #aa021b; }
+.regOverlay #overlayContainer .formContainer #transactionDetails.depositComplete .formFooter {
+	background:url(../../images/en/line.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0 !important;
+}
+.regOverlay.deposit #overlayContainer #depositSuccessContainer #depositSuccessContent.reverseWtd_page {
+	margin-left: 27px !important;
+}
+.rmMthdConditionssecondOverlayCtnt .formFooter {
+	background: none !important;
+}
+.formFooter #backButton {
+	background: transparent url(../../images/en/actionSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 11px !important;
+	color: #1A74AE !important;
+	width: 64px !important;
+	padding-left: 18px !important;
+	margin-right: 20px !important;
+	margin-left: 103px !important;
+}
+.formFooter a.cancelBtn {
+        font-size: 12px;
+        font-weight: bold;
+        color: #1a74ae !important;
+        padding-left: 16px;
+        background: transparent url(../../images/en/actionSprites.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 1px;
+        text-decoration: none;
+	display: block;
+}
+#mep_container {
+	width: 996px;
+	height: 549px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -275px 0 0 -498px;
+	z-index: 100011;
+}
+#mep_container .HdrBM {
+	width: 976px !important;
+}
+#mep_headerBar {
+	background: url(../../images/en/overlay_TM.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px 0px;
+	color: #264D64;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	height: 27px;
+	line-height: 27px;
+	text-shadow: #E3E3E6 1px 1px;
+	width: 976px;
+}
+#mep_headerBar a {
+	color: #264D64;
+	float: right;
+	text-decoration: none;
+}
+#mep_content {
+	background: #fff url(../../images/en/mtsBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0% 0%;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	float: left;
+	overflow: auto;
+	width: 994px;
+	position: relative;
+	height: 511px;
+}
+.mep_errorDetail {
+	width: 532px;
+	height: 292px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -146px 0 0 -266px;
+	background: transparent url(../../images/en/errorBG.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top left;
+	text-align: center;
+}
+.mep_errorDetail h1 {
+	color: #e01e22;
+	font-size: 36px;
+	font-style: italic;
+	margin: 36px 0 0;
+	padding: 0;
+}
+.mep_subTitle {
+	color: #264d64;
+	font-size: 16px;
+	font-style: italic;
+	margin: 10px 0 0;
+}
+.mep_subHeader {
+	color: #264d64;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 53px 0 0;
+}
+.mep_error_link {
+	color: #1b74ac;
+	font-size: 18px;
+	margin: 5px;
+	line-height: 26px;
+}
+#secondOverlayCtnt .formFooter {
+	width: 528px;
+	padding-top: 5px;
+	background: url(../../images/en/line.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0 transparent !important
+}
+#secondOverlayCtnt .leftClmn #overlay_span_issue_num {
+	position: relative;
+	z-index: 1;
+}
+.cvv2_msg_label {
+	display:block;
+	width:248px;
+	float:left;
+}
+.cvv2_msg_image {
+	float:left;
+	margin:1px 0 0 5px;
+}
+#ils_loginForm #submit_button.submitDisable{
+	position: relative;
+	float: left;
+	background: transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px !important;
+	color: #93969C;
+	border: none;
+	display: inline-block;
+	font-size: 11px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	height: 26px;
+	line-height: 26px;
+	margin: 10px 0 0 0;
+	padding: 0 0 4px 20px;
+	vertical-align: middle;
+	cursor: auto;
+	width: 188px;
+	text-align: left;
+}
+#rmv_submitButton[disabled] {
+	background: transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px !important;
+	position: relative;
+	float: left;
+	color: #93969C;
+	border: none;
+	display: inline-block;
+	font-size: 11px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 20px;
+	vertical-align: middle;
+	cursor: auto;
+	width: 188px;
+	text-align: left;
+}
+.regOverlay #overlayContainer .formContainer form #wtdSubmit.submitBtn_disabled {
+	color: #6a6a6a !important;
+}
+.termsAbs .inlineLabel a {
+	text-decoration: underline !important;
+}
+.tooltipGroup a.reg_it_manual {
+	position: relative;
+	top: 4px;
+	left: 20px;
+	text-decoration: underline !important;
+}
+.tooltipGroup .hint label a {
+	text-decoration: underline !important;
+}
+.twoColumnWrapper {
+	height: 50px;
+	position: relative;
+	width: 100%;
+}
+.lblDDL {
+	left: 97px;
+}
+.regForm .label.lblDDL {
+	width: 50% !important;
+}
+.twoColumnWrapper .label {
+	float: none !important;
+	width: 25% !important;
+	position: absolute;
+	top: 0;
+}
+.twoColumnWrapper .tooltipGroup {
+	float: none !important;
+	width: 25% !important;
+	position: absolute !important;
+	top: 25px !important;
+}
+.twoColumnWrapper #sWrapper_ccy_code {
+	width: 62px;
+}
+.twoColumnWrapper #sWrapper_max_deposit_day {
+	width: 62px;
+}
+.twoColumnWrapper .jqTransformSelectWrapper {
+	width: 91px !important;
+}
+.tooltipGroup.ttgDDL {
+	left: 97px;
+}
+.ttgDDL a#whatIsThisURL span.whatIsThis {
+	position: absolute;
+	top: -21px;
+	left: 125px;
+}
+#whatIsThisURL.regHighIndex span.whatIsThis {
+	z-index : 2
+}
+
+#ddl{
+	padding-left: 105px !important;
+}
+
+.regOverlay #overlayContainer .formContainer form #ddl p label a{
+	color: #1a20ae !important;
+}
+
+.tooltipGroup.ttgDDL{
+	left: 80px;
+}
+
+.lblDDL{
+	left: 80px;
+}
+
+
+a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText a {text-decoration:underline !important;}
+.reg_italiaAddress {display:block; margin-top:5px !important;}
+.reg_checkBox {height: 13px; margin: 0; padding: 0; position: relative; vertical-align: bottom; width: 23px; display: block;}
+.reg_boxLabel {display:block; float:left; margin: 3px 5px 0 5px; line-height: 14px;}
+.regOverlay.deposit #overlayContainer .submitMessageContainer span#s_success {
+	width: 500px;
+}
+.regOverlay.deposit #overlayContainer #depositSuccessContainer #depositSuccessContent.reverseWtd_page #transactionDetails {
+	margin-left: 0 !important;
+}
+.regOverlay.deposit #overlayContainer #depositSuccessContainer #backToSiteBtn.reverseWtd_page {
+	margin-left: 27px !important;
+}
+.regOverlay form .xferDisable {
+	background: transparent url(../../images/en/disabledButton.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
+	border: medium none;
+	color: #999;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	height: 26px;
+	margin: 10px 0;
+	padding: 0 0 4px;
+	position: relative;
+	vertical-align: middle;
+	width: 188px;
+}
+#depositSuccessContent.reverseWtd_page .dsDetails_reverse_row {
+	border-bottom: 0 !important;
+}
+#paymentMethodsContainer #paymentMethodsContent .redirectPage {
+	height: 346px;
+}
+.email_obfuscated {
+	display: none !important;
+}
+#secondOverlayCtnt.rmMthdConditionssecondOverlayCtnt .formContainer .formFooter {
+	width: 757px;
+}
+.radio_gender_container .reg_boxLabel {
+	width: 83px;
+}
+.msg_obfuscated {
+	display: none;
+}
+.edit_link_under_logo {
+	display: block;
+	width: 100%;
+	margin-bottom: 12px !important;
+}
+.edit_link_under_logo a {
+	margin-left: 0 !important;
+	clear: right;
+}
+#ils_messages .login_error_message_text {
+	width: 400px;
+	float: left;
+	margin: 0 0 0 5px;
+}
+#ils_messages .login_error_message_liveChat {
+	float: left;
+	display: block;
+	background: url(https://secdn.williamhill.com/core/ob/static/cust/images/en/chatLink.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+	padding-left: 24px;
+	margin: 0;
+}
+.langEE .regOverlay .leftClmn #gender_msg.hint.info {
+	padding-left: 97px !important;
+	width: 289px !important;
+	bottom: 0px !important;
+}
+.langEE .regOverlay .leftClmn #gender_msg.hint.info p {
+	width: 283px !important;
+}
+.langEE .rightClmn #reg_postcode #postcode_msg {
+	width: 278px !important;
+}
+.langEN #formFooter_remove .rightClmn input.submitDisable {
+	background-position: 44px 3px !important;
+	text-align: center !important;
+}
+.langIT .rightClmn #doc_day_msg {
+	padding-left: 196px !important;
+	width: 178px !important;
+}
+.langIT .regOverlay #overlayContainer .submitMessageContainer span.submitError {
+	height: 30px !important;
+}
+
+#contentHolder {
+	border-right: none;
+	border-style: none;
+	border-width: 0;
+	border: none !important;
+	margin: 0;
+	padding: 0;
+}
+#overlayDiv .regModalIe7OverlayCtnt,
+#overlayDiv .regModalOverlayCtnt {
+	border:none !important;
+}
+.formFooter .rightClmn input {
+	background: transparent url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -362px !important;
+	width: 180px !important;
+}
+.formFooter .rightClmn input:hover {
+	background-position: 0px -388px !important;
+}
+#reg_back_btn {
+	float: left;
+}
+.formFooter .rightClmn input {
+	margin-right: 5px !important;
+}
+
+/* -----[ General styling ]-------------------------------------------------- */
+
+.mts_container #overlayHeader #overlayFunc {
+	overflow: hidden;
+}
+.mts_container #overlayHeader #overlayFunc li {
+	overflow: hidden;
+	float: left;
+	word-break: break-all;
+}
+
+/* Buttons */
+.regOverlay.withdraw .submitGreen {
+	position: relative;
+	float: left;
+	display: inline-block;
+	width: 188px;
+	height: 26px;
+	margin: 0;
+	padding: 0 0 4px 0;
+	font-size: 11px;
+	color: #354a02;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	line-height: 26px;
+	vertical-align: middle;
+	cursor: pointer;
+	border: none;
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+}
+.regOverlay.withdraw .submitGreen:hover {
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+	color: #4561031;
+}
+.regOverlay.withdraw .submitGreen:disabled {
+	cursor: auto;
+	background: url(../../images/en/inputsDisabled.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+}
+.regOverlay.withdraw .submitGreen:disabled:hover {
+	cursor: auto;
+	background: url(../../images/en/inputsDisabled.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+}
+.regOverlay.withdraw .submitBlue {
+	float:left;
+	clear:both;
+	display:block;
+	width:200px;
+	height:26px;
+	margin-bottom:40px;
+	color:#2d4456;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight:bold;
+	line-height:24px;
+	text-align: center;
+	text-decoration: none !important;
+	vertical-align:middle;
+	cursor: pointer;
+	border: none;
+	background:url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -112px;
+}
+.regOverlay.withdraw .submitBlue:hover {
+	background-position: 0 -138px;
+}
+.regOverlay.withdraw .submitGray:focus {
+	outline: thin dotted;
+	margin: 6px 0 0 1px; 
+}
+
+/* Icons */
+.regOverlay .icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	margin-top: 1px;
+	line-height: 16px;
+	vertical-align: text-top;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.regOverlay .icon-small {
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	margin: 0;
+}
+.regOverlay .icon-update {
+	background: transparent url(../../images/en/updateCardImg.png?ver=10302352b9cca8d374b2c95e0ccf157d) 2px 0px no-repeat;
+}
+.regOverlay .icon-email-details {
+	background: transparent url(../../images/en/icon-envelope.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0 -1px no-repeat scroll;
+	padding-left: 2px;
+}
+.regOverlay .icon-print-screen {
+	background: transparent url(../../images/en/icon-print-screen.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0 -2px no-repeat scroll;
+	padding-left: 2px;
+}
+.regOverlay .icon-help {
+	background: transparent url(../../images/en/helpIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0 -1px no-repeat;
+}
+.regOverlay .icon-accept {
+	background: transparent url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) -40px 0 no-repeat;
+}
+
+/* -----[ Head styling ]----------------------------------------------------- */
+
+/* Common */
+.regOverlay.withdraw .mts_contents {
+	overflow: hidden;
+}
+.regOverlay.withdraw .mts_contents #mts_content {
+	overflow: hidden;
+}
+
+
+/* Messages */
+.regOverlay.withdraw .mts_messages {
+	float: left;
+	width: 600px;
+	margin-right: 0;
+}
+.regOverlay.withdraw .mts_messages p {
+	float: left;
+	line-height: 1.2em;
+}
+.regOverlay.withdraw .mts_messages .messages {
+	width: 625px;
+	line-height: 1.4em;
+}
+
+
+/* Account info */
+.regOverlay.withdraw .accountInfo {
+	overflow: hidden;
+	float: right;
+	text-align: left;
+	width: 140px;
+	margin: 5px 10px 0 0;
+}
+.regOverlay.withdraw .accountInfo .guidanceText {
+	overflow: hidden;
+	width: auto;
+	float: right;
+	text-align: right;
+}
+.regOverlay.withdraw .accountInfo .guidanceText span {
+	float: none;
+	display: inline-block;
+	clear: none !important;
+	width: auto;
+	height: auto;
+}
+.regOverlay.withdraw .accountInfo .guidanceText .accountDetails {
+	padding-left: 5px;
+}
+.regOverlay.withdraw .accountInfo .boldLabel {
+	color: #005580;
+}
+
+
+/* Check withdrawal details form */
+.regOverlay.withdraw .mts_form_container {
+	overflow: hidden;
+	height: auto;
+	padding-bottom: 10px;
+}
+.regOverlay.withdraw .mts_form_container .mts_form {
+	float: left;
+	width: 590px;
+}
+.regOverlay.withdraw .mts_form_container .mts_form .tooltipGroup .tinyInput {
+	overflow: hidden;
+	float: left;
+	width: 188px;
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+}
+.regOverlay.withdraw .mts_form_container .mts_form .tooltipGroup .tinyInput input {
+	width: 180px;
+}
+.regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint {
+	left: 188px;
+}
+.regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint a {
+	text-decoration: none !important;
+}
+.regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint p {
+	overflow: hidden;
+}
+.regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint.xl {
+	width: 390px;
+}
+.regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint.xl p {
+	/*width: 395px;*/
+}
+.regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint label {
+	float: left;
+	padding-left: 0 !important;
+}
+.regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint.success p {
+	height:14px;
+	width:14px;
+	padding:0;
+	margin:4px 0 0 4px;
+}
+.regOverlay.withdraw .mts_form_container .mts_form .submitGray {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	display: inline-block;
+	width: 188px;
+	height: 22px;
+	margin: 6px 0 0;
+	padding: 0;
+	font-size: 11px;
+	color: #47505f;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	line-height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+	border: none;
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -318px;
+}
+
+
+/* Help links */
+.regOverlay.withdraw .mts_form_container .helpLinks {
+	overflow: hidden;
+	float: right;
+	width: 166px;
+	padding: 0 0 0px;
+}
+.regOverlay.withdraw .mts_form_container .helpLinks li {
+	display: block;
+	height: 20px;
+	padding: 3px 0;
+	margin-bottom: 3px;
+	line-height: 24px;
+	border-bottom: 1px dotted #8ec3e3;
+}
+.regOverlay.withdraw .mts_form_container .helpLinks li a {
+	overflow: hidden;
+	display: block;
+	height: 19px;
+	padding-left: 25px !important;
+	color: #000 !important;
+	text-decoration: none;
+	border: none !important;
+}
+.regOverlay.withdraw .mts_form_container .helpLinks li a.phoneHelp {
+	background: url(../../images/en/helpIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+	height: 19px;
+}
+.regOverlay.withdraw .mts_form_container .helpLinks li a.emailHelp {
+	background: url(../../images/en/helpIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -19px;
+	height: 20px;
+}
+.regOverlay.withdraw .mts_form_container .helpLinks li a.chatHelp {
+	background: url(../../images/en/helpIcons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -39px;
+	height: 19px;
+}
+.regOverlay.withdraw .mts_form_container .helpLinks li a:hover {
+	color:#269eec !important;
+}
+
+
+/* -----[ Table styling ]---------------------------------------------------- */
+
+.regOverlay.withdraw .mts_table .transfersTableTitle .transferTableHeader_leftBracket {
+	float: left;
+	width: 10px;
+}
+.regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_transferable {
+	float: left;
+	width: 250px;
+	padding-left: 10px;
+	border-left: none;
+	border-right: 1px solid #e9e9e9;
+	background: url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0 !important;
+}
+.regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_allocation {
+	float:left;
+	width: 472px;
+	padding-right: 10px;
+	border-left: 1px solid #c9cacd;
+	background: url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;
+}
+.regOverlay.withdraw .mts_table .transfersTableHeader .methodLink {
+	float: right;
+	margin-right: 10px;
+	color: #1b74b0;
+	text-decoration: underline;
+}
+.regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_methods {
+	float: left;
+	width: 398px;
+	border-right: 1px solid #e9e9e9;
+}
+.regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_amount {
+	float: left;
+	width: 68px;
+	border-right: 1px solid #e9e9e9;
+	border-left: 1px solid #c9cacd;
+}
+.regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_eta {
+	float: left;
+	width: 122px;
+	border-left: 1px solid #c9cacd;
+	border-right: 1px solid #e9e9e9;
+}
+.regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_reference {
+	float: left;
+	width: 120px;
+	border-left: 1px solid #c9cacd;
+	/*border-right: 1px solid #e9e9e9;*/
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_methods {
+	float: left;
+	line-height: 24px;
+	width: 400px;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_methods .tableDetailTextAlign {
+	margin-left: 10px;
+	line-height: 17px;
+	float: left;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_methods .ukshDetailsFloatLeft {
+        float: left;
+}
+.regOverlay.withdraw .mts_table .transfersTableROw .transfersTable_methods .shopLocatorAlign {
+	float: left;
+	clear: left;
+	margin-right: 10px;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_amount {
+	float: left;
+	width: 70px;
+	padding: 0 0 0 10px;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_eta {
+	float: left;
+	width: 104px;
+	padding: 0 10px;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_reference {
+	float: left;
+	padding: 0 10px 0 20px;
+	width: 91px;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_transferable {
+	width: 250px;
+	background: none !important;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_allocation {
+	width: 455px;
+	padding-left: 10px;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .formContainer #inputs {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+/* Bank Transfer & Cheque form */
+.regOverlay.withdraw .mts_table .transfersTableRow .formContainer .leftClmn,
+.regOverlay.withdraw .mts_table .transfersTableRow .formContainer .rightClmn {
+	width: 49.8%;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .formContainer .leftClmn {
+	float: left;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .formContainer .rightClmn {
+	float: right !important;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .formContainer label {
+	float: left;
+	clear: left;
+	margin-top: 3px;
+}
+.regOverlay.withdraw .mts_table .transfersTableRow .formContainer .tooltipGroup {
+	float: left;
+	margin-bottom: 1px;
+}
+.regOverlay.withdraw .mts_table .transferTable_total strong {
+	overflow: hidden;
+	float: left;
+	clear: left;
+	margin-bottom: 5px;
+}
+.regOverlay.withdraw .mts_table .transferTable_total .links {
+	float: left;
+	clear: left;
+}
+.regOverlay.withdraw .mts_table .transferTable_total .links a {
+	color: #1F77B0;
+	margin-right: 10px;
+	text-decoration: underline;
+}
+.regOverlay.withdraw .mts_table .transferTable_total .links a:hover {
+	text-decoration: none;
+}
+.regOverlay.withdraw .mts_table .transferTable_total .submitBlue {
+	margin-top: 20px;
+}
+.regOverlay.withdraw .mts_table .transferTable_total #wtdSubmit {
+	overflow: hidden;
+	clear: left;
+	float: left;
+	margin-left: 0 !important;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+}
+.regOverlay.withdraw .mts_table #acctInfoBox {
+	width: 724px;
+	margin: 0 11px 0 9px;
+	padding: 5px;
+	line-height: 1.4em;
+	background: #c5d2dc;
+}
+.regOverlay.withdraw .mts_table #acctInfoBox a {
+	color: #0174EC;
+	text-decoration: underline;
+}
+
+/* multiple methods */
+.regOverlay.withdraw .mts_table .innerContent {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 734px;
+	max-height: 144px !important;
+	margin: 0;
+	padding: 0 10px;
+	border: none;
+}
+.regOverlay.withdraw .mts_table .innerContent li {
+	overflow: hidden;
+	margin: 0 0 0 !important;
+}
+
+/* Email change overlay */
+#regModalFrame {
+	height: 1500px !important;
+}
+#secondOverlayDiv {
+	overflow: hidden;
+	top: -3px !important;
+}
+#secondOverlayDiv.editMthdsecondOverlayDiv {
+	height: 365px !important;
+}
+#secondOverlayDiv.warnMsgsecondOverlayDiv {
+	height: 440px !important;
+	top: 85px !important;
+	left: 113px !important;
+}
+#secondOverlayCtnt.warnMsgsecondOverlayCtnt {
+	background: url(../../images/en/overlayContent_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0 #FFFFFF !important;
+}
+#secondOverlayDiv.TnCsecondOverlayDiv {
+	height: 160px !important;
+	top: 225px !important;
+	left: 225px !important;
+}
+#secondOverlayCtnt.TnCsecondOverlayCtnt {
+	background: url(../../images/en/overlayContent_bg_smllr.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0 #FFFFFF !important;
+}
+#secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayCtnt {
+	background-position: 0 0 !important;
+}
+#secondOverlayTop {
+	width: 750px;
+}
+#secondOverlayCtnt {
+	background: url(../../images/en/overlayContent_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0 #FFFFFF;
+}
+#secondOverlayCtnt.editMthdsecondOverlayCtnt .formContainer {
+	width: 750px !important;
+}
+#secondOverlayCtnt.warnMsgsecondOverlayDiv .formContainer {
+	width: 750px !important;
+}
+#secondOverlayCtnt.warnMsgsecondOverlayDiv .formFooter .overlay_okBtn {
+	border: none;
+	color: #354A02;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Tahoma,Arial,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 0 4px 0;
+	position: relative;
+	vertical-align: middle;
+	width: 188px;
+	background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 -60px !important;
+	font-weight: bold;
+	text-decoration: none;
+	text-align:center;
+	float: left;
+}
+#secondOverlayBtm {
+	width: 750px;
+}
+#update_details {
+	overflow: hidden !important;
+	width: 750px !important;
+	font-size: 11px;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+#update_details a {
+	color: #1a74ae;
+}
+#update_details #email_link,
+#update_details #edit_email {
+	display: block;
+	padding: 12px 0 0;
+}
+#update_details #email_msg {
+	position: static !important;
+	overflow: hidden !important;
+	width: auto !important;
+	padding-left: 5px !important;
+}
+#update_details #email_msg.info {
+	background: #c1cdd7;
+}
+#update_details #email_msg.error {
+	background: #feb7b7;
+}
+#update_details #email_msg p {
+	overflow: hidden !important;
+	width: auto;
+}
+#update_details #email_link .icon-update {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 0;
+	line-height: 14px;
+	vertical-align: text-top;
+	background: transparent url(../../images/en/updateCardImg.png?ver=10302352b9cca8d374b2c95e0ccf157d) 3px 2px no-repeat;
+}
+#update_details #edit_email label {
+	float: left !important;
+	padding-top: 5px !important;
+}
+#update_details #edit_email input#email {
+	float: left !important;
+	width: 182px;
+	padding: 3px;
+	margin-left: 5px !important;
+	margin-right: 5px !important;
+	font-size: 11px;
+	border: none;
+	background: transparent url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+}
+#secondOverlayCtnt.editMthdsecondOverlayCtnt .formContainer .formFooter {
+	overflow: hidden;
+	width: 750px;
+}
+.update_email_success {
+	clear: left !important;
+	color: #405b00;
+	display: none;
+	float: left !important;
+	margin: 5px 0 !important;
+	overflow: hidden !important;
+}
+.update_email_failure {
+	clear: left !important;
+	color:#b90318;
+	display: none;
+	float: left !important;
+	margin: 5px 0 !important;
+	overflow: hidden !important;
+}
+#overlayContainer .formContainer #depositSuccessContainer #backToSiteBtn {
+	overflow: hidden !important;
+	float: left !important;
+	clear: left !important;
+	margin-top: 12px !important;
+}
+
+.regOverlay.withdraw .pmLogo {
+	float: left !important;
+	height: 24px !important;
+	margin: 0 6px 0 0 !important;
+	display: block !important;
+}
+
+.regOverlay.withdraw .paymentVisa {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px 0 transparent;
+	width:36px;
+}
+.regOverlay.withdraw .paymentMastercard, .regOverlay.withdraw .paymentMastercardD {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -72px transparent;
+	width:36px;
+}
+.regOverlay.withdraw .paymentMaestro {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -48px transparent;
+	width:36px;
+}
+.regOverlay.withdraw .paymentSolo {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -96px transparent;
+	width:22px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentLaser {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -120px transparent;
+	width:22px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentElectron {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -24px transparent;
+	width:36px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentBPNG {
+	background: url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -599px transparent;
+	width: 48px;
+}
+.regOverlay.withdraw .paymentIKSH {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px 0 transparent;
+	width:52px;
+	height:20px !important;
+}
+.regOverlay.withdraw .paymentUKSH {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -297px transparent;
+	width:70px;
+	height:13px !important;
+}
+.regOverlay.withdraw .paymentPaySafe {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -20px transparent;
+	width:97px;
+	height:19px !important;
+}
+.regOverlay.withdraw .paymentPaypal {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -38px transparent;
+	width:60px;
+	height:20px !important;
+}
+.regOverlay.withdraw .paymentNeteller {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -57px transparent;
+	width:73px;
+	height:14px !important;
+}
+.regOverlay.withdraw .paymentMoneyBookers {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -71px transparent;
+	width:82px;
+	height:15px !important;
+}
+.regOverlay.withdraw .paymentMoneyBookers1Tap {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -580px transparent;
+	width:96px;
+	height:20px !important;
+}
+.regOverlay.withdraw .paymentClick2Pay {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -86px transparent;
+	width:85px;
+	height:16px !important;
+}
+.regOverlay.withdraw .paymentClickAndBuy {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -102px transparent;
+	width:107px;
+	height:23px !important;
+}
+.regOverlay.withdraw .paymentQIWI {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -358px transparent;
+	width:42px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEP {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -144px transparent;
+	width:36px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentDC {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -168px transparent;
+	width:42px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentAMEX {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -382px transparent;
+	width:44px !important;
+	height:24px;
+}
+.regOverlay.withdraw .paymentENVO_SPEUR{
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -453px;
+	width:76px;
+	height:19px !important;
+}
+.regOverlay.withdraw .paymentENVO_SPUSD{
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -453px;
+	width:76px;
+	height:19px !important;
+}
+.regOverlay.withdraw .paymentEnvoyKAPO {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -334px transparent;
+	width:42px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyG2P {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -310px transparent;
+	width:44px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyUKSH {
+	background:url(../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0px -528px transparent;
+	width:172px;
+	height:20px !important;
+}
+.regOverlay.withdraw .paymentEnvoyCASHU {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px 0px transparent;
+	width:57px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyFNDSD {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -25px transparent;
+	width:97px;
+	height:17px !important;
+}
+.regOverlay.withdraw .paymentEnvoySPDCD {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -42px transparent;
+	width:85px;
+	height:20px !important;
+}
+.regOverlay.withdraw .paymentEnvoySPORO {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -62px transparent;
+	width:83px;
+	height:18px !important;
+}
+.regOverlay.withdraw .paymentEnvoyTODIT {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -80px transparent;
+	width:85px;
+	height:20px !important;
+}
+.regOverlay.withdraw .paymentEnvoyWU {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -100px transparent;
+	width:87px;
+	height:25px !important;
+}
+.regOverlay.withdraw .paymentEnvoyMONET {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -109px transparent;
+	width:84px;
+	height:22px !important;
+}
+.regOverlay.withdraw .paymentEnvoyBLKSB {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -125px transparent;
+	width:110px;
+	height:25px !important;
+}
+.regOverlay.withdraw .paymentEnvoyINSTA {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -281px;
+	width:88px;
+	height:21px !important;
+}
+.regOverlay.withdraw .paymentEnvoyINSDB {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -150px transparent;
+	width:107px;
+	height:14px !important;
+}
+.regOverlay.withdraw .paymentEnvoyEUTLR {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -164px transparent;
+	width:83px;
+	height:22px !important;
+}
+.regOverlay.withdraw .paymentEnvoySOFCH {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -186px transparent;
+	width:75px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyUMBNK {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -210px transparent;
+	width:100px;
+	height:20px !important;
+}
+.regOverlay.withdraw .paymentEnvoyPOLI, .regOverlay.withdraw .paymentEnvoyPLINZ {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -371px transparent;
+	width:49px;
+	height:18px !important;
+}
+.regOverlay.withdraw .paymentEnvoyNORDE {
+	background:url(../../images/en/paymentIcons_secondary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -249px transparent;
+	width:86px;
+	height:21px !important;
+}
+.regOverlay.withdraw .paymentEnvoyWEBMO {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -64px transparent;
+	width:91px;
+	height:23px !important;
+}
+.regOverlay.withdraw .paymentEnvoyECARD {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -962px transparent;
+	width:22px;
+	height:25px !important;
+}
+.regOverlay.withdraw .paymentEnvoyCDIGI {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -637px transparent;
+	width:113px;
+	height:23px !important;
+}
+.regOverlay.withdraw .paymentEnvoyEPS {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -112px transparent;
+	width:31px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyGIROP {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -275px transparent;
+	width:53px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyNSURF {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -251px transparent;
+	width:52px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyENP24 {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -87px transparent;
+	width:69px;
+	height:25px !important;
+}
+.regOverlay.withdraw .paymentEnvoyEWRDK, .regOverlay.withdraw .paymentEnvoyEWRNO, .regOverlay.withdraw .paymentEnvoyEWRSK {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -46px transparent;
+	width:68px;
+	height:18px !important;
+}
+.regOverlay.withdraw .paymentEnvoyENIDL {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -98px transparent;
+	width:28px;
+	height:25px !important;
+}
+.regOverlay.withdraw .paymentEnvoyABAQS {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px 0px transparent;
+	width:78px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyBSANT {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -136px transparent;
+	width:94px;
+	height:21px !important;
+}
+.regOverlay.withdraw .paymentEnvoyBLETO {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -203px transparent;
+	width:42px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyMBANC {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -181px transparent;
+	width:95px;
+	height:22px !important;
+}
+.regOverlay.withdraw .paymentEnvoyTELEI {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -157px transparent;
+	width:117px;
+	height:24px !important;
+}
+.regOverlay.withdraw .paymentEnvoyENFBT {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -24px transparent;
+	width:73px;
+	height:22px !important;
+}
+.regOverlay.withdraw .paymentEnvoyMRCSH {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -114px -257px transparent;
+	width:39px;
+	height:25px !important;
+}
+.regOverlay.withdraw .paymentEnvoyEKONT {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -299px transparent;
+	width:43px;
+	height:25px !important;
+}
+.regOverlay.withdraw .paymentEnvoySOFEU {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -324px transparent;
+	width:99px;
+	height:28px !important;
+}
+.regOverlay.withdraw .paymentEnvoyBLKUN {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -352px transparent;
+	width:49px;
+	height:17px !important;
+}
+.regOverlay.withdraw .paymentEnvoyEPYV {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -371px transparent;
+	width:115px;
+	height:25px !important;
+}
+.regOverlay.withdraw .paymentBankTransfer, .regOverlay.withdraw .paymentBANK {
+	background:url(../../images/en/?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll -230px -371px transparent;
+	height:24px !important;
+}
+
+.regOverlay.withdraw .paymentENVO_PAYU {
+	background:url(../../images/en/paymentIcons_tertiary.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -114px -431px;
+	width:85px;
+	height:18px !important;
+}
+
+
+#optional_total_msg_txt {
+	color: red;
+	display: block;
+	padding: 2px 0 0 0;
+	text-align: center;
+}
+
+div.tooltipGroup select {
+	position: relative;
+	z-index: 10;
+}
+
+.regOverlay #nationality, #country_province, #fiscal_region, #provin_nascita, #comune_nascita_dropdown,
+#doc_type, #doc_authority, #spa_doc_type {
+	width: 187px;
+}
+
+.regOverlay #challenge_1 {
+	width: 187px;
+}
+
+.langIT #challenge_1, #addr_region, #addr_city_dropdown {
+	width: 199px;
+}
+
+.large_single #dob_day, #dob_year {width: 55px;}
+.large_single #dob_month {width: 90px;}
+#country_code, #country_province, #fiscal_region { width: 200px; }
+.large_single #ccy_code {width: 87px;}
+.large_single #challenge_1 {width: 187px; }
+
+input#acceptTerms, input#keepInformed { float: left; width: 20px; display: inline; }
+
+.inlineLabel { width: 338px !important; }
+
+#dbt_card_no, #credit_card_no { width: 182px; }
+
+#expiry_month, #start_month {
+	width: 87px;
+}
+
+#overlay_expiry_month, #overlay_start_month { width: 82px; }
+
+#transFrom, #transTo { width: 187px;}
+
+#remember_me { width: 15px; }
+
+#gender {
+	width: 99px;
+}
+input#gender {
+	width: 15px;
+}
+.radio_gender_container .reg_boxLabel {
+	width: 78px;
+}
+.langIT #doc_day {
+	width: 66px;
+}
+.langIT #doc_month {
+	width: 71px;
+}
+
+input#acceptTerms, input#keepInformed, input#acceptPrivPolicy, input#keepInformedOut {
+	float: left;
+	width: 20px;
+	display: inline;
+}
+.langIT #dob_month {
+	width: 67px;
+}
+.ils_termsList input {
+	width: 12px;
+}
+
+
+/* WHO 21 Jan 2013*/
+#ils_headerbar h1.WHlogo ,#overlayHeader h1.WHlogo{
+	display: none;
+}
+/* EOF WHO 21 Jan 2013*/
+
+.infoBox.redirectPage {
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        margin: -48px 0pt 0pt -301px;
+        z-index: 999999;
+}
+
+a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
+	padding-left: 108px !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	select:focus {
+		outline: thin dotted;
+	}
+}
+
+.regOverlay #overlayContainer .regNotificationContainer span {
+  font-size: 12px;
+  height: 24px;
+  padding: 4px 0 0 0;
+  font-weight:normal
+}
+
+.paypal-reg-icon {
+	background: url("../../images/en/paymentIcons_primary.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll -230px -39px;
+	display: block;
+	height: 18px;
+	line-height: 18px;
+	padding-left: 68px;
+}
+
+.regOverlay #overlayContainer .formContainer form .PCF2014{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+.regOverlay #overlayContainer .formContainer form .PCF2014 .checkboxDiv{
+    width: 100%;
+}
+.regOverlay #overlayContainer .formContainer form .PCF2014 .checkboxDiv input{
+    float: left;
+    width: 20px;
+    display: inline;
+}
+.regOverlay #overlayContainer .formContainer form .PCF2014 .checkboxDiv .locked{
+    width: 10px;
+    float: left;
+    margin: 2px 6px 2px 2px;
+}
+
+.regOverlay #overlayContainer .formContainer form .PCF2014 .checkboxDiv .PCF2014_accept_terms{
+    width: 460px !important;
+}
+
+
+.introMessage {
+	float: left;
+	display: block;
+	margin: 10px 0px;
+}
+

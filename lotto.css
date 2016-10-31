@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+/*
+	Copyright (c) 2008 Orbis Technology Ltd. All rights reserved.
+
+	Lotto CSS
+*/
+
+body#lottery_site #productsNav .sports{border-left: 1px solid #FFF;}
+
+body#lottery_site #productsNav ul li {border-left: 1px solid #181832;}
+body#lottery_site #productsNav li#productSelected{border-left: 1px solid #181832}
+
+body#lottery_site #productsNav a{border-bottom: 1px solid #1a1c35}
+
+body#lottery_site #productsNav li#productSelected{background: #006790; border-bottom: none}
+
+
+body#lottery_site #productsNav li#productSelected a{background: url(../../images/en/lotteryTabOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom repeat-x; border-bottom: none}
+
+
+body #subNavLotto {height: 3.6em; margin-left: 6px; margin-right: 6px; overflow: visible; position: static; text-align: center; padding-top: 1px; background: #00415b url(../../images/en/lottoSubNavBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) top repeat-x}
+
+
+
+#subNavLotto ul{background: none; border: none; padding: 4px 0 10px 23px; width: 960px; text-align: center; }
+#subNavLotto ul li{background: none; display: inline; margin-top: 5px; padding: 0; float: none; text-align: center}
+
+#subNavLotto ul li#subNavSelected{margin: 0; padding: 0; background: none}
+#subNavLotto ul li#subNavSelected a{border: 1px solid #001b2b; line-height: 20px; padding: 2px 16px 4px 16px; height: 1%; color: #FFF; background: #007bb6 url(../../images/en/gamesSubNavSelected.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) top repeat-x;}
+
+#subNavLotto ul li a{color: #FFF; padding: 3px 17px 5px 17px; margin: 0 15px 0 15px; background: none; display: inline}
+#subNavLotto ul li a:hover{text-decoration: underline;}
+
+
+/*-------------------------------------------------MAIN CONTENT----------------------------------*/
+
+body#lottery_site #contentCenter {background: #0c2739;}
+
+
+body#lottery_site #contentMain .curvesTop{
+	position: absolute; height: 3px; left: 0; background: url(../../images/en/gamesCurveTopRight.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top right no-repeat; margin: 0; top: 0; width: 964px
+}
+
+body#lottery_site #contentMain .curvesTop div{
+	background: url(../../images/en/gamesCurveTopLeft.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top left no-repeat; display: block; width: 3px; height: 3px; margin: 0px; line-height: 0
+}
+
+body#lottery_site #contentMain .curvesBottom{
+	position: absolute; height: 3px; left: 0; background: #FFF url(../../images/en/gamesCurveBottomRight.gif?ver=10302352b9cca8d374b2c95e0ccf157d) bottom right no-repeat; margin: 0; bottom: -1px; width: 964px; padding: 0; line-height: 0
+}
+
+body#lottery_site #contentMain .curvesBottom div{
+background: url(../../images/en/gamesCurveBottomLeft.gif?ver=10302352b9cca8d374b2c95e0ccf157d) bottom left no-repeat; display: block; width: 3px; height: 3px; line-height: 0; padding: 0; margin: 0;}
+
+
+body#lottery_site #contentHolder{border: 1px solid #FFF; margin: 0 6px 6px 6px; height: 1%;}
+
+body#lottery_site #contentHolder{background: #015071 url(../../images/en/lotteryContentHolderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;}
+
+body#lottery_site #contentHead{width: 966px; margin: 0px; color: #FFF; border: none; height: 74px; background: #002a3a url(../../images/en/lottoContentHeadBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) center top no-repeat; padding-left: 10px}
+
+body#lottery_site #contentHead #breadcrumb{display: none}
+
+body#lottery_site #contentHead h2{color: #FFF; padding: 11px 0 0 190px; font-size: 3.8em; background: url(../../images/en/lottoTitle.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 12px 15px no-repeat; letter-spacing: 0; text-indent: -2000px}
+
+
+body#lottery_site #contentHead.lotto h2{background: url(../../images/en/lottoTitle.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 12px 15px no-repeat;}
+body#lottery_site #contentHead.spanish h2{background: url(../../images/en/lottoSpanishTitle.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 12px 15px no-repeat}
+body#lottery_site #contentHead.irish h2{background: url(../../images/en/lottoIrishTitle.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 12px 15px no-repeat}
+body#lottery_site #contentHead.hongKong h2{background: url(../../images/en/lottoHongKongTitle.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 12px 15px no-repeat}
+body#lottery_site #contentHead.newYork h2{background: url(../../images/en/lottoNewYorkTitle.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 12px 15px no-repeat}
+body#lottery_site #contentHead.lotto49 h2{background: url(../../images/en/lotto49Title.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 12px 15px no-repeat}
+
+
+#contentHolder #contentHead #contentHeadText{
+position: absolute; right: 25px; top: 18px; width: 470px; height: 30px; color: #FFF; font-size: 1.2em
+}
+
+#contentHeadText p {float: left}
+
+body#lottery_site #contentHeadText p a{color: #61c0f0}
+
+#contentHeadText a.joinNow{background: url(../../images/en/gamingJoinNowBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) bottom no-repeat; display: block; width: 173px; height: 29px; text-align: center; font-size: 1.6em; text-decoration: none; padding: 6px 0 0 0; float: right}
+
+#contentHeadText a.joinNow:hover{background: url(../../images/en/gamingJoinNowBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) top no-repeat;text-decoration: underline;}
+
+#contentHead #nextDraw{
+	position: absolute;
+	padding-top: 8px;
+	font-size: 1.1em;
+	width: 500px;
+	right: 0px;
+	top: 0px;
+	text-align: right;
+	padding-right: 4px;
+	margin-top: 60px;
+	color: #FFF;
+}
+
+body#lottery_site #contentA.fullWidth{padding: 0; margin: 0;};
+
+
+body#lottery_site #contentA .lottoIntro{ border: 3px solid #0ea2e6; width: 948px}
+
+.lottoIntro ul{font-size: 1.1em; width: 550px; float: left; line-height: 16px; padding-top: 20px; padding-left: 15px}
+
+.lottoIntroRight{float: right; padding-top: 0px; padding-bottom: 10px; padding-top: 5px; width: 265px}
+
+#lottoContainer{
+	padding-bottom: 0
+}
+
+#lottoContainer h2{padding: 0; font-size: 1.8em; margin-left: 6px}
+#lottoContainer h3{padding: 0; font-size: 2.4em; margin-left: 6px; letter-spacing: 0}
+#lottoContainer p{font-size: 1.1em; padding-bottom: 20px; margin-left: 6px}
+
+#lottoSelector{
+	width: 315px;
+	margin-left: 0px;
+	float: left;
+}
+
+#lottoSelector h3{margin-bottom: 0}
+#lottoSelector p{padding-bottom: 8px}
+
+#lottoSelector ul li{clear: none; float: left; width: 42px; height: 42px; padding: 0; margin: 0; text-align: center; border-bottom:1px solid #FFF; border-right: 1px solid #FFF}
+
+
+#lottoSelector ul li a{font-size: 1.8em; padding-top: 9px; padding-bottom: 6px; height: 25px; width: 40px; display: block; color: #FFF; text-decoration: none; font-weight: bold; border: 1px solid #000}
+
+#lottoSelector.lottoSpanish ul li a{background: #c70704 url(../../images/en/lottoSelectorSpanish.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; border-color: #6b0000;}
+#lottoSelector.lottoSpanish ul li a:hover{background: #ff9500;}
+
+#lottoSelector.lottoIrish ul li a{background: #006a00 url(../../images/en/lottoSelectorIrish.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; border-color: #004800}
+#lottoSelector.lottoIrish ul li a:hover{background: #003a00;}
+
+#lottoSelector.lottoHongKong ul li a{background: #7a0c17 url(../../images/en/lottoSelectorHongKong.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; border-color: #000}
+#lottoSelector.lottoHongKong ul li a:hover{background: #000}
+
+#lottoSelector.lottoNewYork ul li a{background: #b81a00 url(../../images/en/lottoSelectorNewYork.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; border-color: #5f0301}
+#lottoSelector.lottoNewYork ul li a:hover{background: #1e458f}
+
+#lottoSelector.lotto49s ul li a{background: #243373 url(../../images/en/lottoSelector49.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; border-color: #012433}
+#lottoSelector.lotto49s ul li a:hover{background: #012433;}
+
+#lottoSelector ul li a.selectedNumber{background: #027cb7 url(../../images/en/lottoSelectorOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;  no-repeat;}
+
+#lottoSelector ul li a:hover{background: #027cb7 url(../../images/en/lottoSelectorOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; color: #FFF}
+
+
+body#lottery_site #contentA .tableData tr td{border-bottom: 1px solid #002131}
+
+
+#lottoNumbers{
+	width: 610px;
+	margin-left: 20px;
+	float: left;
+}
+
+#lottoNumbers h3{margin-bottom: 0}
+#lottoNumbers p{padding-bottom: 8px}
+
+
+
+#lottoNumbers .tableData{
+	width: 100%;
+	margin-left: 0;
+}
+
+body#lottery_site .tableData.tableLinks tr td{border-bottom: 1px solid #FFF}
+
+#lottoNumbers .tableData tr td{
+	padding-bottom: 2px;
+	height: 44px;
+}
+#lottoNumbers .tableData tr.selectedRow{background: #e5f6fd; color: #144471}
+
+#lottoNumbers .tableData tr.selectedRow a.lineSelectLink{text-decoration: none}
+
+#lottoNumbers .tableData tr.selectedRow input{border: 1px solid #144471}
+
+#lottoNumbers .checkbox{width: 13px; height: 13px; margin-right: 5px}
+
+#lottoNumbers .tableData td ul{margin: 0px; padding: 2px 0 0 0;}
+
+#lottoNumbers .tableData td ul li{clear: none; float: left; width: 36px; height: 23px; padding: 11px 0 2px 0; margin-right: 2px; text-align: center; background: #017bb7 url(../../images/en/lottoNumberBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x; border: 1px solid #002131; color: #FFF; font-size: 1.4em}
+
+#contaentA #lottoNumbers .tableData tr.noBorderLast td{border-bottom:none} 
+
+#lottoNumbers .tableData tr.selectedRow td ul li {background: #144471; color: #FFF}
+
+#lottoNumbers label{
+	padding-right: 4px;
+	float: none;
+	display: block
+}
+
+#lottoNumbers .tableData label{margin-left: 10px}
+
+#lottoNumbers .tableData .txtLabel{margin: 4px 0 0 0; float: left;}
+
+
+.lottoOptionsContainer{padding-top: 28px}
+
+body#lottery_site .tableData.tableLottoOptions label{padding: 0 0 2px 0px; font-size: 1em; font-weight: bold; margin: 0}
+
+body#lottery_site .tableData.tableLottoStake tr.noBorder td{height: 45px; border-bottom: none;}
+
+body#lottery_site .currency{
+	float: left; padding: 6px 2px 0 0; font-size: 1.1em;
+}
+
+body#lottery_site select#lottoSelect{width: 220px}
+body#lottery_site select#lottoWeek{width: 130px}
+body#lottery_site input#totalStake{width: 68px; margin-top: 3px; float: left; height: 14px}
+
+
+
+
+.lottoPlaceBetContainer{border-top: 1px solid #002131; clear: both; padding: 10px 0 20px 0; width: 946px;}
+.lottoPlaceBetContainer input{width: 160px; margin-top: 3px; float: right; font-size: 1.8em}
+
+
+
+
+
+.lottoList{text-align: left}
+
+body#lottery_site .tableData tr th{border: none; background: #3a9ed0 url(../../images/en/infoBlockHeadBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d)}
+body#lottery_site .tableData tr td{border-top: none; border-bottom: 1px solid #7bbfff;}
+
+body#lottery_site .tableData.tableLotto{width: 946px; margin-bottom: 0; border-bottom: 3px solid #0ea2e6}
+
+body#lottery_site .tableData.tableLotto .btn{width: 150px}
+
+body#lottery_site .tableData.tableLotto tr.noBorder td{border: none;}
+
+body#lottery_site .tableData.tableLotto h4{text-align: left; padding-top: 8px; font-size: 1.4em; padding-bottom: 0}
+
+ul.lottoPayout {width: 350px; margin-left: 5px}
+ul.lottoPayout li {border: 1px solid #89d1f0; margin-bottom: 1px; padding: 3px 0 3px 4px; height: 1%; overflow: auto; background: url(../../images/en/lottoPayoutBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x}
+ul.lottoPayout li span{float: left; padding-left: 8px; width:200px}
+ul.lottoPayout li p{float:right; text-align: left; width: 100px}
+
+body.langFR ul.lottoPayout li span{float: left; padding-left: 8px; width:220px}
+body.langFR ul.lottoPayout li p{float:right; text-align: left; width: 80px}
+
+a.lottoLogo{width: 180px; height: 140px; display: block; text-align: center; padding-bottom: 1px}
+
+ul.lottoList{padding: 10px 0;}
+ul.lottoList li{padding-left: 10px; background: url(../../images/en/homeContentBullet.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left 5px no-repeat;}
+
+
+#lottoError{
+	height: 16px;
+	color: red;
+	border: 2px solid red;
+	margin-top: 10px;
+	margin-bottom: 3px;
+	font-size: 1.1em;
+	text-align: left;
+	padding: 20px;
+	height: 1%;
+}
+
+#lottoError ul{
+	padding-left: 184px
+}
+tr.lottoErrorRow {background: #ffe0e5}
+tr.lottoErrorRow  td {border-bottom: 1px solid red; border-top: 1px solid red;}
+tr.lottoErrorRow  td input{border: 1px solid red}
+
+tr.lottoErrorRow  + tr td {border-top: none;}
+
+body#lottery_site #contentA .tableData tr.noBorder td{border: none; padding-bottom: 10px}
+

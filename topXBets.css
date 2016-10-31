@@ -1,0 +1,478 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+	Copyright (c) 2008 Orbis Technology Ltd. All rights reserved.
+
+	TOP X BETS CSS
+*/
+
+
+/* TOP X */
+
+-------------------------------------------------------------------------
+
+#topxhidebets {
+	float: right;
+	width: 75px;
+}
+#topxhidebets a {
+	font-size:11px;
+}
+#pricelabel {
+	float:left;
+	line-height:13px;
+	verticle-align:middle;
+	font-size: 11px;
+	margin-left: 9px;
+}
+#betsmallwrap {
+	width: 308px;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: visible;
+	float: left;
+}
+#betsmallform {
+	margin: 0px;
+	padding: 0px;
+	width: 308px;
+	overflow: visible;
+}
+.betsmallheader {
+	background-color: #FFFFFF;
+	height: 26px;
+}
+#topxcontentholder {
+	height: auto;
+	margin-top: 5px;
+	background-color: #F2F2F2;
+	display: block;
+	float: left;
+	width: 308px;
+}
+#titleblock {
+	position: relative;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	float: left;
+	width: 298px;
+}
+#titlecopy {
+	color:#000000;
+	display:inline;
+	float:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	width: 220px;
+}
+#hidebets {
+	display: inline;
+	float: right;
+	font-size: 11px;
+	text-decoration: none;
+}
+#pricesblock {
+	display:none;
+	font-size:12px;
+	height:auto;
+	margin-top:10px;
+	padding 0 10px;
+	float: left;
+	width: 288px;
+}
+.pricerow {
+	border-bottom:1px dotted #AAAAAA;
+	clear:left;
+	float:left;
+	height:20px;
+	line-height:20px;
+	margin:0px;
+	padding:0;
+	position:relative;
+	vertical-align:middle;
+	width:288px;
+}
+.betcopy {
+	display:inline;
+	float:left;
+	padding-left:3px;
+	position:relative;
+	text-align:left;
+	width:200px;
+}
+.betprice {
+	display:inline;
+	float:right;
+	padding-right:3px;
+	text-align:left;
+	width:60px;
+}
+#sliderwrap {
+	clear:both;
+	display:block;
+	height:60px;
+	left:0;
+	margin-top:5px;
+	position:relative;
+	width:308px;
+	float: left;
+}
+#submitwrap {
+	height: 24px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	clear: left;
+}
+#slideholder {
+	position:absolute;
+	left:21px;
+	top:6px;
+	width:120px;
+	height: 36px;
+	z-index:auto;
+	font-weight: bold;
+}
+#winholder {
+	position:absolute;
+	left:165px;
+	margin-left: 0;
+	top:6px;
+	width:139px;
+	height:36px;
+	z-index:auto;
+	font-weight: bold;
+	text-align: right;
+	overflow: visible;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000;
+}
+#winholder span {
+	color: #729C43;
+	font-size: 24px;
+}
+#slideholder span {
+	font-size: 20px;
+	color: #005C8D;
+}
+#titleblock a {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	font-size:11px;
+	text-decoration:none;
+	padding-right: 9px;
+}
+.tooltip {
+	position: absolute;
+	z-index: auto;
+	height: auto;
+	left: 15px;
+	bottom: 10px;
+	visibility: hidden;
+	clip: rect(auto,auto,auto,auto);
+	width:250px;
+}
+.tooltip_top {
+	width:250px;
+	background-image: url(../../images/en/topx_tooltip_top.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+	height: 11px;
+	background-repeat: no-repeat;
+	background-position: top;
+	overflow:hidden;
+}
+.tooltip_mid {
+	width: 220px;
+	background-image: url(../../images/en/topx_tooltip_mid.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-repeat: repeat-y;
+	background-position: left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.tooltip_base {
+	width: 250px;
+	background-image: url(../../images/en/topx_tooltip_base.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+#sliderwrap .slidercontainer {
+	position: absolute;
+	left: 28px;
+	top: 43px;
+	width: 107px;
+	height: 27px;
+}
+#topxprice {
+	clear: left;
+	font-size: 18px;
+	color: #7b9647;
+	width: 138px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-weight: bold;
+	background-color: #F2F2F2;
+	overflow: visible;
+	z-index: auto;
+}
+#topxamount {
+	clear: left;
+	font-size: 18px;
+	color: #095d89;
+	background-color: #F2F2F2;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-weight: bold;
+	display: inline;
+	margin: 0px;
+	padding-top: 1px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 105px;
+}
+.pricerow a {
+	display: inline-block;
+	text-decoration:none;
+	width: 100%;
+	cursor: pointer;
+	position:relative;
+	padding:0;
+	margin:0;
+}
+#incstake {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000;
+	height: 15px;
+	width: 100px;
+	position: absolute;
+	left: 174px;
+	top: 39px;
+}
+#slider_startvalue {
+	height: 11px;
+	width: 22px;
+	position: absolute;
+	left: 5px;
+	top: 44px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 10px;
+	font-weight: bold;
+}
+#slider_endvalue {
+	height: 12px;
+	width: 17px;
+	position: absolute;
+	left: 132px;
+	top: 43px;
+	overflow: visible;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #666;
+}
+.betcopy a {
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+a.bettingbutton {
+	background-image: url(../../images/en/topx_add_button.jpg?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-position:left top;
+	color:#FFFFFF;
+	display:inline-block;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	height:21px;
+	line-height:20px;
+	padding-left:10px;
+	text-align:left;
+	text-decoration:none;
+	width:140px;
+}
+
+
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default { border: 0px none }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {  text-decoration: none; outline: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { border: 0px ;  outline: none; }
+.ui-state-hover a, .ui-state-hover a:hover { text-decoration: none; outline: none; }
+.ui-state-active, .ui-widget-content .ui-state-active {  outline: none; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {  outline: none; text-decoration: none; }
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #aaaaaa;
+	background: url(../../images/en/topx_slider_back.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+}
+.ui-widget-content a {
+	color: #ffffff;
+
+}
+
+/* Slider
+----------------------------------*/
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 9px;
+	height: 25px;
+	cursor: pointer;
+	background-image:url(../../images/en/topx_slider_handle.gif?ver=10302352b9cca8d374b2c95e0ccf157d)
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+}
+.ui-slider-horizontal {
+	height: 10px;
+}
+.ui-slider-horizontal .ui-slider-handle { margin-left:-4px; top:-2px;}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+/* Custom CSS ------------------------------------- */
+
+#panel-contents{position:relative;height:40px;}
+#small-label{ background:url(../../images/en/topx_small_label.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; height:4px; width:17px; overflow:hidden;float:left; }
+#large-label{ background:url(../../images/en/topx_large_label.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; height:18px; width:17px; overflow:hidden;float:left; }
+
+#container{width:100px; margin:auto;}
+input{
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#rate{
+	width:40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #005C8D;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0px;
+}
+#slider {
+	width: 100px;
+}
+#amountlabel {
+	display:inline;
+	float:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	line-height:13px;
+	vertical-align:middle;
+	margin-left: 7px;
+}
+.clear { /* generic container (i.e. div) for floating buttons */
+	overflow: hidden;
+	margin-left: 150px;
+	margin-bottom: 15px;
+}
+
+a.button {
+	color: #FFF;
+	display: inline-block;
+	float: left;
+	height: 21px;
+	margin-right: 6px;
+	padding-right: 12px; /* sliding doors padding */
+	text-decoration: none;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(../../images/en/topx_bg_button_a.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-repeat: no-repeat;
+	background-position: right top;
+	font-family: arial, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+}
+
+a.button span {
+	display: inline-block;
+	line-height: 11px;
+	background-color: transparent;
+	background-image: url(../../images/en/topx_bg_button_span.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	background-repeat: no-repeat;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+a.button:active {
+	background-position: bottom right;
+	color: #FFF;
+	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	padding-right: 12px;
+}
+
+a.button:active span {
+	background-position: -21PX left; /* push text down 1px */
+	padding-top: 5px;
+	padding-bottom: 6px;
+	padding-left: 5px;
+}
+

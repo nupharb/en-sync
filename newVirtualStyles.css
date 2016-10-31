@@ -1,0 +1,599 @@
+/*
+	Copyright (c) 2009 Orbis Technology Ltd. All rights reserved.
+
+	Virtual-specific styles
+*/
+
+#contentHolder #contentA {
+  margin-top: 11px;
+}
+
+#page-wrapper {
+	width:646px; 
+	background-color:#fff; 
+	margin:10px 0;
+}
+
+/* Virtual Player styles */
+#vp-wrapper {
+	background-color:#e2e2e2;
+}
+
+#vp-header-area {
+	background:transparent url(../../images/en/virtual-player-header-646-81.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top left; 
+	width:646px; 
+	height:81px; 
+	display:block;
+}
+
+#vp-navigation {
+	margin:0px; 
+	padding:3px;
+}
+#contentHolder #contentA {
+  margin-top: 11px;
+}
+
+#contentA .mediaVirtual {
+  border:none;
+  background: url(../../images/en/videozoneBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+  width:626px;
+  height: 308px;
+  padding:0px;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-bottom:0px;
+}
+
+
+
+
+#contentA .mediaVirtual#mediaVirtualDogs {
+	background: url(../../images/en/videozoneDogsBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+}
+
+#contentA .mediaVirtual#mediaVirtualMoto {
+	background: url(../../images/en/videozoneMotoBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d)  ;
+}
+
+#vp-navigation ul {
+	margin:0px;  
+	padding:0; 
+	width:640px; 
+	height: 38px; 
+	background: transparent url(../../images/en/virtual-player-navbar-640-38.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top left;
+}
+
+#vp-navigation li, #vp-sub-navigation li {
+	float:left; 
+	display:inline; 
+	list-style:none; 
+	margin:0; 
+	padding:0;
+	clear: none;
+}
+
+#vp-navigation li a {
+	display:block; 
+	line-height:36px; 
+	border-right:1px solid #272424; 
+	border-left:1px solid #014a6e; 
+	text-decoration: none; 
+	font-size:12px; 
+	color:#FFF; 
+	font-weight:bold; 
+	padding:0 10px; 
+	text-shadow:0 -1px #000033;
+}
+
+#vp-navigation li a:hover {
+	background: url(../../images/en/virtual-player-navsprite-300-152.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 -38px;
+}
+
+#vp-navigation li.current {
+	background: url(../../images/en/virtual-player-navsprite-300-152.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 -38px;
+}
+
+#vp-navigation li a.first {
+	border-left:none;
+}
+#vp-navigation li a.first:hover {
+	border-left:none; 
+	background:url(../../images/en/virtual-player-navsprite-300-152.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+}
+
+#vp-navigation li a:active {
+	background: url(../../images/en/virtual-player-navsprite-300-152.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 -76px;
+}
+
+#vp-navigation li a.first:active {
+	border-left:none; 
+	background:url(../../images/en/virtual-player-navsprite-300-152.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -114px;
+}
+
+
+#vp-sub-navigation {
+	margin:0; 
+	padding:0;
+}
+
+#vp-sub-navigation ul {
+	margin:0 3px; 
+	padding:0;
+}
+
+#vp-sub-navigation li {
+	float:left; 
+	display: inline; 
+	margin:0 5px 0 0; 
+	padding:0;
+}
+
+#vp-sub-navigation li a {
+	height:30px; 
+	margin:  0; 
+	padding-right:10px; 
+	display:block; 
+	background: transparent url(../../images/en/virtual-player-sprite-buttons-300-30.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 100% -300px; 
+	font-weight:bold; 
+	text-decoration:none; 
+	float:left; 
+	text-align:left; 
+	position:relative;
+}
+
+#vp-sub-navigation li a span {
+	color:#163260; 
+	padding:5px 50px 5px 10px; 
+	background: transparent url(../../images/en/virtual-player-sprite-buttons-300-30.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -120px; 
+	display:block; 
+	line-height:20px;
+}
+
+#vp-sub-navigation li a:hover, #vp-sub-navigation li a.active-sub {
+	height:30px; 
+	margin:  0; 
+	padding-right:10px; 
+	display:block; 
+	background: transparent url(../../images/en/virtual-player-sprite-buttons-300-30.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 100% -240px; 
+	font-weight:bold; 
+	text-decoration:none;
+}
+
+#vp-sub-navigation li a:hover span, #vp-sub-navigation li a.active-sub span {
+	color:#fff; 
+	background: transparent url(../../images/en/virtual-player-sprite-buttons-300-30.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px; 
+	display:block; 
+	line-height:20px;
+}
+
+.yellowbox {
+	width:45px; 
+	height:22px; 
+	text-align:center; 
+	color:#333; 
+	background:url(../../images/en/virtual-player-sub-yellowbox.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0; 
+	position:absolute; 
+	right:5px; 
+	top:0; 
+	padding:4px 0; 
+	line-height:12px; 
+	margin:4px 0;
+}
+
+#vp-screen-area {
+	background-color:#fff; 
+	width:646px; 
+	height:364px; 
+	display:block;
+}
+
+#vp-footer-bar {
+	height:35px; 
+	display:block; 
+	background:url(../../images/en/virtual-player-bottom-bar-646-35.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top left;
+}
+
+#vp-footer-button {
+	float:right; 
+	margin:5px 10px 5px 0;
+}
+
+/* Button Styles */
+a#vp-footer-results {
+	height:24px; 
+	margin:  0; 
+	padding-right:10px; 
+	display:block; 
+	background: transparent url(../../images/en/virtual-player-sprite-buttons-300-30.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 100% -183px; 
+	font-weight:bold; 
+	text-decoration:none; 
+	float:left;
+}
+
+a#vp-footer-results span {
+	color:#002538; 
+	padding:5px 0 5px 26px; 
+	background: transparent url(../../images/en/virtual-player-sprite-buttons-300-30.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -3px; 
+	display:block; 
+	line-height:14px;
+}
+
+a#vp-footer-results:hover {
+	background: transparent url(../../images/en/virtual-player-sprite-buttons-300-30.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 100% -213px; 
+}
+
+a#vp-footer-results:hover span {
+	background: transparent url(../../images/en/virtual-player-sprite-buttons-300-30.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -33px; 
+	color:#055b87;
+}
+
+.vwtableData img {
+	padding: 0px;
+	margin-top: 3px;
+}
+
+.vwtableData caption {
+	color: #000000;
+	font-size: 14pt;
+	font-weight: 100;
+	letter-spacing: -1px;
+	margin: 0;
+	padding: 0 0 2px;
+	text-align: left;
+	width: 646px;
+}
+
+.vwtableData.tableRight img {
+	margin-left: 2px;
+}
+
+#contentA ul#listLinks {
+	margin-left:19px;
+	margin-top: -10px;
+	width:146px;
+}
+
+ #contentA ul#listLinks li {
+		padding-top: 2px;
+		margin: 0px;
+		font-weight:bold;
+ }
+
+ #contentA ul#listLinks li a {
+	 padding-top:2px;
+	 text-decoration: none;
+
+ }
+
+
+#objectPlaceHolder {
+	width: 424px;
+	height: 237px;
+ margin: 7px 7px;
+ background-color: #FFFFFF;
+}
+
+#objectPlaceHolderDogs {
+	width: 320px;
+	height: 240px;
+	background-color: #FFFFFF;
+	margin: 8px 62px;
+}
+
+#objectPlaceHolderMoto {
+	width: 430px;
+	height: 243px;
+	background-color: #FFFFFF;
+	margin: 7px 7px;
+}
+#contentA .mediaDetails h3 {
+		 font-weight: bold;
+		 margin-left: 10px;
+}
+
+#contentA ul#listLinks li {
+	width:146px;
+	background: url(../../images/en/ListNavBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) bottom no-repeat;
+	border:none;
+	vertical-align: bottom
+
+
+}
+
+
+#contentHead #oddsDisplay {
+	margin-bottom: 5px;
+}
+
+
+
+#contentA hr.hrthin {
+height: 8px;
+padding:0px;
+}
+
+#contentA h3.vw {font-size: 11pt; margin-left: 0;}
+
+
+/*#updateMkts {
+
+	width:100%;
+	float:left;
+	position: relative;
+	top:0px;
+
+}*/
+
+
+/*#01527D caption border*/
+caption {
+border-bottom: 2pt #01527D solid;
+}
+
+.oddsNote {
+	font-weight:normal;
+	font-size: 0.7em;
+	margin-left:4px;
+}
+
+
+.vwtableData {
+	margin-bottom: 20px;
+}
+
+
+
+
+.vwtableData.tableRight caption, .vwtableData.tableLeft caption{
+	width: 312px;
+	font-size: 11pt;
+}
+
+.vwtableData.tableLeft caption{
+	width: 320px;
+}
+
+.vwtableData.tableRight tr {
+	padding-left: 5px;
+}
+
+
+.vwtableData.tableLeft, .vwtableData.tableRight {
+	float: left;
+	width: 312px;
+	margin-right: 2px;
+}
+
+.vwtableData tr th {
+    border: medium none;
+    padding-left: 8px;
+}
+.vwtableData tr th {
+    background: url(../../images/en/tableDataHeaderBG-push.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0 #013855;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    height: 27px;
+    padding-top: 0;
+    text-align: left;
+}
+
+.vwtableData tr {
+	height:23px;
+}
+
+caption {
+	border-bottom:0pt;
+}
+
+.vwtableData tr td {
+	height:27px;
+	border:none;
+	font-weight: bold;
+	font-size: 1.0em;
+	color: #404040;
+	padding-left: 8px;
+}
+
+.vwtableData tr.altRow {
+	background: #ECF7FA;
+}
+
+
+
+
+#contentA a.oddsBtn, .vwtableData td a.oddsBtn{
+
+display: block;
+	width: 63px;
+	text-decoration: none;
+	color: #000;
+	background: #FFF;
+	text-align: center;
+	border: none;
+	height: 20px;
+	background: url(../../images/en/vOddsButton.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	margin:0px  ;
+	padding:0px;
+	font-size: 1.0em;
+	font-weight:bold;
+	line-height:20px;
+}
+
+
+#contentA .vwtableData td a.oddsBtn.bestPrice{
+	color: white;
+	background: url(../../images/en/vBestPrice.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	border:none;
+}
+
+body #contentA a.oddsBtn:hover,
+.vwtableData td a.oddsBtn:hover,
+#contentA .vwtableData td a.oddsBtn.bestPrice:hover,
+.vwtableData td a.oddsBtn.btnB:hover {
+	text-decoration: none;
+	color: #FFF;
+	border: none;
+	background: url(../../images/en/vOddsButtonHover.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+}
+
+/******************** RESULTS LISTS  ****************************/
+
+.matrixContainer {
+	margin-left:10px;
+	margin-top:-20px;
+}
+
+
+.matrixA li.headerRow{
+background: url(../../images/en/vHeaderRowBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x;
+color: #002235;
+border: none;
+padding-left: 0;
+padding-bottom:0px;
+margin-bottom: 0px;
+height:27px;
+margin-top:0px; /* override gen li style */
+}
+
+.matrixA li.headerRow a{
+color: #2c4b5c;
+font-size:0.9em;
+
+
+
+}
+
+.matrixA li.headerRow ul {
+	 height: 20px;
+	 margin-top: -9px;
+	 overflow: visible;
+	 color: #002235;
+}
+
+.matrixA li.headerRow .headerRowTitle  {
+position:absolute;
+top: 3px;
+
+}
+
+
+#contentA .matrixContainer h3{
+	margin: 0 -4px 4px 0px;
+/*    padding: 0 0 5px 5px;*/
+	border:none;
+}
+
+.matrixA li.headerRow ul li a {
+	 color: #002235;
+}
+
+.matrixA li.headerRow strong {
+	color: #002235;
+}
+
+.matrixA li h4 a {
+font-weight: normal;
+color: #000000;
+}
+
+.matrixA li h4 {
+padding: 6px 0px 4px 9px;
+width: 150px;
+}
+
+
+.matrixA li h4, .matrixA li ul.QPLink li a{
+position: relative;
+top: 20px;
+font-size: 1.1em;
+}
+
+
+
+
+.matrixA ul, .matrixB ul, .matrixC ul {
+width: 405px;
+display: block;
+margin: -28px 0 2px 156px;
+z-index: 1;
+padding: 0px;
+}
+
+.matrixA li, .matrixB li, .matrixC li {
+	border-bottom: dotted 1pt #4CAED3;
+ margin-top: 4px;
+ width:626px;
+
+}
+
+
+
+.matrixA .altRow,
+.matrixB .altRow,
+.matrixC .altRow{
+background: #FFF;
+border: 1px solid #cce8f5;
+padding-left: 0;
+padding-bottom: 2px
+}
+
+#contentA .matrixA li ul li a.eventPriced{
+	display: block;
+	width: 40px;
+	line-height:18px;
+	float: left;
+	padding:0px;
+	margin-top: 0px;
+	margin-bottom: 7px;
+	margin-right: 4px;
+	text-align: center;
+	border: solid 1pt #64C1EA;
+	background:none;
+	z-index: 10000;
+}
+
+#contentA .matrixA li ul li{
+	width:40px;
+	margin-left:6px;
+	float: left
+}
+
+#contentA .matrixA li ul li.vRaceBox{
+	background: url(../../images/en/vRedCircle.gif?ver=10302352b9cca8d374b2c95e0ccf157d) 15px 4px no-repeat;
+	padding-top:20px;
+}
+
+
+.matrixA li ul.QPLink li a {
+width: 95px;
+margin-left: -15px;
+}
+
+
+.redCircle {
+position: relative;
+left: 10px;
+
+}
+
+.vRaceBox {
+position: relative;
+top: 0px;
+left: 0px;
+}
+
+#contentA h4.vwheaderRowTitle {
+position: absolute;
+top:3px;
+font-size: 10pt;
+height: 1%;
+padding: 2px 0 4px 10px;
+}
+
+#contentA h4.vwh4 {
+font-size : 1.1em;
+float:none;
+padding: 0 0 4px 1px;
+}
+

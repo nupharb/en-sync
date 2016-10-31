@@ -1,0 +1,515 @@
+/*
+
+    This CSS is for the generic overlay including unique styling for particular applications
+
+    Overrides should go before generic
+*/
+
+/* my events overlay -- frame content here too */
+#myEvOverlayCtnt table {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000;
+	background-color:#ffffff;
+}
+
+#myEvOverlayCtnt a img {
+	border:medium none;
+}
+
+#myEvOverlayCtnt table.a:link    { text-decoration: none; }
+#myEvOverlayCtnt table.a:hover   { text-decoration: none; }
+#myEvOverlayCtnt table.a:visited { text-decoration: none; }
+#myEvOverlayCtnt table.a:active  { text-decoration: none; }
+
+
+#myEvOverlayCtnt div.myEvOverlayHdr{
+	float:left;
+	font-size:17px;
+	font-weight:bold;
+	color:#002b48;
+}
+#myEvOverlayCtnt div.myEvOverlayTitle{
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	color:#002b48;
+	width: 345px;
+}
+
+div.myEvOverlayTopRightIE6 {
+	float:right;
+}
+
+/* community overlay */
+/* hack dupe these classes for IE6 using gifs (bad quality) as design refused to give us png fix */
+#overlayDiv #overlayTopLeft.tipItOverlayTopLeftIE6 {
+	background:url("../../images/en/tipit_overlay_top_left_ie6.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0 1px;
+	padding:0;
+	height:27px;
+	line-height:28px;
+	vertical-align:middle;
+	position:relative;
+	float:left;
+	overflow:hidden;
+}
+
+#overlayDiv #overlayTopRight.tipItOverlayTopRightIE6 {
+	background:url("../../images/en/tipit_overlay_top_right_ie6.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0 1px;
+	padding:0;
+	height:27px;
+	line-height:28px;
+	vertical-align:middle;
+	position:relative;
+	overflow:hidden;
+	float:right;
+}
+/* end IE6 hack */
+#overlayDiv #overlayTopLeft.tipItOverlayTopLeft {
+	background:url("../../images/en/tipit_overlay_top_left.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0 1px;
+	padding:0;
+	height:27px;
+	line-height:28px;
+	vertical-align:middle;
+	position:relative;
+	float:left;
+	overflow:hidden;
+}
+
+#overlayDiv #overlayTop.tipItOverlayHeader {
+	float:left;
+	background:url("../../images/en/tipit_overlay_top.png?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x 0 1px;
+	padding:0;
+	height:27px;
+	line-height:28px;
+	vertical-align:middle;
+	font-weight:bold;
+	font-size:11px;
+	color:#1c3849;
+	position:relative;
+	overflow:hidden;
+	border-top:none;
+}
+
+#overlayDiv #overlayTopRight.tipItOverlayTopRight {
+	background:url("../../images/en/tipit_overlay_top_right.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0 1px;
+	padding:0;
+	height:27px;
+	line-height:28px;
+	vertical-align:middle;
+	position:relative;
+	overflow:hidden;
+}
+
+#overlayDiv #overlayCtnt.tipItOverlayCtnt{
+	padding:0px 0px 0px 0px;
+	background-color:#f7f8f9;
+	border-left:#9e9e9e 1px solid;
+	border-right:#9e9e9e 1px solid;
+}
+
+#overlayDiv #overlayBtm.tipItOverlayBtm {
+	background-color:#f7f8f9;
+}
+
+#overlayDiv #overlayBtmLeft.tipItOverlayBtm {
+	background:url(../../images/en/tipit_overlay_btm_left.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+
+#overlayDiv #overlayBtmRight.tipItOverlayBtm {
+	background:url(../../images/en/tipit_overlay_btm_right.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+}
+
+#overlayDiv #overlayTop #tipItOverlayTitle {
+	background:url("../../images/en/tipit_overlay_title_background.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0;
+	padding:0 0 0 25px;
+	float:left;
+	display:inline;
+}
+
+#overlayDiv #overlayTop #tipItOverlayFunc {
+	padding:0 0px 0 10px;
+	float:right;
+	display:inline;
+	height:27px;
+	overflow:hidden;
+}
+#overlayDiv #overlayTop #tipItOverlayFunc ul {
+	margin:0;
+	list-style:none;
+	float:right;
+}
+#overlayDiv #overlayTop #tipItOverlayFunc ul li {
+	float:right;
+	clear:none;
+	margin-left:7px;
+}
+#overlayDiv #overlayTop #tipItOverlayFunc ul li.separator {
+	background:url("../../images/en/tipit_overlay_sep.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat right;
+	width:1px;
+	height:27px;
+}
+#overlayDiv #overlayTop #tipItOverlayFunc a {
+	color:#1c3849;
+	display:inline-block;
+	cursor:pointer;
+	background-position: right;
+	text-decoration:none;
+}
+/*
+ * help icon removed change request
+#overlayDiv #overlayTop a#help {
+	background:url("../../images/en/tipit_overlay_help.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 24px -1px;
+	padding-right:8px;
+}*/
+#overlayDiv #overlayTop #tipItOverlayFunc a#close {
+	background:url("../../images/en/tipit_overlay_close.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 32px 1px;
+	padding-right:12px;
+}
+
+/* generic css for basic overlay */
+#overlayShadeDiv {
+	display:none;
+	z-index:100499;
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	border:none;
+	opacity:0.75;
+	filter: alpha(opacity=75);
+	-moz-opacity: .75;
+	-khtml-opacity: 0.75;
+	background-color:#222222;
+}
+#overlayShadeDiv.overlayIE6 {
+	position:absolute;
+	overflow:hidden;
+}
+#overlayDiv {
+	display:none;
+	z-index:100500;
+	position:absolute;
+	left:200px;
+	top:150px;
+}
+#overlayDiv #overlayTopLeft {
+	background:url(../../images/en/overlay-TL.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	float:left;
+	height:10px;
+	overflow:hidden;
+	width:10px;
+}
+#overlayDiv #overlayTop {
+	float:left;
+	height:10px;
+	overflow:hidden;
+	background-color:#ffffff;
+	border-top:#9e9e9e 1px solid;
+}
+#overlayDiv #overlayTopRight {
+	background:url(../../images/en/overlay-TR.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	height:10px;
+	overflow:hidden;
+	width:10px;
+}
+#overlayDiv #overlayCtnt {
+	background-color:#ffffff;
+	border-left:#9e9e9e 1px solid;
+	border-right:#9e9e9e 1px solid;
+}
+#overlayDiv #overlayBtmLeft {
+	background:url(../../images/en/overlay-BL.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	float:left;
+	height:10px;
+	overflow:hidden;
+	width:10px;
+}
+#overlayDiv #overlayBtm {
+	float:left;
+	height:10px;
+	overflow:hidden;
+	background-color:#ffffff;
+	border-bottom:#9e9e9e 1px solid;
+}
+#overlayDiv #overlayBtmRight {
+	background:url(../../images/en/overlay-BR.gif?ver=10302352b9cca8d374b2c95e0ccf157d);
+	height:10px;
+	overflow:hidden;
+	width:10px;
+}
+div.overlayIE6 {
+	float:right;
+}
+
+
+#spanishRegModalInner {
+	padding:20px;
+}
+
+#spanishRegModalInner img {
+	margin:5px auto; 
+	text-align:center; 
+	display:block; 
+	width:155px; 
+	height:130px;
+}
+
+#spanishRegModalMessage {
+	height:40px;  
+	background:#013e60 url(../../images/en/spanishRegModalMessage_bg.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x; 
+	display:block;
+}
+
+#spanishRegModalMessage p {
+	font:bold 12px/40px Arial, Helvetica, sans-serif; 
+	padding: 0 10px ; 
+	margin:0;
+	color:#FFF;
+}
+
+#spanishRegModalMessage a {
+	color:#ffdb00;
+}
+
+#spanishRegModalMessage a:hover {
+	text-decoration:none;
+}
+
+/* Registration Overlay */
+#overlayDiv .regModalIe7OverlayTopLeft, #overlayDiv .regModalIe7OverlayHeader, #overlayDiv .regModalIe7OverlayTopRight, #overlayDiv .regModalIe7OverlayBtm, #overlayDiv .regModalIe7OverlayBtm, #overlayDiv .regModalIe7OverlayBtm,
+#overlayDiv .regModalOverlayTopLeft, #overlayDiv .regModalOverlayHeader, #overlayDiv .regModalOverlayTopRight, #overlayDiv .regModalOverlayBtm, #overlayDiv .regModalOverlayBtm, #overlayDiv .regModalOverlayBtm {
+	display:none;
+}
+#overlayDiv .regModalIe7OverlayCtnt,
+#overlayDiv .regModalOverlayCtnt {
+	padding:0 !important;
+	background: none !important;
+	float:left !important;
+	border: none !important;
+}
+#overlayDiv.regModalIe7OverlayDiv {
+	position: fixed !important;
+}
+
+/** Second Overlay - Generic **/
+
+#secondOverlayDiv, #secondOverlay_ctnt, #infoPopupCtn {
+	display: none;
+}
+
+/** Second Overlay - Edit/Remove Methods **/
+#secondOverlayDiv {
+	position: absolute;
+}
+#secondOverlayTopLeft {
+	background: url("../../images/en/SecondOverlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+	float: left;
+	width: 10px;
+	height: 26px;
+}
+#secondOverlayTop {
+	width: 529px;
+	height: 26px;
+	float: left;
+	padding: 0;
+	margin: 0;
+	background:url("../../images/en/SecondOverlayTitleBar.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll 0pt 0pt transparent;
+}
+#secondOverlayTop #editOverlayTitle {
+	height: 26px;
+	line-height: 26px;
+}
+#secondOverlayTopRight {
+	background: url("../../images/en/SecondOverlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll -10px 0pt transparent;
+	float: left;
+	height: 26px;
+	width: 10px;
+}
+#secondOverlayBtmLeft {
+	width: 10px;
+	height: 8px;
+	float: left;
+	background: url("../../images/en/SecondOverlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -27px transparent;
+}
+#secondOverlayBtm {
+	width: 529px;
+	height: 8px;
+	float: left;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+}
+#secondOverlayBtmRight {
+	width: 10px;
+	height: 8px;
+	float: left;
+	background:url("../../images/en/SecondOverlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll -10px -27px transparent;
+}
+#secondOverlayCtnt {
+	background: url("../../images/en/overlayContent_bg_second.gif?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll 0pt 0pt rgb(255, 255, 255);
+	float: left;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+#secondOverlayCtnt .formContainer {
+	padding-left: 10px;
+}
+#secondOverlayShadeDiv {
+	display:none;
+	z-index:100499;
+	position:fixed;
+	left:0px;
+	top:0px;
+	margin:0;
+	padding:0;
+	border:none;
+	opacity:0.75;
+	filter: alpha(opacity=75);
+	-moz-opacity: .75;
+	-khtml-opacity: 0.75;
+	background-color:#222222;
+}
+#secondOverlayShadeDiv.email-modal {
+	margin-left: 100px;
+	width: 784px !important;
+	border-radius: 11px 11px 11px 11px;
+}
+
+/** rule overwrites for the Reverse Withdrawal Window **/
+.regOverlay.reverseWtd #overlayHeader { width: 760px !important; }
+.regOverlay.reverseWtd .HdrBM { width: 760px !important; }
+.regOverlay.reverseWtd #overlayContainer { width: 756px !important; }
+.regOverlay.reverseWtd { width: 780px !important; }
+.regOverlay.reverseWtd #overlayHeader #overlayFunc { width: 760px !important; }
+
+.overlayBody {
+	background:none;
+}
+
+/*  MoD -> Mobile or Desktop*/
+#MoDOverlay {
+	z-index: 100499;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+	-moz-opacity: .75;
+	-khtml-opacity: 0.75;
+	background-color: #222222;
+	width: 100%;
+	height: 100%;
+}
+#MoD {
+	width: 950px;
+	height: 1036px;
+	z-index: 100500;
+	position: absolute;
+}
+#MoD p {
+	font-size: 34px;
+	color: #36424a;
+	font-weight: bold;
+}
+#MoD .MoDHead {
+	height: 163px;
+	width: 630px;
+	background-color: #164572;
+}
+#MoD .MoDContent {
+	height: 790px;
+	width: 950px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAKCAYAAACJxx+AAAAAO0lEQVQYV2O8e/f+fwYg4OPjAVEYgJGggtevX4NN+PTpC1g3zCQYn5FoBTDL0U2Cm0BQAfluIOhNQgoA/ZFC62bgg3kAAAAASUVORK5CYII=) repeat;
+}
+#MoD .MoDContent .MoDTriangle {
+	width: 126px;
+	height: 46px;
+	margin: 0 auto;
+	position: relative;
+	top: -5px;
+}
+#MoD .MoDContent .MoDtxt {
+	min-height: 80px;
+	margin: 0 auto;
+	width: 864px;
+	margin-top: 30px;
+}
+#MoD .MoDContent .MoDtxt p {
+	text-align: center;
+}
+#MoD .MoDContent .MoDChoose {
+	*zoom: 1;
+	width: 864px;
+	margin: 0 auto;
+	height: 433px;
+	position: relative;
+	margin-top: 30px;
+}
+#MoD .MoDContent .MoDChoose .MoDMobile {
+	float: left;
+	background: url(../../images/en/l_mobile.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 0 0 repeat #ebebeb;
+	width: 432px;
+	height: 432px;
+	color: transparent;
+}
+#MoD .MoDContent .MoDChoose .MoDMobile:hover {
+	background: url(../../images/en/l_mobile_action.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 0 0 repeat #ebebeb;
+}
+#MoD .MoDContent .MoDChoose .MoDMobile.gray_bg {
+	background: url(../../images/en/l_mobile_action_gray.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 0 0 repeat #ebebeb;
+}
+#MoD .MoDContent .MoDChoose .MoDDesktop {
+	float: right;
+	background: url(../../images/en/r_desktop.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 0 0 repeat #ebebeb;
+	width: 432px;
+	height: 432px;
+	color: transparent;
+}
+#MoD .MoDContent .MoDChoose .MoDDesktop:hover {
+	background: url(../../images/en/r_desktop_action.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) 0 0 repeat #ebebeb;
+}
+#MoD .MoDContent .MoDChoose .MoDOR {
+	position: absolute;
+	top: 165px;
+	left: 356px;
+	width: 152px;
+	height: 93px;
+	background: url(../../images/en/c_or.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0px 0px no-repeat transparent;
+}
+#MoD .MoDContent .MoDChoose .MoDOR.gray_bg {
+	background: url(../../images/en/c_or.png?ver=10302352b9cca8d374b2c95e0ccf157d) -150px 0px no-repeat #ebebeb;
+}
+#MoD .MoDContent .MoDFooter {
+	margin: 44px 0px 40px 32px;
+	display: table;
+	padding: 0px 25px;
+}
+#MoD .MoDContent .MoDFooter div {
+	display: table-cell;
+	width: 40px;
+}
+#MoD .MoDContent .MoDFooter p {
+	font-weight: normal;
+	display: table-cell;
+}
+#MoD .MoDContent .MoDFooter input {
+	/* Double-sized Checkboxes */
+
+	-ms-transform: scale(3);
+	/* IE */
+
+	-moz-transform: scale(3);
+	/* FF */
+
+	-webkit-transform: scale(3);
+	/* Safari and Chrome */
+
+	-o-transform: scale(3);
+	/* Opera */
+}
+

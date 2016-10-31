@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  */
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-size:.75em;
+	line-height:1.250em;
+	text-align:left;
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.lvc_Padding {
+	padding:20px;
+}
+
+#lvc_ChatDialogContainer {
+	background-color:#EBEFF5;
+	border:1px solid #555;
+	overflow-x:hidden;
+	overflow-y:auto;
+	position:relative;
+	height:130px;
+}
+
+h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:14px;
+	line-height:30px;
+}
+
+#lvc_ChatSummary {
+	display:block;
+	border-top:1px solid #bbbbbb;
+	border-bottom:1px solid #bbbbbb;
+	font-size:12px;
+	height:28px;
+	font-weight:bold;
+}
+
+#lvc_ChatSummary span {
+	border-top:1px solid #fff;
+	line-height:27px;
+	display:block;
+}
+
+h1, #lvc_ChatSummary {
+	padding:0px 10px;
+}
+
+#lvc_ChatForm {
+	padding:20px 10px;
+}
+
+#lvc_SelectProduct {
+	width:300px;
+	margin-right:10px
+}
+

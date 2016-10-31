@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+.lostLogin{padding: 20px 20px 22px 20px; border-bottom: 1px solid #000; width: 854px; font-size: 1.2em; position: relative; font-weight: normal}
+
+.lostLogin.on{background:  url(../../images/en/lostLoginBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom repeat-x;}
+
+.lostLoginContainer{margin-top: -16px; margin-bottom: 12px}
+
+.lostLoginReveal{font-size: 10px; display: none;}
+
+.lostLogin.on .lostLoginReveal{display: block}
+
+.lostLogin fieldset{margin: -8px 0 7px 0; border: none; padding-bottom: 0}
+
+.lostLoginReveal fieldset label{text-align: left; padding-left: 12px; width: 140px; font-weight: normal}
+
+.lostLogin fieldset p{text-align: left; padding-left: 20px; width: 134px; font-weight: normal}
+
+
+.helpDetails{font-size: 1.2em; margin-bottom: 42px}
+
+span.loginControl a{position: absolute; right: 15px; display: block; width: 23px; height: 23px; background: url(../../images/en/divExpand.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; top: 15px; text-indent: -2000px}
+
+span.loginControl a:hover{background: url(../../images/en/divExpandOver.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;}
+
+.lostLogin.on span.loginControl a {background: url(../../images/en/divContract.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;}
+
+.lostLoginReveal .btnHolder{padding-left: 274px; padding-top: 4px; padding-bottom: 0}
+
+ul.loginBullets{padding-left: 20px; padding-top: 30px; padding-bottom: 20px}
+ul.loginBullets li{background: url(../../images/en/dot.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left center no-repeat; padding-left: 12px}
+
+.lostLoginReveal select{font-size: 0.9em; padding-top: 2px; padding-bottom: 2px;}
+.lostLoginReveal .select_sc_cc{font-size: 0.9em; padding-top: 2px; padding-bottom: 2px; width: 285px}
+
+.lostLogin label.hide{display: none}
+

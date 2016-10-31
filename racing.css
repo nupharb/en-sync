@@ -1,0 +1,1741 @@
+/*
+	Copyright (c) 2008 Orbis Technology Ltd. All rights reserved.
+
+	NEW RACING CSS
+*/
+
+/* LAYOUT - DEV ONLY : START */
+
+/* LAYOUT - DEV ONLY : END */
+
+/* SHARED ELEMENTS : START */
+
+h3.racingHeader {
+	width: 640px;
+	border-bottom: 3px solid #03b1ed;
+	font-size: 16px !important;
+	font-weight: bold !important;
+}
+
+h3.racingHeader .headerAction {
+	float: right;
+	display: block;
+	width: 9px;
+	height: 5px;
+	margin-right: 5px;
+}
+
+a { color: #000; }
+
+
+.md_leftContent {
+	float: left;
+}
+
+.md_leftContent > h4 {
+	width:100px;
+}
+
+
+.md_rightContent {
+	float: left;
+}
+
+#meetingData_results .md_rightContent {
+	margin-right: 100px;
+	margin-left: 27px;
+	text-align: left;
+}
+
+.bottomShadow_white {
+	width: 645px;
+	height: 12px;
+	background: #fff url(../../images/en/shadow_bottom_whiteBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+}
+
+/* SHARED ELEMENTS : END */
+
+/* MEETING CONTENT MODULE STYLES : START */
+
+#meetingContent {
+	width: 655px;
+	height: 135px;
+	margin: 0;
+	padding: 0;
+}
+
+#meetingContent #mc_navLeft, #meetingContent #mc_navRight {
+	display: block;
+	width: 33px;
+	height: 135px;
+	cursor: pointer;
+}
+
+#meetingContent #mc_navLeft {float: left; background: #fff url(../../images/en/nav_arrow_left.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) right center no-repeat;}
+#meetingContent #mc_navRight {float: right; background: #fff url(../../images/en/nav_arrow_right.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) left center no-repeat;}
+
+#meetingContent #mc_centerContent {
+	width: 578px;
+	float: left;
+}
+
+#meetingContent #mc_centerContent h2 {
+	float: left;
+	border-right: 1px solid #d4d4d4;
+	width: 394px;
+	padding-left: 16px;
+	height: 24px;
+	line-height: 24px;
+}
+
+#meetingContent .mc_going {
+	float:left;
+	height: 27px;
+	line-height: 32px;
+	text-align:center;
+	width:124px;
+	display: inline;
+}
+
+#meetingContent .mc_weather {
+	float:right;
+}
+
+#meetingContent #mc_centerContent .mc_links {
+	list-style-type: none;
+	width: 143px;
+	padding-left: 19px;
+	float: left;
+}
+
+#meetingContent #mc_centerContent .mc_links li {
+	border-bottom: 1px dotted #000;
+	height: 25px;
+	line-height: 25px;
+	font-weight: bold;
+	position: relative;
+}
+
+#meetingContent #mc_centerContent .mc_links li img {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+}
+
+#meetingContent #mc_centerContent .mc_links li.mc_links_first {
+	border-top: 1px dotted #000;
+}
+
+#meetingContent #mc_centerContent .mc_links li .mc_links_rp {
+	position: relative;
+	top: 3px;
+}
+
+#meetingContent #mc_centerContent .mc_spotlight {
+	width: 378px;
+	float: left;
+	padding: 12px 19px;
+	line-height: 12px;
+}
+
+/* MEETING CONTENT MODULE STYLES : END */
+
+/* MEETING NAVIGATION MODULE STYLES : START */
+
+#meetingNavigation {
+	float: left;
+	margin: 0 0 5px;
+	padding: 0 0 0 2px;
+	width: 646px;
+}
+
+#meetingNavigation a {
+	float: left;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	width: 160px;
+}
+
+#meetingNavigation a.navNarrow {
+	width: 126px !important;
+	margin: 0 3px 0 0;
+}
+.outsideNarrow {
+	width: 119px !important;
+} 
+
+#meetingNavigation a:hover .outside, 
+#meetingNavigation a.racecardTabSelected .outside {
+	background: transparent url(../../images/en/dailyMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 50% 100%;
+}
+
+#meetingNavigation a:hover .inside, 
+#meetingNavigation a.racecardTabSelected .inside {
+	color: #FFFFFF;
+	text-decoration: none !important;
+}
+
+#meetingNavigation a, #raceTitle a {
+	text-decoration: none !important;
+}
+
+.outside{ /* Inherited from Main Stylesheet */
+	background: transparent url(../../images/en/dailyMatchOff.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0px 0px;
+	border: 1px solid #8897AD;
+	clear: none;
+	display: table;
+	float: left;
+	font-size: 11px;
+	height: 30px;
+	margin: 2px 0px 2px 0px;
+	padding: 2px;
+	position: relative;
+	vertical-align: middle;
+	width: 150px;
+}
+.inside{ /* Inherited from Main Stylesheet */
+	display: table-cell;
+	position: relative;
+	vertical-align: middle;
+	width: 100%;
+	color: #000;
+}
+
+/* new-collection style was designed to add a "new" flag to collections marked as new in the configuration for horse racing and sports. */
+.new-collection-flag {
+background: url("../../images/en/tabs-new.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left top transparent;
+	display: block;
+	height: 25px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 25px;
+}
+
+.racecardPreviousOddsHdr { 
+	width: 98px; 
+	text-align: right;
+	padding-right: 9px !important;
+}
+.racecardOddsHdr         { width: 52px; text-align: center;}
+.racecardSPOddsHdr       { width: 28px; text-align: center;}
+.racecardDrawHdr         { width: 28px; text-align: center;}
+.racecardNumHdr          { width: 19px; text-align: center;}
+
+.racecardEWBorder    { border-left: 1px solid #AAC1E3;}
+.racecardEWBoldRight { text-align: right; font-weight: bold; }
+.racecardEWOdds      { text-align: center; font-weight: normal; }
+.racecardEWOddsDesc  { text-align: right; font-weight: bold; }
+
+.racecardPreviousOdds { 
+	text-align: right; 
+	vertical-align: middle !important; 
+	padding: 0 10px 0 0 !important;
+	font-size: 12px;
+}
+.racecardBoldCenter   { font-weight: bold; text-align: center; }
+.racecardBold         { font-weight: bold;}
+.racecardPadFav       { padding-left: 42px; font-size:14px}
+
+.racecardSpotlight    { border-bottom: 1px none #b9bae8 !important; height: 28px; vertical-align: middle; }
+
+
+/* MEETING NAVIGATION MODULE STYLES : START */
+
+/* MEETING DATA MODULE STYLES : START */
+
+#meetingData {
+	margin: 0;
+}
+
+#meetingData_results {
+    table-layout:fixed;
+}
+
+#meetingData_results .md_row .md_column1, #meetingData_results .md_row .md_column3 {
+    width: 29px; 
+}
+#meetingData #meetingData_results,
+#meetingData #meetingData_forecastTricast,
+#meetingData #meetingData_otherMarkets_h2h,
+#meetingData #meetingData_bettingWithout,
+#meetingData #meetingData_insuranceMarkets,
+#meetingData #meetingData_placeMarkets,
+#meetingData #meetingData_racecard,
+#meetingData #meetingData_racecard_noform,
+#meetingData #meetingData_pro-racecard,
+#meetingData #meetingData_results_full{
+	border-collapse: collapse;
+	width: 646px;
+}
+
+#meetingData #meetingData_racecard td.raceOddsDraw, #meetingData #meetingData_racecard_noform td.raceOddsDraw {
+	text-align: center;
+}
+
+#meetingData #meetingData_results #md_hdr_column2,
+#meetingData #meetingData_forecastTricast #md_hdr_column1,
+#meetingData #meetingData_bettingWithout #md_hdr_column1,
+#meetingData #meetingData_insuranceMarkets #md_hdr_column1,
+#meetingData #meetingData_placeMarkets #md_hdr_column1,
+#meetingData #meetingData_pro-racecard #md_hdr_column1,
+#meetingData #meetingData_racecard #md_hdr_column1,
+#meetingData #meetingData_racecard_noform #md_hdr_column1
+#meetingData #meetingData_results_full #md_hdr_column3{ width: 19px; padding-left: 2px; }
+
+#meetingData #meetingData_otherMarkets_h2h #md_hdr_column1,
+#meetingData #meetingData_otherMarkets_h2h #md_hdr_column9 { width: 16px; padding: 0 2px; }
+
+#meetingData #meetingData_otherMarkets_oddsEvens #md_hdr_column1,
+#meetingData #meetingData_otherMarkets_h2h #md_hdr_column3 { font-weight: bold; }
+
+#meetingData #meetingData_bettingWithout #md_hdr_column3,
+#meetingData #meetingData_bettingWithout #md_hdr_column2,
+#meetingData #meetingData_insuranceMarkets #md_hdr_column2,
+#meetingData #meetingData_placeMarkets #md_hdr_column2,
+#meetingData #meetingData_pro-racecard #md_hdr_column2,
+#meetingData #meetingData_racecard #md_hdr_column2,
+#meetingData #meetingData_racecard_noform #md_hdr_column2 { width: 28px; }
+
+#meetingData #meetingData_bettingWithout #md_hdr_column4,
+#meetingData #meetingData_insuranceMarkets #md_hdr_column4,
+#meetingData #meetingData_pro-racecard #md_hdr_column4,
+#meetingData #meetingData_racecard #md_hdr_column4,
+#meetingData #meetingData_racecard_noform #md_hdr_column4 { width: 110px; }
+
+#meetingData #meetingData_insuranceMarkets #md_hdr_column4,
+#meetingData #meetingData_placeMarkets #md_hdr_column4 { width: 52px; text-align: center; }
+
+#meetingData #meetingData_results #md_hdr_column4 { 
+	text-align: left;
+	width: 250px;
+}
+#meetingData #meetingData_results #md_hdr_column5, #meetingData #meetingData_results #md_hdr_column6 {text-align: left; width: 100px; }
+
+#meetingData #meetingData_bettingWithout #md_hdr_column5,
+#meetingData #meetingData_insuranceMarkets #md_hdr_column5,
+#meetingData #meetingData_placeMarkets #md_hdr_column5,
+#meetingData #meetingData_racecard_noform #md_hdr_column5,
+#meetingData #meetingData_racecard #md_hdr_column5,
+#meetingData #meetingData_pro-racecard #md_hdr_column5 { width: 52px; text-align: center; }
+
+#meetingData #meetingData_results_full #md_hdr_column5 { width: 120px; }
+#meetingData #meetingData_results_full #md_hdr_column6,
+#meetingData #meetingData_results_full #md_hdr_column7 {
+	width: 90px;
+	text-align: center;
+}
+
+#meetingData #meetingData_pro-racecard #md_hdr_column6,
+#meetingData #meetingData_racecard #md_hdr_column6,
+#meetingData #meetingData_racecard_noform #md_hdr_column6 { width: 28px; text-align: center; }
+
+#meetingData #meetingData_bettingWithout #md_hdr_column6,
+#meetingData #meetingData_insuranceMarkets #md_hdr_column6,
+#meetingData #meetingData_placeMarkets #md_hdr_column6,
+#meetingData #meetingData_bettingWithout #md_hdr_column7,
+#meetingData #meetingData_insuranceMarkets #md_hdr_column7,
+#meetingData #meetingData_placeMarkets #md_hdr_column7,
+#meetingData #meetingData_pro-racecard #md_hdr_column7,
+#meetingData #meetingData_racecard #md_hdr_column7,
+#meetingData #meetingData_racecard_noform #md_hdr_column7 { width: 52px; text-align: center; }
+
+#meetingData #meetingData_results #md_hdr_column7,
+#meetingData #meetingData_results #md_hdr_column8,
+#meetingData #meetingData_results #md_hdr_column9 { width: 40px; }
+
+#meetingData #meetingData_bettingWithout #md_hdr_column8,
+#meetingData #meetingData_insuranceMarkets #md_hdr_column8,
+#meetingData #meetingData_placeMarkets #md_hdr_column8,
+#meetingData #meetingData_pro-racecard #md_hdr_column8,
+#meetingData #meetingData_racecard #md_hdr_column8,
+#meetingData #meetingData_racecard_noform #md_hdr_column8 { width: 52px; text-align: center; }
+
+#meetingData #meetingData_pro-racecard #md_hdr_column9 { width: 52px; text-align: center; }
+
+#meetingData #meetingData_results .md_row td,
+#meetingData #meetingData_forecastTricast .md_row td,
+#meetingData #meetingData_otherMarkets_h2h .md_row td,
+#meetingData #meetingData_bettingWithout .md_row td,
+#meetingData #meetingData_insuranceMarkets .md_row td,
+#meetingData #meetingData_placeMarkets .md_row td,
+#meetingData #meetingData_pro-racecard .md_row td,
+#meetingData #meetingData_racecard .md_row td,
+#meetingData #meetingData_racecard_noform .md_row td,
+#meetingData #meetingData_results_full .md_row td{ 
+	border-bottom: 1px solid #b9bae8; 
+	height: 28px; 
+	vertical-align: middle; 
+}
+	
+#meetingData #meetingData_results_full .md_row .md_column1,
+#meetingData #meetingData_results_full .md_row .md_column2,
+#meetingData #meetingData_results_full .md_row .md_column3,
+#meetingData #meetingData_results_full .md_row .md_column4,
+#meetingData #meetingData_results_full .md_row .md_column6,
+#meetingData #meetingData_results_full .md_row .md_column7,
+#meetingData #meetingData_results_full .md_row .md_column8 {
+	vertical-align: top;
+}
+
+#meetingData #meetingData_racecard .md_showSpotlight td,
+#meetingData #meetingData_pro-racecard .md_showSpotlight td,
+#meetingData #meetingData_placeMarkets .md_showSpotlight td,
+#meetingData #meetingData_insuranceMarkets .md_showSpotlight td,
+#meetingData #meetingData_bettingWithout .md_showSpotlight td {
+	border-bottom: 0px solid #fff !important;
+}
+#meetingData #meetingData_racecard .md_rowSpotlight td,
+#meetingData #meetingData_pro-racecard .md_rowSpotlight td,
+#meetingData #meetingData_placeMarkets .md_rowSpotlight td,
+#meetingData #meetingData_insuranceMarkets .md_rowSpotlight td,
+#meetingData #meetingData_bettingWithout .md_rowSpotlight td {
+	border-bottom: 1px solid #b9bae8;
+	text-align: left;
+	line-height: 14px;
+	padding-left: 86px;
+	font-size: 11px;
+}
+
+#meetingData #meetingData_bettingWithout .md_row .md_column1,
+#meetingData #meetingData_insuranceMarkets .md_row .md_column1,
+#meetingData #meetingData_placeMarkets .md_row .md_column1,
+#meetingData #meetingData_pro-racecard .md_row .md_column1,
+#meetingData #meetingData_racecard .md_row .md_column1,
+#meetingData #meetingData_racecard_noform .md_row .md_column1,
+#meetingData #meetingData_results_full .md_row .md_column1{ font-weight: bold; text-align: center; }
+
+
+#meetingData #meetingData_bettingWithout .md_row .md_column2,
+#meetingData #meetingData_insuranceMarkets .md_row .md_column2,
+#meetingData #meetingData_placeMarkets .md_row .md_column2,
+#meetingData #meetingData_pro-racecard .md_row .md_column3,
+#meetingData #meetingData_racecard .md_row .md_column2,
+#meetingData #meetingData_racecard_noform .md_row .md_column2,
+#meetingData #meetingData_results_full .md_row .md_column2{ text-align: center; }
+
+#meetingData #meetingData_results .md_row .md_column1 { font-weight: bold; width: 44px; text-align: center; font-size: 11px; }
+#meetingData #meetingData_results .md_row .md_column2,
+#meetingData #meetingData_results_full .md_row .md_column3 {font-weight: bold; text-align: center; }
+#meetingData #meetingData_results .md_row .md_column1b,
+#meetingData #meetingData_results .md_row .md_column3 { text-align: center; }
+
+#meetingData #meetingData_bettingWithout .md_row .md_column3,
+#meetingData #meetingData_insuranceMarkets .md_row .md_column3,
+#meetingData #meetingData_placeMarkets .md_row .md_column3,
+#meetingData #meetingData_pro-racecard .md_row .md_column3,
+#meetingData #meetingData_racecard .md_row .md_column3,
+#meetingData #meetingData_racecard_noform .md_row .md_column3 { font-weight: bold; text-align: left; }
+
+#meetingData #meetingData_bettingWithout .md_row .md_column5,
+#meetingData #meetingData_insuranceMarkets .md_row .md_column5,
+#meetingData #meetingData_placeMarkets .md_row .md_column5,
+#meetingData #meetingData_pro-racecard .md_row .md_column5,
+#meetingData #meetingData_racecard .md_row .md_column5,
+#meetingData #meetingData_racecard_noform .md_row .md_column5 { font-weight: bold; }
+
+#meetingData_results .md_column5 {
+	font-size: 11px;
+}
+
+#meetingData #meetingData_bettingWithout .md_row .md_column6,
+#meetingData #meetingData_insuranceMarkets .md_row .md_column6,
+#meetingData #meetingData_placeMarkets .md_row .md_column6,
+#meetingData #meetingData_pro-racecard .md_row .md_column6,
+#meetingData #meetingData_racecard .md_row .md_column6,
+#meetingData #meetingData_racecard_noform .md_row .md_column6 { font-weight: bold; }
+
+#meetingData #meetingData_results_full .md_row .md_column6,
+#meetingData #meetingData_results_full .md_row .md_column7,
+#meetingData #meetingData_results_full .md_row .md_column8 { font-weight: bold; text-align: center; }
+
+#meetingData #meetingData_bettingWithout .md_row .md_column7,
+#meetingData #meetingData_insuranceMarkets .md_row .md_column7,
+#meetingData #meetingData_placeMarkets .md_row .md_column7,
+#meetingData #meetingData_pro-racecard .md_row .md_column7,
+#meetingData #meetingData_racecard .md_row .md_column7,
+#meetingData #meetingData_racecard_noform .md_row .md_column7 { font-weight: bold; }
+
+#meetingData #meetingData_bettingWithout .md_row .md_column7,
+#meetingData #meetingData_insuranceMarkets .md_row .md_column8,
+#meetingData #meetingData_placeMarkets .md_row .md_column8,
+#meetingData #meetingData_pro-racecard .md_row .md_column8,
+#meetingData #meetingData_racecard .md_row .md_column8,
+#meetingData #meetingData_racecard_noform .md_row .md_column8 { font-weight: bold; }
+
+#meetingData #meetingData_forecastTricast .md_row .md_column3 { font-weight: bold; }
+#meetingData #meetingData_forecastTricast .md_row .md_column4 { padding-right: 10px; }
+#meetingData #meetingData_forecastTricast .md_subHeader { text-align: center; }
+#meetingData #meetingData_forecastTricast .md_row .md_column5,
+#meetingData #meetingData_forecastTricast .md_row .md_column6,
+#meetingData #meetingData_forecastTricast .md_row .md_column7,
+#meetingData #meetingData_forecastTricast .md_row .md_column8,
+#meetingData #meetingData_forecastTricast .md_row .md_column9,
+#meetingData #meetingData_forecastTricast .md_row .md_column10,
+#meetingData #meetingData_forecastTricast .md_row .md_column11 { width: 55px; text-align: center; }
+
+#meetingData #meetingData_forecastTricast .md_row .md_column5,
+#meetingData #meetingData_forecastTricast .md_row .md_column8 { border-left: 1px solid #b9bae8 }
+
+#meetingData #meetingData_results .md_row .md_column5,
+#meetingData #meetingData_results .md_row .md_column6,
+#meetingData #meetingData_results .md_row .md_column7 { width: 79px; text-align: center; }
+
+#meetingData #meetingData_racecard .md_column4 { vertical-align: top !important; padding-top: 10px; }
+
+#meetingData #meetingData_racecard .md_specialistBet td.md_column3,
+#meetingData #meetingData_racecard_noform .md_specialistBet td.md_column3 { padding-left: 33px; }
+
+#meetingData #meetingData_results .md_row .md_column6,
+#meetingData #meetingData_results .md_row .md_column7,
+#meetingData #meetingData_bettingWithout .md_eachWayOdds td.md_column4,
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds td.md_column4,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds td.md_column4,
+#meetingData #meetingData_racecard .md_eachWayOdds td.md_column4,
+#meetingData #meetingData_racecard_noform .md_eachWayOdds td.md_column4 { font-weight: bold; }
+
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds td.md_column4,
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds td.md_column5,
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds td.md_column6,
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds td.md_column7,
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds td.md_column8,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds td.md_column4,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds td.md_column5,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds td.md_column6,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds td.md_column7,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds td.md_column8,
+#meetingData #meetingData_pro-racecard .md_eachWayOdds td.md_column5,
+#meetingData #meetingData_pro-racecard .md_eachWayOdds td.md_column7,
+#meetingData #meetingData_pro-racecard .md_eachWayOdds td.md_column8,
+#meetingData #meetingData_pro-racecard .md_eachWayOdds td.md_column9,
+#meetingData #meetingData_racecard .md_eachWayOdds td.md_column5,
+#meetingData #meetingData_racecard .md_eachWayOdds td.md_column7,
+#meetingData #meetingData_racecard .md_eachWayOdds td.md_column8,
+#meetingData #meetingData_racecard_noform .md_eachWayOdds td.md_column5,
+#meetingData #meetingData_racecard_noform .md_eachWayOdds td.md_column7,
+#meetingData #meetingData_racecard_noform .md_eachWayOdds td.md_column8 { text-align: center; font-weight: normal; }
+
+#meetingData #meetingData_racecard_noform td.md_column5 a,
+#meetingData #meetingData_racecard td.md_column5 a {
+	float: left;
+	margin-left: 0px;
+}
+
+#meetingData #meetingData_results tr.md_tableHeader th,
+#meetingData #meetingData_forecastTricast tr.md_tableHeader th,
+#meetingData #meetingData_otherMarkets_oddsEvens tr.md_tableHeader th,
+#meetingData #meetingData_otherMarkets_h2h tr.md_tableHeader th,
+#meetingData #meetingData_bettingWithout tr.md_tableHeader th,
+#meetingData #meetingData_insuranceMarkets tr.md_tableHeader th,
+#meetingData #meetingData_placeMarkets tr.md_tableHeader th,
+#meetingData #meetingData_pro-racecard tr.md_tableHeader th,
+#meetingData #meetingData_racecard tr.md_tableHeader th,
+#meetingData #meetingData_racecard_noform tr.md_tableHeader th,
+#meetingData #meetingData_results_full tr.md_tableHeader th {
+	background: #013855 url(../../images/en/tableHeaderRow.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top;
+	height: 28px;
+	padding: 0;
+	color: #fff;
+	font-weight: normal;
+}
+
+#meetingData #meetingData_bettingWithout .md_nr td,
+#meetingData #meetingData_insuranceMarkets .md_nr td,
+#meetingData #meetingData_placeMarkets .md_nr td,
+#meetingData #meetingData_pro-racecard .md_nr td,
+#meetingData #meetingData_racecard .md_nr td,
+#meetingData #meetingData_racecard_noform .md_nr td,
+#meetingData #meetingData_results_full .md_nr td{
+	/* for IE */
+	filter:alpha(opacity=60);
+	/* CSS3 standard */
+	opacity:0.5;
+	background-color:#fff;
+}
+#meetingData #meetingData_results_full .md_nr td.md_trainer {
+	filter:alpha(opacity=100);
+	opacity:1;
+	color: black !important;
+	font-weight: bold;
+}
+
+#meetingData #meetingData_bettingWithout .md_nr td.md_column4,
+#meetingData #meetingData_pro-racecard .md_nr td.md_column4,
+#meetingData #meetingData_racecard .md_nr td.md_column4,
+#meetingData #meetingData_racecard_noform .md_nr td.md_column4 {
+	/* for IE */
+	filter:alpha(opacity=100);
+	/* CSS3 standard */
+	opacity:1.0;
+	font-weight: bold;
+	padding-right: 20px;
+}
+
+#meetingData #meetingData_pro-racecard #md_hdr_column4,
+#meetingData #meetingData_pro-racecard .md_column4 {text-align: center;}
+
+#meetingData #meetingData_pro-racecard .md_nr td.md_column4,
+#meetingData #meetingData_racecard .md_nr td.md_column4 { 
+	text-align: middle; vertical-align: middle !important; padding: 0 !important; 
+}
+#meetingData #meetingData_racecard_noform .md_nr td.md_column4 { text-align: right; } 
+
+#meetingData #meetingData_forecastTricast .md_submitButtons td {
+	text-align: right;
+}
+
+#meetingData #meetingData_forecastTricast .md_submitButtons td input.btnFcReset {
+	background: #fff url(../../images/en/btnResetBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	height: 20px;
+	width: 75px;
+	color: #fff;
+	text-transform: uppercase;
+	border: 0px solid #fff;
+	cursor: pointer;
+}
+
+#meetingData #meetingData_forecastTricast .md_submitButtons td input.btnFcAdd {
+	background: #fff url(../../images/en/multipleRacesBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	height: 20px;
+	width: 154px;
+	color: #fff;
+	text-transform: uppercase;
+	border: 0px solid #fff;
+	cursor: pointer;
+}
+
+#meetingData #meetingData_forecastTricast .md_extraDetails td,
+#meetingData #meetingData_bettingWithout .md_extraDetails td,
+#meetingData #meetingData_insuranceMarkets .md_extraDetails td,
+#meetingData #meetingData_placeMarkets .md_extraDetails td,
+#meetingData #meetingData_pro-racecard .md_extraDetails td,
+#meetingData #meetingData_racecard .md_extraDetails td,
+#meetingData #meetingData_racecard_noform .md_extraDetails td {
+	padding: 10px 0 10px 84px;
+	background-color: #f0f0f0;
+	line-height: 16px;
+}
+
+#meetingData #meetingData_results .md_extraDetails td,
+#meetingData #meetingData_results_full .md_extraDetails td  {
+	padding: 10px 50px 10px 10px;
+	background-color: #f0f0f0;
+	line-height: 16px;
+}
+
+#meetingData #meetingData_pro-racecard .md_specialistBet td,
+#meetingData #meetingData_pro-racecard .md_eachWayOdds,
+#meetingData #meetingData_racecard .md_specialistBet td,
+#meetingData #meetingData_racecard .md_eachWayOdds {
+	height: 21px; !important;
+}
+
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds .md_column4,
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds .md_column5,
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds .md_column6,
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds .md_column7,
+#meetingData #meetingData_insuranceMarkets .md_eachWayOdds .md_column8,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds .md_column4,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds .md_column5,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds .md_column6,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds .md_column7,
+#meetingData #meetingData_placeMarkets .md_eachWayOdds .md_column8,
+#meetingData #meetingData_pro-racecard .md_eachWayOdds .md_column5,
+#meetingData #meetingData_pro-racecard .md_eachWayOdds .md_column7,
+#meetingData #meetingData_pro-racecard .md_eachWayOdds .md_column8,
+#meetingData #meetingData_pro-racecard .md_eachWayOdds .md_column9,
+#meetingData #meetingData_racecard .md_eachWayOdds .md_column5,
+#meetingData #meetingData_racecard .md_eachWayOdds .md_column7,
+#meetingData #meetingData_racecard .md_eachWayOdds .md_column8,
+#meetingData #meetingData_racecard .md_eachWayOdds .md_column9 {
+	border-left: 1px solid #AAC1E3;
+}
+
+#meetingData #meetingData_insuranceMarkets .md_specialistBet .md_column5,
+#meetingData #meetingData_insuranceMarkets .md_specialistBet .md_column6,
+#meetingData #meetingData_insuranceMarkets .md_specialistBet .md_column7,
+#meetingData #meetingData_insuranceMarkets .md_specialistBet .md_column8,
+#meetingData #meetingData_placeMarkets .md_specialistBet .md_column5,
+#meetingData #meetingData_placeMarkets .md_specialistBet .md_column6,
+#meetingData #meetingData_placeMarkets .md_specialistBet .md_column7,
+#meetingData #meetingData_placeMarkets .md_specialistBet .md_column8,
+#meetingData #meetingData_pro-racecard .md_specialistBet .md_column5,
+#meetingData #meetingData_pro-racecard .md_specialistBet .md_column6,
+#meetingData #meetingData_pro-racecard .md_specialistBet .md_column7,
+#meetingData #meetingData_pro-racecard .md_specialistBet .md_column8,
+#meetingData #meetingData_pro-racecard .md_specialistBet .md_column9,
+#meetingData #meetingData_racecard .md_specialistBet .md_column5,
+#meetingData #meetingData_racecard .md_specialistBet .md_column6,
+#meetingData #meetingData_racecard .md_specialistBet .md_column7,
+#meetingData #meetingData_racecard .md_specialistBet .md_column8 {
+	text-align: center;
+}
+
+#meetingData #meetingData_forecastTricast .md_oddsButton,
+#meetingData #meetingData_pro-racecard .md_specialistBet .md_oddsButton,
+#meetingData #meetingData_pro-racecard_noform .md_oddsButton,
+#meetingData #meetingData_racecard .md_specialistBet .md_oddsButton,
+#meetingData #meetingData_racecard_noform .md_oddsButton {
+	height: 20px;
+	line-height: 21px;
+}
+
+#meetingData #meetingData_otherMarkets_oddsEvens .md_oddsButton,
+#meetingData #meetingData_otherMarkets_h2h .md_oddsButton,
+#meetingData #meetingData_bettingWithout .md_oddsButton,
+#meetingData #meetingData_insuranceMarkets .md_oddsButton,
+#meetingData #meetingData_placeMarkets .md_oddsButton,
+#meetingData #meetingData_pro-racecard .md_oddsButton,
+#meetingData #meetingData_racecard .md_oddsButton {
+	height: 44px;
+	line-height: 45px;
+}
+
+#meetingData .md_oddsButton {
+	background: url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll;
+	font-weight: bold;
+	border: 1px solid #AAC1E3;
+	color: #000;
+	display: block;
+	margin: 4px 1px 4px;
+	text-align: center;
+	text-decoration: none;
+	width: 50px;
+	position: relative;
+	font-size:12px;
+}
+
+#meetingData .md_oddsButton:hover, #meetingData .md_oddsSelected, #homePage_next3races .md_oddsSelected, #meetingData .md_bestPrice:hover {
+	background: url(../../images/en/oddsBtnOver.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0 #0781BB !important;
+	border: 1px solid #2B97C9;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+#meetingData #meetingData_pro-racecard .md_row .md_column6 .md_oddsButton { width: 25px !important; }	
+#meetingData #meetingData_insuranceMarkets .md_nr .md_oddsButton, #meetingData #meetingData_insuranceMarkets .md_nr .md_oddsButton:hover,
+#meetingData #meetingData_placeMarkets .md_nr .md_oddsButton, #meetingData #meetingData_placeMarkets .md_nr .md_oddsButton:hover,
+#meetingData #meetingData_bettingWithout .md_nr .md_oddsButton, #meetingData #meetingData_bettingWithout .md_nr .md_oddsButton:hover,
+#meetingData #meetingData_pro-racecard .md_nr .md_oddsButton, #meetingData #meetingData_pro-racecard .md_nr .md_oddsButton:hover,
+#meetingData #meetingData_racecard .md_nr .md_oddsButton, #meetingData #meetingData_racecard .md_nr .md_oddsButton:hover,
+#meetingData #meetingData_racecard_noform .md_nr .md_oddsButton, #meetingData #meetingData_racecard_noform .md_nr .md_oddsButton:hover {
+	background: url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll;
+	border: 1px solid #AAC1E3;
+	cursor: default;
+	color: #000;
+}
+
+#homePage_next3races .md_bestPrice,
+#meetingData .md_bestPrice {
+	background: url(../../images/en/oddsBtnBestPriceBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0 #9AC536 !important;
+	border: 1px solid #75A027 !important;
+}
+
+#meetingData .md_bettingWithout {
+	background: url(../../images/en/bettingWithoutBG.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0 #3b3b3b !important;
+	color: #fff;
+}
+
+#meetingData .mc_movementUp, #meetingData .mc_movementDown {
+	position: absolute;
+	top: 2px;
+	right: 1px;
+	display: block;
+	width: 11px;
+	height: 6px;
+}
+#meetingData .mc_movementUp { background: transparent url(../../images/en/movement_up.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; }
+#meetingData .mc_movementDown { background: transparent url(../../images/en/movement_down.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; }
+#meetingData .md_rowHighlight td { background-color: #f2f6fb; }
+
+#meetingData input {
+	float: none;
+	width: 15px;
+}
+
+
+.md_runnerDetails {
+	table-layout:fixed;
+	width:270px;
+}
+
+/* runner detail templates : start */
+
+/* -------------   shared   ------------- */
+
+.md_rd_template1, .md_rd_template2 {
+	width: 270px;
+	border-collapse: collapse;
+	margin: 0 !important;
+}
+.md_rd_template1 td, .md_rd_template2 td, .md_rd_template3 td, 
+.md_rd_template5 td, .md_rd_template6 td {
+	margin: 0;
+	padding: 0;
+	border-bottom: 0 !important;
+}
+.md_rd_template1 .md_silk, .md_rd_template2 .md_silk, .md_rd_template5 .md_silk {
+	vertical-align: middle;
+	width: 40px;
+}
+.md_rd_template1 .md_rating, .md_rd_template2 .md_rating {
+	background: transparent url(../../images/en/hollow_circle.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center center;
+	color: #000;
+	width:auto;
+}
+.md_rd_template1 .md_ratingFilled, .md_rd_template2 .md_ratingFilled {
+	background: transparent url(../../images/en/filled_circle.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat center center;
+	color: #fff;
+	width:auto;
+}
+.md_title { text-align: center; }
+.md_nonrunner { color: #939393 }
+
+.md_runner, .md_jockeyTrainer, .md_stats { padding-left: 3px !important; }
+
+.md_jockeyTrainer {
+	width:190px !important;
+	padding-left:5px !important;
+}
+
+/* ------------- template 1 ------------- */
+.md_rd_template1 .md_runner {
+	vertical-align: middle;
+	width: 246px;
+	font-size: 14px;
+}
+
+/* ------------- template 2 ------------- */
+.md_rd_template2 td {
+	height: 12px !important;
+}
+.md_rd_template2 .md_runner, .md_rd_template2 .md_jockeyTrainer {
+	height: 14px !important;
+}
+.md_rd_template2 .md_runner, md_rd_template2 .md_jockeyTrainer {
+	width: 143px;
+}
+.md_rd_template2 .md_runner {
+	font-weight: bold;
+	vertical-align: middle;
+	font-size: 14px;
+}
+.md_rd_template2 .md_jockeyTrainer {
+	font-size: 10px !important;
+	font-weight: normal;
+}
+.md_rd_template2 .md_tvTips {
+	width: 60px;
+}
+.md_rd_template2 .md_stats {
+	font-weight: normal;
+	vertical-align: middle;
+	width: 180px !important;
+}
+.md_rd_template2 .md_awards {
+	text-align: center;
+	padding-right: 9px;
+	width:25px;
+}
+.md_rd_template2 .md_awards img {
+	margin: 0 -2px 0 0;
+	padding: 0;
+}
+.md_rd_template2 .md_formRating {
+	font-weight: normal;
+	text-align: center;
+	color: #31485a;
+	font-size: 9px;
+	height: 10px !important;
+	padding-right: 7px;
+	width:40px;
+}
+.md_rd_template2 .md_rating,
+.md_rd_template2 .md_ratingFilled {
+	height: 28px;
+	width: 43px;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center !important;
+	vertical-align: middle;
+}
+.md_rd_template2 .md_spotlight {
+	font-weight: normal;
+	width: 43px;
+	position:relative;
+	top:-3px;
+	font-size:9px;
+}
+
+.md_rd_template2 .md_jockeyTrainer, .md_rd_template2 .md_stats, .md_rd_template2 {
+	font-size: 11px;
+}
+
+/* ------------- template 3 ------------- */
+.md_rd_template3 {
+	width: 355px;
+}
+.md_rd_template3 .md_runner_left, .md_rd_template3 .md_jockeyTrainer_left, .md_rd_template3 .md_stats_left {
+	text-align: right;
+}
+.md_rd_template3 .md_divider {
+	text-align: center;
+	font-weight: bold;
+	padding-top: 7px;
+	width: 20px;
+	vertical-align: top !important;
+}
+.md_rd_template3 .md_runner, .md_rd_template3 .md_runner_left {
+	height: 15px !important;
+	font-size: 14px;
+	font-weight: bold;
+	width:140px;
+	padding-left:3px;
+}
+.md_rd_template3 .md_jockeyTrainer_left, .md_rd_template3 .md_jockeyTrainer {
+	height: 15px !important;
+	font-size: 11px;
+}
+.md_rd_template3 .md_stats_left, .md_rd_template3 .md_stats {
+	height: 14px !important;
+	font-size: 10px;
+}
+.md_stats {
+	font-size: 11px;
+	width:190px;
+	padding-left:3px;
+}
+
+/* ------------- template 4 ------------- */
+.md_rd_template4 {
+	width: 505px;
+}
+.md_rd_template4 .md_cloth, .md_rd_template4 .md_odds {
+	text-align: center;
+	width: 40px;
+	height: 20px;
+}
+
+/* ------------- template 5 ------------- */
+.md_rd_template5 {
+	width: 439px !important;
+	table-layout: fixed;
+	height: 38px;
+}
+.md_rd_template5 td {
+	height: 12px !important;
+}
+.md_rd_template5 .md_runner {
+	font-weight: bold;
+	font-size: 14px;
+	vertical-align: middle;
+	width: 202px !important;
+}
+.md_rd_template5 .md_jockey, .md_rd_template5 .md_trainer {
+	text-align: left;
+	width: 100px;
+}
+
+/* ------------- template 6 ------------- */ 
+.md_rd_template6 {
+	width: 340px;
+}
+
+.md_rd_template6 .md_silk {
+	vertical-align: top;
+	width:40px;
+}
+
+.md_rd_template6 .md_runner, .md_rd_template6 .md_trainer,
+.md_rd_template6 .md_jockey {
+	height: 22px !important;
+	vertical-align: middle !important;
+}
+
+.md_rd_template6 .md_runner {
+	font-weight: bold;
+	font-size: 14px;
+	vertical-align: middle;
+}
+
+.md_rd_template6 .md_jockey, .md_rd_template6 .md_trainer {
+	font-size: 10px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.md_rd_template6 .md_resultSpotlight {
+	text-align: left;
+	vertical-align: top;
+	color: #474747;
+	font-size: 11px;
+}
+
+/* runner detail templates : end */
+
+/* MEETING DATA MOUDLE STYLES : END */
+
+/* HOME PAGE STYLES : START */
+
+#homePageContent {
+	width: 640px;
+	margin: 0 auto;
+}
+
+#homePage_next3races {
+	border-collapse: collapse;
+	width: 640px;
+	table-layout: automatic;
+}
+
+#homePage_next3races tr.hp_tableHeader th {
+	background: #013855 url(../../images/en/tableHeaderRow.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top;
+	color: #FFFFFF;
+	height: 28px;
+	padding: 0;
+	text-align: left;
+}
+
+#homePage_next3races tr.hp_tableHeader th a {
+	color: #FFFFFF;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	width: 193px;
+}
+
+#homePage_next3races tr.hp_row td.hp_column {
+	width: 130px;
+}
+
+#homePage_next3races .hp_row td {
+	height: 27px;
+	border-bottom: 1px solid #b9bae8;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+#homePage_next3races td.hp_column_spacer,
+#homePage_next3races th.md_hdr_spacer {
+	border-bottom: 0 none;
+	width: 20px;
+}
+
+#homePage_next3races .hp_row .hp_column2,
+#homePage_next3races .hp_row .hp_column4,
+#homePage_next3races .hp_row .hp_column6 {
+	width: 60px;
+	text-align: left;
+}
+
+#homePage_next3races .hp_meetingRunners {
+	text-align: right;
+	padding-right: 9px;
+	border-bottom: 0 !important;
+}
+
+#homePage_next3races .md_oddsButton {
+	background: url('../../images/en/price_all_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll;
+	font-weight: bold;
+	border: 1px solid #AAC1E3;
+	color: #000;
+	display: block;
+	margin: 4px 1px 4px;
+	text-align: center;
+	text-decoration: none;
+	width: 50px;
+	position: relative;
+	height: 20px;
+	line-height: 21px;
+}
+
+#homePage_next3races .md_oddsButton:hover {
+	background: url(../../images/en/oddsBtnOver.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll 0 0 #0781BB;
+	border: 1px solid #2B97C9;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#homePageContent .racingBlurb {
+	line-height: 14px;
+	font-size: 11px;
+}
+
+ul.racingKey {
+	list-style-type: none;
+	margin: 10px 0 10px 0;
+}
+
+ul.racingKey li { display: inline; margin-left: 10px; }
+
+ul.racingKey li.title { font-weight: bold; width: 50px; }
+ul.racingKey li.earlyPrices { width: 80px; }
+ul.racingKey li.enchancedPrices { width: 160px; }
+ul.racingKey li.bestOdds { width: 150px; }
+ul.racingKey li.results { width: 100px; }
+ul.racingKey li.raceReplay { width: 100px; }
+
+ul.racingKey li.multipleRaces {
+  float: right;
+  position: relative;
+  top: -6px;
+}
+
+ul.racingKey li img {
+    margin-right: 2px;
+}
+
+#homePageContent .meetingContainer_top {
+	width: 640px;
+	height: 3px;
+	line-height: 0px;
+	background: #fff url(../../images/en/meetingBox_top.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat bottom;
+	font-size: 0px;
+}
+
+#homePageContent .meetingContainer {
+	background: url(../../images/en/meetingBox_middle_2.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll center bottom #FFFFFF;
+	border-left: 1px solid #C2C2C2;
+	border-right: 1px solid #C2C2C2;
+	overflow: auto;
+	padding: 10px 5px;
+	position: relative;
+	width: 628px;
+}
+
+#homePageContent .meetingContainer h3 {
+    color: #004062;
+    display: inline-block;
+    float: left;
+    font:bold 13px Arial;
+    margin: 0 10px 20px 5px;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+#homePageContent .meetingContainer h3 a {
+	text-decoration: none;
+}
+
+#homePageContent .meetingContainer ul.header_section {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	list-style-type: none;
+}
+
+#homePageContent .meetingContainer ul.header_section li {
+    	border-left: 1px solid #D4D4D4;
+    	clear: none;
+ 	display: inline;
+    	float: left;
+    	height: 24px;
+    	line-height: 22px;
+	padding: 0 10px 0 23px;
+    	text-align: center;
+    	width: 130px;
+}
+
+
+#homePageContent .meetingContainer ul.header_section li img.img_liveTV {
+    float: left;
+    position: relative;
+}
+
+#homePageContent .meetingContainer ul.header_section li img.img_tvSupplier {
+    float: left;
+    margin-left: 7px;
+    margin-top: 3px;
+    position: relative;
+}
+
+#homePageContent .meetingContainer p.meeting_leftTitle {
+    clear: both;
+    float: left;
+    text-align: left;
+    width: 77px;
+    line-height: 23px;	
+    padding-left: 5px;
+}
+
+#homePageContent .meetingContainer p.meeting_leftTitle a {
+	line-height: 14px;
+}
+
+#homePageContent .meetingContainer ul.meetingsRaces,
+#homePageContent .meetingContainer ul.meetingsSpecials {
+	list-style-type: none;
+	width: 540px;
+	float: right;
+}
+
+ul.meetingsRaces li img {
+	margin: 0 -5px 0 0;
+}
+
+#homePageContent .meetingContainer ul.meetingsRaces li,
+#homePageContent .meetingContainer ul.meetingsSpecials li {
+	height: 27px;
+	padding-right: 10px;
+}
+
+#homePageContent .meetingContainer ul.meetingsRaces li a {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#homePageContent .meetingContainer ul.meetingsRaces li {
+    clear: none;
+    float: left;
+    width: 95px;
+}
+
+#homePageContent .meetingContainer ul.meetingsRaces li input {
+	width: auto;
+}
+
+#homePageContent .meetingContainer ul.meetingsRaces input {
+	margin: 0 3px 0 0;
+}
+
+#homePageContent .meetingContainer ul.meetingsSpecials li {
+    clear: none;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    padding-top: 1px;
+    width: auto;
+}
+
+#homePageContent .meetingContainer ul.meetingsSpecials li .meetingSpecial_jackpot,
+#homePageContent .meetingContainer ul.meetingsSpecials li .meetingSpecial_placepot,
+#homePageContent .meetingContainer ul.meetingsSpecials li .meetingSpecial_quadpot {
+	display: block;
+	width: 102px;
+	height: 19px;
+}
+
+#homePageContent .meetingContainer ul.meetingsSpecials li .meetingSpecial_jackpot { background: #fff url(../../images/en/totePools.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px; }
+#homePageContent .meetingContainer ul.meetingsSpecials li .meetingSpecial_placepot { background: #fff url(../../images/en/totePools.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -19px; }
+#homePageContent .meetingContainer ul.meetingsSpecials li .meetingSpecial_quadpot { background: #fff url(../../images/en/totePools.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -38px; }
+
+#homePageContent .meetingContainer_bottom {
+	width: 640px;
+	height: 17px;
+	background: #fff url(../../images/en/meetingBox_bottom.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+	overflow: auto;
+	text-align: right;
+}
+
+#homePageContent input.btnMultipleRaces {
+	float: right;
+	background: #fff url(../../images/en/multipleRacesBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat scroll 0 0 ;
+	height: 20px;
+	width: 154px;
+	color: #ffffff;
+	border: 0px solid #ffffff;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	
+}
+
+.meetingContainer a, #raceGoing p, .md_stats, .md_column1, .header_going{
+	font-size: 11px;
+}
+
+/* HOME PAGE STYLES : END */
+
+/* Meeting header css start */
+
+#meetingHeader {
+	position: relative;
+	width: 646px;
+	height: 203px;
+	margin-bottom: 10px;
+	background: #fff url(../../images/en/mainBg.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+}
+
+#meetingHeader.meetingLevel {
+	background: #fff url(../../images/en/meetingBg.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	height:176px;
+}
+
+#meetingHeader #raceTitle {
+	width: 306px;
+	height: 58px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#meetingHeader #raceTitle h2 {
+	color: #003269;
+	padding: 0;
+	font: 17px Arial;
+	font-weight: bold;
+	margin: 0;
+}
+
+#meetingHeader #raceTitle #navTitleLeft, #meetingHeader #raceTitle #navTitleRight,
+#meetingHeader #raceTitle #navTitleLeft_inactive, #meetingHeader #raceTitle #navTitleRight_inactive {
+	width: 16px;
+	height: 58px;
+	float: left;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#meetingHeader #raceTitle #navTitleLeft_inactive {
+	background: transparent url(../../images/en/arrowLeft_inactive.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right center;
+	cursor: default;
+}
+#meetingHeader #raceTitle #navTitleRight_inactive {
+	background: transparent url(../../images/en/arrowRight_inactive.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left center;
+	cursor: default;
+}
+
+#meetingHeader #raceTitle #navTitleLeft {
+	background: transparent url(../../images/en/arrowLeft.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right center;
+}	
+#meetingHeader #raceTitle #navTitleRight {
+	background: transparent url(../../images/en/arrowRight.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left center;
+}
+#meetingHeader #raceTitle #raceTitleContent {
+	float: left;
+	width: 251px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+#meetingHeader #raceTitle h2 a {
+    text-decoration: none;
+    color: #003269;
+}
+
+#meetingHeader #raceTitle p.raceDist, #meetingHeader #raceTitle p.raceStatus {
+	font: 11px Arial;
+	font-weight: bold;
+	line-height: 14px;
+}
+#meetingHeader #raceTitle p.raceDist {
+	color: #003269;
+}
+#meetingHeader #raceTitle p.raceStatus {
+	color: #000;
+}
+/* More <span> status classes to be added here as needed */
+#meetingHeader #raceTitle p.raceStatus .raceStatus {
+	color: #e90208;
+	text-transform: uppercase;
+}
+
+#meetingHeader #raceGoing {
+	width: 147px;
+	height: 36px;
+	position: absolute;
+	top: 0;
+	left: 307px;
+	padding: 11px 14px;
+	background: transparent url(../../images/en/breakLine.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left center;
+}
+
+#meetingHeader #raceGoing.meetingLevel {
+	left: 471px;
+}
+
+#meetingHeader #raceSubNav {
+	width: 144px;
+	height: 138px;
+	position: absolute;
+	top: 59px;
+	left: 0;
+	padding-left: 8px;
+}
+#meetingHeader #raceSubNav ul {
+	margin: 0;
+	padding: 0;
+	width: 144px;
+	height: 125px;
+	border-top: 1px solid #d5d5d5;
+}
+#meetingHeader #raceSubNav ul li {
+	border-bottom: 1px solid #D5D5D5;
+	color: #666666;
+	cursor: pointer;
+	height: 24px;
+	line-height: 24px;
+	list-style-type: none;
+	padding: 0 25px 0 4px;
+	background: #fbfbfd url(../../images/en/subNav_bg.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top;
+	font-size: 11px;
+}
+
+#meetingHeader #raceSubNav ul li.popUp {
+	border-bottom: 1px solid #D5D5D5;
+	color: #666666;
+	cursor: pointer;
+	height: 24px;
+	line-height: 24px;
+	list-style-type: none;
+	padding: 0 25px 0 4px;
+	background: #fbfbfd url(../../images/en/subNav_bg_pop_up.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top;
+}
+
+#meetingHeader #raceSubNav ul li a {
+    text-decoration:none;
+}
+
+#meetingHeader #raceSubNav ul li.selectedItem {
+	color: #000;
+	background: #fbfbfd url(../../images/en/subNavSelected_bg.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top;
+	font-weight: bold;
+}
+#meetingHeader #raceSubNav ul li img.rAlignImg {
+	float: right;
+}
+#imgRpLogo {
+	position: relative;
+	top: 1px;
+}
+#imgWhTV {
+	position: relative;
+	top: 2px;
+}
+#imgTipAd {
+	position: relative;
+	top: 4px;
+}
+
+#meetingHeader #raceSubNavSelected {
+	height: 116px;
+	left: 148px;
+	padding: 0 10px 22px 14px;
+	position: absolute;
+	top: 59px;
+	left: 148px;
+	width: 310px;
+}
+
+#raceSubNavSelected_container {
+
+		width: 310px;
+
+		height: 116px;
+
+		overflow-x: hidden;
+
+		overflow-y: auto;
+
+}
+
+#meetingHeader #raceSubNavSelected.meetingLevel {
+	width: 474px;
+	height: 101px;
+	padding: 0 10px 12px 14px;
+}
+#meetingHeader #raceSubNavSelected p {
+	font: 11px Arial;
+	line-height: 13px;
+	color: #3a3a3a;
+	padding-left: 2px;
+}
+#meetingHeader #raceSubNavSelected #racingPostVerdict {
+	height: 116px;
+	position: relative;
+}
+#meetingHeader #raceSubNavSelected #racingPostVerdict.meetingLevel {
+	height: 101px;
+}
+#meetingHeader #raceSubNavSelected #verdictTags {
+	position: absolute;
+	right: 3px;
+	bottom: 1px;
+}
+
+#meetingHeader #nextRaces {
+	border-left: 1px solid #DBDBDB;
+	height: 191px;
+	padding: 5px 5px 0 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 147px;
+}
+#meetingHeader #nextRaces p.nextRacesHeader {
+	color: #003269;
+	font: 12px Arial;
+	font-weight: bold;
+	margin: 5px 0 3px;
+}
+#meetingHeader #nextRaces ul {
+	margin: 0;
+	padding: 0;
+}
+#meetingHeader #nextRaces ul li {
+	font: 11px/16px Arial;
+	list-style-type: none;
+	padding: 0 0 2px;
+}
+
+#hover_horseRacing, #hover_raceTimes {
+	position: absolute;
+	display: none;
+	z-index: 100;
+}
+#hover_horseRacing .hover_horseRacing_header {
+	background: transparent url(../../images/en/horseTT_header.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top;
+	float: left;
+	width: 370px;
+	height: 20px;
+}
+#hover_horseRacing .hover_horseRacing_footer {
+	background: transparent url(../../images/en/horseTT_footer.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top;
+	float: left;
+	width: 370px;
+	height: 15px;
+}
+#hover_horseRacing .hover_horseRacing_contentOuter {
+	float: left;
+	padding: 0px 6px;
+	width: 358px;
+	background: transparent url(../../images/en/horseTT_shadow.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-y top;
+}
+#hover_horseRacing .hover_horseRacing_contentOuter .hover_horseRacing_contentInner {
+	float: left;
+	overflow: auto;
+	padding: 0 8px;
+	width: 342px;
+	background: url(../../images/en/horseTT_content.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll center bottom #01527D;
+}
+#hover_horseRacing .hover_horseRacing_contentOuter .hover_horseRacing_contentInner .hover_horseRacing_contentColumn {
+	width: 104px;
+	float: left;
+	padding-left: 10px
+}
+#hover_horseRacing .hover_horseRacing_contentOuter .hover_horseRacing_contentInner .hover_horseRacing_contentColumn p {
+	margin: 5px 0;
+	font-weight: bold;
+	color: #fff;
+}
+#hover_horseRacing .hover_horseRacing_contentOuter .hover_horseRacing_contentInner .hover_horseRacing_contentColumn a {
+	line-height: 16px;
+	display: block;
+	color: #fff;
+	font-size: 10px;
+	background: none;
+}
+
+#hover_raceTimes .hover_raceTimes_header {
+	background: transparent url(../../images/en/timeTT_header.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top;
+	float: left;
+	width: 270px;
+	height: 22px;
+}
+#hover_raceTimes .hover_raceTimes_footer {
+	float: left;
+	width: 270px;
+	height: 15px;
+	background: transparent url(../../images/en/timeTT_footer.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat top;
+}
+#hover_raceTimes .hover_raceTimes_contentOuter {
+	float: left;
+	padding: 0px 6px;
+	width: 258px;
+	background: transparent url(../../images/en/timeTT_shadow.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-y top;
+}
+#hover_raceTimes .hover_raceTimes_contentOuter .hover_raceTimes_contentInner {
+	overflow-y: hidden;
+	padding: 0 8px;
+	width: 242px;
+	background: url(../../images/en/timeTT_content.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x scroll center bottom #045F8E;
+}
+#hover_raceTimes .hover_raceTimes_contentOuter .hover_raceTimes_contentInner a {
+	font-weight: bold;
+	color: #fff;
+	font-size: 10px;
+	background: none;
+}
+#hover_raceTimes .hover_raceTimes_contentOuter .hover_raceTimes_contentInner ul li {
+	list-style-type: none;
+	display: inline-block;
+	width: 33px;
+	padding-left: 4px;
+	text-align: center;
+	height: 22px;
+	line-height: 22px;
+}
+
+#hover_raceTimes .hover_raceTimes_contentOuter .hover_raceTimes_contentInner {
+	width: 242px;
+	padding: 0 8px;
+	background: #045f8e url(../../images/en/timeTT_content.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x bottom;
+}
+
+.horseRacingBlurb-wrapper {
+	text-align:center;
+	display:block;
+	padding:5px;
+	text-transform:uppercase;
+	height:18px;
+	clear:both;
+	line-height:18px;
+	font-weight:bold;
+	font-size:12px;
+	background-color:#eff6fc;
+	border:1px solid #229bd3;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	margin-bottom:4px;
+	color:#004062;
+	text-shadow: 0 1px #fff;
+	*float:left;
+	*overflow:hidden;
+	*width:618px;
+}
+
+.horseRacingBlurb-message {
+	padding-left:30px;
+	background: transparent url(../../images/en/blurb-icon.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 50%;
+}
+
+/* Full Results Template - new elements */
+#meetingData .resultsHeader {
+	overflow: auto;
+	height: 23px;
+	padding: 0 10px;
+}
+#meetingData .resultsHeader h2 {
+	float: left;
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	float: left;
+}
+#meetingData .resultsHeader h2 a {
+	position: relative;
+	top: 2px;
+	left: 5px;
+}
+#meetingData .resultsHeader p {
+	float: right;
+	font-weight: bold;
+}
+
+
+span.sortHeader {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#imgRcRadio {
+	position: relative;
+	top: 2px;
+	left: 3px;
+}
+
+#racingVideo {
+	position: relative;
+	overflow: auto;
+}
+#racingVideo img {
+	float: right;
+	position: absolute;
+	right: 9px;
+	top: 0px;
+}
+#racingVideo p.meetingHeader_blurb {
+    color: #4d4d4d !important;
+    margin-bottom: 40px !important;
+}
+#racingVideo p.meetingHeader_blurb_small {
+	color: #4d4d4d !important;
+	margin-bottom: 40px !important;
+}
+#racingVideo p.meetingHeader_subHeader {
+	font-size: 14px !important;
+	font-weight: bold !important;
+	margin-bottom: 10px;
+	color: #fff;
+}
+#racingVideo #btnQualifyingBets, #racingVideo #btnTandCs {
+	height: 25px;
+	line-height: 25px;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+#racingVideo #btnQualifyingBets {
+	background: transparent url(../../images/en/radioBtnLarge.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	width: 134px;
+}
+#racingVideo #btnQualifyingBets:hover {
+	background: transparent url(../../images/en/radioBtnLarge_hover.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+}
+#racingVideo #btnTandCs {
+	background: transparent url(../../images/en/radioBtnSmall.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+	width: 118px;
+}
+#racingVideo #btnTandCs:hover {
+	background: transparent url(../../images/en/radioBtnSmall_hover.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat;
+}
+
+.racecardRunnerHdr {
+	text-align: left;
+	padding: 0pt 7px 0pt 40px;
+	width: 277px !important;
+}
+
+.hr_dayHdr {
+	font-size: 16px !important; 
+	font-weight: bold !important; 
+	text-transform: uppercase; 
+	color: #-13856;
+}
+
+.hr_raceHeader {
+	color:#003269;
+	font:bold 17px Arial !important;
+	margin:0;
+	padding:0;
+}
+
+.md_extraDetails ul li {
+    padding: 0 !important;
+}
+
+
+.toteLink {
+	float:left;
+	position: relative;
+	left: -7px;
+	top: 3px;
+}
+
+.next3RacesRunLink {
+	position: relative;
+	top: 5px;
+}
+
+.md_column1, .md_column2, .md_column3, .md_column4 {
+	text-align:center;
+}
+
+.md_runner, .md_comment {
+	text-align:left;
+}
+
+.paginationLiveTwo span#selectedLive .inside, .paginationLiveTwo a:hover .inside {
+        background:transparent url('../../images/en/dailyMatchOn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d') repeat-x scroll center bottom;
+        color:#ffffff;
+}
+

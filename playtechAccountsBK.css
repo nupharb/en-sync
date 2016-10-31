@@ -1,0 +1,525 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, .regAccContent {
+scrollbar-base-color: #035571;
+scrollbar-arrow-color: white;
+scrollbar-track-color: #002534;
+
+scrollbar-shadow-color: #01a7cb;
+scrollbar-lightshadow-color: black; 
+scrollbar-darkshadow-color: black;
+
+scrollbar-highlight-color: #01a7cb;
+scrollbar-3dlight-color: black;
+}
+
+body{width: 94%; background: #023b59 url(../images/casinoContentBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x fixed}
+
+.headerBG,#SiteFooter  {display: none}
+#contentCenter{width: 700px; margin: 0 auto;}
+.accStyle #contentHead{width: 660px; margin: 0; margin-left: 20px; height: 60px}
+.accStyle #contentHead h2{width: 600px; font-size: 2em}
+.accStyle #contentHolder {width: 700px; padding: 0; margin: 0; margin: 0; border: none}
+		
+#supportAreaDepWdl {top: 20px}
+
+.accStyle .regAccContent{padding: 0; padding-left: 20px; overflow: auto; height: 305px; width: 690px}
+
+/*label{width: 120px}
+#checkRows input{margin-left: 10px}
+.btnHolder{padding-left: 140px; margin-top: -20px}
+.lowerForm .btnHolder{padding-left: 100px}
+.regAccContent fieldset {margin: 10px 0px 28px 0px;}
+li.error .validationAdvice  {width: 300px; right: 0px; padding: 4px 15px 0 20px; font-weight: normal}*/
+.validationAdvice.prompt {width: 299px; right: 0px; padding: 5px 15px 1px 20px; font-weight: normal; height: 18px; margin-top: 1px}
+
+.validationPassed{width: 300px; background: url(../images/casinoValidationPassed.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left 6px no-repeat; right: 15px; font-weight: normal}
+
+
+
+
+.lowerForm .btnHolder {padding-left: 0}
+.lowerForm .btnHolder.error {padding-left: 0; width: 500px;}
+.btn{width: 100px}
+		
+li.error input {border: 1px solid #fcc715; padding: 2px 1px 2px 3px}
+li.error label{color: #fcc715}
+
+input{width: 172px; padding:1px 1px 0px 3px; font-size: 0.9em}
+#card_no{width: 172px;}
+select{width: 180px}
+#dob_month {width: 80px;}
+#country_code{width: 224px}
+.dob {width: 62px}
+#country_code, #challenge_1 {width: 224px}
+#max_deposit{width: 150px}
+.medField{width: 172px}
+.dateField{font-size: 0.9em}
+.dateFieldMonth{width: 94px; font-size: 0.9em}
+
+.smlField{height: 14px}
+.medField{width: 86px; height: 14px}
+		
+label{margin: 5px 10px 0 0; width: 130px; text-align: left}
+
+.fieldInfo {padding: 9px 0 0 9px; font-size: 0.9em}
+
+.matrixAccA  {margin-top: 15px}
+.matrixAccA li{width: 660px; border-top: 3px solid #0ea2e6; border-bottom: 3px solid #0ea2e6; padding: 17px 0 19px 10px; height: auto}
+
+.matrixAccA li ul li{width: 440px}
+
+.regAccContent .tableData td ul.paymentTypes li{width: 110px; padding-left: 105px}
+/*.regAccContent .tableData td ul.paymentTypes.noPad li{text-align: center}*/
+.regAccContent .tableData td .btn{width: 160px; margin-left: 20px}
+
+.matrixAccA li.noBorder{padding-top: 0; padding-bottom: 0}
+
+.matrixAccA li.noBorder ul{margin-left: 190px}
+
+.tablePayments caption{display: none}
+.regAccContent .tableData td.borderBottom {border-bottom: 1px solid #012235;}
+
+
+.regAccContent .infoBox{width: 668px; margin: 10px 0 0 0; padding-bottom: 20px}
+.regAccContent .infoBox2{border: 1px solid #012235; width: 668px; margin: 13px 0 13px 0; font-size: 1.2em; font-weight: bold; padding: 0; text-align: center}
+.regAccContent .infoBox2 .msgContainer {margin: 3px; background: #FFF; height: 1%; padding: 25px 0px; }
+
+.regAccContent .infoBox ul{padding-left: 20px; margin-left: 20px; list-style: disc; line-height: 20px}
+.regAccContent .infoBox ul li{padding: 0}	
+
+.regAccContent .infoBox2 ol{font-weight: normal; text-align: left; padding-left: 30px}
+		
+.reqFieldHolder{margin-top: 1px; margin-right: 10px}
+
+#transBalanceContainer{border: 1px solid #012235; width: 668px; margin: 13px 0 0 0; font-size: 1.2em; font-weight: bold}
+#transBalanceContainer #transBalance {margin: 3px; background: #e7f6fd  url(http://images.williamhill.com/content/pokerAccGradBG1.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) top repeat-x; height: 1%; padding: 3px}
+#transLeft{width: 320px; float: left; text-align: center; border-right: 1px solid #012235; padding: 18px 0}
+#transRight{width: 320px; float: left; text-align: center; padding: 18px 0}
+
+#transBalance p{display: block;  width: 150px; float: left; text-align: right; padding: 4px 3px 4px 6px;}
+
+#transBalance span{border: 1px solid #4cadd2; display: block; background: #FFF; font-weight: normal; width: 110px; text-align: left; margin-left: 6px; padding: 3px 3px 3px 6px; float: left
+}
+
+.transFunds label{padding-left: 8px}
+.transFunds .btnHolder {padding-left: 148px}
+
+.form_transfer{border-top: 3px solid #0ea2e6; border-bottom: 3px solid #0ea2e6; margin-top: 13px; margin-bottom: 10px; width: 670px; background: #fcfdff  url(http://images.williamhill.com/content/pokerAccGradBG2.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom repeat-x; padding: 0;}
+
+.form_transfer label{text-align: right}
+
+.tablePayments {background: #fcfdff  url(http://images.williamhill.com/content/pokerAccGradBG2.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom repeat-x;}
+
+.regAccContent fieldset .btnHolder.error {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 140px;
+	border: none;
+	margin-top: -8px;
+	width: 350px;
+}
+
+.regAccContent fieldset .btnHolder.error input{margin-top: 0}
+
+.regAccContent form.form_transfer fieldset .btnHolder.error {padding-left: 148px;}
+body .regAccContent form.form_transfer fieldset li.error{ padding-left: 0}
+
+.btnHolder.error .validationAdvice {
+	width: 320px;
+	right: 10px;
+	margin-top: -4px;
+}
+
+.regAccContent .textRight {
+	padding: 0;
+	font-size: 1.2em;
+	width: 670px
+}
+
+p.accFooter{font-size: 1.2em; padding: 9px 0 18px 10px}
+p.accFooter.borderTop{font-size: 1.2em; padding: 17px 0 18px 10px; border-top: 3px solid #0ea2e6; margin-right: 9px; margin-top: 16px}
+
+.regAccContent .tableData .rowGroup td {padding: 0 0 0 8px}
+
+fieldset span {width: 300px}
+fieldset li p{width: 120px}
+
+
+#supportAreaDepTrans {
+	width: 652px;
+	padding: 5px 5px 5px 10px;
+	display: block;
+	border: 1px solid #4cadd2;
+	top: 14px;
+	right: 0;
+	position: absolute;
+	font-size: 1.1em;
+}
+
+#supportAreaDepTrans ul li {
+	padding: 0;
+	float: left;
+	clear: none;
+	width: 200px;
+	border-right: 1px solid #4cadd2; margin-right: 15px
+	
+}
+
+#supportAreaDepTrans ul li.noBorder{
+	border: none;
+	margin: 0;
+}
+
+#supportAreaDepTrans ul p {
+	float: left;
+	width: 100px
+}
+
+.transferMsgHolder {padding: 26px 0 0 10px; height: 34px;}
+
+body .regAccContent .success{padding-top: 0; line-height: 20px; background-position: top 0; font-size: 12px}
+
+body .regAccContent .fail{background: url(https://sports.williamhill.com/ob/static/cust/images/en/validationFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d)  no-repeat; padding-top: 0; padding-left: 20px; padding-bottom: 3px; background-position: top 0; font-size: 12px; color: #FFF; margin-top: -5px; line-height: 28px}
+
+body .regAccContent .transferMsgHolder .fail{background: url(../images/validationFailedLargeBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; margin-top: -15px; line-height: 16px; background-position: left center; padding-right: 10px; width: 600px}
+
+
+.noNorderTop {border-top: 0}
+
+sup{font-size: 0.7em}
+
+#qcVoucherHolder {
+	border-top: 3px dashed #4cadd2;
+	border-bottom: none;
+	margin-right: 0;
+	margin-bottom: 25px;
+}
+
+#qcVoucherHolder #qcVoucher {width: 630px; margin: 0; padding-bottom: 20px}
+
+
+
+
+/*---------------------------------Sign In---------------------------------------*/
+
+body#pokerLogin {width: 385px}
+
+body#pokerLogin #contentCenter {width: 385px; background: #003452; padding: 0}
+
+.loginContainer{background: url(http://images.williamhill.com/content/pokerLoginBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d)  top no-repeat; width: 364px; height: 1%; overflow: visible; margin: 10px 0 10px 7px}
+
+.loginFloatLeft {float: left; color: #FFF; padding: 20px 0 20px 17px; height: 92px}
+
+.loginFloatLeft h2 {color: #FFF; font-size: 1.5em; font-weight: normal; padding-bottom: 10px}
+
+.loginFloatLeft ul {margin: 0 0 0 15px; list-style: disc; font-size: 1.1em; line-height: 12px}
+
+
+body#pokerLogin #blockA {float: right; padding: 15px 10px 0 0; height: 1%; background: none;}
+
+body#pokerLogin #blockA #signInA {width: 130px; text-align: left; background: none;}
+
+
+#blockA #signInBtn {
+	paddding-top: 0px;
+	background: url(http://images.williamhill.com/content/pokerSignIn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d); 
+	width: 130px; 
+}
+
+body#pokerLogin #blockA #signInA .inputBG{
+	background:url(http://images.williamhill.com/content/pokerInputBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; height: 20px; float: left; padding: 2px; width: 130px; margin-right: 4px; float: none; margin-bottom: 3px
+}
+
+body#pokerLogin #blockA #signInBtnHolder{float: none; margin-bottom: 3px}
+
+body#pokerLogin #blockA  a.lostLoginLink{float: none; font-size: 1em; display: block; padding-right: 5px; padding-left: 0px; clear: both; margin: 10px 0 0 2px }
+	
+/*----------------- TEMP LOGIN----------------------------*/
+
+.loginContainer.tempLogin{background: url(http://images.williamhill.com/content/pokerBodyLoginTallBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) bottom no-repeat; margin-top: 0}
+
+body#pokerLogin ol li .inputBG{
+	background:url(http://images.williamhill.com/content/pokerInputWideBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; height: 20px; float: left; padding: 2px; width: 180px; margin-right: 4px; float: none; margin-bottom: 3px; border: none; margin-top: 0
+}
+
+body#pokerLogin ol li label{color: #FFF; margin-top: 0}
+
+body#pokerLogin ol li {padding: 0; margin: 0;}
+
+body#pokerLogin .btnHolder .btn{background: url(http://images.williamhill.com/content/pokerSubmitWide.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left 2px  no-repeat; margin-top: 7px; border: none; color: #fff; padding-bottom: 5px; width: 183px; cursor: pointer; margin-bottom: 10px}
+
+
+body#pokerLogin .loginError{background: url(../images/pokerLoginErrorMsg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -54px no-repeat; position: absolute; width: 168px;  height: 88px; left: 20px; top: 28px; padding: 10px 18px 0 18px ; color: red; font-size: 1.1em; color: #FFF}
+
+
+body#pokerLogin .loginError.usernameErr{background-position: right -108px;}
+body#pokerLogin .loginError.passwordErr{background-position: right -82px;}
+
+
+body#pokerLogin .loginError a{color: #FFF}
+
+
+
+
+		input{width: 216px; border: 1px solid #00b2d9; padding: 2px; background: url(../images/casinoInputBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-y; color: #FFF}
+		#card_no{width: 216px}
+		select{width: 224px; border: 1px solid #00b2d9; background: #027395; color: #FFF; font-size: 0.9em}
+		#dob_month {width: 80px;}
+		#country_code{width: 224px}
+		.dob {width: 62px}
+		#country_code, #challenge_1 {width: 224px}
+		#max_deposit{width: 140px}
+		.medField{width: 216px}
+		
+		
+		/*---------------------------------INPUT BACKGROUND STYLES--------------------------------*/
+		
+		select#title{background: #027498}
+		input#fName{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -50px;}
+		input#lName{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -100px;}
+		select#dob_day{background: #035b79}
+		select#dob_month{background: #035b79}
+		select#dob_year{background: #035b79}
+		input#email{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -200px;}
+		input#telephone{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -250px;}
+		select#country_code{background: #033e52;}
+		input#fhouse{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -350px;}
+		
+		input#addr_street_1{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -355px;}
+		input#addr_street_2{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -360px;}
+		input#addr_city{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -365px;}
+		input#addr_region{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -370px;}
+		
+		input#postcode{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -375px;}
+		
+		input#reg_username{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left 0;}
+		input#reg_password{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -50px;}
+		input#vfy_password{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -100px;}
+		select#ccy_code{background: #035772}
+		select#max_deposit{background: #03506a}
+		select#challenge_1{background: #03475d}
+		input#response_1{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -300px;}
+		input#fb_promo_code{background: url(../images/casinoInputGradientBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left -350px;}
+		
+		/*----------------------------------------------------------------------------------------*/
+		
+		#reg_username, #reg_password, #vfy_password, #fb_promo_code, #telephone {width: 132px}
+		
+		.tempPassword input{width: 132px}
+		
+		#findAddressLink{width: 139px}
+		
+		label{margin: 5px 10px 0 0; width: 130px; color: #FFF}
+		
+		.fieldInfo {padding: 9px 0 0 9px; font-size: 0.9em}
+		
+		
+		.matrixAccA  {margin-top: 15px}
+		.matrixAccA li{width: 742px; border-top: 3px solid #0ea2e6; border-bottom: 3px solid #0ea2e6; padding: 17px 0 19px 10px}
+		
+		.regAccContent .tableData td ul.paymentTypes li{width: 100px; padding-left: 105px}
+		.regAccContent .tableData td ul.paymentTypes.noPad li{text-align: center}
+		.regAccContent .tableData td .btn{width: 150px}
+		
+		.regAccContent .infoBox{width: 740px; margin-right: 0}
+		
+		.regAccContent .infoBox.error {width: 734px}
+		.regAccContent .infoBox.error li{text-align: center; padding: 20px}
+		
+
+		.regAccContent .infoBox ul{padding-left: 20px; margin-left: 20px; list-style: disc; line-height: 20px}
+		.regAccContent .infoBox ul li{padding: 0}	
+		
+		.regAccContent .infoBox.thinBorder{border: 1px solid #012235; width: 734px; margin: 13px 0 13px 0; font-size: 1.2em; padding: 20px 0; text-align: center}
+		
+		
+		.reqFieldHolder{margin-top: -38px; margin-right: 40px; color: #fff}
+		.reqField, fieldset .reqField{color: #FFF}
+		
+		p.regTerms{font-size: 1.1em; padding: 0; margin: -18px 55px 30px 50px;}
+		p.accFooter{font-size: 1.2em; padding: 17px 0 18px 10px; border-top: 3px solid #0ea2e6; margin-right: 9px}
+		
+		
+		#checkRows label {width: 600px;}
+		
+
+		fieldset li p{width: 129px}
+		
+		
+		body .regAccContent fieldset .error.btnHolder {
+			padding-top: 15px;
+			padding-bottom: 0px;
+			padding-left: 140px;
+			border: none;
+			margin-top: -8px;
+			width: 340px;
+		}
+		
+		body .regAccContent fieldset li.error{padding: 3px 0; margin: 0; width: 600px}
+		
+		body .regAccContent fieldset  label{padding: 3px 0 0 0;}
+		
+		.btnHolder.error .validationAdvice {
+			width: 350px;
+		}
+		
+		li.error .validationAdvice  {width: 298px; right: 0px; 	background: url(../images/casinoValidationFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left center no-repeat; color: #000; height: 18px; margin-top: 3px; padding-top: 5px ; padding-bottom: 1px; padding-left: 21px}
+		
+		li.error > .validationAdvice {background: url(../images/casinoValidationFailedBG.png?ver=10302352b9cca8d374b2c95e0ccf157d) left center no-repeat}
+		
+		td.errorTransfer{position: relative}
+		
+		
+		td.errorTransfer .validationAdvice{background: url(../images/casinoTransferFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left center no-repeat; position: absolute; width: 330px; display: block; margin-top: -35px; margin-left: 0px; text-align: center; height: 30px; padding-top: 8px; color: #000; font-weight: normal; left: -115px}
+		
+		td.errorTransfer > .validationAdvice{background: url(../images/casinoTransferFailedBG.png?ver=10302352b9cca8d374b2c95e0ccf157d) left center no-repeat;}
+		
+		.tempPassword .btnHolder.error .validationAdvice{width: 310px; right: 85px}
+
+
+
+
+/*--------------------------------------CASINO STYLES-------------------------------------*/
+
+
+		h2{color:#FFF}
+		h2 span a{color: #FFF}
+		
+		body .accStyle #contentHead{width: 658px; margin: 0 39px 0 50px; height: 58px; border-bottom: 2px solid #FFF}
+		body .accStyle #contentHead h2{width: 600px; padding-left: 0px; padding-top: 29px; color: #FFF; letter-spacing: 0}
+		
+		#contentCenter{background: none;}
+		
+		body .accStyle #contentHolder{background: none; overflow: visible; width: 730px; margin: -10px 0 0 -15px; padding-bottom: 20px; height: auto}
+		
+		#supportAreaDepWdl{display: none}
+		#supportAreaDepWdl ul{color: #FFF}
+		
+		.accStyle .regAccContent{overflow: visible; background: none; width: 700px}
+		.accStyle .regAccContent form{margin-left: 20px}
+		
+		.regAccContent .infoBox{border-bottom: 1px solid #FFF; width: 666px; margin-left: 30px;}
+		.regAccContent .infoBox, .regAccContent .infoBox a{color: #FFF}
+		
+		.reqFieldHolder{margin-top: -24px; margin-right: 2px; color: #fff}
+		.reqField, fieldset .reqField{color: #FFF}
+		
+		.regAccContent fieldset legend{color: #FFF}
+		legend a{color: #FFF}
+		legend span{padding-left: 30px}
+		label{text-align: right}
+		
+		.fieldInfo, .fieldInfo a{color: #FFF}
+		
+		.matrixAccA li{width: 658px; border-color: #FFF; border-width: 2px; margin-left: 5px}
+		.matrixAccA li a{color: #FFF}
+		
+		fieldset p, fieldset span{color: #FFF}
+		
+		select{margin-bottom: 4px}
+		
+		li.error select{background: #f1bc1e; color: #000}
+		
+		p.textRight {margin-left: 25px}
+		p.textRight a{color: #FFF}
+		
+		
+		#qcVoucherHolder{margin-left: 30px}
+		#qcVoucherHolder .btn{width: 140px}
+		
+		.regAccContent .infoBox2{color: #FFF; border: none; border-bottom: 1px solid #FFF;  margin-left: 30px; margin-top: -5px}
+		.infoBox2 a{color: #FFF}
+		
+		/*-------------------------------PAYMENT TYPES----------------------------------*/
+		.btn, .btnHolder .btn{width: 109px; background: url(../images/casinoSubmitBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; color: #000; padding: 3px 0 8px 0; margin: 1px 0 0 0; border: none; cursor: pointer; font-size: 0.9em}
+
+		.accStyle .accFooter{border-color: #FFF; border-width: 2px; width: 668px; margin: 0 0 0 30px; padding: 10px 0 20px 0}
+		p.accFooter.borderTop{border-color: #FFF; border-width: 2px; width: 668px; margin: 10px 0 0 30px; padding: 10px 0 20px 0}
+		.accFooter, .accFooter a{color: #FFF}
+		
+		
+
+		a.depType, a.depType2{border: 1px solid #002b3c; padding: 4px 0 4px 8px; width: 300px; margin-left: 140px; float: left; text-decoration: none; background: url(../images/depTypeOff.jpg?ver=10302352b9cca8d374b2c95e0ccf157d); color: #FFF}
+		
+		a.depTypeInline, a.depType2Inline{border: 1px solid #002b3c; padding: 4px 0 4px 8px; width: 200px; margin-left: 20px; float: left; text-decoration: none; background: url(../images/depTypeOff.jpg?ver=10302352b9cca8d374b2c95e0ccf157d); color: #FFF}
+		
+		
+		a.depType:hover, a.depType2:hover{ background: url(../images/depTypeOver.jpg?ver=10302352b9cca8d374b2c95e0ccf157d);}
+	
+		.depTypeTxt{float: left; padding: 8px 0 0 18px; text-decoration: none; color: #FFF}
+		.depTypeTxt:hover{text-decoration: underline}
+		.depTypeTxt a{color: #FFF}
+		
+		.depType span, .depType2 span{padding: 5px; margin-right: 10px;}
+		
+		.visa span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -159px no-repeat}
+		.maestro span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right top no-repeat}
+		.solo span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -30px no-repeat}
+		.laser span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -94px no-repeat}
+		.electron span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -127px no-repeat}
+		.mastercard span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -192px no-repeat}
+		.payPal span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -222px no-repeat}
+		.neteller span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -350px no-repeat}
+		.moneybookers span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -254px no-repeat}
+		.clickbuy span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -318px no-repeat}
+		.click2pay span{background: url(../images/paymentLogos.gif?ver=10302352b9cca8d374b2c95e0ccf157d) right -286px no-repeat}
+	
+		a.depType2{margin-left: 8px}
+		
+		.detailsLink{float: left; display: block; width: 100px; padding: 8px 0 0 32px; color: #FFF}
+		.detailsLink a{color: #FFF}
+		
+		.regAccContent fieldset{border: none; margin: 0 0 20px 0}
+
+		.depOther {margin-bottom: 10px}
+		.depOther li{ width: 600px}
+		.depOther .depType{margin-left: 131px}
+		
+		.depOther.border {border: 2px solid #FFF; margin: 0 0 10px 30px; width: 660px; padding-bottom: 10px; }
+		
+		body .regAccContent ul.bulletList {list-style: disc; color: #FFF; margin: -10px 0 20px 30px; padding-left: 20px; }
+		body .regAccContent ul.bulletList li{color: #FFF; font-size: 1.2em;  padding: 0; line-height: 21px; overflow: visible}
+		body .regAccContent ul.bulletList a {color: #FFF}
+		
+		
+		
+		.regAccContent fieldset ol li{padding: 3px 0; height: 29px; float: left; float: none; vertical-align: bottom}
+		.regAccContent fieldset ol.paymentOptions li{height: auto; padding: 5px 0}
+		.regAccContent fieldset ol.textOnlyList li{height: 20px; margin-left: 35px; background: url(../images/casinoBullet.gif?ver=10302352b9cca8d374b2c95e0ccf157d) left center no-repeat; padding-left: 10px}
+		
+		
+		/*---------------table tranfer---------------------*/
+		
+		.depTransfer{border: 2px solid #00afd0; margin-left: 30px; margin-top: 0px}
+		.depTransfer h4{background: #00afd0; color: #FFF; font-size: 1.2em; padding: 2px 0 5px 10px; margin: 0; height: 1%}
+		
+		.depOtherOptions{border: 2px solid #00afd0; margin-left: 30px; margin-top: 0px;  margin-right: 40px; background: #014461; padding-bottom: 4px; font-size: 1.2em; width: 648px; overflow: auto}
+		.depOtherOptions h4{background: #00afd0; color: #FFF; font-size: 1em; padding: 2px 0 5px 10px; margin: 0; height: 1%}
+		
+		.depOtherOptions .depTypeTxt{padding-top: 4px; padding-left: 10px}
+		
+		.regAccContent .tableTransfer{font-size: 1.2em; color: #fff; padding: 0 0 0 10px; background: #046e95 url(../images/depTransferBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) left 0 repeat-x}
+		
+		.regAccContent .tableTransfer .col1{width: 146px}
+		.regAccContent .tableTransfer .col2{width: 110px}
+		.regAccContent .tableTransfer .col3{width: 89px}
+		.regAccContent .tableTransfer .col4{width: 85px}
+		.regAccContent .tableTransfer .col5{width: 105px;}
+		
+		body .regAccContent table.tableTransfer th{text-align: left; height: 22px; background: #014461; font-size: 0.9em}
+		
+		.regAccContent .tableTransfer .btn{text-align: center; width: 110px; margin-top: 0px; margin-right: 10px; background: url(../images/casinoSubmitBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat; padding: 4px 0; vertical-align: middle; font-size: 0.9em;}
+		
+		.regAccContent .tableTransfer .smlField{height:12px; font-size: 0.9em; margin: 4px 0 3px 0; width: 86px}
+		
+		.regAccContent .tableTransfer th, .regAccContent .tableTransfer td{vertical-align: middle; padding-bottom: 2px}
+		
+		.regAccContent .tableTransfer tr{background: url(../images/tableTransferTrBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-y}
+		
+		.regAccContent .tableTransfer td {border-bottom: 1px solid #000; height: 30px}
+		
+		.regAccContent .tableTransfer tr.borderNone td{border: none}
+		
+		#submitButton_msg{border: 1px solid red; left: 356px; position: absolute; width: 296px; top: -30px; height: 20px; background: red; color: #FFF}

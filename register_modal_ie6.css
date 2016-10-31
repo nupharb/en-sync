@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*-----------------------------------MODAL REGISTRATION IE6 STYLES-------------------------------*/
+/*
+	Copyright (c) 2011 Orbis Technology Ltd. All rights reserved.
+
+	This CSS is for IE6 specific styling for registration overlay.
+*/
+
+.quickmenu {
+	position:absolute;
+}
+
+#regOverlayFrame {
+	position:absolute;
+}
+#paymentMethodsMenu {
+	position: relative;
+}
+#scrollContent {
+	width: 231px;
+}
+#scrollContent ul {
+	position: relative;
+}

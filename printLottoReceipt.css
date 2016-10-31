@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.headerBG,
+.subNavBG,
+#contentHead,
+#contentB,
+#lottoHomeCont,
+.slipSupText,
+#slipBtns,
+#servicesLinks,
+fieldset,
+#supportAreaDepWdl,
+.reqFieldHolder,
+.textRight,
+#footer{display: none}
+
+#contentHolder{border: none}

@@ -1,0 +1,2941 @@
+* {
+     margin: 0pt;
+}
+
+body {
+     color: #02507B;
+     font-family: "Ariel",helvetica,verdana,sans-serif;
+     font-size: 13px;
+     list-style-type: square;
+     margin: 5px;
+     padding: 0;
+     width: auto;
+     background: url("../../images/en/overlayContent_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll 0 0 #fff !important;
+     color: #015f8e !important;
+}
+
+a {
+     color: #4183D1;
+     text-decoration: underline;
+}
+
+a:hover {
+     text-decoration: none;
+}
+
+a.button {
+     color: #333333;
+     display: block;
+     float: left;
+     font: 12px arial,sans-serif;
+     height: 24px;
+     margin: 10px 18px 0pt 15px;
+     padding-right: 18px;
+     text-align: center;
+     text-decoration: none;
+}
+
+a.button span {
+     display: block;
+     line-height: 14px;
+     padding: 5px 0pt 5px 18px;
+     width: 150px;
+}
+
+a.button:active {
+     background-position: right bottom;
+     color: #000000;
+     outline: medium none;
+}
+
+a.button:active span {
+     background-position: left bottom;
+     padding: 6px 0pt 4px 18px;
+}
+
+form {
+     margin: 0pt;
+     padding: 0pt;
+}
+
+h1 {
+     font-size: 20px;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+h2 {
+     font-size: 18px;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+h3 {
+     font-size: 16px;
+     font-weight: bold;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+h4 {
+     font-size: 14px;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+ul {
+     list-style: none outside none;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+li {
+     margin: 0pt;
+     padding: 0pt;
+}
+
+acronym {
+     cursor: help;
+}
+
+img {
+     border: 0pt none;
+}
+
+hr {
+     border-bottom: 1px dashed #CCCCCC;
+}
+
+p {
+     margin: 0pt;
+     padding: 0pt;
+}
+
+div.clear {
+     clear: both;
+     line-height: 0;
+}
+
+div.left {
+     float: left;
+}
+
+div.right {
+     float: right;
+}
+
+h1 {
+     font-size: 14px;
+     margin: 0pt 58px 5px;
+}
+
+p {
+     font-size: 11px;
+     margin: 0pt 12px 5px;
+}
+
+p.stake {
+     color: #368AC8;
+     font-size: 13px;
+     font-weight: bold;
+}
+
+.displayNone {
+     display: none;
+}
+
+.tableData {
+     background: none repeat scroll 0pt 0pt transparent;
+     border: medium none;
+     color: #015f8e !important;
+     font-size: 12px;
+     margin: 0pt;
+}
+
+.tableData tr th {
+     color: #FFFFFF;
+     font-size: 0.9em;
+     height: 27px;
+     padding-top: 0pt;
+     text-align: left;
+}
+
+.tableData tr td {
+     border: medium none;
+     height: 23px;
+}
+
+.tableData tr th {
+     border: medium none;
+     padding-left: 8px;
+}
+
+.tableData tr th a {
+     color: #FFFFFF;
+}
+
+.tableData tr td {
+     border: medium none;
+     padding-left: 8px;
+}
+
+#content {
+     width: 996px;
+}
+
+.regAccContent form {
+     position: relative;
+}
+
+.reqFieldHolder {
+     color: #015f8e !important;
+     font-size: 1.2em;
+     margin: 0pt 4.8em 0pt 0pt;
+     position: absolute;
+     right: 0pt;
+     top: 0pt;
+}
+
+.reqField, fieldset .reqField {
+     color: red;
+     display: inline;
+     float: none;
+}
+
+#depReqFieldHolder {
+     font-size: 11px;
+     left: 345px;
+     position: absolute;
+     top: -20px;
+     width: 100px;
+}
+
+#depReqFieldHolder, #not#ie8 {
+     margin-top: 0pt;
+}
+
+.accStyle #contentHolder {
+     position: relative;
+}
+
+#contentHeadReg {
+     background: none repeat scroll 0pt 0pt #FFFFFF;
+     border-bottom: 5px solid #4CADD2;
+     height: 70px;
+     margin: 0pt 55px 0pt 0pt;
+     padding: 0pt 5px;
+     position: relative;
+}
+
+.accStyle #contentHead {
+     background: none repeat scroll 0pt 0pt transparent;
+     border-bottom: 3px solid #0EA2E6;
+     height: 107px;
+     margin: 0pt 45px;
+     overflow: auto;
+     padding: 0pt 5px;
+     position: static;
+     width: 884px;
+}
+
+#mainNavHolder {
+     overflow: visible;
+}
+
+#mainNavHolder.navAcc #mainNavA {
+     padding: 20px 0pt;
+     text-align: center;
+     width: 986px;
+}
+
+#mainNavAcc {
+     background: url("../../images/en/mainNavAccBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll 0pt 0pt #001826;
+     padding: 15px 0pt 20px;
+     text-align: center;
+}
+
+#mainNavAcc ul li {
+     display: inline;
+     padding-right: 20px;
+}
+
+#mainNavAcc ul li a {
+     color: #FFFFFF;
+     padding: 5px 20px 6px;
+     text-decoration: none;
+}
+
+#mainNavAcc ul li a:hover {
+     background: url("../../images/en/selectedNavAcc.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll 0pt 0pt #007AB6;
+     border: 1px solid #002131;
+     color: #FFFFFF;
+     padding: 4px 19px 5px;
+     text-decoration: none;
+}
+
+#mainNavAcc li#selectedNavAcc a {
+     background: url("../../images/en/selectedNavAcc.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll 0pt 0pt #007AB6;
+     color: #FFFFFF;
+}
+
+.accStyle #blockA fieldset {
+     clear: none;
+     float: right;
+     height: 20px;
+     margin: 0pt;
+     padding: 2px 0pt 0pt 20px;
+}
+
+.accStyle #blockA #signInA label {
+     font-size: 0.8em;
+     font-weight: normal;
+     height: 1%;
+     margin: 0pt;
+     padding: 1px 4px 0pt 5px;
+     width: 56px;
+}
+
+.accStyle #blockA #signInBtn {
+     font-size: 0.7em;
+     height: 18px;
+     margin-top: -1px;
+     padding: 0pt;
+     width: 90px;
+}
+
+.accStyle #blockA #signInB {
+     height: 1%;
+     padding-top: 3px;
+     text-align: left;
+}
+
+.accStyle #blockA #signInB input {
+     background: url("../../images/en/btnPlaceBetGrad.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll center bottom #1B76A5;
+     border: 1px solid #FFFFFF;
+     color: #FFFFFF;
+     height: 20px;
+     padding: 0pt 0pt 2px;
+     width: 176px;
+}
+
+.subHead {
+     background: none repeat scroll 0pt 0pt transparent;
+     border: medium none;
+}
+
+#regAccPayPal {
+     font-size: 1.2em;
+     height: 100px;
+     margin-top: 25px;
+     position: absolute;
+     right: 0pt;
+     width: 318px;
+}
+
+#thawte {
+     font-size: 1.2em;
+     height: 32px;
+     margin: -44px 10px 0pt 0pt;
+     position: absolute;
+     right: 0pt;
+     width: 39px;
+     z-index: 1;
+}
+
+#thawte img {
+     height: 32px;
+     width: 39px;
+}
+
+h2.payPal {
+     background: url("../../images/en/payPalLogo2.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left 2px transparent;
+     color: #000000;
+     font-size: 1.6em;
+     padding: 3px 0pt 0pt 75px;
+}
+
+#regAccPayPal h4 {
+     background: url("../../images/en/paypal.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left 5px transparent;
+     color: #000000;
+     font-size: 1.8em;
+     padding: 0pt 0pt 0pt 70px;
+}
+
+.regAccContent li {
+     clear: both;
+     float: left;
+     list-style: none outside none;
+     overflow: hidden;
+     padding: 3px 0;
+     width: 380px;
+}
+
+.regAccContent .joinNowButton1 {
+     position: absolute;
+     right: 80px;
+     top: 50px;
+}
+
+.regAccContent a:focus {
+     outline: 1px dotted #0174EC;
+}
+
+.regAccContent .textRight {
+     font-size: 1.1em;
+     padding: 10px 45px 0pt 0pt;
+}
+
+.regAccContent h2 {
+     color: #000000;
+     font-size: 1.8em;
+     margin-bottom: 16px;
+     padding-top: 25px;
+}
+
+h2 .textSmall {
+     font-size: 9pt;
+     letter-spacing: 0pt;
+     padding-left: 6px;
+}
+
+h2 .clearBoth {
+     line-height: 0;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+.regAccContent .headLeft {
+     display: block;
+     float: left;
+     padding-top: 45px;
+}
+
+.regAccContent .headRight {
+     display: block;
+     float: right;
+     padding: 45px 45px 0pt 0pt;
+}
+
+#payPalTitle {
+     background: url("../../images/en/paypal.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left 9px transparent;
+     padding-left: 75px;
+}
+
+.accDetailsPayPal {
+     width: 100%;
+}
+
+.accDetailsPSC {
+     width: 100%;
+}
+
+#listWallet {
+     margin-top: 80px;
+}
+
+#listIKSH, #listUKSH {
+     margin-top: 100px;
+}
+
+#listEPYV{
+	margin-top: 100px;
+}
+
+#listPSC {
+     margin-top: 100px;
+}
+
+.regAccContent .tableData caption {
+     padding: 0pt 0pt 5px;
+     width: 894px;
+}
+
+body.langEL .statementTitle {
+     font-size: 1.4em;
+}
+
+.regAccContent .tableData.tableList {
+     background: url("../../images/en/tableListAccBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll center top #E7F6FD;
+}
+
+.regAccContent .tableData td {
+     height: 24px;
+     padding: 3px 0pt 2px 8px;
+}
+
+.regAccContent .tableData.tablePayments td {
+     padding: 0;
+}
+
+.regAccContent .tableData.tableList td {
+     padding-left: 8px;
+}
+
+.regAccContent .noBorder td {
+     border-bottom: medium none;
+     padding: 0pt 0pt 0pt 6px;
+}
+
+.regAccContent .lastCommon td {
+     padding: 0pt 0pt 0pt 6px;
+}
+
+.regAccContent .tableData .rowGroup td {
+     border: medium none;
+     padding: 0pt 0pt 0pt 6px;
+}
+
+.regAccContent .tableData .rowGroup.top td {
+     padding-top: 15px;
+}
+
+.regAccContent .tableData .rowGroup.bottom td {
+     border-bottom: 1px solid #002134;
+     padding-bottom: 15px;
+}
+
+.regAccContent .tableData td.borderBottom {
+     border-bottom: 1px solid #7BBFFF;
+}
+
+.regAccContent .tableData td ul.paymentTypes {
+     line-height: 24px;
+     list-style: none outside none;
+     text-align: left;
+}
+
+body .regAccContent .tableData td ul.paymentTypes.noPad li {
+     padding-left: 0pt;
+}
+
+.hidden {
+     display: none;
+}
+
+.show {
+     display: block;
+}
+
+.regAccContent .tableData td ul.paymentTypes li {
+     padding-left: 105px;
+     width: 130px;
+}
+
+div.payLogo {
+     height: 30px;
+     width: 250px;
+}
+
+span.payLogo {
+     height: 21px;
+     width: 250px;
+}
+
+div.reverseLogo {
+     height: 30px;
+     width: 108px;
+}
+
+span.depositSuccess {
+     clear: none;
+     display: block;
+     height: 25px;
+     width: 250px;
+}
+
+.regAccContent .tableData td ul.paymentTypes li.reversible {
+     width: 330px;
+}
+
+.paymentMaestro {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+     float: left;
+     position: static;
+}
+
+.paymentSolo {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -30px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentDelta {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -61px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentLaser {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -60px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentElectron {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -90px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentVisa {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -120px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMastercard {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -150px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMastercardD {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -150px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEurocard {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentPaypal {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -180px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMoneyBookers {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -210px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentClick2Pay {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -240px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentClickAndBuy {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -270px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentNeteller {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -300px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentPaySafe {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -360px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBWLT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -210px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBVSA {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -900px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBVSD {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -900px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBVSE {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -930px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBMAE {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -960px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBSLO {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -990px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBAMX {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBDIN {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1020px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBJCB {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBLSR {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1050px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBGCB {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBNET {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPBT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBDNK {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1080px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPSP {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1110px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBLCSI {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -140px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPBT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1170px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBGIR {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1200px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBDID {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBSFT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1230px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBENT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1260px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBEBT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1290px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBSO2 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1290px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBIDL {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1320px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBNPY {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPLI {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1350px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY5 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY6 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY7 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY14 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY15 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY17 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY18 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY19 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY20 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2340px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY21 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY22 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY25 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY26 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY28 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY32 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY33 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY36 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBEUR6 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1440px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBEPY {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1470px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBMCC {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1500px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBPWY37 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMBELV {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1530px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentMB4BC {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -1560px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyENFBT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -540px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyENIDL {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -780px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyENP24 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -630px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyEUTLR {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -480px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyPOLI {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -840px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyBLKUN {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -720px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyBLKSB {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2310px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyBLETO {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -660px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyMBANC {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2280px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyEPS {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -450px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyTELEI {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -690px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyGIROP {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -750px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyPLINZ {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -840px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyEKONT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -420px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyNORDE {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -810px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyCDIGI {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2250px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyBSANT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2220px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyNSURF {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -600px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoySOFEU {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -870px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoySOFCH {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -870px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyEWRDK {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -510px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyEWRNO {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -510px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyEWRSK {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -510px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyMONET {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2430px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyWEBMO {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2400px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyINSDB {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2370px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyABAQS {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -390px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyINSTA {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2640px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyMRCSH {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2670px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyCASHU {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2700px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyUMBNK {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2730px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyTODIT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=61759ba92fc0951e993e5e2e34549959") no-repeat scroll 0pt -2940px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyECARD {
+     background: url("../../images/en/paymentLogosReg.gif?ver=61759ba92fc0951e993e5e2e34549959") no-repeat scroll 0pt -2880px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoySPORO {
+     background: url("../../images/en/paymentLogosReg.gif?ver=61759ba92fc0951e993e5e2e34549959") no-repeat scroll 0pt -2910px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyTODIT {
+     background: url("../../images/en/paymentLogosReg.gif?ver=61759ba92fc0951e993e5e2e34549959") no-repeat scroll 0pt -2940px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoyECARD {
+     background: url("../../images/en/paymentLogosReg.gif?ver=61759ba92fc0951e993e5e2e34549959") no-repeat scroll 0pt -2880px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEnvoySPORO {
+     background: url("../../images/en/paymentLogosReg.gif?ver=61759ba92fc0951e993e5e2e34549959") no-repeat scroll 0pt -2910px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentUKSH {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2130px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentIKSH {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2460px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEPYV {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2970px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentePayVoucher {
+	background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2970px transparent;
+	float: left;
+	position: static;
+}
+
+.paymentCheck {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2160px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentBankTransfer {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2190px transparent;
+     float: left;
+     position: static;
+}
+
+.payment4BE6 {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2580px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentKAPO {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2610px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentEP {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2520px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentG2P {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2550px transparent;
+     float: left;
+     position: static;
+}
+
+.paymentDC {
+     background: url("../../images/en/paymentLogosReg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt -2490px transparent;
+     float: left;
+     position: static;
+}
+
+a {
+     color: #0174EC;
+     margin-left: 0pt;
+     text-decoration: underline;
+}
+
+a:hover {
+     text-decoration: none;
+}
+
+.ulExtraPad li {
+     padding: 11px 0pt;
+}
+
+.regAccContent {
+     background: none repeat scroll 0pt 0pt #FFFFFF;
+     border: medium none;
+     clear: both;
+     height: 1%;
+     margin: 0pt 0pt 0pt 40px;
+     padding: 0pt;
+     position: relative;
+}
+
+.regAccContent .infoBox {
+     font-size: 1.2em;
+     margin: 0pt;
+     padding: 0pt;
+     text-align: center;
+}
+
+.regAccContent .infoBox.error {
+     border: 1px solid red;
+     color: red;
+     margin: 0pt 0pt 5px;
+     padding: 3px 0pt;
+}
+
+.regAccContent .infoBox.error ul {
+     margin-left: 20px;
+}
+
+.regAccContent #breadcrumb {
+     margin: 0pt 55px 15px 58px;
+}
+
+.regAccContent .infoBox p {
+     padding-left: 0pt;
+     text-align: left;
+}
+
+.regAccContent .infoBox .infoLeft {
+     padding-left: 110px;
+     text-align: left;
+     width: 500px;
+}
+
+.regAccContent .infoBox ul {
+     list-style: disc inside none;
+     margin-top: 10px;
+     text-align: left;
+}
+
+.regAccContent .infoBox ul p {
+     float: left;
+     width: 125px;
+}
+
+.regAccContent .infoBox ul span {
+     float: left;
+     text-align: left;
+     width: 250px;
+}
+
+fieldset {
+     border: medium none;
+     clear: both;
+     font-size: 1.2em;
+     margin: 20px 0pt 0pt 55px;
+     padding-top: 100px;
+}
+
+body .regAccContent.bonus fieldset, .regAccContent #updateDetails fieldset {
+     -moz-border-bottom-colors: none;
+     -moz-border-image: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     border-color: #FFFFFF #FFFFFF #002134;
+     border-style: solid;
+     border-width: 1px;
+     padding-bottom: 10px;
+}
+
+.regAccContent.bonus fieldset {
+     margin-bottom: 10px;
+}
+
+.regAccContent.bonus fieldset.noBorder, .regAccContent #updateDetails fieldset .noBorder {
+     border: medium none;
+     padding-bottom: 20px;
+}
+
+span.bonusBarHolder {
+     border: 1px solid #002131;
+     padding: 2px;
+     width: 400px;
+}
+
+.bonusGraphicCasino {
+     background: url("../../images/en/bonusCasinoBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll center bottom #EE3C96;
+     display: block;
+     float: left;
+     height: 10px;
+}
+
+.bonusGraphicPoker {
+     background: url("../../images/en/bonusPokerBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll center bottom #ED1C24;
+     display: block;
+     float: left;
+     height: 10px;
+}
+
+.bonusGraphicArcade, .bonusGraphicVegas, .bonusGraphicGames {
+     background: url("../../images/en/bonusGamesBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll center bottom #EE3C96;
+     display: block;
+     float: left;
+     height: 10px;
+}
+
+.bonusGraphicBingo {
+     background: url("../../images/en/bonusBingoBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll center bottom #FAA61A;
+     display: block;
+     float: left;
+     height: 10px;
+}
+
+.bonusGraphicSportsbook {
+     background: url("../../images/en/bonusSportsBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll center bottom #96C527;
+     display: block;
+     float: left;
+     height: 10px;
+}
+
+.bonus .bonusTxt {
+     color: #000000;
+     display: block;
+     float: left;
+     padding: 4px 0pt 2px 8px;
+     width: 40px;
+}
+
+.regAccContent fieldset {
+     clear: both;
+     font-size: 1.2em;
+     margin: 0pt;
+     padding: 0pt;
+     position: relative;
+}
+
+.regAccContent fieldset ol {
+     margin-bottom: 20px;
+     margin-top: 40px;
+}
+
+.bonus fieldset ol {
+     margin-top: 20px;
+}
+
+.regAccContent hr {
+     clear: both;
+     margin-bottom: 60px;
+     visibility: hidden;
+}
+
+.regAccContent legend {
+     color: #000000;
+     display: none;
+     font-size: 1.5em;
+     font-weight: 100;
+     letter-spacing: 0pt;
+     top: 0pt;
+}
+
+.regAccContent legend span {
+     display: block;
+     left: -1px;
+     position: absolute;
+}
+
+.bonus legend span {
+     top: 18px;
+}
+
+.legendLeft {
+     display: block;
+     float: left;
+     width: 400px;
+}
+
+.legendRight {
+     display: block;
+     float: right;
+     font-size: 0.6em;
+     padding-top: 10px;
+     text-align: right;
+     width: 200px;
+}
+
+#registration legend {
+     margin-bottom: 0pt;
+}
+
+p.key {
+     margin-bottom: 20px;
+     width: 300px;
+}
+
+label {
+     color: #015f8e !important;
+     display: block;
+     float: left;
+     font-weight: bold;
+     margin-top: 0px;
+     padding-top: 0px;
+     text-align: left;
+     width: 130px;
+     clear: both;
+}
+
+li.error label {
+     color: red;
+}
+
+.labelDate {
+     clear: none;
+     text-align: left;
+     width: 18px;
+}
+
+input.btn {
+     float: left;
+     margin-left: 0px;
+     width: 190px;
+}
+
+.lowerForm {
+
+}
+
+.lowerForm.noBG {
+     background: none repeat scroll 0pt 0pt transparent;
+}
+
+.lowerForm.marginAdjust {
+     margin-top: -35px;
+}
+
+.lowerForm fieldset {
+     border: medium none;
+     display: block;
+     margin-bottom: 0pt;
+     margin-left: -45px;
+}
+
+fieldset .lowerForm li.error label {
+     color: red;
+     height: 20px;
+}
+
+#regBG {
+     background: url("../../images/en/headerBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll center top #002538;
+     border: medium none;
+}
+
+#regHeader {
+     background: url("../../images/en/mainNavBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll center bottom #015079;
+     border-left: 1px solid #FFFFFF;
+     border-right: 1px solid #FFFFFF;
+     height: 222px;
+     margin: 0pt 6px;
+     padding: 0pt 0pt 0pt 45px;
+}
+
+#regHeader.short {
+     height: 150px;
+}
+
+#regHeader h2 {
+     color: #FBFBFA;
+     font-size: 2em;
+     padding-bottom: 12px;
+}
+
+#regHeader ul {
+     color: #A2A2A2;
+     font-size: 1.2em;
+     margin-bottom: 20px;
+}
+
+#regHeader ul.regProcess {
+     color: #FFFFFF;
+     font-size: 1.6em;
+     line-height: 20px;
+     margin: 15px 0pt 0pt;
+}
+
+#regHeader ul.regProcess.payPal {
+     margin-top: -10px;
+}
+
+#regHeader ul.regProcess.lostDetails {
+     margin-top: -2px;
+}
+
+#regHeader .stepComplete {
+     background: none repeat scroll 0pt 0pt #000000;
+     color: #7DDDFF;
+     margin-left: -10px;
+     padding: 0pt 0pt 3px 10px;
+     width: 600px;
+}
+
+#regHeader p {
+     color: #A2A2A2;
+     font-size: 1.2em;
+     margin-bottom: 10px;
+}
+
+#regHeader a {
+     color: #A5D335;
+     font-weight: bold;
+}
+
+.regHeaderLeft {
+     float: left;
+     margin: 25px 0pt 20px;
+     width: 624px;
+}
+
+#regHeader.short .regHeaderLeft {
+     margin-top: 2px;
+}
+
+.regHeaderLeft h2 {
+     visibility: hidden;
+}
+
+.regHeaderLeft h2.payPalHead {
+     background: url("../../images/en/payPalHead.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+     height: 42px;
+     padding: 3px 0pt 0pt 100px;
+     visibility: visible;
+}
+
+.regHeaderLeft p {
+     padding-top: 7px;
+}
+
+.regHeaderRight {
+     float: left;
+     margin: 25px 0pt 20px;
+     width: 274px;
+}
+
+.fadeOut label {
+     color: #E4E4E4;
+}
+
+.fadeOut input {
+     border: 1px solid #E4E4E4;
+}
+
+.fadeOut sup {
+     color: #E4E4E4;
+}
+
+fieldset p {
+     color: #000000;
+     float: left;
+     margin-right: 20px;
+     padding-top: 4px;
+     text-align: left;
+     width: auto;
+}
+
+fieldset span {
+     display: inline-block;
+     float: left;
+     padding-bottom: 25px;
+     width: auto;
+}
+
+.bonus fieldset p {
+     width: 125px;
+}
+
+.bonus fieldset span {
+     width: 460px;
+}
+
+fieldset a {
+     color: #1a74ae !important;
+     text-decoration: underline;
+     clear: none;
+     float: left;
+     display: inline-block;
+     padding-top: 9px;
+}
+
+fieldset a:hover {
+     text-decoration: none;
+     color:#269eec !important;
+}
+
+.btn {
+     font-size: 1.1em;
+     margin: 0pt;
+     width: 189px;
+}
+
+.extraPad {
+     padding: 13px 0pt;
+}
+
+.lowerForm .btnHolder {
+     margin: 0pt 55px 20px 0pt;
+     padding: 0pt 0pt 30px 175px;
+}
+
+#addressSelect {
+     background: none repeat scroll 0pt 0pt #FFFFFF;
+     border-bottom: 1px solid #4CADD2;
+     border-top: 1px solid #4CADD2;
+     height: 1%;
+     margin: 20px 55px 10px 0pt;
+     padding: 20px 0pt 0pt;
+}
+
+#addSelect {
+     height: 84px;
+     padding: 5px;
+     width: 443px;
+}
+
+.textPrompt {
+     padding: 2px 0pt 20px 220px;
+}
+
+.divideLine {
+     border-bottom: 1px solid #CCCCCC;
+}
+
+.extraSpace {
+     margin-top: 18px;
+}
+
+.extraSpace2 {
+     margin-top: 38px;
+}
+
+.checkBoxMail {
+     border: medium none;
+     margin-right: 5px;
+     width: 13px;
+}
+
+.labelMail {
+     color: #000000;
+     font-weight: normal;
+     width: 100px;
+}
+
+.mailBtn {
+     float: right;
+     font-size: 1.1em;
+     margin-right: 43px;
+     margin-top: 20px;
+     width: 189px;
+}
+
+.dob {
+     margin-right: 10px;
+     width: 76px;
+}
+
+#title {
+     width: 75px;
+}
+
+#dob_month {
+     width: 111px;
+}
+
+#country_code, #challenge_1 {
+     width: 283px;
+}
+
+#postcode {
+     width: 68px;
+}
+
+#postcode2 {
+     width: 68px;
+}
+
+#captureImg {
+     width: 190px;
+}
+
+.dateField {
+     margin: 20px 10px 0 -18px;
+     width: 75px;
+}
+
+.dateFieldMonth {
+     margin: 20px 10px 0 -18px;
+     width: 75px;
+}
+
+select {
+     float: left;
+     font-size: 1.1em;
+     margin-top: 5px;
+     padding: 1px;
+     width: 198px;
+}
+
+input {
+     float: left;
+     margin-bottom: 2px;
+     margin-top: 5px;
+}
+
+#regCapture {
+     margin-top: 0pt;
+}
+
+#regCapture legend {
+     margin-bottom: 20px;
+}
+
+#regCapture .subHead {
+     width: 400px;
+}
+
+#regCapture img {
+     margin: 0pt;
+     width: 196px;
+}
+
+#regCapture p {
+     margin-top: 10px;
+}
+
+.matrixAccA {
+     color: #040404;
+     font-size: 1.2em;
+     margin-top: 20px;
+}
+
+.matrixAccA a {
+     padding-bottom: 0.5em;
+}
+
+.matrixAccA li {
+     border-bottom: 1px solid #002134;
+     clear: both;
+     height: 1%;
+     list-style: none outside none;
+     margin-bottom: 10px;
+     padding-bottom: 10px;
+     position: relative;
+}
+
+.matrixAccA li.reducedHeight {
+     margin-bottom: 3px;
+     padding-bottom: 3px;
+}
+
+.matrixAccA li.extraPad {
+     padding-top: 40px;
+}
+
+.matrixAccA li.extraMargin {
+     padding-bottom: 20px;
+}
+
+.matrixAccA li.noBorder {
+     border-bottom: medium none;
+}
+
+.matrixA li.paymentVerify {
+     border-bottom: 1px solid #4CADD2;
+     border-top: 1px solid red;
+     padding-bottom: 30px;
+     padding-top: 0pt;
+}
+
+.matrixA li.paymentVerify ul li iframe {
+     border: 1px solid #000000;
+     height: 475px;
+     width: 500px;
+}
+
+.matrixAccA ul.liBtnHolder li {
+     margin-bottom: 30px;
+}
+
+.matrixAccA.accConfirm {
+     margin: -20px 0pt 50px;
+}
+
+.matrixAccA.accConfirm li {
+     border-bottom: medium none;
+     margin-bottom: 3px;
+     padding-bottom: 3px;
+}
+
+.matrixAccA ul {
+     display: block;
+     margin: -1.4em 0pt 0pt 225px;
+     width: 650px;
+}
+
+.matrixAccA li ul li {
+     border: medium none;
+     margin: 0pt;
+     padding: 2px 0pt 5px;
+     width: 650px;
+}
+
+.matrixAccA .listFloat li {
+     clear: none;
+     display: block;
+     float: left;
+     width: 200px;
+}
+
+.lastLiFloat:after {
+     clear: both;
+     content: ".";
+     display: block;
+     height: 0pt;
+}
+
+.colLink a {
+     background: none repeat scroll 0pt 0pt blue;
+     color: red;
+}
+
+.matrixAccA .pLeft {
+     float: left;
+     width: 400px;
+}
+
+.matrixAccA .pRight {
+     float: left;
+     width: 200px;
+}
+
+.matrixAccA .noBorder {
+     border: medium none;
+}
+
+.matrixAccA .pRight input {
+     margin-top: 0pt;
+     width: 215px;
+}
+
+.searchFields {
+     border-bottom: 3px solid #0EA2E6;
+     height: 1%;
+     margin-left: 0pt;
+     margin-right: 45px;
+     padding-bottom: 0pt;
+}
+
+.searchFields .btnHolder {
+     margin-bottom: 20px;
+     margin-top: 10px;
+}
+
+#checkRows {
+     padding-top: 20px;
+}
+
+.lowerForm #checkRows {
+     margin-top: 5px;
+     padding-top: 0pt;
+}
+
+.lowerForm hr {
+     background: none repeat scroll 0pt 0pt #4CADD2;
+     border: medium none;
+     color: #4CADD2;
+     height: 6px;
+     margin-bottom: 5px;
+     margin-left: -10px;
+     margin-right: 55px;
+}
+
+#checkRows input {
+     border: medium none;
+     height: 13px;
+     margin: 0pt 0pt 0pt 220px;
+     padding: 0pt;
+     width: 13px;
+}
+
+#checkRows p {
+     border: medium none;
+     height: 13px;
+     margin: 0pt 0pt 0pt 210px;
+     padding: 0pt;
+     width: 13px;
+}
+
+#checkRows label {
+     float: left;
+     margin-top: 0pt;
+     padding: 0pt 0pt 0pt 10px;
+     text-align: left;
+     width: 560px;
+}
+
+.checkBoxRow input {
+     width: 13px;
+}
+
+.checkBoxRow label {
+     padding: 0pt 0pt 0pt 10px;
+     width: 500px;
+}
+
+fieldset.checkA, fieldset.checkB {
+     border: medium none;
+     clear: none;
+     font-size: 1.2em;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+fieldset.searchCriterea {
+     margin-bottom: 0pt;
+}
+
+.checkA strong {
+     padding-left: 5px;
+     position: absolute;
+     top: 7px;
+}
+
+.checkA {
+     float: left;
+     width: 430px;
+}
+
+.checkB {
+     float: left;
+     width: 200px;
+}
+
+.checkA input, .checkB input {
+     float: left;
+     height: 13px;
+     margin: 5px 5px 0pt 0pt;
+     width: 13px;
+}
+
+.checkA input {
+     margin-left: 226px;
+}
+
+.checkA label, .checkB label {
+     float: left;
+     margin-top: 0pt;
+     text-align: left;
+     width: 150px;
+}
+
+.regAccContent fieldset.checkA ol, .regAccContent fieldset.checkB ol {
+     margin-top: 0pt;
+}
+
+fieldset.searchCriterea .btnHolder {
+     padding-bottom: 20px;
+}
+
+fieldset.searchCriterea ol li p {
+     margin-left: 220px;
+     width: 420px;
+}
+
+.regAccContent fieldset .btnHolder.error {
+     border: medium none;
+     width: 550px;
+}
+
+.lowerForm .btnHolder.error {
+     border: medium none;
+     margin-top: 0pt;
+     padding-bottom: 30px;
+     padding-top: 30px;
+     width: 650px;
+}
+
+.btnHolder.error .validationAdvice {
+     background: url("../../images/en/validationFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left center transparent;
+     border: medium none;
+     color: #FFFFFF;
+     display: inline-block;
+     font-size: 1em;
+     font-weight: bold;
+     height: 30px;
+     line-height: 12px;
+     margin-top: -8px;
+     padding-left: 25px;
+     padding-top: 5px;
+     position: absolute;
+     right: 0;
+     width: 280px;
+}
+
+.btnHolder.error .validationAdvice a {
+     color: #FFFFFF;
+}
+
+.lowerForm .btnHolder.error .validationAdvice {
+     background: url("../../images/en/validationFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left center transparent;
+     border: medium none;
+     color: #FFFFFF;
+     display: block;
+     font-size: 1.2em;
+     font-weight: bold;
+     height: 29px;
+     line-height: 12px;
+     margin-top: -8px;
+     padding-left: 25px;
+     padding-top: 5px;
+     position: absolute;
+     right: 55px;
+     width: 450px;
+}
+
+.lowerForm .btnHolder.error .validationAdvice a {
+     color: #FFFFFF;
+}
+
+li.error input {
+     border: 1px solid red;
+     height: 16px;
+     padding: 2px;
+}
+
+li.error #acceptTerms {
+     border: 1px solid #FF8000;
+     height: 15px;
+     width: 15px;
+}
+
+li.errorUserName {
+     color: red;
+     padding-bottom: 20px;
+     padding-top: 60px;
+}
+
+li.errorUserName #username {
+     border: 1px solid red;
+}
+
+li.errorUserName .validationAdvice {
+     background: url("../../images/en/validationFailedUsername.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+     color: #FFFFFF;
+     display: block;
+     font-weight: bold;
+     height: 76px;
+     margin-top: -40px;
+     padding: 16px 0pt 16px 30px;
+     width: 350px;
+}
+
+li.errorUserName .userSelect label {
+     color: #FFFFFF;
+}
+
+li.errorUserName label {
+     color: red;
+}
+
+.userSelect {
+     padding-top: 10px;
+}
+
+.userSelect li {
+     color: #000000;
+     margin-top: -5px;
+     overflow: visible;
+     padding: 0pt;
+}
+
+.userSelect li input {
+     float: left;
+     width: 13px;
+}
+
+.userSelect label {
+     padding: 5px 0pt 0pt 5px;
+     text-align: left;
+}
+
+.regAccContent .lowerForm {
+     border: medium none;
+     padding-left: 45px;
+}
+
+.lowerForm #checkRows ol {
+     margin-top: 0pt;
+}
+
+.lowerForm #checkRows li.error label {
+     background: url("../../images/en/validationFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+     color: #FFFFFF;
+     display: inline;
+     height: 30px;
+     margin-top: -10px;
+     padding-left: 15px;
+     padding-top: 8px;
+     position: absolute;
+     right: 55px;
+}
+
+.lowerForm #checkRows li.error label a {
+     color: #FFFFFF;
+}
+
+.validationAdvice {
+     color: #00A8F9;
+     display: none;
+     float: right;
+     font-weight: bold;
+     height: 18px;
+     line-height: 11px;
+     padding: 3px 0pt 0pt;
+     width: 329px;
+}
+
+li.error .validationAdvice {
+     border: medium none;
+     color: red;
+     display: block;
+     font-weight: bold;
+     height: 20px;
+     line-height: 12px;
+     padding-left: 5px;
+     padding-top: 4px;
+     position: relative;
+     right: 0;
+     width: auto;
+     float: left;
+}
+
+li.error .validationAdvice a {
+     color: #FFFFFF;
+}
+
+li.error select {
+     background: none repeat scroll 0pt 0pt #FFDBAF;
+}
+
+li.focus select {
+     background: none repeat scroll 0pt 0pt #E5F1CD;
+}
+
+li.focus input {
+     border: 1px solid #A5D62F;
+     padding: 3px;
+}
+
+.regAccContent li.error {
+     border: medium none;
+     margin: 0pt;
+     overflow: hidden;
+     padding: 3px 0pt;
+     width: 450px;
+}
+
+.regAccContent li.error.extend {
+     border: medium none;
+     margin: 0pt;
+     overflow: auto;
+     padding: 40px 0pt;
+}
+
+li.error.extend .validationAdvice {
+     background: url("../../images/en/validationFailedUsername.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+     color: #FFFFFF;
+     display: block;
+     font-weight: bold;
+     height: 76px;
+     margin-top: -37px;
+     padding: 16px 0pt 16px 30px;
+     width: 350px;
+}
+
+.validationAdvice.prompt {
+     color: #454545;
+     display: block;
+     height: 30px;
+     line-height: 12px;
+     margin-right: 35px;
+     padding-left: 55px;
+     padding-top: 4px;
+     position: relative;
+     right: 0;
+     width: 265px;
+}
+
+.checkRow .validationAdvice {
+     color: red;
+     float: right;
+     padding: 0pt;
+     width: 249px;
+}
+
+.validationFailed {
+     border: 1px solid red;
+}
+
+.validationPassed {
+     background: url("../../images/en/fieldPassed.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left 6px transparent;
+     display: none;
+     height: 28px;
+     left: 0pt;
+     padding: 0pt;
+     position: absolute;
+     right: 0pt;
+     width: 350px;
+}
+
+.fieldInfo {
+     float: left;
+     padding-left: 0px !important;
+}
+
+.success {
+     background: url("../../images/en/fieldPassed.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 5px 2px transparent;
+     line-height: 30px;
+     padding: 8px 0pt 10px 30px;
+}
+
+.textLarge.success {
+     background: url("../../images/en/fieldPassed.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 5px 17px transparent;
+     font-size: 2.2em;
+     line-height: 30px;
+     padding: 12px 0pt 10px 30px;
+}
+
+.tableData .success {
+     background: none repeat scroll 0pt 0pt transparent;
+}
+
+.betSummaryList {
+     list-style: none outside none;
+}
+
+#accNav li ul li {
+     border: medium none;
+     display: block;
+     float: none;
+     font-weight: normal;
+}
+
+#depType {
+     font-size: 1.2em;
+     list-style: none outside none;
+}
+
+#depType input {
+     width: 110px;
+}
+
+#depType li {
+     display: block;
+     position: relative;
+     width: 648px;
+}
+
+#depType li ul {
+     margin-left: 0pt;
+     width: 125px;
+}
+
+#depType li ul li {
+     border-bottom: 1px solid #CCCCCC;
+     height: 30px;
+     padding: 10px 0pt;
+}
+
+#depType li ul li ul {
+     left: 0pt;
+     margin: 0pt 0pt 0pt 125px;
+     position: absolute;
+     top: 0pt;
+     width: 580px;
+}
+
+#depType li ul li ul li {
+     float: left;
+}
+
+#depType .depTypeLogos {
+     border: medium none;
+     clear: none;
+     float: left;
+     padding-top: 7px;
+     width: 230px;
+}
+
+#depType .depTypeMin {
+     border: medium none;
+     clear: none;
+     float: left;
+     padding: 15px 0pt 0pt 20px;
+     width: 200px;
+}
+
+#depType .depTypeDetails {
+     border: medium none;
+     clear: none;
+     float: right;
+     padding-top: 15px;
+     width: 100px;
+}
+
+p.stateLegacy {
+     float: left;
+     font-size: 1.1em;
+     padding-top: 21px;
+}
+
+.accMsg {
+     -moz-border-bottom-colors: none;
+     -moz-border-image: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     border-color: #CCCCCC;
+     border-style: solid;
+     border-width: 1px 1px 3px;
+     font-size: 1.2em;
+     margin-top: 15px;
+     padding: 10px;
+     width: 628px;
+}
+
+.accMsg h3 {
+     margin-top: 0pt;
+     padding-top: 0pt;
+}
+
+.accMsg p {
+     padding-top: 10px;
+}
+
+li.accMsgFull p {
+     padding: 5px 0pt;
+}
+
+#supportArea {
+     font-size: 1.1em;
+     position: absolute;
+     right: 20px;
+     top: 12px;
+}
+
+#supportArea h4 {
+     font-size: 1.3em;
+     margin-bottom: 2px;
+}
+
+#supportArea ul {
+     font-size: 1.1em;
+     line-height: 10px;
+}
+
+#supportAreaDepWdl {
+     border: 1px dotted #4CADD2;
+     display: block;
+     left: 0pt;
+     margin: 0pt 5px;
+     padding: 5px 5px 5px 10px;
+     position: relative;
+     top: 0pt;
+     width: 395px;
+}
+
+#supportAreaDepWdl ul {
+     font-size: 1.1em;
+     height: 55px;
+     line-height: 1.5em;
+}
+
+#supportAreaDepWdl ul li {
+     padding: 0pt;
+}
+
+#supportAreaDepWdl ul p {
+     float: left;
+}
+
+#supportAreaDepWdl ul span {
+     float: right;
+     text-align: left;
+     width: 70px;
+}
+
+#qcVoucherHolder {
+     border-bottom: 1px solid #4CADD2;
+     border-top: 1px solid #4CADD2;
+     font-size: 1.2em;
+     margin-right: 45px;
+     padding: 20px 0pt;
+}
+
+#qcVoucherHolder span {
+     display: block;
+     float: left;
+     padding-left: 5px;
+     width: 215px;
+}
+
+#qcVoucherHolder #qcVoucher {
+     background: none repeat scroll 0pt 0pt #CCCCCC;
+     display: block;
+     float: left;
+     padding: 20px;
+     width: 632px;
+}
+
+#qcVoucher ul li p {
+     float: left;
+     width: 130px;
+}
+
+#qcVoucher p.textLeft {
+     display: block;
+     float: left;
+     font-size: 1.1em;
+     padding: 30px 0pt 0pt;
+     width: 300px;
+}
+
+#qcVoucher p.textRight {
+     display: block;
+     float: right;
+     font-size: 1.1em;
+     padding: 30px 0pt 0pt;
+     width: 300px;
+}
+
+#footer {
+     background: none repeat scroll 0pt 0pt transparent;
+}
+
+#contentHolder .findAddress a:focus {
+     outline: 1px dotted #0174EC;
+}
+
+#subExpand {
+     position: relative;
+}
+
+#subExpand a span {
+     background: url("../../images/en/subNavExpand.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 100% 4px transparent;
+     padding-right: 10px;
+}
+
+#subExpand ul {
+     display: none;
+     overflow: hidden;
+     position: absolute;
+}
+
+li#subExpand:hover ul, li#subExpand.sfhover ul {
+     background: none repeat scroll 0pt 0pt #002132;
+     display: block;
+     font-size: 0.9em;
+     left: 0pt;
+     overflow: visible;
+     padding: 2px;
+     top: 23px;
+     width: 14em;
+     z-index: 99999;
+}
+
+#subExpand:hover ul li, #subExpand.sfhover ul li {
+     margin: 0pt;
+     padding: 0pt;
+     z-index: 99999;
+}
+
+body #subExpand:hover ul li a, body #subExpand.sfhover ul li a {
+     display: block;
+     float: none;
+     font-size: 1.1em;
+     padding-left: 17px;
+     text-align: left;
+     z-index: 99999;
+}
+
+body #subExpand ul li a:hover {
+     padding-left: 16px;
+     z-index: 99999;
+}
+
+body #subExpand.selectedNavAcc ul li a {
+     background: none repeat scroll 0pt 0pt transparent;
+}
+
+body #subExpand.selectedNavAcc ul li a:hover {
+     background: url("../../images/en/selectedNavAcc.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll 0pt 0pt #007AB6;
+}
+
+.regAccContent .tableData.tablePayments tr.cpmRow {
+     background-color: #FFFFFF;
+     font-size: 0.83em;
+}
+
+.regAccContent .tableData.tablePayments input.accBtn {
+     float: right;
+     margin-right: 10px;
+     width: 300px;
+}
+
+.regAccContent .tableData.tablePayments input.cpmBtn {
+     float: right;
+     margin-right: 10px;
+     width: 200px;
+}
+
+.regAccContent .tableData tr.revMsg {
+     height: 100px;
+     text-align: center;
+}
+
+.regAccContent tr.btnRow {
+     height: 50px;
+}
+
+.regAccContent tr.selectRow {
+     font-weight: bold;
+     height: 50px;
+}
+
+.form_wtd .validationAdvice.prompt {
+     background: url("../../images/en/validationPromptBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left center transparent;
+     border: medium none;
+     color: #FFFFFF;
+     display: block;
+     float: right;
+     font-weight: bold;
+     height: 30px;
+     line-height: 12px;
+     padding-left: 15px;
+     padding-top: 4px;
+     position: relative;
+     width: 200px;
+}
+
+.form_wtd .validationAdvice {
+     background: url("../../images/en/validationFailedBG.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left center transparent;
+     border: medium none;
+     color: #FFFFFF;
+     display: block;
+     font-weight: bold;
+     height: 30px;
+     line-height: 12px;
+     padding-left: 15px;
+     padding-top: 4px;
+     width: 200px;
+}
+
+.form_wtd .validationPassed {
+     background: url("../../images/en/fieldPassed.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll left 6px transparent;
+     display: block;
+     height: 34px;
+     position: relative;
+     width: 26px;
+}
+
+.form_wtd td.error input {
+     border: 1px solid red;
+     padding: 3px;
+}
+
+.depTransfer table.tableData {
+     padding-bottom: 30px;
+}
+
+table .rev_wtd_table_heading_time {
+     width: 160px;
+}
+
+table .rev_wtd_table_heading_mtd {
+     width: 428px;
+}
+
+table .rev_wtd_table_conf_heading_mtd {
+     width: 308px;
+}
+
+table .rev_wtd_table_heading_paymthd {
+     width: 120px;
+}
+
+table .rev_wtd_table_heading_amt {
+     width: 150px;
+}
+
+table .rev_wtd_table_heading_until {
+     width: 160px;
+}
+
+* html .regAccContent li {
+
+}
+
+* html li.error input {
+     height: 15px;
+     padding-bottom: 4px;
+}
+
+* html li.error .validationAdvice {
+     line-height: 16px;
+     padding-bottom: 10px;
+     padding-top: 9px;
+}
+
+* html .regAccContent .form_wtd .tablePayments td.error {
+     -moz-border-bottom-colors: none;
+     -moz-border-image: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     border-color: -moz-use-text-color -moz-use-text-color black;
+     border-style: none none solid;
+     border-width: medium medium 1px;
+     padding: 9px 0pt 12px 8px;
+     width: auto;
+}
+
+.regAccContent .transferMsgHolder {
+     font-size: 18px;
+     padding-right: 46px;
+}
+
+span.mthdExp {
+     float: right;
+     font-size: 1.1em;
+     margin-right: 10px;
+     text-align: center;
+     width: 300px;
+}
+
+td.optional_msg {
+     padding-left: 0pt ! important;
+     width: 245px;
+}
+
+.cpmRow .form_cc div#scheme_msg {
+     display: none;
+}
+
+.casinoWarningText {
+     color: black;
+     font-size: 1.2em;
+     font-weight: bold;
+     height: 50%;
+     line-height: 1.4em;
+     margin-top: 3px;
+     position: relative;
+     top: 18px;
+}
+
+.wide {
+     width: 142px;
+}
+
+.errorWideBtn {
+     font-size: 1em;
+     font-weight: bold;
+     padding-top: 2px;
+}
+
+div.whdialog div.main div a.ok {
+     background: url("../../images/en/whdialog_btn_ok.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+}
+
+div.whdialog div.main div a.cancel {
+     background: url("../../images/en/whdialog_btn_cancel.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+}
+
+div.whdialog div.main div a.button {
+     color: black ! important;
+     display: block;
+     float: left;
+     height: 28px;
+     margin: 0pt 20px 0pt 0pt;
+     text-decoration: none;
+}
+
+div.whdialog div.main div a.button:hover {
+     color: #555555;
+}
+
+div.whdialog div.main div a.button span {
+     background: url("../../images/en/whdialog_btn_span.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll right 0pt transparent;
+     display: block;
+     float: left;
+     margin-left: 26px;
+     padding: 6px 13px 6px 5px;
+}
+
+div.whdialog {
+     color: #FFFFFF;
+     display: none;
+     margin: 99px;
+     padding: 20px 40px;
+     position: absolute;
+     top: -108px;
+     width: 529px;
+     z-index: 5001;
+}
+
+div.whdialog div.top {
+     background: url("../../images/en/whdialog_top.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+     height: 8px;
+     overflow: hidden;
+     width: 529px;
+}
+
+div.whdialog div.main {
+     background: url("../../images/en/whdialog_main.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt bottom transparent;
+     width: 529px;
+}
+
+div.whdialog div.main div {
+     font-size: 12px;
+     line-height: 16px;
+     margin: 0pt 15px;
+}
+
+div.whdialog div.main div div.title {
+     font-size: 18px;
+     margin: 0pt -14px 0pt 0pt;
+     padding: 10px 0pt;
+}
+
+div.whdialog div.main div div.sportswarningHeader {
+     background: url("../../images/en/wh_logo.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+     border-bottom: 1px solid #FFFFFF;
+     font-size: 18px;
+     height: 30px;
+     line-height: 30px;
+     margin: 0pt;
+     padding-bottom: 7px;
+     text-align: right;
+     vertical-align: bottom;
+}
+
+div.whdialog div.main div div.greeting {
+     background: url("../../images/en/whdialog_warn.jpg?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll right 0pt transparent;
+     font-size: 15px;
+     height: 30px;
+     line-height: 30px;
+     margin: 10px 0pt 5px;
+     text-align: center;
+     vertical-align: middle;
+}
+
+div.whdialog div.main div div.warning {
+     background: url("../../images/en/whdialog_warn.gif?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll right 0pt transparent;
+}
+
+div.whdialog div.main div div.title strong {
+     color: red;
+}
+
+div.whdialog div.main div p {
+     font-size: 11px;
+     margin: 0pt 0pt 10px;
+}
+
+div.whdialog div.main div a {
+     color: #377FF6 ! important;
+}
+
+div.whdialog div.main div.centerContent {
+     margin: 0pt;
+     padding: 0pt;
+     text-align: center;
+}
+
+div.whdialog div.main div.buttons {
+     margin-left: auto;
+     margin-right: auto;
+     padding: 0pt;
+     width: 338px;
+}
+
+div.whdialog div.main div.buttons a.buttonOK {
+     background: url("../../images/en/btnOK.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+     display: inline-block;
+     padding: 0pt;
+}
+
+div.whdialog div.main div.buttons a.buttonCancel {
+     background: url("../../images/en/btnCancel.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0pt 0pt transparent;
+     display: inline-block;
+}
+
+div.whdialog div.main div.buttons a.buttonOK, div.whdialog div.main div.buttons a.buttonCancel {
+     color: #000000;
+     height: 28px;
+     margin: 0pt 2px;
+     text-decoration: none;
+     width: 163px;
+}
+
+div.whdialog div.main div.buttons a.buttonOK span, div.whdialog div.main div.buttons a.buttonCancel span {
+     cursor: pointer;
+     height: 28px;
+     line-height: 28px;
+     margin: 0pt 6px 0pt 22px;
+     overflow: hidden;
+     padding: 0pt;
+     text-align: center;
+     vertical-align: middle;
+}
+
+div.whdialog div.main div.buttons a.buttonOK:hover, div.whdialog div.main div.buttons a.buttonCancel:hover {
+     color: #555555;
+}
+
+.regAccContent form {
+     background: url("../../images/en/overlayContent_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d") repeat-x scroll 0px -43px #fff !important;
+}
+
+.btnHolder input {
+     background: transparent url("../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0px -362px !important;
+     border: 0px;
+     width: 180px !important;
+     height: 26px;
+     color: #354a02;
+     font-weight: bold;
+     line-height: 26px;
+     cursor: pointer;
+     margin-right: 285px !important;
+     font-size: 13px;
+     position: relative;
+}
+
+.btnHolder input:hover {
+     background: url("../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0 -388px rgba(0, 0, 0, 0) !important;
+}
+
+#cashierBtn, cashierBtn:hover {
+     background: transparent url("../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0px -112px !important;
+     width: 200px !important;
+     margin-right: 72px !important;
+     margin-top:-26px;
+     padding-right: 0px;
+     float: right;
+}
+
+#cashierBtn:hover {
+     background: url("../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat scroll 0 -138px rgba(0, 0, 0, 0);
+}
+
+#PoCF {
+	width: 90%;
+	font-size: 11px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+#PoCF.error {
+	color: #B90318 !important;
+}
+
+#PoCF input[type="checkbox"] {
+	margin: 2px 4px 0px 0px;
+	float: left;
+	width: auto;
+}
+
+#PoCF img {
+	float: left;
+	margin-top: 3px;
+}
+
+#PoCFText {
+	width: 88%;
+	margin: 0px 0px 0px 7px;
+	float: left;
+}
+
+#PoCFText a {
+	color: #1188C0 !important;
+	float: none;
+	padding: 0px;
+}
+
