@@ -28,9 +28,10 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 11px;
+    font-size: 14px;
     vertical-align: baseline;
     background: transparent;
+    background-repeat: no-repeat;
 }
 
 .regOverlay #inputs, .regOverlay #inputs div {
@@ -67,8 +68,8 @@
     padding: 0;
     z-index: 9999;
     width: 996px;
-    height: 550px;
-    background: none;
+    height: 560px;
+    background-color: #e8ecef;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
@@ -77,31 +78,21 @@
     height: 645px;
 }
 
-.regOverlay .HdrTL, .regOverlay .HdrTR, .regOverlay .HdrBL, .regOverlay .HdrBM, .regOverlay .HdrBR {
+.regOverlay .HdrBL, .regOverlay .HdrBM, .regOverlay .HdrBR {
+    display: none;
+}
+
+.regOverlay .HdrTL,
+.regOverlay .HdrTR {
+    background-color: #00417d;
     float: left;
     overflow: hidden;
-}
-
-.regOverlay .HdrTL, .regOverlay .HdrTR {
-    height: 27px;
+    height: 45px;
     width: 10px;
-}
-
-.regOverlay .HdrBL, .regOverlay .HdrBR {
-    height: 11px;
-    width: 10px;
-}
-
-.regOverlay .HdrTL {
-    background: url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
-}
-
-.regOverlay .HdrTR {
-    background: url(../../images/en/overlayCorners.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0;
 }
 
 .regOverlay #overlayHeader {
-    color: #264d64;
+    color: #fff;
     display: inline;
     float: left;
     font-weight: bold;
@@ -109,13 +100,12 @@
     line-height: 26px;
     margin: 0;
     overflow: hidden;
-    padding: 0;
+    padding: 9px 0;
     position: relative;
     vertical-align: middle;
     width: 976px;
-    font-family: Tahoma, Arial, sans-serif;
-    text-shadow: 1px 1px #e3e3e6;
-    background: url(../../images/en/overlay_TM.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;
+    font-family: Arial, sans-serif;
+    background-color: #00417d;
 }
 
 .regOverlay .HdrBL {
@@ -137,6 +127,7 @@
     float: left;
     padding: 0 10px 0 2px;
     width: 500px;
+    font-size: 18px;
 }
 
 .regOverlay #overlayHeader #overlayFunc {
@@ -144,7 +135,7 @@
     float: right;
     height: 27px;
     overflow: hidden;
-    padding: 0 14px 0 10px;
+    padding: 0 14px 0 9px;
     width: 450px;
     z-index: 100499;
 }
@@ -162,19 +153,29 @@
 }
 
 .regOverlay #overlayHeader #overlayFunc a {
-    color: #1c3849;
+    color: #fff;
     line-height: 27px;
     display: inline-block;
     cursor: pointer;
 }
 
 .regOverlay #overlayHeader #overlayFunc a#close {
-    background: url(../../images/en/closeIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right 8px;
-    padding-right: 12px;
+    background-image: url(../../images/en/closeIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+    background-size: contain;
+    margin-top: 5px;
+    padding-right: 25px;
+    width: 12px;
+    height: 12px;
+}
+
+.regOverlay #overlayHeader #overlayFunc a#close:hover,
+.regOverlay #overlayHeader #overlayFunc a#close:active {
+    color: #fff;
 }
 
 .regOverlay #overlayHeader #overlayFunc a span {
     float: left;
+    display: none;
 }
 
 .regOverlay #overlayContainer {
@@ -185,9 +186,7 @@
     padding: 6px 11px 0;
     position: relative;
     width: 972px;
-    border-left: #fff 1px solid;
-    border-right: #fff 1px solid;
-    background: #fff url(../../images/en/overlayContent_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;
+    background-color: #e8ecef;
 }
 
 .large_single.regOverlay #overlayContainer {
@@ -200,13 +199,13 @@
     position: relative;
     width: 760px;
     height: 28px;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .large_single.regOverlay #overlayContainer .submitMessageContainer {
     display: inline;
     float: left;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     height: 38px; /* Increase this Height */
     position: relative;
     width: 760px;
@@ -406,7 +405,6 @@ input#recaptcha_response_field {
 .regOverlay #overlayContainer .formContainer form .tooltipGroup input {
     position: absolute;
     z-index: 4 !important;
-    background: red;
 }
 
 .regOverlay #overlayContainer .formContainer form .tooltipGroup span label {
@@ -459,14 +457,14 @@ input#recaptcha_response_field {
 .regOverlay #overlayContainer .formContainer form .submitGreen {
     position: relative;
     float: left;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
-    color: #354a02;
+    background-color: #3da700;
+    color: #fff;
     border: none;
     display: inline-block;
-    font-size: 11px;
-    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
     font-weight: bold;
-    height: 26px;
+    height: 30px;
     line-height: 26px;
     margin: 0;
     padding: 0 0 4px 0;
@@ -476,19 +474,19 @@ input#recaptcha_response_field {
 }
 
 .regOverlay #overlayContainer .formContainer form .submitGreen:hover {
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
-    color: #4561031;
+    background-color: #338c00;
+    color: #fff;
 }
 
 .regOverlay #overlayContainer .formContainer form .submitDisable {
     position: relative;
     float: left;
-    background: transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px !important;;
+    background: transparent url(../../images/en/processing.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 3px !important;
     color: #93969c;
     border: none;
     display: inline-block;
     font-size: 11px;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: normal;
     height: 26px;
     line-height: 26px;
@@ -945,7 +943,8 @@ div.tooltipGroup .hint.error {
 }
 
 .label.mts_amount_label.importo-prelevare-label {
-    margin-top: 2px !important;
+    font-weight: bold;
+    color: #222;
 }
 
 span.importo-prelevare-text {
@@ -1011,7 +1010,7 @@ span.importo-prelevare-text {
     display: block;
     width: 231px;
     border-top: 1px solid #fff;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     text-shadow: 1px 1px #ffffff;
     float: left;
 }
@@ -1939,7 +1938,7 @@ span.importo-prelevare-text {
     float: left;
     color: #005580;
     font-weight: bold;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 12px;
     text-shadow: 1px 1px #ffffff;
 }
@@ -2698,7 +2697,6 @@ i
     color: #264D64;
     font-family: Tahoma, Arial, sans-serif;
     font-weight: bold;
-    text-shadow: 1px 1px #E3E3E6;
 }
 
 #overlayFunc ul {
@@ -3992,6 +3990,7 @@ i
     border: 1px solid #00417d;
     background-color: #c4e3ff;
 }
+
 .mts_messages.mts_info span {
     background-position-x: -94px;
 }
@@ -5634,24 +5633,8 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_contents #mts_content {
     overflow: hidden;
+    padding: 10px 10px 15px 15px;
 }
-
-/* Messages */
-/*.regOverlay.withdraw .mts_messages {*/
-/*float: left;*/
-/*width: 600px;*/
-/*margin-right: 0;*/
-/*}*/
-
-/*.regOverlay.withdraw .mts_messages p {*/
-/*float: left;*/
-/*line-height: 1.2em;*/
-/*}*/
-
-/*.regOverlay.withdraw .mts_messages .messages {*/
-/*width: 625px;*/
-/*line-height: 1.4em;*/
-/*}*/
 
 /* Account info */
 .regOverlay.withdraw .accountInfo {
@@ -5741,23 +5724,15 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 .regOverlay.withdraw .mts_form_container .mts_form .submitGray {
-    position: relative;
-    overflow: hidden;
-    float: left;
-    display: inline-block;
-    width: 188px;
-    height: 22px;
-    margin: 6px 0 0;
-    padding: 0;
-    font-size: 11px;
-    color: #47505f;
-    font-family: Tahoma, Arial, sans-serif;
-    font-weight: bold;
-    line-height: 20px;
-    vertical-align: middle;
+    background-color: #237fb2;
     cursor: pointer;
-    border: none;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -318px;
+    text-align: center;
+    width: 231px;
+    margin-top: 16px;
+    padding: 12px 0;
+    font-size: 14px;
+    color: white;
+    height: 42px;
 }
 
 /* Help links */
@@ -6745,4 +6720,3 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     display: block;
     margin: 10px 0px;
 }
-
