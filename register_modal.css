@@ -14,7 +14,6 @@
     outline: thin dotted;
 }
 
-
 #modalDimmer {
     filter: alpha(opacity=80);
     opacity: .80;
@@ -4092,17 +4091,11 @@ i
 }
 
 .transfersTableHeader_leftBracket {
-    width: 9px;
-    height: 31px;
-    background: transparent url(../../images/en/transfersTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
-    float: left;
+    display: none;
 }
 
 .transfersTableHeader_rightBracket {
-    width: 11px;
-    height: 31px;
-    background: transparent url(../../images/en/transfersTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0px !important;
-    float: left;
+    display: none;
 }
 
 .transfersTable_BANK_CHQ_heading {
@@ -4111,42 +4104,53 @@ i
     padding-right: 10px;
 }
 
-.transfersTable_title {
-    height: 31px;
-    background: transparent url(../../images/en/transfersTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px -31px !important;
-    float: left;
-    line-height: 30px;
-    font-size: 12px;
+.regOverlay .transfersTable_title {
+    background-color: #00417d;
     color: #fff;
-    font-weight: bold;
-    text-shadow: -1px 1px 2px #000;
-    padding-left: 2px !important;
-    width: 732px;
+    padding: 5px 12px;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .transfersTable_transferable,
 .transfersTable_bonus,
+.transfersTable_allocation,
 .transfersTable_total {
-    background: transparent url(../../images/en/tableSubHeader_divider.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left bottom !important;
+    background: #d9d9db;
 }
 
-.transfersTableHeader {
-    border-bottom: 1px solid #f5f6f7;
-    height: 23px;
-    padding: 0;
-    background: #fefefe url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top left !important;
+.regOverlay .transfersTableHeader {
+    border-bottom: 1px solid #bbb;
+    padding: 3px 0 3px 12px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #222;
+    overflow: auto;
+    background: #d9d9db !important;
 }
 
-.transfersTableHeader div {
-    color: #264d64;
-    font-weight: bold;
-    height: 21px;
-    line-height: 21px;
-    border-bottom: 1px solid #aaaeb6;
-    border-top: 1px solid #e9edf0;
-    padding-left: 10px;
-    font-size: 11px;
+.regOverlay .transfersTable_transferable {
+    width: 280px;
+    background: #d9d9db;
 }
+
+.regOverlay .transfersTable_allocation {
+    width: 396px;
+    background: #d9d9db;
+    border-left: 1px solid #636363;
+    padding-left: 15px;
+}
+
+/*.transfersTableHeader div {*/
+/*color: #264d64;*/
+/*font-weight: bold;*/
+/*height: 21px;*/
+/*line-height: 21px;*/
+/*border-bottom: 1px solid #aaaeb6;*/
+/*border-top: 1px solid #e9edf0;*/
+/*padding-left: 10px;*/
+/*font-size: 11px;*/
+/*}*/
 
 .transfersTable_allocation, .transfersTableRow_allocation {
     width: 190px;
@@ -5659,14 +5663,11 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     clear: none !important;
     width: auto;
     height: auto;
+    font-size: 12px;
 }
 
 .regOverlay.withdraw .accountInfo .guidanceText .accountDetails {
-    padding-left: 5px;
-}
-
-.regOverlay.withdraw .accountInfo .boldLabel {
-    color: #005580;
+    font-weight: bold;
 }
 
 /* Check withdrawal details form */
@@ -5734,6 +5735,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     font-size: 14px;
     color: white;
     height: 42px;
+    text-transform: uppercase;
 }
 
 /* Help links */
@@ -5789,22 +5791,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     width: 10px;
 }
 
-.regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_transferable {
-    float: left;
-    width: 250px;
-    padding-left: 10px;
-    border-left: none;
-    border-right: 1px solid #e9e9e9;
-    background: url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0 !important;
-}
-
-.regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_allocation {
-    float: left;
-    width: 472px;
-    padding-right: 10px;
-    border-left: 1px solid #c9cacd;
-    background: url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;
-}
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .methodLink {
     float: right;
@@ -6720,4 +6706,8 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     float: left;
     display: block;
     margin: 10px 0px;
+}
+
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
+    display: none !important;
 }
