@@ -3970,11 +3970,37 @@ i
     background-color: #ffdddd;
 }
 
+.mts_messages.mts_success {
+    border: 1px solid #3da700;
+    background-color: #e2ffd3;
+}
+
+.mts_messages.mts_success span {
+    background-position-x: -61px;
+}
+
+.mts_messages.mts_warning {
+    border: 1px solid #ed5a13;
+    background-color: #fef7f3;
+}
+
+.mts_messages.mts_warning span {
+    background-position-x: -30px;
+}
+
+.mts_messages.mts_info {
+    border: 1px solid #00417d;
+    background-color: #c4e3ff;
+}
+.mts_messages.mts_info span {
+    background-position-x: -94px;
+}
+
 .mts_messages span {
     height: 36px;
     width: 22px;
     display: inline-block;
-    background: url(../images/token-icons.png) no-repeat;
+    background: url(../../images/en/token-icons.png) no-repeat;
     float: left;
     background-position-y: center;
 }
@@ -3984,11 +4010,6 @@ i
     width: 528px;
     display: inline-block;
     padding-left: 20px;
-}
-
-.mts_messages.mts_success p#s_success {
-    color: #405b00;
-    font-weight: bold;
 }
 
 .mts_messages.mts_standard span {
@@ -5617,19 +5638,19 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 /* Messages */
 /*.regOverlay.withdraw .mts_messages {*/
-    /*float: left;*/
-    /*width: 600px;*/
-    /*margin-right: 0;*/
+/*float: left;*/
+/*width: 600px;*/
+/*margin-right: 0;*/
 /*}*/
 
 /*.regOverlay.withdraw .mts_messages p {*/
-    /*float: left;*/
-    /*line-height: 1.2em;*/
+/*float: left;*/
+/*line-height: 1.2em;*/
 /*}*/
 
 /*.regOverlay.withdraw .mts_messages .messages {*/
-    /*width: 625px;*/
-    /*line-height: 1.4em;*/
+/*width: 625px;*/
+/*line-height: 1.4em;*/
 /*}*/
 
 /* Account info */
