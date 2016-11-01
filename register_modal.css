@@ -3968,34 +3968,34 @@ i
     background-color: #ffdddd;
 }
 
-.mts_messages.mts_success {
+.regOverlay .mts_messages.mts_success {
     border: 1px solid #3da700;
     background-color: #e2ffd3;
 }
 
-.mts_messages.mts_success span {
+.regOverlay .mts_messages.mts_success span {
     background-position-x: -61px;
 }
 
-.mts_messages.mts_warning {
+.regOverlay .mts_messages.mts_warning {
     border: 1px solid #ed5a13;
     background-color: #fef7f3;
 }
 
-.mts_messages.mts_warning span {
+.regOverlay .mts_messages.mts_warning span {
     background-position-x: -30px;
 }
 
-.mts_messages.mts_info {
+.regOverlay .mts_messages, .regOverlay .mts_messages.mts_info {
     border: 1px solid #00417d;
     background-color: #c4e3ff;
 }
 
-.mts_messages.mts_info span {
+.regOverlay .mts_messages span, .mts_messages.mts_info span {
     background-position-x: -94px;
 }
 
-.mts_messages span {
+.regOverlay .mts_messages span {
     height: 36px;
     width: 22px;
     display: inline-block;
@@ -4004,7 +4004,7 @@ i
     background-position-y: center;
 }
 
-.mts_messages p {
+.regOverlay .mts_messages p {
     font-size: 14px;
     width: 528px;
     display: inline-block;
@@ -5632,8 +5632,12 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 /* -----[ Head styling ]----------------------------------------------------- */
 
 /* Common */
+.regOverlay.withdraw {
+    background: white !important;
+}
 .regOverlay.withdraw .mts_contents {
     overflow: hidden;
+    background: white !important;
 }
 
 .regOverlay.withdraw .mts_contents #mts_content {
@@ -5667,7 +5671,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 .regOverlay.withdraw .accountInfo .guidanceText .accountDetails {
-    font-weight: bold;
+    padding-left: 5px;
 }
 
 /* Check withdrawal details form */
