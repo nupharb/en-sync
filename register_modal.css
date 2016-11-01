@@ -14,6 +14,7 @@
     outline: thin dotted;
 }
 
+
 #modalDimmer {
     filter: alpha(opacity=80);
     opacity: .80;
