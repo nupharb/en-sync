@@ -246,20 +246,20 @@
     padding-left: 0 !important;
 }
 
-.regOverlay #overlayContainer .submitMessageContainer span.submitError {
-    color: #b90318;
-    background: url(../../images/en/errorIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
-    overflow: hidden;
-    float: left;
-    padding-left: 27px !important;
-}
+/*.regOverlay #overlayContainer .submitMessageContainer span.submitError {*/
+    /*color: #b90318;*/
+    /*background: url(../../images/en/errorIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;*/
+    /*overflow: hidden;*/
+    /*float: left;*/
+    /*padding-left: 27px !important;*/
+/*}*/
 
-.regOverlay #overlayContainer .submitMessageContainer span.submitError p {
-    color: #b90318;
-    background: none;
-    padding: 0;
-    font-weight: bold;
-}
+/*.regOverlay #overlayContainer .submitMessageContainer span.submitError p {*/
+    /*color: #b90318;*/
+    /*background: none;*/
+    /*padding: 0;*/
+    /*font-weight: bold;*/
+/*}*/
 
 .regOverlay.deposit #overlayContainer #submitMessage-Narrow span.submitSuccess, .regOverlay #overlayContainer #submitMessage-Narrow span.submitError {
     max-width: 475px !important;
@@ -880,7 +880,7 @@ div.tooltipGroup .hint.error {
  * First Deposit
  * ------------- */
 .regOverlay.deposit #overlayContainer .submitMessageContainer {
-    height: 50px;
+    height: 87px;
     margin-bottom: 5px;
 }
 
@@ -901,21 +901,6 @@ div.tooltipGroup .hint.error {
     font-weight: bold;
     padding: 3px 0 0 0;
     clear: both;
-}
-
-.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess p.promoError {
-    font-size: 11px;
-    color: #d45000;
-    padding: 0 0 0 10px;
-}
-
-.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess {
-    color: #405b00;
-    background: url(../../images/en/successIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
-    overflow: hidden;
-    float: left;
-    max-width: 550px !important;
-    padding-left: 27px !important;
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer_reverseWtd span.submitSuccess {
@@ -3973,7 +3958,8 @@ i
     overflow: auto;
 }
 
-.regOverlay .mts_messages {
+.regOverlay .mts_messages,
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess {
     line-height: 1.4em;
     padding: 6px 20px 6px 10px;
     display: block;
@@ -3990,7 +3976,8 @@ i
     background-color: #ffdddd;
 }
 
-.regOverlay .mts_messages.mts_success {
+.regOverlay .mts_messages.mts_success,
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess{
     border: 1px solid #3da700;
     background-color: #e2ffd3;
 }
@@ -4026,7 +4013,8 @@ i
     background-position-y: center;
 }
 
-.mts_messages .messages:before {
+.mts_messages .messages:before,
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess:before {
     content: ' ';
     height: 36px;
     width: 22px;
@@ -4037,6 +4025,13 @@ i
     margin-left: -20px;
     margin-right: 20px;
     background-position-x: -94px;
+}
+
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess:before {
+    margin: 0px;
+    left: 0;
+    position: absolute;
+    background-position-x: -61px;
 }
 
 .regOverlay .mts_messages p {
@@ -5396,6 +5391,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span#s_success {
     width: 500px;
+    padding-left: 40px;
 }
 
 .regOverlay.deposit #overlayContainer #depositSuccessContainer #depositSuccessContent.reverseWtd_page #transactionDetails {
