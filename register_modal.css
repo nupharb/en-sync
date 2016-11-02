@@ -68,7 +68,7 @@
     padding: 0;
     z-index: 9999;
     width: 996px;
-    height: 560px;
+    height: 550px;
     background-color: #e8ecef;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
@@ -95,7 +95,6 @@
     color: #fff;
     display: inline;
     float: left;
-    font-weight: bold;
     height: 27px;
     line-height: 26px;
     margin: 0;
@@ -181,7 +180,7 @@
 .regOverlay #overlayContainer {
     display: inline;
     float: left;
-    height: 506px;
+    height: 499px;
     margin: 0;
     padding: 6px 11px 0;
     position: relative;
@@ -197,7 +196,7 @@
     float: left;
     display: inline;
     position: relative;
-    width: 760px;
+    width: 100%;
     height: 28px;
     font-family: Arial, sans-serif;
 }
@@ -261,7 +260,7 @@
     display: inline;
     float: left;
     position: relative;
-    width: 778px;
+    width: 777px;
 }
 
 .regOverlay #overlayContainer .formContainer form {
@@ -283,10 +282,7 @@
     display: inline;
     float: left;
     width: 768px;
-    margin-top: 12px;
-    padding-top: 7px;
-    height: 26px;
-    background: url(../../images/en/line.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0 !important;
+    margin-top: 10px;
 }
 
 .formFooter.paypalFormFooter {
@@ -322,9 +318,11 @@
 .regOverlay #overlayContainer .formContainer form label.label {
     width: 94%;
     float: left;
-    color: #015f8e;
+    color: #222;
     margin-top: 7px;
     text-align: left;
+    font-size: 13px;
+    line-height: 19px;
 }
 
 .regOverlay #overlayContainer .formContainer form label.label.top {
@@ -461,16 +459,21 @@ input#recaptcha_response_field {
     color: #fff;
     border: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Arial, sans-serif;
-    font-weight: bold;
-    height: 30px;
-    line-height: 26px;
+    height: 39px;
     margin: 0;
-    padding: 0 0 4px 0;
-    vertical-align: middle;
     cursor: pointer;
+    padding: 9px 0;
+    text-align: center;
     width: 188px;
+    cursor: pointer;
+    border-radius: 2px;
+    line-height: 23px;
+}
+
+.regOverlay #overlayContainer .formContainer form .submitGreen#submitButton {
+    width: 177px;
 }
 
 .regOverlay #overlayContainer .formContainer form .submitGreen:hover {
@@ -743,7 +746,9 @@ div.tooltipGroup .hint.error {
 
 #inputContent_edit div.tooltipGroup .hint.info p,
 #inputs div.tooltipGroup .hint.info p {
-    background: #BFCED6 url(../../images/en/hintInfo_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+    /*background: #BFCED6 url(../../images/en/hintInfo_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;*/
+    background-color: #fff;
+    color: #999;
 }
 
 #inputContent_edit div.tooltipGroup .hint.suggest p,
@@ -753,11 +758,13 @@ div.tooltipGroup .hint.error {
 
 #inputContent_edit div.tooltipGroup .hint.error p,
 #inputs div.tooltipGroup .hint.error p {
-    background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+    /*background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;*/
+    background-color: #fff;
+    color: #c20000;
 }
 
 #inputs div.tooltipGroup .hint.error p {
-    background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) #fdb7b7 no-repeat left top;
+    /*background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) #fdb7b7 no-repeat left top;*/
 }
 
 #inputContent_edit div.tooltipGroup .hint.success p,
@@ -810,10 +817,9 @@ div.tooltipGroup .hint.error {
     float: right;
     position: static;
     width: 185px;
-    height: 452px;
+    height: 473px;
     padding: 3px;
     margin-top: 15px;
-    background: url(../../images/en/rightNavBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
 }
 
 .regOverlay #overlayContainer .rightNav .rightNavContent {
@@ -873,8 +879,8 @@ div.tooltipGroup .hint.error {
  * First Deposit
  * ------------- */
 .regOverlay.deposit #overlayContainer .submitMessageContainer {
-    height: 60px;
-    margin-bottom: 17px;
+    height: 50px;
+    margin-bottom: 5px;
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span {
@@ -923,6 +929,7 @@ div.tooltipGroup .hint.error {
     position: absolute;
     top: 0;
     right: 0;
+    padding-right: 5px;
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo p, .regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo p span {
@@ -943,8 +950,7 @@ div.tooltipGroup .hint.error {
 }
 
 .label.mts_amount_label.importo-prelevare-label {
-    font-weight: bold;
-    color: #222;
+    margin-top: 2px !important;
 }
 
 span.importo-prelevare-text {
@@ -974,8 +980,15 @@ span.importo-prelevare-text {
     position: relative;
     display: inline;
     float: left;
+}
+
+.regOverlay.deposit #overlayContainer #depositSuccessContainer {
     width: 760px;
     height: 415px;
+}
+
+.regOverlay.deposit #overlayContainer #paymentMethodsContainer {
+    width: 777px;
 }
 
 .regOverlay.deposit #overlayContainer #paymentMethodsContainer #paymentMethodsMenu {
@@ -987,7 +1000,6 @@ span.importo-prelevare-text {
 .regOverlay.deposit #overlayContainer #paymentMethodsContainer #paymentMethodsContent {
     display: inline;
     float: right;
-    width: 509px;
 }
 
 .regOverlay.deposit #overlayContainer #paymentMethodsContainer #paypalPaymentMethodsContent {
@@ -1001,8 +1013,9 @@ span.importo-prelevare-text {
 }
 
 #paymentMethodsMenu #scrollContent {
-    overflow: hidden;
-    height: 360px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 433px;
     border-top: 1px solid #d4d5d7;
 }
 
@@ -1036,32 +1049,35 @@ span.importo-prelevare-text {
 
 #paymentMethodsMenu #scrollContent ul li.single.clickIgnore {
     height: 24px;
-    background: url(../../images/en/pmCategoryBg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0;
     overflow: hidden;
     margin: 0;
     cursor: default;
+    background: none;
 }
 
 #paymentMethodsMenu #scrollContent ul li.single.clickIgnore.highlight {
-    background: url(../../images/en/pmCategoryBg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0 !important;
+    background: none;
 }
 
 #paymentMethodsMenu #scrollContent ul li.double {
     height: 54px;
-    background: url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+    border-bottom: 1px solid #959595;
 }
 
 #paymentMethodsMenu #scrollContent ul li.double.selected, #paymentMethodsMenu #scrollContent ul li.double.highlight {
-    background: url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+    /*background: url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;*/
+    background-color: #fff;
 }
 
 #paymentMethodsMenu #scrollContent ul li.single {
-    height: 24px;
-    background: url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -120px;
+    height: 28px;
+    padding-top: 15px;
+    border-bottom: 1px solid #959595;
 }
 
 #paymentMethodsMenu #scrollContent ul li.single.selected, #paymentMethodsMenu #scrollContent ul li.single.highlight {
-    background: url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -150px;
+    /*background: url(../../images/en/pmoBgs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -150px;*/
+    background-color: #fff;
 }
 
 #paymentMethodsMenu #scrollContent ul li p {
@@ -1885,7 +1901,7 @@ span.importo-prelevare-text {
 
 #paymentMethodsMenu #scrollUp, #paymentMethodsMenu #scrollDown {
     width: 70px;
-    height: 21px;
+    height: 0;
     text-indent: -100000px;
     margin-left: 80px;
     cursor: pointer;
@@ -1926,21 +1942,25 @@ span.importo-prelevare-text {
 #paymentMethodsContent .moreText {
     display: none;
     float: left;
+    background-color: #fff;
+    padding: 8px;
+}
+
+.regOverlay.deposit #overlayContainer #paymentMethodsContainer #paymentMethodsContent #content_group_OTHER .moreText {
+    width: 527px;
 }
 
 #paymentMethodsContent .pmTitle, #paypalPaymentMethodsContent .pmTitle {
-    height: 21px;
-    border-bottom: 2px solid #005580;
+    height: 32px;
+    border-bottom: 1px solid #bbb;
     line-height: 23px;
 }
 
 #paymentMethodsContent .pmTitle p, #paypalPaymentMethodsContent .pmTitle p {
     float: left;
-    color: #005580;
-    font-weight: bold;
     font-family: Arial, sans-serif;
-    font-size: 12px;
-    text-shadow: 1px 1px #ffffff;
+    font-size: 16px;
+    color: #222;
 }
 
 #paymentMethodsContent .pmTitle a.moreInfo, #paypalPaymentMethodsContent .pmTitle a.moreInfo {
@@ -1948,7 +1968,7 @@ span.importo-prelevare-text {
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
-    background: url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -62px 4px;
+    background-repeat: no-repeat;
     padding-left: 17px;
 }
 
@@ -2002,7 +2022,8 @@ p.pymnt_iconWithText.visibleText span {
 }
 
 .regOverlay.deposit #overlayContainer .formContainer .rightClmn {
-    width: 254px;
+    width: 268px;
+    margin-top: 16px;
 }
 
 .regOverlay.deposit #overlayContainer .formContainer .formFooter a {
@@ -2034,7 +2055,7 @@ p.pymnt_iconWithText.visibleText span {
 }
 
 .regOverlay.deposit #inputs {
-    height: 302px;
+    height: 292px;
     overflow: hidden;
 }
 
@@ -2479,7 +2500,7 @@ i
 .regOverlay.deposit .pmDetails .pmInfo ul {
     display: inline;
     float: right;
-    margin-top: 1px;
+    margin-top: 5px;
 }
 
 .regOverlay.deposit .pmDetails .pmInfo ul.pmInfoLabels {
@@ -5774,6 +5795,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     color: white;
     height: 42px;
     text-transform: uppercase;
+    border-radius: 2px;
 }
 
 /* Help links */
@@ -6743,6 +6765,23 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     float: left;
     display: block;
     margin: 10px 0px;
+}
+
+
+
+/*#### START: HELP MENU ON THE RIGHT SIDE ####*/
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li.helpTitle {
+    border: none;
+}
+
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li {
+    background: none;
+}
+
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a,
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a:hover,
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a:active {
+    color: #222 !important;
 }
 
 .__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
