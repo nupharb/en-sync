@@ -790,7 +790,10 @@ div.tooltipGroup .hint.error {
 .mts_form #inputs .rightClmn div.tooltipGroup .hint,
 #inputContent_edit .leftClmn div.tooltipGroup .hint,
 .mts_form #inputs .leftClmn div.tooltipGroup .hint {
-    padding-left: 185px;
+    padding: 0;
+    position: absolute;
+    left: 186px !important;
+    top: 0;
 }
 
 #inputContent_edit .leftClmn div.tooltipGroup .hint.m,
@@ -4164,7 +4167,7 @@ i
     font-size: 14px;
     line-height: 26px;
     color: #222;
-    overflow: auto;
+    overflow: hidden;
     background: #d9d9db !important;
 }
 
@@ -4329,12 +4332,10 @@ div.tooltipGroup div.largeInput span {
 .mts_form .largeInput {
     float: left;
     display: inline-block;
-    height: 14px;
-    padding: 3px 4px;
     overflow: hidden;
 }
 
-.mts_form. largeInput {
+.mts_form. .largeInput {
     width: 192px;
     background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
 }
@@ -4345,11 +4346,15 @@ div.tooltipGroup div.largeInput span {
 
 .mts_form .midInput {
     width: 180px;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
 }
 
 .mts_form .midInput input {
     width: 180px;
+    height: 17px;
+    padding: 4px 10px;
 }
 
 .mts_form .submitGreen {
@@ -5986,7 +5991,8 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_table .transfersTableRow .formContainer .tooltipGroup {
     float: left;
-    margin-bottom: 1px;
+    margin-bottom: 0;
+    height: 30px;
 }
 
 .regOverlay.withdraw .mts_table .transferTable_total strong {
