@@ -28,10 +28,15 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 14px;
+    font-size: 13px;
     vertical-align: baseline;
     background: transparent;
     background-repeat: no-repeat;
+}
+
+.regOverlay button:focus, .regOverlay button:active,
+.regOverlay input:focus, .regOverlay input:active{
+    outline: none !important;
 }
 
 .regOverlay #inputs, .regOverlay #inputs div {
@@ -728,6 +733,10 @@ div.tooltipGroup .hint.error {
     min-height: 14px;
 }
 
+.hint, .hint p {
+    background: white !important;
+}
+
 #inputContent_edit div.tooltipGroup .hint.m p,
 #inputs div.tooltipGroup .hint.m p {
     width: 284px;
@@ -749,31 +758,19 @@ div.tooltipGroup .hint.error {
 }
 
 #inputContent_edit div.tooltipGroup .hint.info p,
+.withdraw .hint.error p,
 #inputs div.tooltipGroup .hint.info p {
-    /*background: #BFCED6 url(../../images/en/hintInfo_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;*/
-    background-color: #fff;
-    color: #999;
-}
-
-#inputContent_edit div.tooltipGroup .hint.suggest p,
-#inputs div.tooltipGroup .hint.suggest p {
-    background: url(../../images/en/hintSuggest_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
+    color: #999 !important;
 }
 
 #inputContent_edit div.tooltipGroup .hint.error p,
-#inputs div.tooltipGroup .hint.error p {
-    /*background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;*/
-    background-color: #fff;
-    color: #c20000;
-}
-
-#inputs div.tooltipGroup .hint.error p {
-    /*background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) #fdb7b7 no-repeat left top;*/
+.withdraw .hint.error p,
+#inputs div.tooltipGroup .hint.error {
+    color: #c20000 !important;
 }
 
 #inputContent_edit div.tooltipGroup .hint.success p,
 #inputs div.tooltipGroup .hint.success p {
-    background: url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -40px top;
     height: 14px;
     width: 14px;
     padding: 0;
@@ -3977,7 +3974,7 @@ i
 }
 
 .regOverlay .mts_messages {
-    line-height: 1.2;
+    line-height: 1.4em;
     padding: 6px 20px 6px 10px;
     display: block;
     margin-bottom: 4px;
@@ -4047,6 +4044,7 @@ i
     width: 528px;
     display: inline-block !important;
     padding-left: 20px;
+    line-height: 1.4em;
 }
 
 .mts_messages.mts_standard span {
@@ -4262,7 +4260,7 @@ div.tooltipGroup div.largeInput span {
 }
 
 .mts_form div.tooltipGroup .hint.xl p {
-    width: 255px;
+    width: 325px;
 }
 
 .mts_form div.tooltipGroup .hint.s p {
@@ -4309,7 +4307,7 @@ div.tooltipGroup div.largeInput span {
     padding: 0;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 15px;
     overflow: hidden;
     background: none;
     position: relative;
@@ -4775,7 +4773,7 @@ div.tooltipGroup div.largeInput span {
 div.tooltipGroup .hint {
     display: block;
     left: 2px;
-    bottom: -1px;
+    bottom: -5px;
     overflow: hidden;
     position: absolute;
     vertical-align: middle;
@@ -5600,15 +5598,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -112px;
 }
 
-.regOverlay.withdraw .submitBlue:hover {
-    background-position: 0 -138px;
-}
-
-.regOverlay.withdraw .submitGray:focus {
-    outline: thin dotted;
-    margin: 6px 0 0 1px;
-}
-
 /* Icons */
 .regOverlay .icon {
     display: inline-block;
@@ -5690,7 +5679,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     clear: none !important;
     width: auto;
     height: auto;
-    font-size: 12px;
 }
 
 .regOverlay.withdraw .accountInfo .guidanceText .accountDetails {
@@ -5784,10 +5772,11 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     width: 231px;
     margin-top: 16px;
     padding: 12px 0 !important;
-    font-size: 14px !important;
+    font-size: 18px !important;
     color: white !important;
     height: 42px !important;
     border-radius: 2px !important;
+    font-weight: normal !important;
 }
 
 .regOverlay.withdraw .mts_form_container .mts_form .submitGray:hover,
@@ -5884,7 +5873,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_methods {
     float: left;
     line-height: 24px;
-    width: 400px;
+    width: 369px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_methods .tableDetailTextAlign {
@@ -5911,7 +5900,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_eta {
     float: left;
-    width: 104px;
+    width: 136px;
     padding: 0 10px;
 }
 
