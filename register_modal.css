@@ -74,6 +74,10 @@
     overflow: hidden;
 }
 
+.regOverlay.withdraw {
+    height: 566px;
+}
+
 .large_single.regOverlay {
     height: 645px;
 }
@@ -940,7 +944,6 @@ div.tooltipGroup .hint.error {
     color: #015F8E;
     font-weight: bold;
     min-height: 0;
-    padding: 0;
     margin-left: 3px;
     padding: 0 3px 0 0;
 }
@@ -951,6 +954,7 @@ div.tooltipGroup .hint.error {
 
 .label.mts_amount_label.importo-prelevare-label {
     margin-top: 2px !important;
+    font-weight: bold;
 }
 
 span.importo-prelevare-text {
@@ -3980,7 +3984,7 @@ i
     color: #000;
     margin-top: 4px;
     font-size: 14px;
-    height: 36px;
+    min-height: 36px;
     width: 585px;
 }
 
@@ -4041,7 +4045,7 @@ i
 .regOverlay .mts_messages p {
     font-size: 14px;
     width: 528px;
-    display: inline-block;
+    display: inline-block !important;
     padding-left: 20px;
 }
 
@@ -4112,11 +4116,10 @@ i
 }
 
 .mts_table > ul {
-    width: 754px;
-    min-height: 159px;
-    background: transparent url(../../images/en/conditionsTableBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) top left no-repeat;
+    width: 756px;
     margin: 0px auto 5px;
-    padding: 1px 1px 0;
+    padding: 0;
+    border: 1px solid #bbb;
 }
 
 .transfersTableTitle {
@@ -4175,17 +4178,6 @@ i
     padding-left: 15px;
 }
 
-/*.transfersTableHeader div {*/
-/*color: #264d64;*/
-/*font-weight: bold;*/
-/*height: 21px;*/
-/*line-height: 21px;*/
-/*border-bottom: 1px solid #aaaeb6;*/
-/*border-top: 1px solid #e9edf0;*/
-/*padding-left: 10px;*/
-/*font-size: 11px;*/
-/*}*/
-
 .transfersTable_allocation, .transfersTableRow_allocation {
     width: 190px;
 }
@@ -4242,10 +4234,6 @@ i
     line-height: 24px;
     text-decoration: underline !important;
     font-weight: bold;
-}
-
-.transfersTableRow.lastRowItem {
-    border-bottom: 1px dotted #264d64;
 }
 
 div.tooltipGroup div.largeInput span {
@@ -5707,6 +5695,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .accountInfo .guidanceText .accountDetails {
     padding-left: 5px;
+    font-weight: bold;
 }
 
 /* Check withdrawal details form */
@@ -5740,6 +5729,10 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     border: none;
 }
 
+.regOverlay .tinyInput input:focus {
+    outline: none;
+}
+
 .regOverlay .tinyInput:before {
     content: "£";
     background-color: #e8eaed;
@@ -5750,7 +5743,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     display: inline-block;
     float: left;
 }
-
 
 .regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint {
     left: 188px;
@@ -5784,18 +5776,23 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     margin: 4px 0 0 4px;
 }
 
-.regOverlay.withdraw .mts_form_container .mts_form .submitGray {
-    background-color: #237fb2;
-    cursor: pointer;
-    text-align: center;
+.regOverlay.withdraw .mts_form_container .mts_form .submitGray,
+.regOverlay.withdraw .submitBlue {
+    background: #237fb2 !important;
+    cursor: pointer !important;
+    text-align: center !important;
     width: 231px;
     margin-top: 16px;
-    padding: 12px 0;
-    font-size: 14px;
-    color: white;
-    height: 42px;
-    text-transform: uppercase;
-    border-radius: 2px;
+    padding: 12px 0 !important;
+    font-size: 14px !important;
+    color: white !important;
+    height: 42px !important;
+    border-radius: 2px !important;
+}
+
+.regOverlay.withdraw .mts_form_container .mts_form .submitGray:hover,
+.regOverlay.withdraw .submitBlue:hover {
+    background: #28699b !important;
 }
 
 /* Help links */
@@ -5860,29 +5857,28 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_methods {
     float: left;
-    width: 398px;
-    border-right: 1px solid #e9e9e9;
+    width: 368px;
+    border-right: 1px solid #636363;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_amount {
     float: left;
     width: 68px;
-    border-right: 1px solid #e9e9e9;
-    border-left: 1px solid #c9cacd;
+    border-right: 1px solid #636363;
+    padding-left: 10px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_eta {
     float: left;
-    width: 122px;
-    border-left: 1px solid #c9cacd;
-    border-right: 1px solid #e9e9e9;
+    width: 152px;
+    border-right: 1px solid #636363;
+    padding-left: 10px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_reference {
     float: left;
     width: 120px;
-    border-left: 1px solid #c9cacd;
-    /*border-right: 1px solid #e9e9e9;*/
+    padding-left: 10px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_methods {
@@ -5926,18 +5922,31 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 0 12px;
+    border-bottom: 1px solid #959595;
+}
+
+.regOverlay.withdraw .mts_table .transfersTableRow.transferTable_total {
+    border-bottom: none;
+    /*padding: 0;*/
+}
+
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_transferable,
+.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_allocation {
+    background: none !important;
+    font-weight: bold;
+    color: #212121;
+    line-height: 24px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_transferable {
-    width: 250px;
-    background: none !important;
+    width: 282px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_allocation {
-    width: 455px;
+    width: 396px;
     padding-left: 10px;
+    border-left: none;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .formContainer #inputs {
@@ -5976,7 +5985,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     overflow: hidden;
     float: left;
     clear: left;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .regOverlay.withdraw .mts_table .transferTable_total .links {
@@ -5995,17 +6004,29 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 .regOverlay.withdraw .mts_table .transferTable_total .submitBlue {
-    margin-top: 20px;
+    margin: 0 !important;
+    height: 24px !important;
 }
 
 .regOverlay.withdraw .mts_table .transferTable_total #wtdSubmit {
-    overflow: hidden;
     clear: left;
     float: left;
-    margin-left: 0 !important;
-    padding: 0;
     cursor: pointer;
     border: none;
+    background: #3da700 !important;
+    color: white !important;
+    text-align: center;
+    margin: 0;
+    width: 238px;
+    padding: 7px 0;
+    font-size: 18px !important;
+    height: 35px !important;
+    font-weight: normal;
+    line-height: 17.5px;
+}
+
+.regOverlay.withdraw .mts_table .transferTable_total #wtdSubmit:hover {
+    background: #338c00 !important;
 }
 
 .regOverlay.withdraw .mts_table #acctInfoBox {
@@ -6026,7 +6047,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     overflow-x: hidden;
     overflow-y: auto;
     width: 734px;
-    max-height: 144px !important;
+    max-height: 166px !important;
     margin: 0;
     padding: 0 10px;
     border: none;
@@ -6088,7 +6109,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 #secondOverlayCtnt.warnMsgsecondOverlayDiv .formContainer {
-    width:  750px !important;
+    width: 750px !important;
 }
 
 #secondOverlayCtnt.warnMsgsecondOverlayDiv .formFooter .overlay_okBtn {
@@ -6588,7 +6609,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 #optional_total_msg_txt {
     color: red;
     display: block;
-    padding: 2px 0 0 0;
     text-align: center;
 }
 
@@ -6767,8 +6787,6 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     margin: 10px 0px;
 }
 
-
-
 /*#### START: HELP MENU ON THE RIGHT SIDE ####*/
 .regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li.helpTitle {
     border: none;
@@ -6783,6 +6801,10 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 .regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a:active {
     color: #222 !important;
 }
+
+/*#wtd_form {*/
+    /*border: 1px solid #bbb;*/
+/*}*/
 
 .__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
     display: none !important;
