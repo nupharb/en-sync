@@ -4004,6 +4004,19 @@ i
     background-position-y: center;
 }
 
+.mts_messages .messages:before {
+    content: ' ';
+    height: 36px;
+    width: 22px;
+    display: inline-block;
+    background: url(../../images/en/token-icons.png) no-repeat;
+    float: left;
+    background-position-y: center;
+    margin-left: -20px;
+    margin-right: 20px;
+    background-position-x: -94px;
+}
+
 .regOverlay .mts_messages p {
     font-size: 14px;
     width: 528px;
@@ -5635,6 +5648,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 .regOverlay.withdraw {
     background: white !important;
 }
+
 .regOverlay.withdraw .mts_contents {
     overflow: hidden;
     background: white !important;
@@ -5686,16 +5700,36 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     width: 590px;
 }
 
-.regOverlay.withdraw .mts_form_container .mts_form .tooltipGroup .tinyInput {
-    overflow: hidden;
-    float: left;
-    width: 188px;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+.regOverlay .tinyInput {
+    width: 154px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: none;
+    padding: 0;
+    height: 24px;
 }
 
-.regOverlay.withdraw .mts_form_container .mts_form .tooltipGroup .tinyInput input {
-    width: 180px;
+.regOverlay .tinyInput input {
+    overflow: hidden;
+    float: left;
+    width: 103px;
+    padding: 4px 10px;
+    background: none;
+    height: 17px;
+    border: none;
 }
+
+.regOverlay .tinyInput:before {
+    content: "£";
+    background-color: #e8eaed;
+    color: #adb8bb;
+    padding: 5px 10px 3px;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+}
+
 
 .regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint {
     left: 188px;
@@ -5794,7 +5828,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     float: left;
     width: 10px;
 }
-
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .methodLink {
     float: right;
