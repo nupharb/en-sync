@@ -1,13 +1,13 @@
 /*-----------------------------------MODAL REGISTRATION STYLES-------------------------------*/
 /*
-	Copyright (c) 2011 Orbis Technology Ltd. All rights reserved.
+    Copyright (c) 2011 Orbis Technology Ltd. All rights reserved.
 
-	This CSS is for styling registration overlay and its form elements.
+    This CSS is for styling registration overlay and its form elements.
 */
 
 /*
 *:focus {
-	outline:none;
+    outline:none;
 }
 */
 .regOverlay #overlayContainer .formContainer form a:focus, .regOverlay #overlayContainer .formContainer form input[type="button"]:focus {
@@ -34,11 +34,6 @@
     background-repeat: no-repeat;
 }
 
-.regOverlay button:focus, .regOverlay button:active,
-.regOverlay input:focus, .regOverlay input:active {
-    outline: none !important;
-}
-
 .regOverlay #inputs, .regOverlay #inputs div {
     float: left;
 }
@@ -61,24 +56,6 @@
     border: none;
 }
 
-.regOverlay button,
-.regOverlay input[type="button"],
-.regOverlay .submitBlue {
-    font-size: 13px !important;
-    cursor: pointer !important;
-    text-align: center !important;
-    width: 231px;
-    margin-top: 0;
-    padding: 0 !important;
-    color: white !important;
-    height: 26px !important;
-    border-radius: 2px !important;
-    font-weight: normal !important;
-    line-height: 26px;
-    text-decoration: none !important;
-    border: none;
-}
-
 .regOverlay a {
     color: #000;
 }
@@ -95,10 +72,6 @@
     background-color: #e8ecef;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
-}
-
-.regOverlay.withdraw {
-    height: 616px;
 }
 
 .large_single.regOverlay {
@@ -188,7 +161,7 @@
 .regOverlay #overlayHeader #overlayFunc a#close {
     background-image: url(../../images/en/closeIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d);
     background-size: contain;
-    margin-top: 5px;
+    margin-top: 7px;
     padding-right: 25px;
     width: 12px;
     height: 12px;
@@ -260,8 +233,12 @@
     font-size: 12px;
 }
 
-.regOverlay.deposit #overlayContainer .submitMessageContainer span:before {
-    left: 10px !important;
+
+.regOverlay #overlayContainer .submitMessageContainer span.submitError p {
+    color: #b90318;
+    background: none;
+    padding: 0;
+    font-weight: bold;
 }
 
 .regOverlay.deposit #overlayContainer #submitMessage-Narrow span.submitSuccess, .regOverlay #overlayContainer #submitMessage-Narrow span.submitError {
@@ -331,10 +308,10 @@
     width: 94%;
     float: left;
     color: #222;
-    margin-top: 7px;
+    margin-top: 5px;
     text-align: left;
     font-size: 13px;
-    line-height: 19px;
+    line-height: 17px;
 }
 
 .regOverlay #overlayContainer .formContainer form label.label.top {
@@ -376,10 +353,10 @@
 .regOverlay #overlayContainer .formContainer form input {
     float: left;
     display: inline-block;
-    height: 14px;
+    height: 24px;
     padding: 0 1px 0 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 15px;
     overflow: hidden;
     background: none;
 }
@@ -455,24 +432,71 @@ input#recaptcha_response_field {
     width: 192px;
 }
 
+.regOverlay #secondOverlayDiv #inputContent_edit .largeInput,
 .regOverlay #overlayContainer .formContainer form .midInput {
-    width: 180px;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
+    width: 182px;
+    height: 30px;
+    padding: 0;
 }
 
-.regOverlay #overlayContainer .formContainer form .midInput input {
-    width: 180px;
+.regOverlay #overlayContainer .formContainer form .tinyInput {
+    padding: 0;
+    height: 24px;
 }
 
-.regOverlay .submitGreen {
+.regOverlay #secondOverlayDiv #inputContent_edit .largeInput {
+    background: none !important;
+}
+
+.regOverlay #overlayContainer .formContainer form .midInput input,
+.regOverlay #secondOverlayDiv #inputContent_edit .largeInput input {
+    width: 161px;
+    padding: 6px 10px;
+    border: none;
+    background: none;
+    height: 17px;
+    font-size: 15px;
+    border: 1px solid #ccc !important;
+    border-radius: 2px;
+}
+
+.regOverlay #secondOverlayDiv #inputContent_edit .largeInput input.success,
+.regOverlay #overlayContainer .formContainer form .midInput input.success {
+    border: 1px solid #3da700 !important;
+    background-color: #f5fff0;
+}
+
+.regOverlay #secondOverlayDiv #inputContent_edit .largeInput input.error,
+.regOverlay #overlayContainer .formContainer form .midInput input.error {
+    border: 1px solid #c20000 !important;
+    background-color: #fff0f0;
+}
+
+.regOverlay #overlayContainer .formContainer form .submitGreen {
     position: relative;
     float: left;
     background-color: #3da700;
     color: #fff;
+    border: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    height: 39px;
+    margin: 0;
+    cursor: pointer;
+    padding: 9px 0;
+    text-align: center;
+    width: 188px;
+    cursor: pointer;
+    border-radius: 2px;
+    line-height: 23px;
+}
+
+.regOverlay #overlayContainer .formContainer form .submitGreen#submitButton {
     width: 177px;
 }
 
-.regOverlay .submitGreen:hover {
+.regOverlay #overlayContainer .formContainer form .submitGreen:hover {
     background-color: #338c00;
     color: #fff;
 }
@@ -581,22 +605,15 @@ div.tooltipGroup {
     float: left;
     display: block;
     width: 100%;
-    height: 20px;
-    margin-bottom: 20px;
-    margin-left: 2px;
-    clear: left;
+    height: 25px;
 }
 
-.regOverlay.withdraw div.tooltipGroup {
-    width: 166px;
-}
-
-.regOverlay.withdraw div.tooltipGroup + br {
-    display: none;
+.regOverlay div.tooltipGroup {
+    height: 30px;
 }
 
 div.tooltipGroup select {
-    font-size: 11px !important;
+    font-size: 14px !important;
 }
 
 div.tooltipGroup.select_double {
@@ -654,7 +671,7 @@ div.tooltipGroup .hint.error {
 #inputs div.tooltipGroup .hint {
     display: block;
     left: 2px;
-    bottom: -1px;
+    bottom: 2px;
     overflow: hidden;
     position: absolute;
     vertical-align: middle;
@@ -693,14 +710,15 @@ div.tooltipGroup .hint.error {
 #inputContent_edit div.tooltipGroup .hint.xl,
 #inputs div.tooltipGroup .hint.xl,
 #form_transfer div.tooltipGroup .hint.xl {
-    width: 426px;
-    padding-left: 81px;
+    width: 385px;
+    padding-left: 127px;
+    bottom: 5px;
 }
 
 #inputContent_edit div.tooltipGroup .hint.s,
 #inputs div.tooltipGroup .hint.s {
     width: 365px;
-    padding-left: 142px;
+    padding-left: 155px;
 }
 
 #inputContent_edit div.tooltipGroup .hint.suggest,
@@ -725,15 +743,10 @@ div.tooltipGroup .hint.error {
     position: relative;
     float: left;
     vertical-align: middle;
-    padding: 0;
+    padding: 4px 2px 3px 4px;
     line-height: 12px;
     width: 183px;
     min-height: 14px;
-    font-size: 12px;
-}
-
-.hint, .hint p {
-    background: white !important;
 }
 
 #inputContent_edit div.tooltipGroup .hint.m p,
@@ -748,7 +761,7 @@ div.tooltipGroup .hint.error {
 
 #inputContent_edit div.tooltipGroup .hint.xl p,
 #inputs div.tooltipGroup .hint.xl p {
-    width: 420px;
+    width: 395px;
 }
 
 #inputContent_edit div.tooltipGroup .hint.s p,
@@ -757,21 +770,33 @@ div.tooltipGroup .hint.error {
 }
 
 #inputContent_edit div.tooltipGroup .hint.info p,
-.withdraw .hint.error p,
 #inputs div.tooltipGroup .hint.info p {
-    color: #999 !important;
+    /*background: #BFCED6 url(../../images/en/hintInfo_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;*/
+    background-color: #fff;
+    color: #999;
+}
+
+#inputContent_edit div.tooltipGroup .hint.suggest p,
+#inputs div.tooltipGroup .hint.suggest p {
+    background: url(../../images/en/hintSuggest_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
 }
 
 #inputContent_edit div.tooltipGroup .hint.error p,
-.withdraw .hint.error p,
-#inputs div.tooltipGroup .hint.error {
-    color: #c20000 !important;
+#inputs div.tooltipGroup .hint.error p {
+    /*background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;*/
+    background-color: #fff;
+    color: #c20000;
+}
+
+#inputs div.tooltipGroup .hint.error p {
+    /*background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) #fdb7b7 no-repeat left top;*/
 }
 
 #inputContent_edit div.tooltipGroup .hint.success p,
 #inputs div.tooltipGroup .hint.success p {
-    height: 14px;
-    width: 14px;
+    /*background: url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -40px top;*/
+    /*height: 14px;
+    width: 14px;*/
     padding: 0;
     margin: 4px 0 0 4px;
 }
@@ -780,19 +805,15 @@ div.tooltipGroup .hint.error {
 .mts_form #inputs .rightClmn div.tooltipGroup .hint,
 #inputContent_edit .leftClmn div.tooltipGroup .hint,
 .mts_form #inputs .leftClmn div.tooltipGroup .hint {
-    padding: 0;
-    position: absolute;
-    left: 186px !important;
-    top: 0;
+    padding-left: 185px;
 }
 
 #inputContent_edit .leftClmn div.tooltipGroup .hint.m,
 #inputContent_edit .rightClmn div.tooltipGroup .hint.m,
 #inputs .leftClmn div.tooltipGroup .hint.m,
 #inputs .rightClmn div.tooltipGroup .hint.m {
+    padding-left: 96px;
     width: 259px;
-    left: 100px !important;
-    padding-left: 0 !important;
 }
 
 .mts_form #inputs div.tooltipGroup .hint {
@@ -823,7 +844,6 @@ div.tooltipGroup .hint.error {
     width: 185px;
     height: 473px;
     padding: 3px;
-    margin-top: 15px;
 }
 
 .regOverlay #overlayContainer .rightNav .rightNavContent {
@@ -883,27 +903,67 @@ div.tooltipGroup .hint.error {
  * First Deposit
  * ------------- */
 .regOverlay.deposit #overlayContainer .submitMessageContainer {
-    height: 87px;
+    height: 50px;
     margin-bottom: 5px;
 }
 
-.regOverlay.deposit #overlayContainer .submitMessageContainer span {
+.regOverlay.deposit #overlayContainer .submitMessageContainer span {   
+    color: #222;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     min-height: 28px;
     height: auto;
     max-height: 60px;
+    font-weight: 400;
+    padding: 10px 20px 10px 15px;
     vertical-align: middle;
+    width: 100%;
+    overflow: hidden;
+}
+
+.regOverlay.deposit #overlayContainer .submitMessageContainer span:before {
+    content: ' ';
+    background-image: url(../../images/en/token-icons-vertical.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.regOverlay #overlayContainer .submitMessageContainer span.submitError {
+    float: left;
+    border: 1px solid #c20000;
+    background-color: #ffdddd;
+    background-position: 5px 3px;
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span.infoMessage {
-    padding: 4px 0 0;
+    border: 1px solid #00417d;
+    background-color: #c4e3ff;
+    background-position: 5px -87px;
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span p {
-    color: #000;
-    font-size: 12px;
-    font-weight: bold;
+    color: #222;
+    font-size: 13px;
     padding: 3px 0 0 0;
     clear: both;
+}
+
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess p.promoError {
+    font-size: 11px;
+    color: #d45000;
+    padding: 0 0 0 10px;
+}
+
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess {
+    color: #405b00;
+    background: url(../../images/en/successIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
+    overflow: hidden;
+    float: left;
+    max-width: 550px !important;
+    padding-left: 27px !important;
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer_reverseWtd span.submitSuccess {
@@ -929,6 +989,7 @@ div.tooltipGroup .hint.error {
     color: #015F8E;
     font-weight: bold;
     min-height: 0;
+    padding: 0;
     margin-left: 3px;
     padding: 0 3px 0 0;
 }
@@ -939,7 +1000,6 @@ div.tooltipGroup .hint.error {
 
 .label.mts_amount_label.importo-prelevare-label {
     margin-top: 2px !important;
-    font-weight: bold;
 }
 
 span.importo-prelevare-text {
@@ -1005,15 +1065,13 @@ span.importo-prelevare-text {
     overflow-x: hidden;
     overflow-y: auto;
     height: 433px;
-    border-top: 1px solid #d4d5d7;
+    border-top: 1px solid #959595;
 }
 
 #paymentMethodsMenu #scrollContent ul {
     display: block;
     width: 231px;
-    border-top: 1px solid #fff;
     font-family: Arial, sans-serif;
-    text-shadow: 1px 1px #ffffff;
     float: left;
 }
 
@@ -1070,7 +1128,6 @@ span.importo-prelevare-text {
 }
 
 #paymentMethodsMenu #scrollContent ul li p {
-    font-weight: bold;
     color: #808080;
     text-indent: -100000px;
 }
@@ -1081,12 +1138,10 @@ span.importo-prelevare-text {
 
 #paymentMethodsMenu #scrollContent ul li.myMethods p.visibleText {
     color: #3f7600;
-    text-align: center;
 }
 
 #paymentMethodsMenu #scrollContent ul li.otherMethods p.visibleText {
     color: #025b87;
-    text-align: center;
 }
 
 #paymentMethodsMenu #scrollContent ul li.selected p {
@@ -1948,7 +2003,7 @@ span.importo-prelevare-text {
 #paymentMethodsContent .pmTitle p, #paypalPaymentMethodsContent .pmTitle p {
     float: left;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #222;
 }
 
@@ -1956,14 +2011,13 @@ span.importo-prelevare-text {
     float: right;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     background-repeat: no-repeat;
     padding-left: 17px;
 }
 
 #paymentMethodsContent a, #paypalPaymentMethodsContent a, #depositSuccessContainer a {
     color: #1A74AE !important;
-    text-decoration: underline;
 }
 
 #paymentMethodsContent a:hover, #paypalPaymentMethodsContent a:hover, #depositSuccessContainer a:hover {
@@ -1999,7 +2053,6 @@ p.pymnt_iconWithText.visibleText span {
 
 .regOverlay #overlayContainer .formContainer form .tinyInput {
     width: 76px;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -164px;
 }
 
 .regOverlay #overlayContainer .formContainer form .tinyInput input {
@@ -2489,13 +2542,14 @@ i
 .regOverlay.deposit .pmDetails .pmInfo ul {
     display: inline;
     float: right;
-    margin-top: 5px;
+    margin-top: 2px;
+    line-height: 14px;
 }
 
 .regOverlay.deposit .pmDetails .pmInfo ul.pmInfoLabels {
     font-weight: bold;
     margin-right: 8px;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: Arial, Geneva, sans-serif;
 }
 
 .regOverlay #inputs #whatIsThisURL.lowIndex {
@@ -2512,10 +2566,11 @@ i
     cursor: hand;
     display: inline-block;
     float: left;
-    margin: 3px 0 0 3px;
-    background: url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -11px 0;
-    width: 14px;
-    height: 14px;
+    margin: 3px 0 0 6px;
+    background-image: url(../../images/en/help-icon.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+    width: 20px;
+    background-size: 100%;
+    height: 20px;
 }
 
 .regOverlay.deposit #inputs p.infoText, .regOverlay.deposit p.infoText {
@@ -2595,7 +2650,7 @@ i
     float: left;
     color: #4b7300;
     font-weight: bold;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 12px;
     text-shadow: 1px 1px #ffffff;
 }
@@ -2637,7 +2692,7 @@ i
     background: url("../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0 -112px;
     width: 200px;
     height: 26px;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: #2d4456;
     line-height: 24px;
     vertical-align: middle;
@@ -2705,7 +2760,7 @@ i
     position: fixed;
     z-index: 100501;
     color: #264D64;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -3362,7 +3417,7 @@ i
 #secondOverlayDiv .pmDetails .pmInfo ul.pmInfoLabels {
     font-weight: bold;
     margin-right: 8px;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: Arial, Geneva, sans-serif;
 }
 
 #secondOverlay.removeConditions {
@@ -3423,60 +3478,60 @@ i
     margin: 10px 0;
 }
 
-/*#conditionsTable > ul {*/
-/*width: 754px;*/
-/*min-height: 159px;*/
-/*background: transparent url(../../images/en/conditionsTableBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) top left no-repeat;*/
-/*margin: 0px 0px 5px;*/
-/*padding: 1px 1px 0;*/
-/*}*/
+#conditionsTable > ul {
+    width: 754px;
+    min-height: 159px;
+    background: transparent url(../../images/en/conditionsTableBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) top left no-repeat;
+    margin: 0px 0px 5px;
+    padding: 1px 1px 0;
+}
 
-/*.conditionsTableHeader_leftBracket {*/
-/*width: 9px;*/
-/*height: 31px;*/
-/*background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;*/
-/*float: left;*/
-/*}*/
+.conditionsTableHeader_leftBracket {
+    width: 9px;
+    height: 31px;
+    background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
+    float: left;
+}
 
-/*.conditionsTableHeader_rightBracket {*/
-/*width: 11px;*/
-/*height: 31px;*/
-/*background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0px !important;*/
-/*float: left;*/
-/*}*/
+.conditionsTableHeader_rightBracket {
+    width: 11px;
+    height: 31px;
+    background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0px !important;
+    float: left;
+}
 
-/*.conditionsTable_title {*/
-/*height: 31px;*/
-/*background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px -31px !important;*/
-/*float: left;*/
-/*line-height: 30px;*/
-/*font-size: 12px;*/
-/*color: #fff;*/
-/*font-weight: bold;*/
-/*text-shadow: -1px 1px 2px #000;*/
-/*width: 734px;*/
-/*}*/
+.conditionsTable_title {
+    height: 31px;
+    background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px -31px !important;
+    float: left;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px #000;
+    width: 734px;
+}
 
-/*.conditionsTableHeader {*/
-/*border-bottom: 1px solid #f5f6f7 !important;*/
-/*height: 23px;*/
-/*padding: 0;*/
-/*background: #fefefe url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top left !important;*/
-/*}*/
+.conditionsTableHeader {
+    border-bottom: 1px solid #f5f6f7 !important;
+    height: 23px;
+    padding: 0;
+    background: #fefefe url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top left !important;
+}
 
-/*.conditionsTableHeader div {*/
-/*font-weight: bold;*/
-/*height: 23px;*/
-/*line-height: 23px;*/
-/*border-bottom: 1px solid #aaaeb6;*/
-/*font-size: 11px;*/
-/*}*/
+.conditionsTableHeader div {
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    border-bottom: 1px solid #aaaeb6;
+    font-size: 11px;
+}
 
-/*.conditionsTableRow {*/
-/*overflow: auto;*/
-/*clear: left;*/
-/*margin: 0 11px 0 9px !important;*/
-/*}*/
+.conditionsTableRow {
+    overflow: auto;
+    clear: left;
+    margin: 0 11px 0 9px !important;
+}
 
 .rev_wtd_table_scrolling {
     overflow: auto;
@@ -3742,7 +3797,7 @@ i
 
 #secondOverlayTop div {
     color: #264D64;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     line-height: 26px;
     text-shadow: 1px 1px #E3E3E6;
@@ -3758,7 +3813,7 @@ i
     border: none;
     display: inline-block;
     font-size: 11px;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     height: 26px;
     line-height: 26px;
@@ -3858,7 +3913,7 @@ i
     border: none;
     display: inline-block;
     font-size: 11px;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     height: 26px;
     line-height: 26px;
@@ -3943,6 +3998,7 @@ i
 #ils_headerbar a.mts_header_help,
 #overlayFunc ul li a.mts_header_help {
     padding-right: 7px;
+    background: transparent url(../../images/en/headerLinksDivider.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right center;
 }
 
 .mts_headerbar a#close,
@@ -3960,16 +4016,15 @@ i
     overflow: auto;
 }
 
-.regOverlay .mts_messages,
-.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess {
-    line-height: 1.4em;
+.regOverlay .mts_messages {
+    line-height: 1.2;
     padding: 6px 20px 6px 10px;
     display: block;
     margin-bottom: 4px;
     color: #000;
     margin-top: 4px;
     font-size: 14px;
-    min-height: 36px;
+    height: 36px;
     width: 585px;
 }
 
@@ -3978,8 +4033,7 @@ i
     background-color: #ffdddd;
 }
 
-.regOverlay .mts_messages.mts_success,
-.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess {
+.regOverlay .mts_messages.mts_success {
     border: 1px solid #3da700;
     background-color: #e2ffd3;
 }
@@ -4015,8 +4069,7 @@ i
     background-position-y: center;
 }
 
-.mts_messages .messages:before,
-.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess:before {
+.mts_messages .messages:before {
     content: ' ';
     height: 36px;
     width: 22px;
@@ -4029,19 +4082,11 @@ i
     background-position-x: -94px;
 }
 
-.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess:before {
-    margin: 0px;
-    left: 0;
-    position: absolute;
-    background-position-x: -61px;
-}
-
 .regOverlay .mts_messages p {
     font-size: 14px;
     width: 528px;
-    display: inline-block !important;
+    display: inline-block;
     padding-left: 20px;
-    line-height: 1.4em;
 }
 
 .mts_messages.mts_standard span {
@@ -4065,7 +4110,6 @@ i
     overflow: auto;
     width: 760px;
     margin: 0 auto !important;
-    min-height: 70px;
 }
 
 .mts_form_withdrawal_amount {
@@ -4112,12 +4156,11 @@ i
 }
 
 .mts_table > ul {
-    width: 756px;
+    width: 754px;
+    min-height: 159px;
+    background: transparent url(../../images/en/conditionsTableBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) top left no-repeat;
     margin: 0px auto 5px;
-    padding: 0;
-    border: 1px solid #bbb;
-    overflow: auto;
-    padding-bottom: 9px;
+    padding: 1px 1px 0;
 }
 
 .transfersTableTitle {
@@ -4160,7 +4203,7 @@ i
     font-size: 14px;
     line-height: 26px;
     color: #222;
-    overflow: hidden;
+    overflow: auto;
     background: #d9d9db !important;
 }
 
@@ -4172,7 +4215,20 @@ i
 .regOverlay .transfersTable_allocation {
     width: 396px;
     background: #d9d9db;
+    border-left: 1px solid #636363;
+    padding-left: 15px;
 }
+
+/*.transfersTableHeader div {*/
+/*color: #264d64;*/
+/*font-weight: bold;*/
+/*height: 21px;*/
+/*line-height: 21px;*/
+/*border-bottom: 1px solid #aaaeb6;*/
+/*border-top: 1px solid #e9edf0;*/
+/*padding-left: 10px;*/
+/*font-size: 11px;*/
+/*}*/
 
 .transfersTable_allocation, .transfersTableRow_allocation {
     width: 190px;
@@ -4232,6 +4288,10 @@ i
     font-weight: bold;
 }
 
+.transfersTableRow.lastRowItem {
+    border-bottom: 1px dotted #264d64;
+}
+
 div.tooltipGroup div.largeInput span {
     width: 192px;
     height: 20px;
@@ -4258,7 +4318,7 @@ div.tooltipGroup div.largeInput span {
 }
 
 .mts_form div.tooltipGroup .hint.xl p {
-    width: 325px;
+    width: 255px;
 }
 
 .mts_form div.tooltipGroup .hint.s p {
@@ -4296,7 +4356,6 @@ div.tooltipGroup div.largeInput span {
     margin-top: 7px;
     margin-bottom: 1px;
     text-align: left;
-    margin-left: 2px;
 }
 
 .mts_form input {
@@ -4306,7 +4365,7 @@ div.tooltipGroup div.largeInput span {
     padding: 0;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 11px;
     overflow: hidden;
     background: none;
     position: relative;
@@ -4319,22 +4378,14 @@ div.tooltipGroup div.largeInput span {
 .mts_form .largeInput {
     float: left;
     display: inline-block;
+    height: 14px;
+    padding: 3px 4px;
     overflow: hidden;
-    height: 24px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
 }
 
-.mts_form .tinyInput input,
-.mts_form .smallInput input,
-.mts_form .midInput input,
-.mts_form .largeInput input {
-    height: 17px;
-    padding: 4px 10px;
-}
-
-.mts_form. .largeInput {
+.mts_form. largeInput {
     width: 192px;
+    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
 }
 
 .mts_form .largeInput input {
@@ -4343,6 +4394,7 @@ div.tooltipGroup div.largeInput span {
 
 .mts_form .midInput {
     width: 180px;
+    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -20px;
 }
 
 .mts_form .midInput input {
@@ -4395,6 +4447,7 @@ div.tooltipGroup div.largeInput span {
 
 .mts_form .smallInput {
     width: 91px;
+    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -40px;
 }
 
 .mts_form .smallInput input {
@@ -4403,6 +4456,7 @@ div.tooltipGroup div.largeInput span {
 
 .mts_form .tinyInput {
     width: 76px;
+    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -164px;
     z-index: 4 !important;
     position: absolute;
 }
@@ -4444,25 +4498,25 @@ div.tooltipGroup div.largeInput span {
 }
 
 #edit_pay_mthd_link {
-    border-bottom: 1px solid #1a74ae;
     float: left;
-    height: 15px;
-    line-height: 19px;
+    height: 25px;
+    line-height: 22px;
     margin-left: 10px;
     text-decoration: none !important;
-    background: transparent url(../../images/en/updateCardImg.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0 4px no-repeat;
-    padding-left: 14px;
+    background: transparent url(../../images/en/edit.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0 4px no-repeat;
+    padding-left: 22px;
 }
 
 #add_pay_mthd_link {
-    border-bottom: 1px solid #1a74ae;
     float: left;
-    height: 15px;
-    line-height: 19px;
-    margin-left: 10px;
+    line-height: 22px;
+    margin-left: 22px;
     text-decoration: none !important;
-    background: transparent url(../../images/en/addAnotherImg.png?ver=10302352b9cca8d374b2c95e0ccf157d) 0 5px no-repeat;
-    padding-left: 10px;
+    background-image: url(../../images/en/addAnotherImg.png?ver=10302352b9cca8d374b2c95e0ccf157d); 
+    background-position: 0 3px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
 }
 
 .hidden_block {
@@ -4776,6 +4830,8 @@ div.tooltipGroup div.largeInput span {
 
 div.tooltipGroup .hint {
     display: block;
+    left: 2px;
+    bottom: -1px;
     overflow: hidden;
     position: absolute;
     vertical-align: middle;
@@ -4785,8 +4841,6 @@ div.tooltipGroup .hint {
     width: 200px;
     padding-bottom: 1px;
     z-index: 1;
-    top: 29px;
-    left: 0 !important;
 }
 
 #ils_loginScreens .rightClmn div.tooltipGroup .hint, #ils_loginScreens div.tooltipGroup .hint {
@@ -5400,7 +5454,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span#s_success {
     width: 500px;
-    padding-left: 40px;
 }
 
 .regOverlay.deposit #overlayContainer #depositSuccessContainer #depositSuccessContent.reverseWtd_page #transactionDetails {
@@ -5520,14 +5573,21 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     border: none !important;
 }
 
+.formFooter .rightClmn input {
+    background: transparent url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -362px !important;
+    width: 180px !important;
+}
+
+.formFooter .rightClmn input:hover {
+    background-position: 0px -388px !important;
+}
+
 #reg_back_btn {
     float: left;
 }
 
 .formFooter .rightClmn input {
-    position: absolute;
-    left: -5px;
-    bottom: 20px;
+    margin-right: 5px !important;
 }
 
 /* -----[ General styling ]-------------------------------------------------- */
@@ -5542,10 +5602,67 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     word-break: break-all;
 }
 
+/* Buttons */
+.regOverlay.withdraw .submitGreen {
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 188px;
+    height: 26px;
+    margin: 0;
+    padding: 0 0 4px 0;
+    font-size: 11px;
+    color: #354a02;
+    font-family: Tahoma, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 26px;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+}
+
+.regOverlay.withdraw .submitGreen:hover {
+    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+    color: #4561031;
+}
+
+.regOverlay.withdraw .submitGreen:disabled {
+    cursor: auto;
+    background: url(../../images/en/inputsDisabled.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
+}
+
+.regOverlay.withdraw .submitGreen:disabled:hover {
+    cursor: auto;
+    background: url(../../images/en/inputsDisabled.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
+}
+
 .regOverlay.withdraw .submitBlue {
     float: left;
     clear: both;
     display: block;
+    width: 200px;
+    height: 26px;
+    margin-bottom: 40px;
+    color: #2d4456;
+    font-family: Tahoma, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none !important;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -112px;
+}
+
+.regOverlay.withdraw .submitBlue:hover {
+    background-position: 0 -138px;
+}
+
+.regOverlay.withdraw .submitGray:focus {
+    outline: thin dotted;
+    margin: 6px 0 0 1px;
 }
 
 /* Icons */
@@ -5604,7 +5721,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_contents #mts_content {
     overflow: hidden;
-    padding: 10px 10px 0 15px;
+    padding: 10px 10px 15px 15px;
 }
 
 /* Account info */
@@ -5614,9 +5731,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     text-align: left;
     width: 140px;
     margin: 5px 10px 0 0;
-    position: absolute;
-    top: 91px;
-    right: 7px;
 }
 
 .regOverlay.withdraw .accountInfo .guidanceText {
@@ -5632,11 +5746,18 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     clear: none !important;
     width: auto;
     height: auto;
+    font-size: 12px;
 }
 
 .regOverlay.withdraw .accountInfo .guidanceText .accountDetails {
     padding-left: 5px;
-    font-weight: bold;
+}
+
+/* Check withdrawal details form */
+.regOverlay.withdraw .mts_form_container {
+    overflow: hidden;
+    height: auto;
+    padding-bottom: 10px;
 }
 
 .regOverlay.withdraw .mts_form_container .mts_form {
@@ -5663,10 +5784,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     border: none;
 }
 
-.regOverlay .tinyInput input:focus {
-    outline: none;
-}
-
 .regOverlay .tinyInput:before {
     content: "£";
     background-color: #e8eaed;
@@ -5677,6 +5794,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     display: inline-block;
     float: left;
 }
+
 
 .regOverlay.withdraw .mts_form_container .mts_form div.tooltipGroup .hint {
     left: 188px;
@@ -5710,14 +5828,17 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     margin: 4px 0 0 4px;
 }
 
-.regOverlay.withdraw .mts_form_container .mts_form .submitGray,
-.regOverlay.withdraw .submitBlue {
-    background: #237fb2 !important;
-}
-
-.regOverlay.withdraw .mts_form_container .mts_form .submitGray:hover,
-.regOverlay.withdraw .submitBlue:hover {
-    background: #28699b !important;
+.regOverlay.withdraw .mts_form_container .mts_form .submitGray {
+    background-color: #237fb2;
+    cursor: pointer;
+    text-align: center;
+    width: 231px;
+    margin-top: 16px;
+    padding: 12px 0;
+    font-size: 14px;
+    color: white;
+    height: 42px;
+    text-transform: uppercase;
 }
 
 /* Help links */
@@ -5782,34 +5903,35 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_methods {
     float: left;
-    width: 368px;
-    border-right: 1px solid #636363;
+    width: 398px;
+    border-right: 1px solid #e9e9e9;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_amount {
     float: left;
     width: 68px;
-    border-right: 1px solid #636363;
-    padding-left: 10px;
+    border-right: 1px solid #e9e9e9;
+    border-left: 1px solid #c9cacd;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_eta {
     float: left;
-    width: 152px;
-    border-right: 1px solid #636363;
-    padding-left: 10px;
+    width: 122px;
+    border-left: 1px solid #c9cacd;
+    border-right: 1px solid #e9e9e9;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableHeader .transfersTable_reference {
     float: left;
     width: 120px;
-    padding-left: 10px;
+    border-left: 1px solid #c9cacd;
+    /*border-right: 1px solid #e9e9e9;*/
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_methods {
     float: left;
     line-height: 24px;
-    width: 369px;
+    width: 400px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_methods .tableDetailTextAlign {
@@ -5836,7 +5958,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_eta {
     float: left;
-    width: 136px;
+    width: 104px;
     padding: 0 10px;
 }
 
@@ -5846,42 +5968,19 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     width: 91px;
 }
 
-/*.regOverlay.withdraw .mts_table .transfersTableRow {*/
-    /*padding: 4px 0 0;*/
-/*}*/
-
 .regOverlay.withdraw .mts_table .transfersTableRow {
-    padding: 8px 0 12px;
-    border-bottom: 1px solid #959595;
-}
-
-.regOverlay.withdraw .mts_table .transfersTableRow.formFooter {
-    position: absolute;
-    bottom: 80px;
-    width: 280px;
-    height: 70px;
-}
-
-.regOverlay.withdraw .mts_table .transfersTableRow.transferTable_total {
-    border-bottom: none;
-}
-
-.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_transferable,
-.regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_allocation {
-    background: none !important;
-    font-weight: bold;
-    color: #212121;
-    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_transferable {
-    width: 282px;
+    width: 250px;
+    background: none !important;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_allocation {
-    width: 396px;
+    width: 455px;
     padding-left: 10px;
-    border-left: none;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .formContainer #inputs {
@@ -5913,15 +6012,14 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_table .transfersTableRow .formContainer .tooltipGroup {
     float: left;
-    margin-bottom: 0;
-    height: 30px;
+    margin-bottom: 1px;
 }
 
 .regOverlay.withdraw .mts_table .transferTable_total strong {
     overflow: hidden;
     float: left;
     clear: left;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 .regOverlay.withdraw .mts_table .transferTable_total .links {
@@ -5939,16 +6037,18 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     text-decoration: none;
 }
 
-.regOverlay.withdraw .mts_table .transferTable_total #wtdSubmit {
-    clear: left;
-    float: left;
-    cursor: pointer;
-    border: none;
-    background: #3da700 !important;
+.regOverlay.withdraw .mts_table .transferTable_total .submitBlue {
+    margin-top: 20px;
 }
 
-.regOverlay.withdraw .mts_table .transferTable_total #wtdSubmit:hover {
-    background: #338c00 !important;
+.regOverlay.withdraw .mts_table .transferTable_total #wtdSubmit {
+    overflow: hidden;
+    clear: left;
+    float: left;
+    margin-left: 0 !important;
+    padding: 0;
+    cursor: pointer;
+    border: none;
 }
 
 .regOverlay.withdraw .mts_table #acctInfoBox {
@@ -5956,7 +6056,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     margin: 0 11px 0 9px;
     padding: 5px;
     line-height: 1.4em;
-    color: red;
+    background: #c5d2dc;
 }
 
 .regOverlay.withdraw .mts_table #acctInfoBox a {
@@ -5969,7 +6069,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     overflow-x: hidden;
     overflow-y: auto;
     width: 734px;
-    max-height: 166px !important;
+    max-height: 144px !important;
     margin: 0;
     padding: 0 10px;
     border: none;
@@ -6019,7 +6119,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 #secondOverlayTop {
-    width: 750px;
+    width: 549px !important
 }
 
 #secondOverlayCtnt {
@@ -6031,7 +6131,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 #secondOverlayCtnt.warnMsgsecondOverlayDiv .formContainer {
-    width: 750px !important;
+    width:  750px !important;
 }
 
 #secondOverlayCtnt.warnMsgsecondOverlayDiv .formFooter .overlay_okBtn {
@@ -6531,12 +6631,21 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 #optional_total_msg_txt {
     color: red;
     display: block;
+    padding: 2px 0 0 0;
     text-align: center;
 }
 
 div.tooltipGroup select {
     position: relative;
     z-index: 10;
+    background: none;
+    height: 25px;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.regOverlay div.tooltipGroup select {
+    height: 30px;
 }
 
 .regOverlay #nationality, #country_province, #fiscal_region, #provin_nascita, #comune_nascita_dropdown,
@@ -6709,6 +6818,8 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     margin: 10px 0px;
 }
 
+
+
 /*#### START: HELP MENU ON THE RIGHT SIDE ####*/
 .regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li.helpTitle {
     border: none;
@@ -6716,18 +6827,140 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 
 .regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li {
     background: none;
+    font-size: 13px;
 }
 
-.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a,
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a {
+    color: #1A74AE !important;
+}
+
 .regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a:hover,
 .regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a:active {
-    color: #222 !important;
+    color: #269eec !important;
 }
 
-/*#wtd_form {*/
-/*border: 1px solid #bbb;*/
-/*}*/
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a {
+    background-image: url('../../images/en/contact-icons.png?ver=10302352b9cca8d374b2c95e0ccf157d');
+    background-size: 20px;
+}
+
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a.phoneHelp {
+    background-position: 0 0;
+    height: 24px;
+}
+
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a.emailHelp {
+    background-position: 0 -22px;
+}
+
+.regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li > a.chatHelp {
+    background-position: 0 -40px;
+}
 
 .__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
     display: none !important;
+}
+
+
+/*#### START: EDIT CREDIT CARD OVERLAY ####*/
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv {
+    background: #d9d9db;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayTop {
+    width: 100% !important;
+    background: #00417d;
+    height: 40px;
+} 
+
+.regOverlay #secondOverlayTop #editOverlayTitle {
+    color: #fff;
+    text-shadow: none;
+    font-weight: 400;
+    height: 100%;
+    font-size: 18px;
+    line-height: 39px;
+    padding-left: 12px;
+}
+
+.regOverlay #secondOverlayTopLeft,
+.regOverlay #secondOverlayTopRight {
+    width: 0;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayCtnt {
+    border: none;
+    background: none;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayCtnt.editMthdsecondOverlayCtnt .formContainer {
+    width: auto !important;
+    padding: 0 4px;
+    margin: 7px;
+    background: #fff;
+    height: 311px;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayBtmLeft,
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayBtm,
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv #secondOverlayBtmRight {
+    height: 0;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter {
+    width: 100%;
+    background: none !important;
+    border-top: 1px solid #7d7d7d;
+    height: auto;
+    padding-top: 5px;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter input.submitGreen {
+    width: 177px;
+    background: #3da700;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2.2;
+    height: 38px;
+    cursor: pointer;
+    margin-left: 4px;
+    border-radius: 2px;
+    font-weight: 400;
+    padding: 0;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter input.submitGreen:hover {
+    background: #338c00;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter a.overlay_cancelBtn {
+    font-weight: 400;
+    background: none;
+    top: 13px;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter .rightClmn {
+    margin: 0;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter a.overlay_removeBtn {
+    background-image: url(../../images/en/remove-card.png?ver=10302352b9cca8d374b2c95e0ccf157d);
+    /*background-color: #237fb2;*/
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 8px 6px 23px;
+    color: #fff !important;
+    background-position: 7px 8px;
+    font-size: 12px;
+    /*-webkit-box-shadow: 0px 1px 5px 0px rgba(40,105,155,1);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(40,105,155,1);
+    box-shadow: 0px 1px 5px 0px rgba(40,105,155,1);*/
+    top: 5px;
+    font-weight: 400;
+    border: 1px solid #dc1641;
+}
+
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter a.overlay_removeBtn:hover {
+    /*background-color: #28699b;*/
 }
