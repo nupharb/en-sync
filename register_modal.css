@@ -5846,8 +5846,13 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     width: 91px;
 }
 
+/*.regOverlay.withdraw .mts_table .transfersTableRow {*/
+    /*padding: 4px 0 0;*/
+/*}*/
+
 .regOverlay.withdraw .mts_table .transfersTableRow {
-    padding: 4px 0 0;
+    padding: 8px 0 12px;
+    border-bottom: 1px solid #959595;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow.formFooter {
