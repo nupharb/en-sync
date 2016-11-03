@@ -35,7 +35,7 @@
 }
 
 .regOverlay button:focus, .regOverlay button:active,
-.regOverlay input:focus, .regOverlay input:active{
+.regOverlay input:focus, .regOverlay input:active {
     outline: none !important;
 }
 
@@ -61,6 +61,24 @@
     border: none;
 }
 
+.regOverlay button,
+.regOverlay input[type="button"],
+.regOverlay .submitBlue {
+    font-size: 13px !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    width: 231px;
+    margin-top: 0;
+    padding: 0 !important;
+    color: white !important;
+    height: 26px !important;
+    border-radius: 2px !important;
+    font-weight: normal !important;
+    line-height: 26px;
+    text-decoration: none !important;
+    border: none;
+}
+
 .regOverlay a {
     color: #000;
 }
@@ -80,7 +98,7 @@
 }
 
 .regOverlay.withdraw {
-    height: 566px;
+    height: 616px;
 }
 
 .large_single.regOverlay {
@@ -242,24 +260,9 @@
     font-size: 12px;
 }
 
-.regOverlay.deposit #overlayContainer .submitMessageContainer span {
-    padding-left: 0 !important;
+.regOverlay.deposit #overlayContainer .submitMessageContainer span:before {
+    left: 10px !important;
 }
-
-/*.regOverlay #overlayContainer .submitMessageContainer span.submitError {*/
-    /*color: #b90318;*/
-    /*background: url(../../images/en/errorIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;*/
-    /*overflow: hidden;*/
-    /*float: left;*/
-    /*padding-left: 27px !important;*/
-/*}*/
-
-/*.regOverlay #overlayContainer .submitMessageContainer span.submitError p {*/
-    /*color: #b90318;*/
-    /*background: none;*/
-    /*padding: 0;*/
-    /*font-weight: bold;*/
-/*}*/
 
 .regOverlay.deposit #overlayContainer #submitMessage-Narrow span.submitSuccess, .regOverlay #overlayContainer #submitMessage-Narrow span.submitError {
     max-width: 475px !important;
@@ -461,30 +464,15 @@ input#recaptcha_response_field {
     width: 180px;
 }
 
-.regOverlay #overlayContainer .formContainer form .submitGreen {
+.regOverlay .submitGreen {
     position: relative;
     float: left;
     background-color: #3da700;
     color: #fff;
-    border: none;
-    display: inline-block;
-    font-family: Arial, sans-serif;
-    height: 39px;
-    margin: 0;
-    cursor: pointer;
-    padding: 9px 0;
-    text-align: center;
-    width: 188px;
-    cursor: pointer;
-    border-radius: 2px;
-    line-height: 23px;
-}
-
-.regOverlay #overlayContainer .formContainer form .submitGreen#submitButton {
     width: 177px;
 }
 
-.regOverlay #overlayContainer .formContainer form .submitGreen:hover {
+.regOverlay .submitGreen:hover {
     background-color: #338c00;
     color: #fff;
 }
@@ -596,6 +584,7 @@ div.tooltipGroup {
     height: 20px;
     margin-bottom: 20px;
     margin-left: 2px;
+    clear: left;
 }
 
 .regOverlay.withdraw div.tooltipGroup {
@@ -736,10 +725,11 @@ div.tooltipGroup .hint.error {
     position: relative;
     float: left;
     vertical-align: middle;
-    padding: 4px 2px 3px 4px;
+    padding: 0;
     line-height: 12px;
     width: 183px;
     min-height: 14px;
+    font-size: 12px;
 }
 
 .hint, .hint p {
@@ -800,8 +790,9 @@ div.tooltipGroup .hint.error {
 #inputContent_edit .rightClmn div.tooltipGroup .hint.m,
 #inputs .leftClmn div.tooltipGroup .hint.m,
 #inputs .rightClmn div.tooltipGroup .hint.m {
-    padding-left: 96px;
     width: 259px;
+    left: 100px !important;
+    padding-left: 0 !important;
 }
 
 .mts_form #inputs div.tooltipGroup .hint {
@@ -3432,60 +3423,60 @@ i
     margin: 10px 0;
 }
 
-#conditionsTable > ul {
-    width: 754px;
-    min-height: 159px;
-    background: transparent url(../../images/en/conditionsTableBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) top left no-repeat;
-    margin: 0px 0px 5px;
-    padding: 1px 1px 0;
-}
+/*#conditionsTable > ul {*/
+/*width: 754px;*/
+/*min-height: 159px;*/
+/*background: transparent url(../../images/en/conditionsTableBg.png?ver=10302352b9cca8d374b2c95e0ccf157d) top left no-repeat;*/
+/*margin: 0px 0px 5px;*/
+/*padding: 1px 1px 0;*/
+/*}*/
 
-.conditionsTableHeader_leftBracket {
-    width: 9px;
-    height: 31px;
-    background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
-    float: left;
-}
+/*.conditionsTableHeader_leftBracket {*/
+/*width: 9px;*/
+/*height: 31px;*/
+/*background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;*/
+/*float: left;*/
+/*}*/
 
-.conditionsTableHeader_rightBracket {
-    width: 11px;
-    height: 31px;
-    background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0px !important;
-    float: left;
-}
+/*.conditionsTableHeader_rightBracket {*/
+/*width: 11px;*/
+/*height: 31px;*/
+/*background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -10px 0px !important;*/
+/*float: left;*/
+/*}*/
 
-.conditionsTable_title {
-    height: 31px;
-    background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px -31px !important;
-    float: left;
-    line-height: 30px;
-    font-size: 12px;
-    color: #fff;
-    font-weight: bold;
-    text-shadow: -1px 1px 2px #000;
-    width: 734px;
-}
+/*.conditionsTable_title {*/
+/*height: 31px;*/
+/*background: transparent url(../../images/en/conditionsTableHdr.png?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0px -31px !important;*/
+/*float: left;*/
+/*line-height: 30px;*/
+/*font-size: 12px;*/
+/*color: #fff;*/
+/*font-weight: bold;*/
+/*text-shadow: -1px 1px 2px #000;*/
+/*width: 734px;*/
+/*}*/
 
-.conditionsTableHeader {
-    border-bottom: 1px solid #f5f6f7 !important;
-    height: 23px;
-    padding: 0;
-    background: #fefefe url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top left !important;
-}
+/*.conditionsTableHeader {*/
+/*border-bottom: 1px solid #f5f6f7 !important;*/
+/*height: 23px;*/
+/*padding: 0;*/
+/*background: #fefefe url(../../images/en/tableSubHeaderBG.jpg?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x top left !important;*/
+/*}*/
 
-.conditionsTableHeader div {
-    font-weight: bold;
-    height: 23px;
-    line-height: 23px;
-    border-bottom: 1px solid #aaaeb6;
-    font-size: 11px;
-}
+/*.conditionsTableHeader div {*/
+/*font-weight: bold;*/
+/*height: 23px;*/
+/*line-height: 23px;*/
+/*border-bottom: 1px solid #aaaeb6;*/
+/*font-size: 11px;*/
+/*}*/
 
-.conditionsTableRow {
-    overflow: auto;
-    clear: left;
-    margin: 0 11px 0 9px !important;
-}
+/*.conditionsTableRow {*/
+/*overflow: auto;*/
+/*clear: left;*/
+/*margin: 0 11px 0 9px !important;*/
+/*}*/
 
 .rev_wtd_table_scrolling {
     overflow: auto;
@@ -3952,7 +3943,6 @@ i
 #ils_headerbar a.mts_header_help,
 #overlayFunc ul li a.mts_header_help {
     padding-right: 7px;
-    background: transparent url(../../images/en/headerLinksDivider.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat right center;
 }
 
 .mts_headerbar a#close,
@@ -3989,7 +3979,7 @@ i
 }
 
 .regOverlay .mts_messages.mts_success,
-.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess{
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess {
     border: 1px solid #3da700;
     background-color: #e2ffd3;
 }
@@ -4075,6 +4065,7 @@ i
     overflow: auto;
     width: 760px;
     margin: 0 auto !important;
+    min-height: 70px;
 }
 
 .mts_form_withdrawal_amount {
@@ -4125,6 +4116,8 @@ i
     margin: 0px auto 5px;
     padding: 0;
     border: 1px solid #bbb;
+    overflow: auto;
+    padding-bottom: 9px;
 }
 
 .transfersTableTitle {
@@ -4179,8 +4172,6 @@ i
 .regOverlay .transfersTable_allocation {
     width: 396px;
     background: #d9d9db;
-    border-left: 1px solid #636363;
-    padding-left: 15px;
 }
 
 .transfersTable_allocation, .transfersTableRow_allocation {
@@ -4322,10 +4313,6 @@ div.tooltipGroup div.largeInput span {
     z-index: 4;
 }
 
-.mts_form input[type="button"] {
-    font-size: 13px;
-}
-
 .mts_form .tinyInput,
 .mts_form .smallInput,
 .mts_form .midInput,
@@ -4333,11 +4320,21 @@ div.tooltipGroup div.largeInput span {
     float: left;
     display: inline-block;
     overflow: hidden;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.mts_form .tinyInput input,
+.mts_form .smallInput input,
+.mts_form .midInput input,
+.mts_form .largeInput input {
+    height: 17px;
+    padding: 4px 10px;
 }
 
 .mts_form. .largeInput {
     width: 192px;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
 }
 
 .mts_form .largeInput input {
@@ -4346,15 +4343,10 @@ div.tooltipGroup div.largeInput span {
 
 .mts_form .midInput {
     width: 180px;
-    height: 24px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
 }
 
 .mts_form .midInput input {
     width: 180px;
-    height: 17px;
-    padding: 4px 10px;
 }
 
 .mts_form .submitGreen {
@@ -4403,7 +4395,6 @@ div.tooltipGroup div.largeInput span {
 
 .mts_form .smallInput {
     width: 91px;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -40px;
 }
 
 .mts_form .smallInput input {
@@ -4412,7 +4403,6 @@ div.tooltipGroup div.largeInput span {
 
 .mts_form .tinyInput {
     width: 76px;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -164px;
     z-index: 4 !important;
     position: absolute;
 }
@@ -5530,21 +5520,14 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     border: none !important;
 }
 
-.formFooter .rightClmn input {
-    background: transparent url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -362px !important;
-    width: 180px !important;
-}
-
-.formFooter .rightClmn input:hover {
-    background-position: 0px -388px !important;
-}
-
 #reg_back_btn {
     float: left;
 }
 
 .formFooter .rightClmn input {
-    margin-right: 5px !important;
+    position: absolute;
+    left: -5px;
+    bottom: 20px;
 }
 
 /* -----[ General styling ]-------------------------------------------------- */
@@ -5559,58 +5542,10 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     word-break: break-all;
 }
 
-/* Buttons */
-.regOverlay.withdraw .submitGreen {
-    position: relative;
-    float: left;
-    display: inline-block;
-    width: 188px;
-    height: 26px;
-    margin: 0;
-    padding: 0 0 4px 0;
-    font-size: 11px;
-    color: #354a02;
-    font-family: Tahoma, Arial, sans-serif;
-    font-weight: bold;
-    line-height: 26px;
-    vertical-align: middle;
-    cursor: pointer;
-    border: none;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
-}
-
-.regOverlay.withdraw .submitGreen:hover {
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
-    color: #4561031;
-}
-
-.regOverlay.withdraw .submitGreen:disabled {
-    cursor: auto;
-    background: url(../../images/en/inputsDisabled.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
-}
-
-.regOverlay.withdraw .submitGreen:disabled:hover {
-    cursor: auto;
-    background: url(../../images/en/inputsDisabled.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
-}
-
 .regOverlay.withdraw .submitBlue {
     float: left;
     clear: both;
     display: block;
-    width: 200px;
-    height: 26px;
-    margin-bottom: 40px;
-    color: #2d4456;
-    font-family: Tahoma, Arial, sans-serif;
-    font-weight: bold;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: none !important;
-    vertical-align: middle;
-    cursor: pointer;
-    border: none;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -112px;
 }
 
 /* Icons */
@@ -5669,7 +5604,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_contents #mts_content {
     overflow: hidden;
-    padding: 10px 10px 15px 15px;
+    padding: 10px 10px 0 15px;
 }
 
 /* Account info */
@@ -5702,13 +5637,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 .regOverlay.withdraw .accountInfo .guidanceText .accountDetails {
     padding-left: 5px;
     font-weight: bold;
-}
-
-/* Check withdrawal details form */
-.regOverlay.withdraw .mts_form_container {
-    overflow: hidden;
-    height: auto;
-    padding-bottom: 10px;
 }
 
 .regOverlay.withdraw .mts_form_container .mts_form {
@@ -5785,23 +5713,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 .regOverlay.withdraw .mts_form_container .mts_form .submitGray,
 .regOverlay.withdraw .submitBlue {
     background: #237fb2 !important;
-    cursor: pointer !important;
-    text-align: center !important;
-    width: 231px;
-    /*margin-top: 16px;*/
-    margin-top: 0;
-    padding: 12px 0 !important;
-    color: white !important;
-    /*height: 42px !important;*/
-    height: 26px !important;
-    border-radius: 2px !important;
-    font-weight: normal !important;
-    line-height: 4px;
 }
-
-/*.regOverlay.withdraw #submitButton {*/
-    /*margin-top: 0;*/
-/*}*/
 
 .regOverlay.withdraw .mts_form_container .mts_form .submitGray:hover,
 .regOverlay.withdraw .submitBlue:hover {
@@ -5935,13 +5847,18 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow {
-    padding: 8px 0 12px;
-    border-bottom: 1px solid #959595;
+    padding: 4px 0 0;
+}
+
+.regOverlay.withdraw .mts_table .transfersTableRow.formFooter {
+    position: absolute;
+    bottom: 80px;
+    width: 280px;
+    height: 70px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow.transferTable_total {
     border-bottom: none;
-    /*padding: 0;*/
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_transferable,
@@ -6017,25 +5934,12 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     text-decoration: none;
 }
 
-.regOverlay.withdraw .mts_table .transferTable_total .submitBlue {
-    margin: 0 !important;
-    height: 24px !important;
-}
-
 .regOverlay.withdraw .mts_table .transferTable_total #wtdSubmit {
     clear: left;
     float: left;
     cursor: pointer;
     border: none;
     background: #3da700 !important;
-    color: white !important;
-    text-align: center;
-    margin: 0;
-    width: 238px;
-    padding: 7px 0;
-    height: 35px !important;
-    font-weight: normal;
-    line-height: 17.5px;
 }
 
 .regOverlay.withdraw .mts_table .transferTable_total #wtdSubmit:hover {
@@ -6816,7 +6720,7 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 }
 
 /*#wtd_form {*/
-    /*border: 1px solid #bbb;*/
+/*border: 1px solid #bbb;*/
 /*}*/
 
 .__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
