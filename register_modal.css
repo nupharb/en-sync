@@ -1,13 +1,13 @@
 /*-----------------------------------MODAL REGISTRATION STYLES-------------------------------*/
 /*
-	Copyright (c) 2011 Orbis Technology Ltd. All rights reserved.
+    Copyright (c) 2011 Orbis Technology Ltd. All rights reserved.
 
-	This CSS is for styling registration overlay and its form elements.
+    This CSS is for styling registration overlay and its form elements.
 */
 
 /*
 *:focus {
-	outline:none;
+    outline:none;
 }
 */
 .regOverlay #overlayContainer .formContainer form a:focus, .regOverlay #overlayContainer .formContainer form input[type="button"]:focus {
@@ -388,6 +388,10 @@
     background: none;
 }
 
+.regOverlay #overlayContainer .formContainer form .tinyInput input {
+    height: 18px;
+}
+
 .regOverlay #overlayContainer .formContainer form .firstName input,
 .regOverlay #overlayContainer .formContainer form .surname input,
 .regOverlay #overlayContainer .formContainer form .tinyInput input,
@@ -468,7 +472,7 @@ input#recaptcha_response_field {
 
 .regOverlay #overlayContainer .formContainer form .tinyInput {
     padding: 0;
-    height: 24px;
+    height: 26px;
 }
 
 .regOverlay #secondOverlayDiv #inputContent_edit .largeInput {
@@ -988,19 +992,21 @@ div.tooltipGroup .hint.error {
     height: auto;
     max-height: 60px;
     font-weight: 400;
-    padding: 10px 20px 10px 15px;
+    padding: 8px 20px 8px 15px;
     vertical-align: middle;
     width: 100%;
     overflow: hidden;
 }
 
-.regOverlay.deposit #overlayContainer .submitMessageContainer span:before {
+.regOverlay.deposit #overlayContainer .submitMessageContainer span#s_error.submitError:before,
+.regOverlay.deposit #overlayContainer .submitMessageContainer span#s_success.submitSuccess:before {
     content: ' ';
     background-image: url(../../images/en/token-icons-vertical.png?ver=10302352b9cca8d374b2c95e0ccf157d);
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
+    float: left;
 }
 
 .regOverlay #overlayContainer .submitMessageContainer span.submitError {
@@ -1030,12 +1036,24 @@ div.tooltipGroup .hint.error {
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess {
-    color: #405b00;
-    background: url(../../images/en/successIcon.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 0;
     overflow: hidden;
+    /*max-width: 550px !important;*/
     float: left;
-    max-width: 550px !important;
-    padding-left: 27px !important;
+    border: 1px solid #3da700;
+    background-color: #e2ffd3;
+    background-position: 5px 3px;
+}
+
+.regOverlay.deposit #overlayContainer .submitMessageContainer span#s_success.submitSuccess {
+    max-width: 487px !important;
+}
+
+.regOverlay.deposit #overlayContainer .submitMessageContainer span#s_success.submitSuccess:before {
+    background-position: 0 -61;
+}
+
+.regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess p {
+    display: inline-block;
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer_reverseWtd span.submitSuccess {
@@ -1058,7 +1076,7 @@ div.tooltipGroup .hint.error {
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span.accountInfo p .boldLabel {
-    color: #015F8E;
+    color: #222;
     font-weight: bold;
     min-height: 0;
     padding: 0;
@@ -2125,11 +2143,11 @@ p.pymnt_iconWithText.visibleText span {
 }
 
 .regOverlay #overlayContainer .formContainer form .tinyInput {
-    width: 76px;
+    width: 86px;
 }
 
 .regOverlay #overlayContainer .formContainer form .tinyInput input {
-    width: 76px;
+    width: 72px;
 }
 
 .regOverlay.deposit #overlayContainer .formContainer .leftClmn {
@@ -2138,7 +2156,6 @@ p.pymnt_iconWithText.visibleText span {
 
 .regOverlay.deposit #overlayContainer .formContainer .rightClmn {
     width: 268px;
-    margin-top: 16px;
 }
 
 .regOverlay.deposit #overlayContainer .formContainer .formFooter a {
@@ -2170,7 +2187,7 @@ p.pymnt_iconWithText.visibleText span {
 }
 
 .regOverlay.deposit #inputs {
-    height: 292px;
+    height: 305px;
     overflow: hidden;
 }
 
@@ -2706,26 +2723,33 @@ i
 .regOverlay.deposit #overlayContainer #depositSuccessContainer #depositSuccessContent {
     display: inline;
     float: left;
+    background-color: #fff;
+    height: 430px;
 }
+
 
 .regOverlay.deposit #overlayContainer #depositSuccessContainer #transactionDetails, .regOverlay.deposit #overlayContainer #depositSuccessContainer .dsDetails, .regOverlay #overlayContainer #depositSuccessContainer .formFooter {
     width: 460px;
     float: left;
 }
 
+.regOverlay.deposit #overlayContainer #depositSuccessContainer #transactionDetails {
+    width: 626px;
+}
+
 #transactionDetails .dsTitle {
-    border-bottom: 2px solid #4b7300;
-    height: 21px;
+    border-bottom: 1px solid #bbbbbb;
+    height: 32px;
     line-height: 23px;
 }
 
 #transactionDetails .dsTitle p {
     float: left;
-    color: #4b7300;
+    color: #222;
     font-weight: bold;
     font-family: Arial, sans-serif;
-    font-size: 12px;
-    text-shadow: 1px 1px #ffffff;
+    font-size: 13px;
+    padding: 5px 0;
 }
 
 .regOverlay.deposit .dsDetails .pmInfo {
@@ -2759,10 +2783,15 @@ i
     margin-right: 10px;
 }
 
+.regOverlay.deposit #overlayContainer #depositSuccessContainer #depositSuccessContent a.backToSiteBtn {
+    color: #fff !important;
+    
+}
+
 .regOverlay #overlayContainer a.backToSiteBtn {
     display: block;
+    background: #237eb1;
     float: left;
-    background: url("../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d") no-repeat 0 -112px;
     width: 200px;
     height: 26px;
     font-family: Arial, sans-serif;
@@ -2773,17 +2802,19 @@ i
     text-decoration: none;
     clear: both;
     text-align: center;
-    margin-bottom: 40px;
     margin-left: 27px;
+    padding: 9px 0;
 }
 
 .regOverlay #overlayContainer a.backToSiteBtn:hover {
-    background-position: 0 -138px;
+    background: #28699b;
 }
 
 .regOverlay.deposit #overlayContainer #depositSuccessContainer #transactionDetails {
     margin-bottom: 25px;
-    margin-left: 27px;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 365px;
 }
 
 .regOverlay.deposit #overlayContainer #depositSuccessContainer #accountOptions {
@@ -5802,8 +5833,19 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
     outline: none;
 }
 
-.regOverlay .tinyInput:before {
-    content: "£";
+.regOverlay.deposit #inputs > .tooltipGroup:last-child > .tinyInput:before  {
+    content: "\00a3";
+    background-color: #e8eaed;
+    color: #adb8bb;
+    padding: 5px 10px 3px;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+}
+
+.regOverlay.withdraw .tinyInput:before {
+    content: "\00a3";
     background-color: #e8eaed;
     color: #adb8bb;
     padding: 5px 10px 3px;
