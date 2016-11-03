@@ -260,7 +260,6 @@
     font-size: 12px;
 }
 
-
 .regOverlay #overlayContainer .submitMessageContainer span.submitError p {
     color: #b90318;
     background: none;
@@ -627,7 +626,6 @@ div.tooltipGroup select {
     font-size: 14px !important;
 }
 
-
 .regOverlay.withdraw div.tooltipGroup {
     position: relative;
     float: left;
@@ -695,7 +693,7 @@ div.tooltipGroup .hint.suggest {
 }
 
 div.tooltipGroup .hint.error {
-    color: #4a030b;
+    color: #c20000;
 }
 
 #inputContent_edit div.tooltipGroup .hint,
@@ -780,25 +778,23 @@ div.tooltipGroup .hint.error {
     min-height: 14px;
 }
 
-
 /*#inputContent_edit div.tooltipGroup .hint p,*/
 /*#inputs div.tooltipGroup .hint p {*/
-    /*display: block;*/
-    /*overflow: hidden;*/
-    /*position: relative;*/
-    /*float: left;*/
-    /*vertical-align: middle;*/
-    /*padding: 0;*/
-    /*line-height: 12px;*/
-    /*width: 183px;*/
-    /*min-height: 14px;*/
-    /*font-size: 12px;*/
+/*display: block;*/
+/*overflow: hidden;*/
+/*position: relative;*/
+/*float: left;*/
+/*vertical-align: middle;*/
+/*padding: 0;*/
+/*line-height: 12px;*/
+/*width: 183px;*/
+/*min-height: 14px;*/
+/*font-size: 12px;*/
 /*}*/
 
 /*.hint, .hint p {*/
-    /*background: white !important;*/
+/*background: white !important;*/
 /*}*/
-
 
 #inputContent_edit div.tooltipGroup .hint.m p,
 #inputs div.tooltipGroup .hint.m p {
@@ -823,7 +819,7 @@ div.tooltipGroup .hint.error {
 #inputContent_edit div.tooltipGroup .hint.info p,
 #inputs div.tooltipGroup .hint.info p {
     /*background: #BFCED6 url(../../images/en/hintInfo_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;*/
-    background-color: #fff;
+    background: #fff;
     color: #999;
 }
 
@@ -835,7 +831,7 @@ div.tooltipGroup .hint.error {
 #inputContent_edit div.tooltipGroup .hint.error p,
 #inputs div.tooltipGroup .hint.error p {
     /*background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;*/
-    background-color: #fff;
+    backgroun: #fff;
     color: #c20000;
 }
 
@@ -867,26 +863,24 @@ div.tooltipGroup .hint.error {
     width: 259px;
 }
 
-
 /*#inputContent_edit .rightClmn div.tooltipGroup .hint,*/
 /*.mts_form #inputs .rightClmn div.tooltipGroup .hint,*/
 /*#inputContent_edit .leftClmn div.tooltipGroup .hint,*/
 /*.mts_form #inputs .leftClmn div.tooltipGroup .hint {*/
-    /*padding: 0;*/
-    /*position: absolute;*/
-    /*left: 186px !important;*/
-    /*top: 0;*/
+/*padding: 0;*/
+/*position: absolute;*/
+/*left: 186px !important;*/
+/*top: 0;*/
 /*}*/
 
 /*#inputContent_edit .leftClmn div.tooltipGroup .hint.m,*/
 /*#inputContent_edit .rightClmn div.tooltipGroup .hint.m,*/
 /*#inputs .leftClmn div.tooltipGroup .hint.m,*/
 /*#inputs .rightClmn div.tooltipGroup .hint.m {*/
-    /*width: 259px;*/
-    /*left: 100px !important;*/
-    /*padding-left: 0 !important;*/
+/*width: 259px;*/
+/*left: 100px !important;*/
+/*padding-left: 0 !important;*/
 /*}*/
-
 
 .mts_form #inputs div.tooltipGroup .hint {
     width: 180px;
@@ -4045,8 +4039,14 @@ i
     z-index: 100011;
 }
 
+
 .mts_container .HdrBM {
     width: 764px !important;
+}
+
+.mts_container #form_transfer #txnAmount_msg {
+    position: absolute;
+    top: 0;
 }
 
 .mts_headerbar {
@@ -4083,9 +4083,15 @@ i
     width: 784px;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
-    background: #fff url(../../images/en/overlayContent_bg.gif?ver=10302352b9cca8d374b2c95e0ccf157d) repeat-x 0 0 !important;
+    background: #fff !important;
     float: left;
     overflow: auto;
+    padding: 10px !important;
+    height: 484px !important;
+}
+
+.mts_contents .mts_form_container {
+    margin: 0 !important;
 }
 
 .regOverlay .mts_messages {
@@ -4129,7 +4135,7 @@ i
 }
 
 .regOverlay .mts_messages span, .mts_messages.mts_info span {
-    background-position-x: -94px;
+    background-position-x: -94px !important;
 }
 
 .regOverlay .mts_messages span {
@@ -4191,33 +4197,33 @@ i
     width: 90px;
 }
 
-.mts_btn {
-    background: transparent url(../../images/en/mts_greenBtn.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
-    width: 188px;
-    height: 26px !important;
-    display: block !important;
-    text-align: center;
-    line-height: 26px;
-    text-decoration: none;
-    font-size: 11px !important;
-    font-weight: bold;
-    color: #384f02 !important;
-    margin: 10px 0 0;
-}
+/*.mts_btn {*/
+/*background: transparent url(../../images/en/mts_greenBtn.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;*/
+/*width: 188px;*/
+/*height: 26px !important;*/
+/*display: block !important;*/
+/*text-align: center;*/
+/*line-height: 26px;*/
+/*text-decoration: none;*/
+/*font-size: 11px !important;*/
+/*font-weight: bold;*/
+/*color: #384f02 !important;*/
+/*margin: 10px 0 0;*/
+/*}*/
 
-.mts_btn_disabled {
-    background: transparent url(../../images/en/mts_disabledButton.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;
-    width: 188px;
-    height: 26px !important;
-    display: block !important;
-    text-align: center;
-    line-height: 26px;
-    text-decoration: none;
-    font-size: 11px !important;
-    font-weight: bold;
-    color: #666 !important;
-    margin: 10px 0 20px;
-}
+/*.mts_btn_disabled {*/
+/*background: transparent url(../../images/en/mts_disabledButton.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px 0px !important;*/
+/*width: 188px;*/
+/*height: 26px !important;*/
+/*display: block !important;*/
+/*text-align: center;*/
+/*line-height: 26px;*/
+/*text-decoration: none;*/
+/*font-size: 11px !important;*/
+/*font-weight: bold;*/
+/*color: #666 !important;*/
+/*margin: 10px 0 20px;*/
+/*}*/
 
 .mts_label_sub {
     font-size: 10px;
@@ -4231,7 +4237,7 @@ i
 
 .mts_table > ul {
     width: 756px;
-    margin: 0px auto 5px;
+    margin: 0;
     padding: 0;
     border: 1px solid #bbb;
     overflow: auto;
@@ -4282,14 +4288,12 @@ i
     background: #d9d9db !important;
 }
 
-.regOverlay .transfersTable_transferable {
+.regOverlay.withdraw .transfersTable_transferable {
     width: 280px;
-    background: #d9d9db;
 }
 
-.regOverlay .transfersTable_allocation {
+.regOverlay.withdraw .transfersTable_allocation {
     width: 396px;
-    background: #d9d9db;
 }
 
 .transfersTable_allocation, .transfersTableRow_allocation {
@@ -4322,14 +4326,10 @@ i
     line-height: 19px;
 }
 
-.transfersTableRow_allocation {
-
-}
-
 .transfersTableRow_transferable,
 .transfersTableRow_bonus,
 .transfersTableRow_total {
-    padding-left: 11px !important;
+    padding-left: 1px !important;
 }
 
 .transfersTableRow {
@@ -4383,24 +4383,7 @@ div.tooltipGroup div.largeInput span {
     width: 358px;
 }
 
-.mts_form div.tooltipGroup .hint.info p {
-    background: url(../../images/en/hintInfo_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
-}
-
-.mts_form div.tooltipGroup .hint.suggest p {
-    background: url(../../images/en/hintSuggest_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
-}
-
-.mts_form div.tooltipGroup .hint.error p {
-    background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
-}
-
-.mts_form div.tooltipGroup .hint.error p {
-    background: url(../../images/en/hintError_top.gif?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat left top;
-}
-
 .mts_form div.tooltipGroup .hint.success p {
-    background: url(../../images/en/icons.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat -40px top;
     height: 14px;
     width: 14px;
     padding: 0;
@@ -4465,30 +4448,6 @@ div.tooltipGroup div.largeInput span {
 
 .mts_form .midInput input {
     width: 180px;
-}
-
-.mts_form .submitGreen {
-    position: relative;
-    float: left;
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -60px;
-    color: #354a02;
-    border: none;
-    display: inline-block;
-    font-size: 11px;
-    font-family: Tahoma, Arial, sans-serif;
-    font-weight: bold;
-    height: 26px;
-    line-height: 26px;
-    margin: 0;
-    padding: 0 0 4px 0;
-    vertical-align: middle;
-    cursor: pointer;
-    width: 188px;
-}
-
-.mts_form .submitGreen:hover {
-    background: url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0 -86px;
-    color: #4561031;
 }
 
 .mts_form .submitDisable {
@@ -4908,8 +4867,12 @@ div.tooltipGroup .hint {
 }
 
 .regOverlay.withdraw div.tooltipGroup .hint {
-        top: 29px;
+    top: 0px;
     left: 0 !important;
+}
+
+#txnAmount_msg {
+    top: 30px;
 }
 
 #ils_loginScreens .rightClmn div.tooltipGroup .hint, #ils_loginScreens div.tooltipGroup .hint {
@@ -5643,8 +5606,9 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 .formFooter .rightClmn input {
-    background: transparent url(../../images/en/inputs.png?ver=10302352b9cca8d374b2c95e0ccf157d) no-repeat 0px -362px !important;
     width: 180px !important;
+    background: #3da700;
+    color: #fff;
 }
 
 .formFooter .rightClmn input:hover {
@@ -5657,12 +5621,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .formFooter .rightClmn input {
     margin-right: 5px !important;
-}
-
-.withdraw .formFooter .rightClmn input {
-    position: absolute;
-    left: -5px;
-    bottom: 20px;
 }
 
 /* -----[ General styling ]-------------------------------------------------- */
@@ -5735,11 +5693,6 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 .regOverlay.withdraw .mts_contents {
     overflow: hidden;
     background: white !important;
-}
-
-.regOverlay.withdraw .mts_contents #mts_content {
-    overflow: hidden;
-    padding: 10px 10px 0 15px;
 }
 
 /* Account info */
@@ -5982,7 +5935,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 /*.regOverlay.withdraw .mts_table .transfersTableRow {*/
-    /*padding: 4px 0 0;*/
+/*padding: 4px 0 0;*/
 /*}*/
 
 .regOverlay.withdraw .mts_table .transfersTableRow {
@@ -5991,10 +5944,29 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow.formFooter {
+    /*position: absolute;*/
+    /*bottom: 70px;*/
+    /*width: 280px;*/
+    /*height: 70px;*/
+
     position: absolute;
-    bottom: 80px;
+    top: 110px;
     width: 280px;
     height: 70px;
+    right: -102px;
+    border-bottom: none;
+}
+
+.regOverlay.withdraw .mts_table .transfersTableRow.formFooter .leftClmn {
+    position: absolute;
+    bottom: 7px;
+    right: 106px;
+}
+
+.regOverlay.withdraw .mts_table .transfersTableRow.formFooter .rightClmn {
+    position: absolute;
+    left: -5px;
+    top: 22px;
 }
 
 .regOverlay.withdraw .mts_table .transfersTableRow.transferTable_total {
@@ -6015,7 +5987,7 @@ a.joinNowLink, a.addressManual, .termsAbs a:link, .termsAbs a:visited, .infoText
 
 .regOverlay.withdraw .mts_table .transfersTableRow .transfersTable_allocation {
     width: 396px;
-    padding-left: 10px;
+    padding-left: 1px;
     border-left: none;
 }
 
@@ -6853,8 +6825,6 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     margin: 10px 0px;
 }
 
-
-
 /*#### START: HELP MENU ON THE RIGHT SIDE ####*/
 .regOverlay #overlayContainer .rightNav .rightNavContent ul.rhs_helpLinks li.helpTitle {
     border: none;
@@ -6895,7 +6865,6 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
 .__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
     display: none !important;
 }
-
 
 /*#### START: EDIT CREDIT CARD OVERLAY ####*/
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv {
@@ -6950,23 +6919,20 @@ a#whatIsThisURL.lowIndex + span#cvv2_msg, span id[*="txnAmount_msg"] {
     padding-top: 5px;
 }
 
-.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter input.submitGreen {
-    width: 177px;
-    background: #3da700;
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter input.submitGreen,
+.mts_btn {
+    background: #3da700 !important;
     color: #fff;
-    text-align: center;
-    font-size: 18px;
-    line-height: 2.2;
-    height: 38px;
-    cursor: pointer;
-    margin-left: 4px;
-    border-radius: 2px;
-    font-weight: 400;
-    padding: 0;
 }
 
-.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter input.submitGreen:hover {
+.regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter input.submitGreen:hover,
+.mts_btn:hover {
     background: #338c00;
+}
+
+.mts_btn {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 
 .regOverlay #secondOverlayDiv.editMthdsecondOverlayDiv .formContainer .formFooter a.overlay_cancelBtn {
