@@ -1043,7 +1043,7 @@ div.tooltipGroup .hint.error {
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span#s_success.submitSuccess:before {
-    background-position: 0 -61;
+    background-position: 0 -61px;
 }
 
 .regOverlay.deposit #overlayContainer .submitMessageContainer span.submitSuccess p {
@@ -2142,6 +2142,7 @@ p.pymnt_iconWithText.visibleText span {
 
 .regOverlay #overlayContainer .formContainer form .tinyInput input {
     width: 72px;
+    padding: 4px 7px;
 }
 
 .regOverlay.deposit #overlayContainer .formContainer .leftClmn {
@@ -2796,7 +2797,7 @@ i
     text-decoration: none;
     clear: both;
     text-align: center;
-    margin-left: 27px;
+    margin-left: 16px;
     padding: 9px 0;
 }
 
@@ -2805,10 +2806,10 @@ i
 }
 
 .regOverlay.deposit #overlayContainer #depositSuccessContainer #transactionDetails {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     margin-left: 16px;
     margin-right: 16px;
-    height: 365px;
+    height: 349px;
 }
 
 .regOverlay.deposit #overlayContainer #depositSuccessContainer #accountOptions {
